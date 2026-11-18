@@ -290,3 +290,16 @@ h1, h2, h3 { font-weight: 720; letter-spacing: -0.025em; line-height: 1.05; marg
 @media (prefers-reduced-motion: reduce) {
   .hero__blank::after { animation: none; }
 }
+
+/* ---------- FAQ, summaries, list headings, static pages ---------- */
+.faq { margin-top: 56px; padding-top: 28px; border-top: 2px solid var(--ink); max-width: 72ch; }
+.faq h2 { font-size: 30px; margin: 0 0 8px; }
+.faq h3 { font-size: 20px; margin: 26px 0 6px; letter-spacing: -0.015em; }
+.faq p { margin: 0; }
+.summary { background: var(--paper); border: 1px solid var(--rule); border-left: 4px solid var(--blue); border-radius: 4px 14px 14px 4px; padding: 20px 24px; margin: 0 0 36px; max-width: 72ch; }
+.summary h2 { font-size: 20px; margin: 0 0 10px; letter-spacing: -0.015em; }
+.summary ul { margin: 0; padding-left: 1.2em; }
+.summary li { margin: 6px 0; color: var(--ink-2); }
+.list__h { font-size: 18px; font-weight: 600; color: var(--ink-3); letter-spacing: 0; margin: 0 0 4px; }
+.page__updated { margin: 16px 0 0; font-size: 15px; }
+.about .prose h2:first-child { margin-top: 0; }

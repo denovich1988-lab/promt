@@ -4,6 +4,18 @@ seoTitle: "Negative Prompts: What They Are + Examples for Midjourney"
 date: 2026-11-18
 description: What a negative prompt is, how it works in Midjourney and Stable Diffusion, and ready-to-use negative prompt lists for portraits, products, logos and AI video.
 related: [product-photo-on-any-background, midjourney-logo-design, cinematic-product-reveal-video]
+summary:
+- A negative prompt lists what an image or video model should leave out.
+- In Midjourney, add --no followed by the items; Stable Diffusion tools have a separate field.
+- List concrete objects and defects, not vague adjectives, and keep the list short.
+- Fix the main prompt first; use negative prompts to remove recurring side effects.
+faq:
+- q: What is a negative prompt?
+  a: A negative prompt tells an AI image or video model what you do not want in the result, such as text, watermarks, extra fingers or a cluttered background.
+- q: How do I use a negative prompt in Midjourney?
+  a: 'Add the --no parameter at the end of your prompt, followed by the things to exclude, for example: --no text, watermark, people.'
+- q: Why is my negative prompt not working?
+  a: The list may be too vague or too long, or the main prompt may still suggest the unwanted thing. Make the positive prompt more specific about what should appear instead.
 ---
 
 A negative prompt tells an image or video model what you *don't* want in the result: blurry details, extra fingers, text, watermarks, a cluttered background. It's the quickest fix for the same mistakes appearing again and again.

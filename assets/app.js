@@ -109,6 +109,13 @@ editors.forEach((ed) => {
     if (empty) empty.hidden = shown > 0;
   };
   input?.addEventListener('input', apply);
+  // Support links like /?q=resume (used by the site search schema).
+  const q = new URLSearchParams(location.search).get('q');
+  if (q && input) {
+    input.value = q;
+    apply();
+    document.getElementById('lib-h')?.scrollIntoView();
+  }
   chips.forEach((chip) =>
     chip.addEventListener('click', () => {
       cat = chip.dataset.filter;

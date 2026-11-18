@@ -4,6 +4,18 @@ seoTitle: How to Write AI Prompts That Work (5-Part Formula + Examples)
 date: 2026-11-18
 description: A simple formula for writing prompts that get good answers from ChatGPT, Claude and Gemini — role, task, context, rules and format — with before-and-after examples.
 related: [cold-email-that-gets-replies, seo-content-brief, senior-code-review]
+summary:
+- 'A good prompt has five parts: role, task, context, rules and format.'
+- Context — the details only you know — has the biggest effect on answer quality.
+- Rules for length, tone and what to avoid turn a generic answer into a usable one.
+- 'Iterate: treat the first answer as a draft, show examples and ask the AI to ask you questions.'
+faq:
+- q: How do you write a good AI prompt?
+  a: Give the AI a role, a clear task, the context it needs, rules for length and tone, and the output format you want. Then refine the answer with follow-up messages.
+- q: How long should a prompt be?
+  a: As long as it needs to be to include the context. A one-line question is fine for simple facts; tasks like writing or analysis usually need a short paragraph of context and a few rules.
+- q: What is the most common prompting mistake?
+  a: Leaving out context. Without details about your audience, goal and constraints, the AI fills the gaps with generic guesses.
 ---
 
 A vague prompt gets a vague answer. The AI is not being lazy; it simply fills every gap with the most average guess. Good prompts close those gaps. You don't need special tricks for that — just five parts, in this order.

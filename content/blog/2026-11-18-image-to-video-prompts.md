@@ -2,8 +2,20 @@
 title: "Image-to-Video Prompts: How to Animate a Photo With AI"
 seoTitle: "Image-to-Video Prompts: Animate a Photo With AI (Templates)"
 date: 2026-11-18
-description: How to write image-to-video prompts for Seedance, Veo, Kling and Runway — what to describe, what to leave out, and 5 templates for products, portraits and landscapes.
+description: How to write image-to-video prompts for Seedance, Veo, Kling and Runway — what to describe, what to skip, and 5 templates for products, people and places.
 related: [cinematic-product-reveal-video, veo-dialogue-scene, product-photo-on-any-background]
+summary:
+- In image-to-video, the picture already shows what is there — the prompt should describe motion.
+- 'Describe three layers: camera motion, subject motion and environment motion.'
+- Say what must stay the same and what to avoid, such as morphing or text.
+- Small, slow movements look the most realistic; generate several takes and pick the best.
+faq:
+- q: How do I write an image-to-video prompt?
+  a: Describe the camera move, what the subject does and what moves in the environment, then list what must stay the same and what to avoid. Do not re-describe what is already in the image.
+- q: Which tools support image-to-video?
+  a: Many AI video tools, including Seedance, Veo, Kling and Runway, can start from an image. Features change often, so check the tool you use.
+- q: Why does my AI video distort the subject?
+  a: Large or fast movements often cause distortion. Use slower camera moves, smaller subject motion and add an avoid line such as "no morphing".
 ---
 
 Image-to-video is the easiest way to get consistent AI video: you start from a photo you already like, and the model only has to add motion. But the prompt works differently from text-to-video. The picture already shows *what* is there. Your prompt should describe *what moves*.

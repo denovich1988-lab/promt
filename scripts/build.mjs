@@ -32,7 +32,8 @@ const listJoin = (a) => (a.length < 2 ? a.join('') : `${a.slice(0, -1).join(', '
 
 // ---------- prompt editor ----------
 // Placeholders like [YOUR PRODUCT] become editable blanks right on the page.
-const PH = /\[([A-Z0-9][A-Z0-9 _\-\/,.'"()]*)\]/g;
+// Any [BRACKETED TEXT] that starts with a capital or digit and has no lowercase letters.
+const PH = /\[([A-Z0-9][^\[\]a-z\n]*)\]/g;
 const countBlanks = (text) => new Set([...text.matchAll(PH)].map((m) => m[1])).size;
 const withBlanks = (text) => {
   let out = '';
@@ -99,6 +100,7 @@ function loadPrompts() {
         models: data.models || [],
         tags: data.tags || [],
         level: data.level || '',
+        updated: data.updated ? toISODate(data.updated) : '',
         promptText: promptMatch[1].trim(),
         introHtml: marked.parse(intro || ''),
         restHtml: marked.parse(rest || ''),
@@ -110,33 +112,92 @@ function loadPrompts() {
 }
 
 // ---------- layout ----------
-function layout({ title, description, pathname, body, ogType = 'website', jsonLd = null }) {
-  const fullTitle = title ? `${title} | ${site.name}` : `Free AI Prompts for ChatGPT, Claude, Gemini and Midjourney | ${site.name}`;
+const ORG_ID = `${SITE_URL}/#organization`;
+const WEBSITE_ID = `${SITE_URL}/#website`;
+const OG_IMAGE = `${SITE_URL}/assets/og.png`;
+const LEGAL = [
+  ['/about/', 'About'],
+  ['/contact/', 'Contact'],
+  ['/privacy/', 'Privacy policy'],
+  ['/cookies/', 'Cookie policy'],
+  ['/terms/', 'Terms of use'],
+  ['/disclaimer/', 'Disclaimer'],
+];
+
+// Keep <title> within ~60 characters: drop the brand suffix when the title is already long.
+const makeTitle = (title) => {
+  if (!title) return `Free AI Prompts for ChatGPT, Claude & Gemini | ${site.name}`;
+  const full = `${title} | ${site.name}`;
+  return full.length <= 62 ? full : title;
+};
+
+function layout({ title, description, pathname, body, ogType = 'website', jsonLd = [], crumbs = [], published = '', modified = '', noindex = false }) {
+  const fullTitle = makeTitle(title);
+  const desc = description || site.description;
   const canonical = SITE_URL + pathname;
   const navCats = Object.entries(site.categories)
     .map(([k, c]) => `<a href="/category/${k}/"${pathname === `/category/${k}/` ? ' aria-current="page"' : ''}>${esc(c.name)}</a>`)
     .join('');
+  const graph = [
+    {
+      '@type': 'Organization',
+      '@id': ORG_ID,
+      name: site.name,
+      url: SITE_URL + '/',
+      logo: { '@type': 'ImageObject', url: `${SITE_URL}/assets/logo.png`, width: 512, height: 512 },
+      email: site.email,
+      description: site.description,
+    },
+    {
+      '@type': 'WebSite',
+      '@id': WEBSITE_ID,
+      name: site.name,
+      url: SITE_URL + '/',
+      description: site.description,
+      inLanguage: site.language,
+      publisher: { '@id': ORG_ID },
+      potentialAction: { '@type': 'SearchAction', target: { '@type': 'EntryPoint', urlTemplate: `${SITE_URL}/?q={search_term_string}` }, 'query-input': 'required name=search_term_string' },
+    },
+  ];
+  if (crumbs.length) {
+    graph.push({
+      '@type': 'BreadcrumbList',
+      itemListElement: [['Home', '/'], ...crumbs].map(([name, url], i) => ({ '@type': 'ListItem', position: i + 1, name, item: SITE_URL + url })),
+    });
+  }
+  for (const j of [].concat(jsonLd || [])) if (j) graph.push(j);
   return `<!doctype html>
 <html lang="${site.language}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${esc(fullTitle)}</title>
-<meta name="description" content="${esc(description || site.description)}">
+<meta name="description" content="${esc(desc)}">
+<meta name="robots" content="${noindex ? 'noindex, follow' : 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1'}">
 <link rel="canonical" href="${canonical}">
 <meta property="og:type" content="${ogType}">
 <meta property="og:site_name" content="${esc(site.name)}">
-<meta property="og:title" content="${esc(title || site.name)}">
-<meta property="og:description" content="${esc(description || site.description)}">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="${esc(title || fullTitle)}">
+<meta property="og:description" content="${esc(desc)}">
 <meta property="og:url" content="${canonical}">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="${OG_IMAGE}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="${esc(site.name)}: free AI prompts you can fill in and copy">
+${published ? `<meta property="article:published_time" content="${published}">\n<meta property="article:modified_time" content="${modified || published}">` : ''}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="${esc(title || fullTitle)}">
+<meta name="twitter:description" content="${esc(desc)}">
+<meta name="twitter:image" content="${OG_IMAGE}">
 <meta name="theme-color" content="#e9ebf0" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#101218" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/logo.png">
 <link rel="preload" href="/assets/fonts/bricolage.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="alternate" type="application/rss+xml" title="${esc(site.name)}" href="/rss.xml">
 <link rel="stylesheet" href="/assets/style.css?v=${BUILD_ID}">
-${jsonLd ? `<script type="application/ld+json">${JSON.stringify(jsonLd)}</script>` : ''}
+<script type="application/ld+json">${JSON.stringify({ '@context': 'https://schema.org', '@graph': graph }).replace(/</g, '\\u003c')}</script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -158,14 +219,19 @@ ${body}
     </div>
     <nav aria-label="Prompts by AI tool"><p class="foot__h">By AI tool</p>${Object.entries(site.hubs).map(([k, h]) => `<a href="/${k}/">${esc(h.title)}</a>`).join('')}</nav>
     <nav aria-label="Prompts by task"><p class="foot__h">By task</p>${Object.entries(site.categories).map(([k, c]) => `<a href="/category/${k}/">${esc(c.name)} prompts</a>`).join('')}</nav>
-    <nav aria-label="More"><p class="foot__h">More</p><a href="/blog/">Blog</a><a href="/about/">About</a><a href="/rss.xml">RSS feed</a></nav>
+    <nav aria-label="Company and legal"><p class="foot__h">Company</p><a href="/blog/">Blog</a>${LEGAL.map(([u, n]) => `<a href="${u}">${n}</a>`).join('')}<a href="/rss.xml">RSS feed</a></nav>
   </div>
-  <div class="wrap"><p class="muted foot__copy">© ${new Date().getFullYear()} ${esc(site.name)}</p></div>
+  <div class="wrap"><p class="muted foot__copy">© ${new Date().getFullYear()} ${esc(site.name)}. Not affiliated with OpenAI, Anthropic, Google or Midjourney.</p></div>
 </footer>
 <script src="/assets/app.js?v=${BUILD_ID}" defer></script>
 </body>
 </html>`;
 }
+
+// Visible FAQ block + matching FAQPage schema (answers must be the same text users see).
+const faqHtml = (faq, heading = 'Frequently asked questions') =>
+  faq.length ? `<section class="faq prose" aria-labelledby="faq-h"><h2 id="faq-h">${esc(heading)}</h2>${faq.map((f) => `<h3>${esc(f.q)}</h3><p>${esc(f.a)}</p>`).join('')}</section>` : '';
+const faqSchema = (faq) => (faq.length ? { '@type': 'FAQPage', mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) } : null);
 
 const row = (p) => `<li class="row" data-search="${esc([p.title, p.description, catName(p.category), ...p.models, ...p.tags].join(' ').toLowerCase())}" data-cat="${p.category}">
   <time class="row__date" datetime="${p.date}">${fmtShort(p.date)}</time>
@@ -192,12 +258,30 @@ const postRow = (b) => `<li class="row row--post">
   <p class="row__cat">${b.minutes} min read</p>
 </li>`;
 
+const itemList = (name, items) => ({
+  '@type': 'ItemList',
+  name,
+  numberOfItems: items.length,
+  itemListElement: items.slice(0, 100).map((x, i) => ({ '@type': 'ListItem', position: i + 1, url: x.url, name: x.name })),
+});
+const promptItems = (list) => list.map((p) => ({ url: `${SITE_URL}/prompts/${p.slug}/`, name: p.title }));
+const authorRef = () => ({ '@type': 'Organization', '@id': ORG_ID, name: `${site.name} editorial team`, url: `${SITE_URL}/about/` });
+
+const homeFaq = () => [
+  { q: `What is ${site.name}?`, a: `${site.name} is a free library of AI prompts for ChatGPT, Claude, Gemini, Midjourney and AI video tools. Each prompt has fill-in blanks: you type your details on the page and copy a ready-to-use prompt.` },
+  { q: 'Are the prompts free?', a: 'Yes. Every prompt on the site is free to copy and use for personal and commercial work. No sign-up is needed.' },
+  { q: 'How do I use a prompt?', a: 'Open a prompt, click each blue blank and type your details, then press Copy prompt and paste it into ChatGPT, Claude, Gemini or another AI tool. Treat the first answer as a draft and ask for changes.' },
+  { q: 'Which AI tools do the prompts work with?', a: 'Text prompts work with ChatGPT, Claude and Gemini. Image prompts are written for Midjourney, Gemini, Flux, DALL·E and Ideogram. Video prompts are written for Seedance, Veo, Kling and Runway. Each prompt page lists the tools it suits.' },
+  { q: 'How often are new prompts added?', a: 'New prompts are published every day. Follow the RSS feed to see them as they come out.' },
+];
+
 function homePage(prompts, posts) {
   const [today] = prompts;
   const counts = Object.fromEntries(Object.keys(site.categories).map((k) => [k, prompts.filter((p) => p.category === k).length]));
   const chips = [`<button class="chip" type="button" data-filter="" aria-pressed="true">All<span>${prompts.length}</span></button>`]
     .concat(Object.entries(site.categories).filter(([k]) => counts[k]).map(([k, c]) => `<button class="chip" type="button" data-filter="${k}" aria-pressed="false">${esc(c.name)}<span>${counts[k]}</span></button>`))
     .join('');
+  const faq = homeFaq();
   const featured = today
     ? `<section class="today" aria-labelledby="today-h">
   <div class="wrap today__grid">
@@ -222,24 +306,39 @@ ${featured}
 <section class="library wrap" aria-labelledby="lib-h">
   <div class="library__head">
     <h2 id="lib-h">AI prompt library</h2>
-    <label class="search"><span class="visually-hidden">Search prompts</span><input type="search" placeholder="Search, e.g. resume, Midjourney" data-search-input autocomplete="off"></label>
+    <label class="search"><span class="visually-hidden">Search prompts</span><input type="search" name="q" placeholder="Search, e.g. resume, Midjourney" data-search-input autocomplete="off"></label>
   </div>
   <div class="chips" role="group" aria-label="Filter by category">${chips}</div>
   <ol class="rows" data-grid>${prompts.map(row).join('\n')}</ol>
   <p class="empty" data-empty hidden>Nothing matches that search. Try a shorter word or pick another category.</p>
 </section>
 ${posts.length ? `<section class="library wrap" aria-labelledby="blog-h">
-  <div class="library__head"><h2 id="blog-h">From the blog</h2><a class="link-strong" href="/blog/">All articles</a></div>
+  <div class="library__head"><h2 id="blog-h">Guides from the blog</h2><a class="link-strong" href="/blog/">All articles</a></div>
   <ol class="rows">${posts.slice(0, 3).map(postRow).join('\n')}</ol>
-</section>` : ''}`;
+</section>` : ''}
+<div class="wrap">${faqHtml(faq)}</div>`;
   return layout({
     title: '',
     description: site.description,
     pathname: '/',
     body,
-    jsonLd: { '@context': 'https://schema.org', '@type': 'WebSite', name: site.name, url: SITE_URL + '/', description: site.description },
+    jsonLd: [itemList('Newest AI prompts', promptItems(prompts.slice(0, 20))), faqSchema(faq)],
   });
 }
+
+const promptFaq = (p) => {
+  const tools = p.models.length ? listJoin(p.models) : 'most AI chat tools';
+  const blanks = [...new Set([...p.promptText.matchAll(PH)].map((m) => m[1].toLowerCase()))];
+  return [
+    { q: 'What does this prompt do?', a: p.description },
+    { q: 'Which AI tools does it work with?', a: `It is written for ${tools}. It also works in other AI tools that accept text prompts, with small changes.` },
+    {
+      q: 'What do I need to fill in?',
+      a: blanks.length ? `${blanks.length} blank${blanks.length === 1 ? '' : 's'}: ${blanks.slice(0, 6).join('; ')}${blanks.length > 6 ? '; and more' : ''}. Click each blue blank on the page, type your details and press Copy prompt.` : 'Nothing. The prompt is ready to copy as it is.',
+    },
+    { q: 'Is this prompt free to use?', a: 'Yes. You can copy and use it for personal and commercial work.' },
+  ];
+};
 
 function promptPage(p, i, prompts) {
   const newer = prompts[i - 1];
@@ -247,22 +346,27 @@ function promptPage(p, i, prompts) {
   const related = prompts.filter((x) => x.category === p.category && x.slug !== p.slug).slice(0, 4);
   const tool = p.models[0] || 'AI';
   const hubFor = Object.entries(site.hubs).filter(([, h]) => h.models.some((m) => p.models.includes(m)));
+  const faq = promptFaq(p);
+  const url = `${SITE_URL}/prompts/${p.slug}/`;
   const body = `
 <article class="prompt">
   <header class="wrap prompt__head">
-    <p class="crumbs"><a href="/">All prompts</a> / <a href="/category/${p.category}/">${esc(catName(p.category))}</a></p>
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/category/${p.category}/">${esc(catName(p.category))} prompts</a></nav>
     <h1>${esc(p.title)}</h1>
     <p class="prompt__lede">${esc(p.description)}</p>
     <dl class="facts">
       <div><dt>Published</dt><dd><time datetime="${p.date}">${fmtDate(p.date)}</time></dd></div>
       ${p.models.length ? `<div><dt>Works with</dt><dd>${esc(listJoin(p.models))}</dd></div>` : ''}
       ${p.level ? `<div><dt>Level</dt><dd>${esc(p.level)}</dd></div>` : ''}
+      <div><dt>By</dt><dd><a href="/about/">${esc(site.name)} editorial team</a></dd></div>
     </dl>
   </header>
   <div class="wrap prompt__body">
     <div class="prose prompt__intro">${p.introHtml}</div>
+    <h2 class="visually-hidden">The prompt</h2>
     ${editor(p.promptText)}
     <div class="prose">${p.restHtml}</div>
+    ${faqHtml(faq)}
     ${p.tags.length ? `<p class="tags">${p.tags.map((t) => `<span>${esc(t)}</span>`).join('')}</p>` : ''}
     ${hubFor.length ? `<p class="see-also">More prompts for ${hubFor.map(([k, h]) => `<a href="/${k}/">${esc(h.title.replace(/ Prompts.*/, ''))}</a>`).join(', ')}.</p>` : ''}
   </div>
@@ -273,61 +377,77 @@ function promptPage(p, i, prompts) {
 </article>
 ${related.length ? `<section class="wrap related"><h2>More ${esc(catName(p.category).toLowerCase())} prompts</h2><ol class="rows">${related.map(row).join('\n')}</ol></section>` : ''}`;
   return layout({
-    title: /prompt/i.test(p.title) ? p.title : `${p.title}: ${tool} Prompt`,
+    title: /prompt/i.test(p.title) || p.title.length > 44 ? p.title : `${p.title}: ${tool} Prompt`,
     description: p.description,
     pathname: `/prompts/${p.slug}/`,
     ogType: 'article',
+    published: p.date,
+    modified: p.updated || p.date,
+    crumbs: [[`${catName(p.category)} prompts`, `/category/${p.category}/`], [p.title, `/prompts/${p.slug}/`]],
     body,
-    jsonLd: {
-      '@context': 'https://schema.org',
-      '@type': 'Article',
-      headline: p.title,
-      description: p.description,
-      datePublished: p.date,
-      url: `${SITE_URL}/prompts/${p.slug}/`,
-      publisher: { '@type': 'Organization', name: site.name },
-    },
+    jsonLd: [
+      {
+        '@type': 'Article',
+        '@id': `${url}#article`,
+        headline: p.title,
+        description: p.description,
+        datePublished: p.date,
+        dateModified: p.updated || p.date,
+        url,
+        mainEntityOfPage: url,
+        image: OG_IMAGE,
+        author: authorRef(),
+        publisher: { '@id': ORG_ID },
+        articleSection: catName(p.category),
+        keywords: [...p.tags, ...p.models.map((m) => `${m} prompt`)].join(', '),
+        about: p.models.map((m) => ({ '@type': 'SoftwareApplication', name: m, applicationCategory: 'AI assistant' })),
+        isAccessibleForFree: true,
+        inLanguage: site.language,
+        hasPart: { '@type': 'CreativeWork', name: `${p.title} (prompt text)`, text: p.promptText, isAccessibleForFree: true },
+      },
+      faqSchema(faq),
+    ],
   });
 }
 
-function listPage({ crumbs, h1, lede, list, title, description, pathname, extra = '' }) {
+function listPage({ crumbsHtml, crumbs, h1, lede, list, title, description, pathname, extra = '', faq = [] }) {
   const body = `
 <section class="hero hero--small wrap">
-  <p class="crumbs">${crumbs}</p>
+  <nav class="crumbs" aria-label="Breadcrumb">${crumbsHtml}</nav>
   <h1 class="hero__title">${esc(h1)}</h1>
   <p class="hero__lede">${esc(lede)}</p>
 </section>
-<section class="wrap library">
+<section class="wrap library" aria-labelledby="list-h">
+  <h2 id="list-h" class="list__h">${list.length} prompt${list.length === 1 ? '' : 's'}, newest first</h2>
   ${list.length ? `<ol class="rows">${list.map(row).join('\n')}</ol>` : '<p class="empty">New prompts here are on the way. Meanwhile, <a href="/">browse all prompts</a>.</p>'}
   ${extra}
+  ${faqHtml(faq)}
 </section>`;
   return layout({
     title,
     description,
     pathname,
+    crumbs,
     body,
-    jsonLd: {
-      '@context': 'https://schema.org',
-      '@type': 'CollectionPage',
-      name: h1,
-      description,
-      url: SITE_URL + pathname,
-      hasPart: list.slice(0, 50).map((p) => ({ '@type': 'CreativeWork', name: p.title, url: `${SITE_URL}/prompts/${p.slug}/` })),
-    },
+    jsonLd: [
+      { '@type': 'CollectionPage', '@id': `${SITE_URL}${pathname}#page`, name: h1, description, url: SITE_URL + pathname, isPartOf: { '@id': WEBSITE_ID }, mainEntity: itemList(h1, promptItems(list)) },
+      faqSchema(faq),
+    ],
   });
 }
 
-const howToUse = `<div class="howto prose"><h2>How to use these prompts</h2><ol><li>Click a prompt and type your details into the blue blanks.</li><li>Press <strong>Copy prompt</strong> and paste it into your AI tool.</li><li>Treat the first answer as a draft and ask for changes until it fits.</li></ol></div>`;
+const howToUse = `<div class="howto prose"><h2>How to use these prompts</h2><ol><li>Open a prompt and type your details into the blue blanks.</li><li>Press <strong>Copy prompt</strong> and paste it into your AI tool.</li><li>Treat the first answer as a draft and ask for changes until it fits.</li></ol></div>`;
 
 function categoryPage(key, prompts) {
   const c = site.categories[key];
   const list = prompts.filter((p) => p.category === key);
   return listPage({
-    crumbs: '<a href="/">All prompts</a>',
+    crumbsHtml: '<a href="/">Home</a>',
+    crumbs: [[c.title, `/category/${key}/`]],
     h1: c.title,
     lede: c.description,
     list,
-    title: `${c.title} (Free, Copy-Ready)`,
+    title: c.seoTitle || c.title,
     description: c.description,
     pathname: `/category/${key}/`,
     extra: howToUse,
@@ -337,47 +457,69 @@ function categoryPage(key, prompts) {
 function hubPage(key, prompts) {
   const h = site.hubs[key];
   const list = prompts.filter((p) => p.models.some((m) => h.models.includes(m)));
+  const tools = listJoin(h.models);
+  const faq = [
+    { q: `What are the best ${h.title.replace(/ for .*/, '').toLowerCase()}?`, a: `The best prompts give the AI a role, the context only you know and clear rules for the answer. Every prompt on this page follows that structure, with blanks for your details. Start with the newest prompts at the top of the list.` },
+    { q: `How do I use these prompts in ${tools}?`, a: `Open a prompt, fill in the blue blanks, press Copy prompt and paste it into ${tools}. Then ask follow-up questions to adjust the result.` },
+    { q: 'Are these prompts free?', a: 'Yes. All prompts are free to copy and use, including for commercial work.' },
+  ];
   return listPage({
-    crumbs: '<a href="/">All prompts</a>',
+    crumbsHtml: '<a href="/">Home</a>',
+    crumbs: [[h.title, `/${key}/`]],
     h1: h.h1,
     lede: h.description,
     list,
-    title: `${h.title}: ${list.length} Free Copy-Ready Prompts`,
+    title: `${h.title.replace(/ for .*/, '')}: ${list.length} Free Copy-Ready Prompts`,
     description: h.description,
     pathname: `/${key}/`,
     extra: howToUse,
+    faq,
   });
 }
 
 function blogIndex(posts) {
+  const desc = 'Practical guides to writing better AI prompts for ChatGPT, Claude, Gemini, Midjourney and AI video tools.';
   const body = `
 <section class="hero hero--small wrap">
-  <p class="crumbs"><a href="/">All prompts</a></p>
-  <h1 class="hero__title">Blog</h1>
-  <p class="hero__lede">Practical guides to ChatGPT, Claude, Gemini and Midjourney: how to write better prompts and get better answers.</p>
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a></nav>
+  <h1 class="hero__title">AI prompting blog</h1>
+  <p class="hero__lede">${desc}</p>
 </section>
-<section class="wrap library">
+<section class="wrap library" aria-labelledby="list-h">
+  <h2 id="list-h" class="list__h">${posts.length} articles, newest first</h2>
   <ol class="rows">${posts.map(postRow).join('\n')}</ol>
 </section>`;
-  return layout({ title: 'AI Prompting Blog: Guides for ChatGPT, Claude and Midjourney', description: 'Practical guides to writing better AI prompts for ChatGPT, Claude, Gemini and Midjourney.', pathname: '/blog/', body });
+  return layout({
+    title: 'AI Prompting Blog: Guides and Prompt Examples',
+    description: desc,
+    pathname: '/blog/',
+    crumbs: [['Blog', '/blog/']],
+    body,
+    jsonLd: [{ '@type': 'Blog', '@id': `${SITE_URL}/blog/#blog`, name: `${site.name} blog`, url: `${SITE_URL}/blog/`, publisher: { '@id': ORG_ID }, blogPost: posts.map((b) => ({ '@type': 'BlogPosting', headline: b.title, url: `${SITE_URL}/blog/${b.slug}/`, datePublished: b.date })) }],
+  });
 }
 
 function postPage(b, i, posts, promptsBySlug) {
   const related = (b.related || []).map((s) => promptsBySlug[s]).filter(Boolean);
   const more = posts.filter((x) => x.slug !== b.slug).slice(0, 3);
+  const url = `${SITE_URL}/blog/${b.slug}/`;
   const body = `
 <article class="prompt post">
   <header class="wrap prompt__head">
-    <p class="crumbs"><a href="/blog/">Blog</a></p>
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/blog/">Blog</a></nav>
     <h1>${esc(b.title)}</h1>
     <p class="prompt__lede">${esc(b.description)}</p>
     <dl class="facts">
       <div><dt>Published</dt><dd><time datetime="${b.date}">${fmtDate(b.date)}</time></dd></div>
+      ${b.updated && b.updated !== b.date ? `<div><dt>Updated</dt><dd><time datetime="${b.updated}">${fmtDate(b.updated)}</time></dd></div>` : ''}
       <div><dt>Reading time</dt><dd>${b.minutes} min</dd></div>
+      <div><dt>By</dt><dd><a href="/about/">${esc(site.name)} editorial team</a></dd></div>
     </dl>
   </header>
   <div class="wrap prompt__body">
+    ${b.summary.length ? `<aside class="summary" aria-labelledby="sum-h"><h2 id="sum-h">Key takeaways</h2><ul>${b.summary.map((x) => `<li>${esc(x)}</li>`).join('')}</ul></aside>` : ''}
     <div class="prose">${b.html}</div>
+    ${faqHtml(b.faq)}
   </div>
 </article>
 ${related.length ? `<section class="wrap related"><h2>Prompts from this article</h2><ol class="rows">${related.map(row).join('\n')}</ol></section>` : ''}
@@ -387,39 +529,49 @@ ${more.length ? `<section class="wrap related"><h2>More from the blog</h2><ol cl
     description: b.description,
     pathname: `/blog/${b.slug}/`,
     ogType: 'article',
+    published: b.date,
+    modified: b.updated || b.date,
+    crumbs: [['Blog', '/blog/'], [b.title, `/blog/${b.slug}/`]],
     body,
-    jsonLd: {
-      '@context': 'https://schema.org',
-      '@type': 'BlogPosting',
-      headline: b.title,
-      description: b.description,
-      datePublished: b.date,
-      dateModified: b.updated || b.date,
-      url: `${SITE_URL}/blog/${b.slug}/`,
-      publisher: { '@type': 'Organization', name: site.name },
-    },
+    jsonLd: [
+      {
+        '@type': 'BlogPosting',
+        '@id': `${url}#article`,
+        headline: b.title,
+        description: b.description,
+        abstract: b.summary.join(' '),
+        datePublished: b.date,
+        dateModified: b.updated || b.date,
+        url,
+        mainEntityOfPage: url,
+        image: OG_IMAGE,
+        author: authorRef(),
+        publisher: { '@id': ORG_ID },
+        wordCount: b.words,
+        inLanguage: site.language,
+        isAccessibleForFree: true,
+      },
+      faqSchema(b.faq),
+    ],
   });
 }
 
-function aboutPage() {
+function staticPage(pg) {
   const body = `
 <article class="wrap about">
-  <h1 class="hero__title">About ${esc(site.name)}</h1>
-  <div class="prose">
-  <p class="prompt__lede">${esc(site.description)}</p>
-  <h2>How it works</h2>
-  <p>We publish new prompts every day for real tasks: writing, marketing, business, coding, images and video. Blue blanks mark the details only you know. Click a blank, type your answer, then press <strong>Copy prompt</strong>. Any blank you skip is copied as it was, so you can fill it in later.</p>
-  <h2>Getting better results</h2>
-  <ul>
-    <li><strong>Be specific in every blank.</strong> “Owners of small coffee shops” works better than “businesses”.</li>
-    <li><strong>Treat the first answer as a draft.</strong> Ask for changes: shorter, warmer, more examples.</li>
-    <li><strong>Check the facts.</strong> AI tools can be confidently wrong. Verify numbers, names and claims before you publish.</li>
-  </ul>
-  <h2>Get new prompts</h2>
-  <p>Subscribe to the <a href="/rss.xml">RSS feed</a> to see each prompt the day it comes out.</p>
-  </div>
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a></nav>
+  <h1 class="hero__title">${esc(pg.h1 || pg.title)}</h1>
+  <p class="muted page__updated">Last updated: <time datetime="${pg.updated}">${fmtDate(pg.updated)}</time></p>
+  <div class="prose">${pg.html}</div>
 </article>`;
-  return layout({ title: 'About', description: `What ${site.name} is and how to get the most from each prompt.`, pathname: '/about/', body });
+  return layout({
+    title: pg.title,
+    description: pg.description,
+    pathname: `/${pg.slug}/`,
+    crumbs: [[pg.title, `/${pg.slug}/`]],
+    body,
+    jsonLd: [{ '@type': pg.schemaType || 'WebPage', '@id': `${SITE_URL}/${pg.slug}/#page`, name: pg.title, description: pg.description, url: `${SITE_URL}/${pg.slug}/`, isPartOf: { '@id': WEBSITE_ID }, dateModified: pg.updated, ...(pg.schemaType === 'AboutPage' || pg.schemaType === 'ContactPage' ? { mainEntity: { '@id': ORG_ID } } : {}) }],
+  });
 }
 
 function notFoundPage() {
@@ -427,6 +579,7 @@ function notFoundPage() {
     title: 'Page not found',
     description: 'This page does not exist.',
     pathname: '/404.html',
+    noindex: true,
     body: `<section class="hero wrap"><h1 class="hero__title">This page is a <span class="hero__blank">blank</span>.</h1><p class="hero__lede">The link may be old or mistyped. The newest prompts are on the home page.</p><p><a class="btn btn--copy" href="/">Go to the home page</a></p></section>`,
   });
 }
@@ -446,10 +599,13 @@ ${items}
 </channel></rss>`;
 }
 
-function sitemap(prompts, posts) {
-  const urls = ['/', '/blog/', '/about/', ...Object.keys(site.hubs).map((k) => `/${k}/`), ...Object.keys(site.categories).map((k) => `/category/${k}/`)]
-    .map((u) => `<url><loc>${SITE_URL}${u}</loc></url>`)
-    .concat(prompts.map((p) => `<url><loc>${SITE_URL}/prompts/${p.slug}/</loc><lastmod>${p.date}</lastmod></url>`))
+function sitemap(prompts, posts, pages) {
+  const newest = prompts[0]?.date || todayISO();
+  const newestPost = posts[0]?.date || newest;
+  const urls = [['/', newest], ['/blog/', newestPost], ...Object.keys(site.hubs).map((k) => [`/${k}/`, newest]), ...Object.keys(site.categories).map((k) => [`/category/${k}/`, prompts.find((p) => p.category === k)?.date || newest])]
+    .map(([u, d]) => `<url><loc>${SITE_URL}${u}</loc><lastmod>${d}</lastmod></url>`)
+    .concat(pages.map((pg) => `<url><loc>${SITE_URL}/${pg.slug}/</loc><lastmod>${pg.updated}</lastmod></url>`))
+    .concat(prompts.map((p) => `<url><loc>${SITE_URL}/prompts/${p.slug}/</loc><lastmod>${p.updated || p.date}</lastmod></url>`))
     .concat(posts.map((b) => `<url><loc>${SITE_URL}/blog/${b.slug}/</loc><lastmod>${b.updated || b.date}</lastmod></url>`));
   return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.join('\n')}\n</urlset>`;
 }
@@ -473,6 +629,9 @@ function loadPosts() {
         seoTitle: data.seoTitle || '',
         description: data.description,
         related: data.related || [],
+        summary: data.summary || [],
+        faq: data.faq || [],
+        words,
         minutes: Math.max(1, Math.round(words / 220)),
         html: marked.parse(content),
         draft: Boolean(data.draft),
@@ -482,9 +641,93 @@ function loadPosts() {
     .sort((a, b) => b.date.localeCompare(a.date) || a.slug.localeCompare(b.slug));
 }
 
+function loadPages() {
+  const dir = path.join(ROOT, 'content', 'pages');
+  if (!fs.existsSync(dir)) return [];
+  return fs
+    .readdirSync(dir)
+    .filter((f) => f.endsWith('.md'))
+    .map((file) => {
+      const { data, content } = matter(fs.readFileSync(path.join(dir, file), 'utf8'));
+      for (const k of ['title', 'description', 'updated']) if (!data[k]) throw new Error(`pages/${file}: missing "${k}"`);
+      const fill = (t) => t.replaceAll('{{SITE}}', site.name).replaceAll('{{URL}}', SITE_URL).replaceAll('{{EMAIL}}', site.email);
+      return { slug: file.replace(/\.md$/, ''), title: data.title, h1: data.h1, description: fill(data.description), updated: toISODate(data.updated), schemaType: data.schemaType, html: marked.parse(fill(content)) };
+    });
+}
+
+// llms.txt: a plain-text map of the site for AI assistants and answer engines.
+function llmsTxt(prompts, posts, pages) {
+  const line = (title, url, desc) => `- [${title}](${url})${desc ? `: ${desc}` : ''}`;
+  return `# ${site.name}
+
+> ${site.description}
+
+${site.name} publishes free, copy-ready AI prompts. Each prompt has fill-in blanks marked [IN SQUARE BRACKETS] for the user's details, plus steps and tips for using it. All prompts are free to use, including for commercial work. New prompts are added every day.
+
+## Prompts by AI tool
+${Object.entries(site.hubs).map(([k, h]) => line(h.title, `${SITE_URL}/${k}/`, h.description)).join('\n')}
+
+## Prompts by task
+${Object.entries(site.categories).map(([k, c]) => line(c.title, `${SITE_URL}/category/${k}/`, c.description)).join('\n')}
+
+## Prompts
+${prompts.map((p) => line(p.title, `${SITE_URL}/prompts/${p.slug}/`, `${p.description} (Works with ${listJoin(p.models) || 'AI chat tools'}.)`)).join('\n')}
+
+## Guides
+${posts.map((b) => line(b.title, `${SITE_URL}/blog/${b.slug}/`, b.description)).join('\n')}
+
+## About
+${pages.map((pg) => line(pg.title, `${SITE_URL}/${pg.slug}/`, '')).join('\n')}
+
+## Optional
+- [Full text of all prompts](${SITE_URL}/llms-full.txt)
+- [RSS feed](${SITE_URL}/rss.xml)
+`;
+}
+
+function llmsFullTxt(prompts) {
+  return `# ${site.name}: full prompt library
+
+${site.description}
+
+Placeholders in [SQUARE BRACKETS] are for the user's own details. Source: ${SITE_URL}/
+
+${prompts
+  .map(
+    (p) => `---
+
+## ${p.title}
+
+URL: ${SITE_URL}/prompts/${p.slug}/
+Category: ${catName(p.category)}
+Works with: ${listJoin(p.models) || 'AI chat tools'}
+Published: ${p.date}
+
+${p.description}
+
+Prompt:
+
+${p.promptText}
+`
+  )
+  .join('\n')}`;
+}
+
+const AI_BOTS = ['GPTBot', 'OAI-SearchBot', 'ChatGPT-User', 'ClaudeBot', 'Claude-SearchBot', 'Claude-User', 'anthropic-ai', 'PerplexityBot', 'Perplexity-User', 'Google-Extended', 'Applebot-Extended', 'Bingbot', 'meta-externalagent', 'cohere-ai', 'DuckAssistBot', 'MistralAI-User'];
+const robotsTxt = () => `# ${site.name} welcomes search engines and AI assistants.
+User-agent: *
+Allow: /
+Disallow: /404.html
+
+${AI_BOTS.map((b) => `User-agent: ${b}\nAllow: /`).join('\n\n')}
+
+Sitemap: ${SITE_URL}/sitemap.xml
+`;
+
 // ---------- build ----------
 const prompts = loadPrompts();
 const posts = loadPosts();
+const pages = loadPages();
 const promptsBySlug = Object.fromEntries(prompts.map((p) => [p.slug, p]));
 for (const b of posts) for (const s of b.related) if (!promptsBySlug[s]) throw new Error(`blog/${b.slug}: related prompt "${s}" not found`);
 for (const h of Object.values(site.hubs)) h._count = prompts.filter((p) => p.models.some((m) => h.models.includes(m))).length;
@@ -499,10 +742,12 @@ Object.keys(site.categories).forEach((k) => write(`category/${k}/index.html`, ca
 Object.keys(site.hubs).forEach((k) => write(`${k}/index.html`, hubPage(k, prompts)));
 write('blog/index.html', blogIndex(posts));
 posts.forEach((b, i) => write(`blog/${b.slug}/index.html`, postPage(b, i, posts, promptsBySlug)));
-write('about/index.html', aboutPage());
+pages.forEach((pg) => write(`${pg.slug}/index.html`, staticPage(pg)));
 write('404.html', notFoundPage());
 write('rss.xml', rss(prompts, posts));
-write('sitemap.xml', sitemap(prompts, posts));
-write('robots.txt', `User-agent: *\nAllow: /\nSitemap: ${SITE_URL}/sitemap.xml\n`);
+write('sitemap.xml', sitemap(prompts, posts, pages));
+write('robots.txt', robotsTxt());
+write('llms.txt', llmsTxt(prompts, posts, pages));
+write('llms-full.txt', llmsFullTxt(prompts));
 
-console.log(`Built ${prompts.length} prompts and ${posts.length} blog posts → dist/`);
+console.log(`Built ${prompts.length} prompts, ${posts.length} blog posts and ${pages.length} pages → dist/`);

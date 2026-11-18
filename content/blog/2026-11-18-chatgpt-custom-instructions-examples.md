@@ -4,6 +4,18 @@ seoTitle: "ChatGPT Custom Instructions: 8 Copy-Ready Examples"
 date: 2026-11-18
 description: What ChatGPT custom instructions are, how to set them up and 8 ready-to-copy examples for writers, marketers, developers, students and busy professionals.
 related: [make-chatgpt-write-like-a-human, learn-anything-in-a-week]
+summary:
+- Custom instructions are saved preferences ChatGPT reads before every new chat.
+- 'They usually have two parts: information about you and how you want answers.'
+- Keep them short and about defaults, not one-off tasks.
+- Below are 8 copy-ready examples for writers, marketers, developers, students and managers.
+faq:
+- q: Where do I find ChatGPT custom instructions?
+  a: In ChatGPT settings, under Personalization. The exact labels change from time to time, so look for custom instructions or personalization options.
+- q: What should I put in ChatGPT custom instructions?
+  a: 'Your role and context, and your default preferences for answers: length, tone, format and things to always or never do.'
+- q: Do Claude and Gemini have custom instructions?
+  a: They have similar features for saved preferences and project instructions, and the examples on this page work there too.
 ---
 
 If you start every chat by explaining who you are and how you like answers, custom instructions save you the trouble. You write them once and ChatGPT applies them to every new conversation.

@@ -4,6 +4,18 @@ seoTitle: 20 Best ChatGPT Prompts You Can Copy and Paste
 date: 2026-11-18
 description: The 20 best ChatGPT prompts for writing, work, learning and planning. Each one has fill-in blanks, so you can copy a ready prompt in seconds.
 related: [make-chatgpt-write-like-a-human, cold-email-that-gets-replies, learn-anything-in-a-week, pre-mortem-for-any-plan]
+summary:
+- The best ChatGPT prompts give the AI a role, your context and clear rules for the answer.
+- Each of the 20 prompts below has fill-in blanks, so you can copy a ready prompt in seconds.
+- They work in ChatGPT, Claude and Gemini without changes.
+- Treat the first answer as a draft and ask follow-up questions to improve it.
+faq:
+- q: What is the best ChatGPT prompt?
+  a: 'There is no single best prompt. The best prompts for any task share a structure: a role, a clear task, the context only you know, rules for length and tone, and the output format you want.'
+- q: Do these ChatGPT prompts work in Claude and Gemini?
+  a: Yes. They are plain-text prompts, so they work in ChatGPT, Claude, Gemini and most other AI chat tools.
+- q: Are these prompts free to use?
+  a: Yes. You can copy and use them for personal and commercial work.
 ---
 
 Most "best prompts" lists give you a hundred one-liners like *"Write a blog post about marketing."* They are easy to copy and almost useless, because the AI has to guess everything that matters.

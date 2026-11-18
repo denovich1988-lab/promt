@@ -27,7 +27,7 @@ tags: [3-4, lowercase, tags]
    - `## How to use it` — 3 numbered steps.
    - `## Tips` — 2–3 bullets.
    - Optional: a short example section.
-4. Run `npm run build` — it must finish with no errors (it validates front matter and the prompt block).
+4. Run `npm run build` and then `python3 scripts/check-seo.py` — both must pass (title ≤60 chars, description 50–165 chars, one H1, valid schema).
 5. Commit: `Add prompt: <title>` and push to `main`.
 
 ## Blog posts
@@ -35,6 +35,8 @@ tags: [3-4, lowercase, tags]
 - File: `content/blog/YYYY-MM-DD-slug.md`. Front matter: `title`, `seoTitle` (optional, ≤60 chars, contains the target keyword), `date`, `description` (≤160 chars), `related` (list of existing prompt slugs; the build fails if one is missing).
 - Target one keyword per article (check volume/difficulty in Ahrefs when available). Original writing only — never copy competitor text.
 - Use ```prompt blocks for any prompt in an article; they become fill-in editors on the page.
+- Add `summary` (3–4 key takeaways, one sentence each) and `faq` (3 items with `q` and `a`) to every post. They render visibly and as FAQPage schema, which helps Google AI Overviews and AI assistants quote the page.
+- Static pages (about, contact, privacy, cookies, terms, disclaimer) live in `content/pages/`.
 - Link to relevant prompt pages (`/prompts/<slug>/`) and hubs (`/chatgpt-prompts/`, `/claude-prompts/`, `/gemini-prompts/`, `/midjourney-prompts/`, `/ai-video-prompts/`).
 
 ## SEO notes
