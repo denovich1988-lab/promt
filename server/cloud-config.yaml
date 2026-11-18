@@ -27,9 +27,28 @@ write_files:
       fi
       rsync -a --delete --exclude .git "$SRC/" /var/www/promt/
 
-  - path: /etc/cron.d/promt-update
+  - path: /etc/systemd/system/promt-update.service
     content: |
-      */5 * * * * root /usr/local/bin/promt-update >/var/log/promt-update.log 2>&1
+      [Unit]
+      Description=Pull the latest Promt site build from GitHub
+      Wants=network-online.target
+      After=network-online.target
+
+      [Service]
+      Type=oneshot
+      ExecStart=/usr/local/bin/promt-update
+
+  - path: /etc/systemd/system/promt-update.timer
+    content: |
+      [Unit]
+      Description=Update the Promt site every 5 minutes
+
+      [Timer]
+      OnBootSec=1min
+      OnUnitActiveSec=5min
+
+      [Install]
+      WantedBy=timers.target
 
   - path: /etc/nginx/sites-available/promt
     content: |
@@ -64,6 +83,8 @@ runcmd:
   - ln -sf /etc/nginx/sites-available/promt /etc/nginx/sites-enabled/promt
   - rm -f /etc/nginx/sites-enabled/default
   - /usr/local/bin/promt-update || true
+  - systemctl daemon-reload
+  - systemctl enable --now promt-update.timer
   - systemctl enable --now nginx
   - systemctl reload nginx
   - ufw allow OpenSSH
