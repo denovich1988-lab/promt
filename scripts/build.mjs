@@ -224,8 +224,11 @@ ${published ? `<meta property="article:published_time" content="${published}">\n
 <meta name="twitter:image" content="${OG_IMAGE}">
 <meta name="theme-color" content="#e9ebf0" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#101218" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="/assets/logo.png">
+<link rel="icon" href="/assets/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
 <link rel="preload" href="/assets/fonts/bricolage.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="alternate" type="application/rss+xml" title="${esc(site.name)}" href="/rss.xml">
 <link rel="stylesheet" href="/assets/style.css?v=${BUILD_ID}">
@@ -235,9 +238,24 @@ ${published ? `<meta property="article:published_time" content="${published}">\n
 <a class="skip" href="#main">Skip to content</a>
 <header class="top">
   <div class="wrap top__row">
-    <a class="logo" href="/" aria-label="${esc(site.name)} home">promt<span class="logo__blank" aria-hidden="true"></span></a>
+    <a class="logo" href="/" aria-label="promt — ${esc(site.name)} home">promt<span class="logo__blank" aria-hidden="true"></span></a>
     <nav class="top__nav" aria-label="Categories">${navCats}</nav>
-    <nav class="top__aux" aria-label="Site"><a href="/blog/"${pathname.startsWith('/blog/') ? ' aria-current="page"' : ''}>Blog</a><a href="/about/"${pathname === '/about/' ? ' aria-current="page"' : ''}>About</a></nav>
+    <nav class="top__aux" aria-label="Site"><a href="/prompt-generator/"${pathname === '/prompt-generator/' ? ' aria-current="page"' : ''}>Generator</a><a href="/guides/"${pathname === '/guides/' ? ' aria-current="page"' : ''}>Guides</a><a href="/blog/"${pathname.startsWith('/blog/') ? ' aria-current="page"' : ''}>Blog</a></nav>
+    <button class="menu-btn" type="button" data-menu-btn aria-expanded="false" aria-controls="drawer"><span class="menu-btn__icon" aria-hidden="true"></span><span class="visually-hidden">Menu</span></button>
+  </div>
+  <div class="drawer" id="drawer" data-drawer hidden>
+    <div class="wrap drawer__inner">
+      <form class="drawer__search" action="/" method="get" role="search"><label class="visually-hidden" for="drawer-q">Search prompts</label><input id="drawer-q" type="search" name="q" placeholder="Search prompts" autocomplete="off"><button class="btn btn--copy" type="submit">Search</button></form>
+      <div class="drawer__quick">
+        <a href="/prompts/">All prompts</a><a href="/prompt-generator/">Prompt generator</a><a href="/guides/">Guides</a><a href="/blog/">Blog</a>
+      </div>
+      <p class="drawer__h">By AI tool</p>
+      <div class="drawer__chips">${Object.entries(site.hubs).map(([k, h]) => `<a href="/${k}/">${esc(h.title.replace(/ Prompts.*/, ''))}</a>`).join('')}</div>
+      <p class="drawer__h">By task</p>
+      <div class="drawer__chips">${Object.entries(site.categories).map(([k, c]) => `<a href="/category/${k}/">${esc(c.name)}</a>`).join('')}</div>
+      <p class="drawer__h">Resources</p>
+      <div class="drawer__links"><a href="/best-ai-tools/">Best AI tools</a><a href="/best-ai-mcps/">MCP servers</a><a href="/best-ai-skills/">Claude skills</a><a href="/free-ai-courses/">Free AI courses</a><a href="/faq/">FAQ</a><a href="/about/">About</a><a href="/contact/">Contact</a></div>
+    </div>
   </div>
 </header>
 <main id="main">
@@ -251,6 +269,7 @@ ${body.replace('<!--CRUMBS-->', crumbsNav(crumbs))}
     </div>
     <nav aria-label="Prompts by AI tool"><p class="foot__h">By AI tool</p>${Object.entries(site.hubs).map(([k, h]) => `<a href="/${k}/">${esc(h.title)}</a>`).join('')}</nav>
     <nav aria-label="Prompts by task"><p class="foot__h">By task</p>${Object.entries(site.categories).map(([k, c]) => `<a href="/category/${k}/">${esc(c.name)} prompts</a>`).join('')}</nav>
+    <nav aria-label="Resources"><p class="foot__h">Resources</p><a href="/prompts/">All prompts</a><a href="/prompt-generator/">Prompt generator</a><a href="/guides/">Guides</a><a href="/best-ai-tools/">Best AI tools</a><a href="/best-ai-mcps/">MCP servers</a><a href="/best-ai-skills/">Claude skills</a><a href="/free-ai-courses/">Free AI courses</a><a href="/faq/">FAQ</a></nav>
     <nav aria-label="Company and legal"><p class="foot__h">Company</p><a href="/blog/">Blog</a>${LEGAL.map(([u, n]) => `<a href="${u}">${n}</a>`).join('')}<a href="/rss.xml">RSS feed</a></nav>
   </div>
   <div class="wrap"><p class="muted foot__copy">© ${new Date().getFullYear()} ${esc(site.name)}. Not affiliated with OpenAI, Anthropic, Google or Midjourney.</p></div>
@@ -687,14 +706,52 @@ function staticPage(pg) {
   <h1 class="hero__title">${esc(pg.h1 || pg.title)}</h1>
   <p class="muted page__updated">Last updated: <time datetime="${pg.updated}">${fmtDate(pg.updated)}</time></p>
   <div class="prose">${pg.html}</div>
+  ${faqHtml(pg.faq)}
 </article>`;
+  const url = `${SITE_URL}/${pg.slug}/`;
+  const node = { '@type': pg.schemaType || 'WebPage', '@id': `${url}#page`, name: pg.title, description: pg.description, url, isPartOf: { '@id': WEBSITE_ID }, dateModified: pg.updated };
+  if (pg.schemaType === 'AboutPage' || pg.schemaType === 'ContactPage') node.mainEntity = { '@id': ORG_ID };
+  if (pg.schemaType === 'WebApplication') Object.assign(node, { applicationCategory: 'UtilitiesApplication', operatingSystem: 'Any (web browser)', isAccessibleForFree: true, offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' }, publisher: { '@id': ORG_ID } });
   return layout({
     title: pg.title,
     description: pg.description,
     pathname: `/${pg.slug}/`,
-    crumbs: [[pg.title, `/${pg.slug}/`]],
+    crumbs: [[pg.h1 || pg.title, `/${pg.slug}/`]],
     body,
-    jsonLd: [{ '@type': pg.schemaType || 'WebPage', '@id': `${SITE_URL}/${pg.slug}/#page`, name: pg.title, description: pg.description, url: `${SITE_URL}/${pg.slug}/`, isPartOf: { '@id': WEBSITE_ID }, dateModified: pg.updated, ...(pg.schemaType === 'AboutPage' || pg.schemaType === 'ContactPage' ? { mainEntity: { '@id': ORG_ID } } : {}) }],
+    jsonLd: [node, faqSchema(pg.faq)],
+  });
+}
+
+function guidesPage(posts) {
+  const start = (site.guides || []).map((s) => posts.find((b) => b.slug === s)).filter(Boolean);
+  const body = `
+<section class="hero hero--small wrap">
+  <!--CRUMBS-->
+  <h1 class="hero__title">Free AI prompting guides</h1>
+  <p class="hero__lede">Step-by-step guides to getting better answers from ChatGPT, Claude, Gemini, Midjourney and AI video tools. Start with the basics, then pick a topic.</p>
+</section>
+<section class="wrap library" aria-labelledby="start-h">
+  <h2 id="start-h" class="section__h">Start here</h2>
+  <ol class="rows">${start.map(postRow).join('\n')}</ol>
+  <h2 class="section__h section__h--gap">Tools and resources</h2>
+  <ul class="cats">
+    <li><a class="cat" href="/prompt-generator/"><span class="cat__name">Prompt generator</span><span class="cat__desc">Answer a few questions and get a structured prompt.</span></a></li>
+    <li><a class="cat" href="/best-ai-tools/"><span class="cat__name">Best AI tools</span><span class="cat__desc">Which tool to use for chat, images, video, audio and code.</span></a></li>
+    <li><a class="cat" href="/best-ai-mcps/"><span class="cat__name">MCP servers</span><span class="cat__desc">Connect AI assistants to your apps and data.</span></a></li>
+    <li><a class="cat" href="/best-ai-skills/"><span class="cat__name">Claude skills</span><span class="cat__desc">Reusable know-how for Claude, and how to write your own.</span></a></li>
+    <li><a class="cat" href="/free-ai-courses/"><span class="cat__name">Free AI courses</span><span class="cat__desc">Learn from Anthropic, OpenAI, Google and others for free.</span></a></li>
+    <li><a class="cat" href="/faq/"><span class="cat__name">FAQ</span><span class="cat__desc">How the site and the fill-in prompts work.</span></a></li>
+  </ul>
+  <h2 class="section__h">All guides</h2>
+  <ol class="rows">${posts.map(postRow).join('\n')}</ol>
+</section>`;
+  return layout({
+    title: 'Free AI Prompting Guides for Beginners and Pros',
+    description: 'Free guides to writing better prompts for ChatGPT, Claude, Gemini and Midjourney, plus tools, AI skills, MCP servers and free AI courses.',
+    pathname: '/guides/',
+    crumbs: [['Guides', '/guides/']],
+    body,
+    jsonLd: [itemList('AI prompting guides', posts.map((b) => ({ url: `${SITE_URL}/blog/${b.slug}/`, name: b.title })))],
   });
 }
 
@@ -726,7 +783,7 @@ ${items}
 function sitemap(prompts, posts, pages) {
   const newest = prompts[0]?.date || todayISO();
   const newestPost = posts[0]?.date || newest;
-  const urls = [['/', newest], ['/prompts/', newest], ['/categories/', newest], ['/blog/', newestPost], ...Object.keys(site.hubs).map((k) => [`/${k}/`, newest]), ...Object.keys(site.categories).map((k) => [`/category/${k}/`, prompts.find((p) => p.category === k)?.date || newest])]
+  const urls = [['/', newest], ['/prompts/', newest], ['/categories/', newest], ['/guides/', newestPost], ['/blog/', newestPost], ...Object.keys(site.hubs).map((k) => [`/${k}/`, newest]), ...Object.keys(site.categories).map((k) => [`/category/${k}/`, prompts.find((p) => p.category === k)?.date || newest])]
     .map(([u, d]) => `<url><loc>${SITE_URL}${u}</loc><lastmod>${d}</lastmod></url>`)
     .concat(pages.map((pg) => `<url><loc>${SITE_URL}/${pg.slug}/</loc><lastmod>${pg.updated}</lastmod></url>`))
     .concat(prompts.map((p) => `<url><loc>${SITE_URL}/prompts/${p.slug}/</loc><lastmod>${p.updated || p.date}</lastmod></url>`))
@@ -775,7 +832,7 @@ function loadPages() {
       const { data, content } = matter(fs.readFileSync(path.join(dir, file), 'utf8'));
       for (const k of ['title', 'description', 'updated']) if (!data[k]) throw new Error(`pages/${file}: missing "${k}"`);
       const fill = (t) => t.replaceAll('{{SITE}}', site.name).replaceAll('{{URL}}', SITE_URL).replaceAll('{{EMAIL}}', site.email);
-      return { slug: file.replace(/\.md$/, ''), title: data.title, h1: data.h1, description: fill(data.description), updated: toISODate(data.updated), schemaType: data.schemaType, html: marked.parse(fill(content)) };
+      return { slug: file.replace(/\.md$/, ''), title: data.title, h1: data.h1, description: fill(data.description), updated: toISODate(data.updated), schemaType: data.schemaType, faq: (data.faq || []).map((f) => ({ q: fill(f.q), a: fill(f.a) })), html: marked.parse(fill(content)) };
     });
 }
 
@@ -870,6 +927,7 @@ for (const k of Object.keys(site.categories)) for (const [f, h] of categoryPages
 for (const k of Object.keys(site.hubs)) for (const [f, h] of hubPages(k, prompts)) write(f, h);
 for (const [f, h] of allPromptsPages(prompts)) write(f, h);
 write('categories/index.html', categoriesPage(prompts));
+write('guides/index.html', guidesPage(posts));
 write('search-index.json', searchIndex(prompts));
 const STATIC = path.join(ROOT, 'static');
 if (fs.existsSync(STATIC)) fs.cpSync(STATIC, DIST, { recursive: true });

@@ -166,3 +166,115 @@ editors.forEach((ed) => {
   box.querySelector('[data-consent-no]')?.addEventListener('click', () => choose(false));
   document.querySelectorAll('[data-consent-open]').forEach((b) => b.addEventListener('click', () => (box.hidden = false)));
 })();
+
+// ---------- Prompt generator ----------
+(() => {
+  const g = document.querySelector('[data-generator]');
+  if (!g) return;
+  const f = (k) => g.querySelector(`[data-g="${k}"]`);
+  const out = g.querySelector('[data-g-out]');
+  const status = g.querySelector('[data-g-status]');
+  const val = (k) => (f(k)?.value || '').trim();
+  const lines = (t) => t.split('\n').map((x) => x.trim()).filter(Boolean);
+  const build = () => {
+    const type = val('type');
+    g.querySelectorAll('[data-for]').forEach((el) => (el.hidden = !el.dataset.for.split(' ').includes(type)));
+    const task = val('task');
+    if (!task) {
+      status.textContent = 'Fill in the task to start';
+      return '';
+    }
+    const p = [];
+    if (type === 'image' || type === 'video') {
+      p.push(`${type === 'video' ? 'Create a short video' : 'Create an image'}: ${task}.`);
+      if (val('context')) p.push(`Details: ${val('context')}`);
+      if (val('style')) p.push(`Style and mood: ${val('style')}.`);
+      if (type === 'video') p.push('Camera: smooth, steady movement; describe what moves in each part of the clip.');
+      if (val('ratio')) p.push(`Format: ${val('ratio')}.`);
+      const avoid = val('rules');
+      p.push(`Avoid: ${avoid || (type === 'video' ? 'on-screen text, sudden cuts, distorted hands, morphing objects' : 'text, watermarks, extra objects, distorted hands')}.`);
+    } else {
+      const role = val('role') || (type === 'code' ? 'a senior software engineer' : '');
+      if (role) p.push(`You are ${role.replace(/^(you are\s+)/i, '')}.`);
+      p.push(`Task: ${task}`);
+      if (val('context')) p.push(`Context:\n${lines(val('context')).map((l) => `- ${l}`).join('\n')}`);
+      if (val('audience')) p.push(`Audience: ${val('audience')}`);
+      const rules = [];
+      if (val('tone')) rules.push(`Tone: ${val('tone')}.`);
+      if (val('length')) rules.push(`Length: ${val('length')}.`);
+      lines(val('rules')).forEach((r) => rules.push(r));
+      rules.push("Don't invent facts, numbers or quotes. If something is uncertain, say so.");
+      p.push(`Rules:\n${rules.map((r) => `- ${r}`).join('\n')}`);
+      if (val('format')) p.push(`Output format: ${val('format')}.`);
+      if (f('ask')?.checked) p.push('Before you start, ask me up to 3 questions if anything important is missing. Otherwise, go ahead.');
+    }
+    status.textContent = 'Ready to copy';
+    return p.join('\n\n');
+  };
+  const render = () => {
+    out.textContent = build() || 'Your prompt will appear here as you type.';
+  };
+  g.addEventListener('input', render);
+  g.addEventListener('change', render);
+  g.querySelector('[data-g-reset]')?.addEventListener('click', () => {
+    g.querySelectorAll('input:not([type=checkbox]), textarea').forEach((el) => (el.value = ''));
+    g.querySelectorAll('select').forEach((el) => (el.selectedIndex = 0));
+    render();
+  });
+  g.querySelector('[data-g-copy]')?.addEventListener('click', async (e) => {
+    const text = build();
+    if (!text) return;
+    try {
+      await navigator.clipboard.writeText(text);
+    } catch {
+      const ta = document.createElement('textarea');
+      ta.value = text;
+      document.body.appendChild(ta);
+      ta.select();
+      document.execCommand('copy');
+      ta.remove();
+    }
+    const btn = e.currentTarget;
+    btn.textContent = 'Copied';
+    btn.classList.add('is-done');
+    setTimeout(() => {
+      btn.textContent = 'Copy prompt';
+      btn.classList.remove('is-done');
+    }, 1800);
+  });
+  render();
+})();
+
+// ---------- Mobile menu ----------
+(() => {
+  const btn = document.querySelector('[data-menu-btn]');
+  const drawer = document.querySelector('[data-drawer]');
+  if (!btn || !drawer) return;
+  const set = (open) => {
+    drawer.hidden = !open;
+    btn.setAttribute('aria-expanded', String(open));
+    document.documentElement.classList.toggle('menu-open', open);
+    if (open) drawer.querySelector('input')?.focus({ preventScroll: true });
+  };
+  btn.addEventListener('click', () => set(drawer.hidden));
+  drawer.addEventListener('click', (e) => {
+    if (e.target.closest('a')) set(false);
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && !drawer.hidden) {
+      set(false);
+      btn.focus();
+    }
+  });
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 900 && !drawer.hidden) set(false);
+  });
+})();
+
+// ---------- Tables become cards on phones: copy header labels onto cells ----------
+document.querySelectorAll('.prose table').forEach((t) => {
+  const heads = [...t.querySelectorAll('thead th')].map((th) => th.textContent.trim());
+  if (!heads.length) return;
+  t.classList.add('stack');
+  t.querySelectorAll('tbody tr').forEach((tr) => [...tr.children].forEach((td, i) => heads[i] && td.setAttribute('data-label', heads[i])));
+});

@@ -1,0 +1,27 @@
+{
+  "name": "GoodAIPromt",
+  "short_name": "GoodAIPromt",
+  "description": "Free AI prompts you can fill in and copy.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#e9ebf0",
+  "theme_color": "#2b3bf5",
+  "icons": [
+    {
+      "src": "/assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

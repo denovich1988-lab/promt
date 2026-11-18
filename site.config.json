@@ -153,5 +153,13 @@
     "coding",
     "image",
     "video"
+  ],
+  "guides": [
+    "how-to-write-ai-prompts",
+    "best-chatgpt-prompts",
+    "chatgpt-custom-instructions-examples",
+    "make-chatgpt-sound-human",
+    "negative-prompts-explained",
+    "image-to-video-prompts"
   ]
 }
