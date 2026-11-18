@@ -89,38 +89,80 @@ editors.forEach((ed) => {
   updateStatus(ed);
 });
 
-// ---------- Search + category filter ----------
+// ---------- Search across the full library (loads /search-index.json on first use) ----------
 (() => {
-  const list = document.querySelector('[data-grid]');
-  if (!list) return;
   const input = document.querySelector('[data-search-input]');
-  const chips = [...document.querySelectorAll('[data-filter]')];
+  if (!input) return;
+  const latest = document.querySelector('[data-grid]');
+  const results = document.querySelector('[data-results]');
   const empty = document.querySelector('[data-empty]');
-  const rows = [...list.querySelectorAll('.row')];
-  let cat = '';
-  const apply = () => {
-    const q = (input?.value || '').trim().toLowerCase();
-    let shown = 0;
-    for (const r of rows) {
-      const ok = (!cat || r.dataset.cat === cat) && (!q || q.split(/\s+/).every((w) => r.dataset.search.includes(w)));
-      r.hidden = !ok;
-      if (ok) shown++;
-    }
-    if (empty) empty.hidden = shown > 0;
+  const heading = document.querySelector('[data-list-h]');
+  const headingText = heading?.textContent || '';
+  let index = null;
+  const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
+  const load = async () => {
+    if (!index) index = await fetch('/search-index.json').then((r) => r.json()).catch(() => []);
+    return index;
   };
-  input?.addEventListener('input', apply);
+  const fmt = (d) => new Date(d + 'T00:00:00Z').toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' });
+  const render = (items) =>
+    items
+      .map(
+        (p) => `<li class="row"><time class="row__date" datetime="${p.a}">${fmt(p.a)}</time><div class="row__main"><h3 class="row__title"><a href="/prompts/${p.s}/">${esc(p.t)}</a></h3><p class="row__desc">${esc(p.d)}</p></div><p class="row__cat">${esc(p.c)}</p><p class="row__models">${p.m.length ? 'For ' + esc(p.m.join(', ')) : ''}</p></li>`
+      )
+      .join('');
+  const run = async () => {
+    const q = input.value.trim().toLowerCase();
+    if (q.length < 2) {
+      latest.hidden = false;
+      results.hidden = true;
+      empty.hidden = true;
+      if (heading) heading.textContent = headingText;
+      return;
+    }
+    const words = q.split(/\s+/);
+    const all = await load();
+    const found = all.filter((p) => {
+      const hay = [p.t, p.d, p.c, ...p.m, ...p.g].join(' ').toLowerCase();
+      return words.every((w) => hay.includes(w));
+    });
+    latest.hidden = true;
+    results.hidden = found.length === 0;
+    results.innerHTML = render(found.slice(0, 60));
+    empty.hidden = found.length > 0;
+    if (heading) heading.textContent = `${found.length} result${found.length === 1 ? '' : 's'} for “${input.value.trim()}”`;
+  };
+  let t;
+  input.addEventListener('input', () => {
+    clearTimeout(t);
+    t = setTimeout(run, 120);
+  });
   // Support links like /?q=resume (used by the site search schema).
   const q = new URLSearchParams(location.search).get('q');
-  if (q && input) {
+  if (q) {
     input.value = q;
-    apply();
+    run();
     document.getElementById('lib-h')?.scrollIntoView();
   }
-  chips.forEach((chip) =>
-    chip.addEventListener('click', () => {
-      cat = chip.dataset.filter;
-      chips.forEach((c) => c.setAttribute('aria-pressed', String(c === chip)));
-      apply();
-    })
-  );
+})();
+
+// ---------- Cookie consent (Google Consent Mode) ----------
+(() => {
+  const box = document.querySelector('[data-consent]');
+  if (!box) return;
+  let saved = null;
+  try {
+    saved = localStorage.getItem('consent');
+  } catch (e) {}
+  if (!saved) box.hidden = false;
+  const choose = (yes) => {
+    try {
+      localStorage.setItem('consent', yes ? 'yes' : 'no');
+    } catch (e) {}
+    if (typeof window.gtag === 'function') window.gtag('consent', 'update', { analytics_storage: yes ? 'granted' : 'denied' });
+    box.hidden = true;
+  };
+  box.querySelector('[data-consent-yes]')?.addEventListener('click', () => choose(true));
+  box.querySelector('[data-consent-no]')?.addEventListener('click', () => choose(false));
+  document.querySelectorAll('[data-consent-open]').forEach((b) => b.addEventListener('click', () => (box.hidden = false)));
 })();

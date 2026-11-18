@@ -1,7 +1,7 @@
 ---
 title: SEO content brief for any keyword
 date: 2026-11-18
-category: marketing
+category: seo
 description: Get a complete SEO content brief — search intent, outline, questions to answer and internal links — before you write a single word.
 models: [ChatGPT, Claude, Gemini]
 level: Intermediate

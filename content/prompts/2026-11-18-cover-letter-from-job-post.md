@@ -1,7 +1,7 @@
 ---
 title: Cover letter tailored to the job post
 date: 2026-11-18
-category: writing
+category: careers
 description: Paste a job post and your experience, get a short cover letter that matches your strongest proof to what the employer asked for.
 models: [ChatGPT, Claude, Gemini]
 level: Beginner

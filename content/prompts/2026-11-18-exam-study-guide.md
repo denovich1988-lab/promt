@@ -1,7 +1,7 @@
 ---
 title: Exam study guide from your notes
 date: 2026-11-18
-category: productivity
+category: education
 description: Turn lecture notes or a syllabus into a study guide with key ideas, practice questions and a day-by-day revision plan.
 models: [ChatGPT, Claude, Gemini]
 level: Beginner

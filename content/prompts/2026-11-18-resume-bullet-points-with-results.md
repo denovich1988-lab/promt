@@ -1,7 +1,7 @@
 ---
 title: Resume bullet points that show results
 date: 2026-11-18
-category: business
+category: careers
 description: Turn a list of job duties into strong resume bullet points built on action, scope and result — tuned to the role you want.
 models: [ChatGPT, Claude, Gemini]
 level: Beginner

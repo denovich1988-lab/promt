@@ -124,6 +124,36 @@ const LEGAL = [
   ['/disclaimer/', 'Disclaimer'],
 ];
 
+// Google tag (GTM) with Consent Mode v2. Analytics storage is denied by default in the EEA, UK and
+// Switzerland until the visitor accepts; ad storage is always denied (the site shows no ads).
+const EEA = ['AT', 'BE', 'BG', 'HR', 'CY', 'CZ', 'DK', 'EE', 'FI', 'FR', 'DE', 'GR', 'HU', 'IE', 'IT', 'LV', 'LT', 'LU', 'MT', 'NL', 'PL', 'PT', 'RO', 'SK', 'SI', 'ES', 'SE', 'IS', 'LI', 'NO', 'GB', 'CH'];
+const googleTag = () => (site.gtmId ? `<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'granted'});
+  gtag('consent', 'default', {ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'denied', region: ${JSON.stringify(EEA)}});
+  try { var c = localStorage.getItem('consent'); if (c) gtag('consent', 'update', {analytics_storage: c === 'yes' ? 'granted' : 'denied'}); } catch (e) {}
+</script>
+<script async src="https://www.googletagmanager.com/gtm.js?id=${site.gtmId}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+</script>` : '');
+
+const consentBanner = () => (site.gtmId ? `<div class="consent" data-consent hidden role="region" aria-label="Cookie choice">
+  <p>We use analytics cookies to see which prompts are useful. No ads, no selling data. <a href="/cookies/">Cookie policy</a></p>
+  <div class="consent__actions"><button class="btn btn--quiet" type="button" data-consent-no>Decline</button><button class="btn btn--copy" type="button" data-consent-yes>Accept</button></div>
+</div>` : '');
+
+// Visible breadcrumbs, built from the same list as the BreadcrumbList schema.
+const crumbsNav = (crumbs) =>
+  crumbs.length
+    ? `<nav class="crumbs" aria-label="Breadcrumb"><ol>${[['Home', '/'], ...crumbs]
+        .map(([name, url], i, all) => (i === all.length - 1 ? `<li><span aria-current="page">${esc(name)}</span></li>` : `<li><a href="${url}">${esc(name)}</a></li>`))
+        .join('')}</ol></nav>`
+    : '';
+
 // Keep <title> within ~60 characters: drop the brand suffix when the title is already long.
 const makeTitle = (title) => {
   if (!title) return `Free AI Prompts for ChatGPT, Claude & Gemini | ${site.name}`;
@@ -135,9 +165,10 @@ function layout({ title, description, pathname, body, ogType = 'website', jsonLd
   const fullTitle = makeTitle(title);
   const desc = description || site.description;
   const canonical = SITE_URL + pathname;
-  const navCats = Object.entries(site.categories)
-    .map(([k, c]) => `<a href="/category/${k}/"${pathname === `/category/${k}/` ? ' aria-current="page"' : ''}>${esc(c.name)}</a>`)
-    .join('');
+  const navCats =
+    (site.nav || Object.keys(site.categories))
+      .map((k) => `<a href="/category/${k}/"${pathname.startsWith(`/category/${k}/`) ? ' aria-current="page"' : ''}>${esc(site.categories[k].name)}</a>`)
+      .join('') + `<a href="/categories/"${pathname === '/categories/' ? ' aria-current="page"' : ''}>All categories</a>`;
   const graph = [
     {
       '@type': 'Organization',
@@ -169,6 +200,7 @@ function layout({ title, description, pathname, body, ogType = 'website', jsonLd
   return `<!doctype html>
 <html lang="${site.language}">
 <head>
+${googleTag()}
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${esc(fullTitle)}</title>
@@ -209,7 +241,7 @@ ${published ? `<meta property="article:published_time" content="${published}">\n
   </div>
 </header>
 <main id="main">
-${body}
+${body.replace('<!--CRUMBS-->', crumbsNav(crumbs))}
 </main>
 <footer class="foot">
   <div class="wrap foot__grid">
@@ -223,6 +255,7 @@ ${body}
   </div>
   <div class="wrap"><p class="muted foot__copy">© ${new Date().getFullYear()} ${esc(site.name)}. Not affiliated with OpenAI, Anthropic, Google or Midjourney.</p></div>
 </footer>
+${consentBanner()}
 <script src="/assets/app.js?v=${BUILD_ID}" defer></script>
 </body>
 </html>`;
@@ -278,8 +311,12 @@ const homeFaq = () => [
 function homePage(prompts, posts) {
   const [today] = prompts;
   const counts = Object.fromEntries(Object.keys(site.categories).map((k) => [k, prompts.filter((p) => p.category === k).length]));
-  const chips = [`<button class="chip" type="button" data-filter="" aria-pressed="true">All<span>${prompts.length}</span></button>`]
-    .concat(Object.entries(site.categories).filter(([k]) => counts[k]).map(([k, c]) => `<button class="chip" type="button" data-filter="${k}" aria-pressed="false">${esc(c.name)}<span>${counts[k]}</span></button>`))
+  const chips = Object.entries(site.categories)
+    .filter(([k]) => counts[k])
+    .sort((a, b) => counts[b[0]] - counts[a[0]])
+    .slice(0, 10)
+    .map(([k, c]) => `<a class="chip" href="/category/${k}/">${esc(c.name)}<span>${counts[k]}</span></a>`)
+    .concat(`<a class="chip chip--all" href="/categories/">All categories</a>`)
     .join('');
   const faq = homeFaq();
   const featured = today
@@ -308,9 +345,12 @@ ${featured}
     <h2 id="lib-h">AI prompt library</h2>
     <label class="search"><span class="visually-hidden">Search prompts</span><input type="search" name="q" placeholder="Search, e.g. resume, Midjourney" data-search-input autocomplete="off"></label>
   </div>
-  <div class="chips" role="group" aria-label="Filter by category">${chips}</div>
-  <ol class="rows" data-grid>${prompts.map(row).join('\n')}</ol>
-  <p class="empty" data-empty hidden>Nothing matches that search. Try a shorter word or pick another category.</p>
+  <nav class="chips" aria-label="Prompt categories">${chips}</nav>
+  <h3 class="list__h" data-list-h>Newest ${Math.min(HOME_LATEST, prompts.length)} of ${prompts.length} prompts</h3>
+  <ol class="rows" data-grid>${prompts.slice(0, HOME_LATEST).map(row).join('\n')}</ol>
+  <ol class="rows" data-results hidden></ol>
+  <p class="empty" data-empty hidden>Nothing matches that search. Try a shorter word or <a href="/categories/">browse by category</a>.</p>
+  <p class="more"><a class="btn btn--copy" href="/prompts/">Browse all ${prompts.length} prompts</a></p>
 </section>
 ${posts.length ? `<section class="library wrap" aria-labelledby="blog-h">
   <div class="library__head"><h2 id="blog-h">Guides from the blog</h2><a class="link-strong" href="/blog/">All articles</a></div>
@@ -351,7 +391,7 @@ function promptPage(p, i, prompts) {
   const body = `
 <article class="prompt">
   <header class="wrap prompt__head">
-    <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/category/${p.category}/">${esc(catName(p.category))} prompts</a></nav>
+    <!--CRUMBS-->
     <h1>${esc(p.title)}</h1>
     <p class="prompt__lede">${esc(p.description)}</p>
     <dl class="facts">
@@ -410,78 +450,151 @@ ${related.length ? `<section class="wrap related"><h2>More ${esc(catName(p.categ
   });
 }
 
-function listPage({ crumbsHtml, crumbs, h1, lede, list, title, description, pathname, extra = '', faq = [] }) {
-  const body = `
+const PER_PAGE = 48;
+const HOME_LATEST = 24;
+
+const pager = (base, page, total) => {
+  if (total <= 1) return '';
+  const href = (n) => (n === 1 ? base : `${base}page/${n}/`);
+  const nums = [];
+  for (let n = 1; n <= total; n++) {
+    if (n === 1 || n === total || Math.abs(n - page) <= 2) nums.push(n);
+    else if (nums[nums.length - 1] !== '…') nums.push('…');
+  }
+  return `<nav class="paging" aria-label="Pages">
+  ${page > 1 ? `<a class="paging__step" href="${href(page - 1)}" rel="prev">Newer</a>` : ''}
+  <ol>${nums.map((n) => (n === '…' ? '<li class="paging__gap">…</li>' : n === page ? `<li><span aria-current="page">${n}</span></li>` : `<li><a href="${href(n)}">${n}</a></li>`)).join('')}</ol>
+  ${page < total ? `<a class="paging__step" href="${href(page + 1)}" rel="next">Older</a>` : ''}
+</nav>`;
+};
+
+// Returns [[relativeOutputPath, html], ...] — one entry per page of the list.
+function listPages({ crumbs, h1, lede, list, title, description, base, extra = '', faq = [] }) {
+  const total = Math.max(1, Math.ceil(list.length / PER_PAGE));
+  const out = [];
+  for (let page = 1; page <= total; page++) {
+    const slice = list.slice((page - 1) * PER_PAGE, page * PER_PAGE);
+    const pathname = page === 1 ? base : `${base}page/${page}/`;
+    const first = page === 1;
+    const pageCrumbs = first ? crumbs : [...crumbs, [`Page ${page}`, pathname]];
+    const from = (page - 1) * PER_PAGE + 1;
+    const body = `
 <section class="hero hero--small wrap">
-  <nav class="crumbs" aria-label="Breadcrumb">${crumbsHtml}</nav>
-  <h1 class="hero__title">${esc(h1)}</h1>
-  <p class="hero__lede">${esc(lede)}</p>
+  <!--CRUMBS-->
+  <h1 class="hero__title">${esc(h1)}${first ? '' : ` <span class="hero__page">page ${page}</span>`}</h1>
+  ${first ? `<p class="hero__lede">${esc(lede)}</p>` : ''}
 </section>
 <section class="wrap library" aria-labelledby="list-h">
-  <h2 id="list-h" class="list__h">${list.length} prompt${list.length === 1 ? '' : 's'}, newest first</h2>
-  ${list.length ? `<ol class="rows">${list.map(row).join('\n')}</ol>` : '<p class="empty">New prompts here are on the way. Meanwhile, <a href="/">browse all prompts</a>.</p>'}
-  ${extra}
-  ${faqHtml(faq)}
+  <h2 id="list-h" class="list__h">${list.length} prompt${list.length === 1 ? '' : 's'}${total > 1 ? `, showing ${from}–${from + slice.length - 1}` : ''}, newest first</h2>
+  ${slice.length ? `<ol class="rows">${slice.map(row).join('\n')}</ol>` : '<p class="empty">New prompts here are on the way. Meanwhile, <a href="/prompts/">browse all prompts</a>.</p>'}
+  ${pager(base, page, total)}
+  ${first ? extra : ''}
+  ${first ? faqHtml(faq) : ''}
 </section>`;
-  return layout({
-    title,
-    description,
-    pathname,
-    crumbs,
-    body,
-    jsonLd: [
-      { '@type': 'CollectionPage', '@id': `${SITE_URL}${pathname}#page`, name: h1, description, url: SITE_URL + pathname, isPartOf: { '@id': WEBSITE_ID }, mainEntity: itemList(h1, promptItems(list)) },
-      faqSchema(faq),
-    ],
-  });
+    out.push([
+      pathname.replace(/^\//, '') + 'index.html',
+      layout({
+        title: first ? title : `${title.replace(/:.*/, '')} (page ${page})`,
+        description: first ? description : `${description} Page ${page} of ${total}.`,
+        pathname,
+        crumbs: pageCrumbs,
+        body,
+        jsonLd: [
+          { '@type': 'CollectionPage', '@id': `${SITE_URL}${pathname}#page`, name: h1, description, url: SITE_URL + pathname, isPartOf: { '@id': WEBSITE_ID }, mainEntity: itemList(h1, promptItems(slice)) },
+          first ? faqSchema(faq) : null,
+        ],
+      }),
+    ]);
+  }
+  return out;
 }
 
 const howToUse = `<div class="howto prose"><h2>How to use these prompts</h2><ol><li>Open a prompt and type your details into the blue blanks.</li><li>Press <strong>Copy prompt</strong> and paste it into your AI tool.</li><li>Treat the first answer as a draft and ask for changes until it fits.</li></ol></div>`;
 
-function categoryPage(key, prompts) {
+function categoryPages(key, prompts) {
   const c = site.categories[key];
-  const list = prompts.filter((p) => p.category === key);
-  return listPage({
-    crumbsHtml: '<a href="/">Home</a>',
-    crumbs: [[c.title, `/category/${key}/`]],
+  return listPages({
+    crumbs: [['All categories', '/categories/'], [c.name, `/category/${key}/`]],
     h1: c.title,
     lede: c.description,
-    list,
+    list: prompts.filter((p) => p.category === key),
     title: c.seoTitle || c.title,
     description: c.description,
-    pathname: `/category/${key}/`,
+    base: `/category/${key}/`,
     extra: howToUse,
   });
 }
 
-function hubPage(key, prompts) {
+function hubPages(key, prompts) {
   const h = site.hubs[key];
   const list = prompts.filter((p) => p.models.some((m) => h.models.includes(m)));
   const tools = listJoin(h.models);
+  const short = h.title.replace(/ for .*/, '');
   const faq = [
-    { q: `What are the best ${h.title.replace(/ for .*/, '').toLowerCase()}?`, a: `The best prompts give the AI a role, the context only you know and clear rules for the answer. Every prompt on this page follows that structure, with blanks for your details. Start with the newest prompts at the top of the list.` },
+    { q: `What are the best ${short.toLowerCase()}?`, a: `The best prompts give the AI a role, the context only you know and clear rules for the answer. Every prompt on this page follows that structure, with blanks for your details. Start with the newest prompts at the top of the list.` },
     { q: `How do I use these prompts in ${tools}?`, a: `Open a prompt, fill in the blue blanks, press Copy prompt and paste it into ${tools}. Then ask follow-up questions to adjust the result.` },
     { q: 'Are these prompts free?', a: 'Yes. All prompts are free to copy and use, including for commercial work.' },
   ];
-  return listPage({
-    crumbsHtml: '<a href="/">Home</a>',
-    crumbs: [[h.title, `/${key}/`]],
+  return listPages({
+    crumbs: [[short, `/${key}/`]],
     h1: h.h1,
     lede: h.description,
     list,
-    title: `${h.title.replace(/ for .*/, '')}: ${list.length} Free Copy-Ready Prompts`,
+    title: `${short}: ${list.length} Free Copy-Ready Prompts`,
     description: h.description,
-    pathname: `/${key}/`,
+    base: `/${key}/`,
     extra: howToUse,
     faq,
   });
 }
 
+function allPromptsPages(prompts) {
+  return listPages({
+    crumbs: [['All prompts', '/prompts/']],
+    h1: 'All AI prompts',
+    lede: `Every prompt in the library, newest first: ${prompts.length} free prompts for ChatGPT, Claude, Gemini, Midjourney and AI video tools.`,
+    list: prompts,
+    title: `All AI Prompts: ${prompts.length} Free Prompts to Copy`,
+    description: `Browse all ${prompts.length} free AI prompts for ChatGPT, Claude, Gemini, Midjourney and AI video, newest first. Fill in the blanks and copy.`,
+    base: '/prompts/',
+    extra: howToUse,
+  });
+}
+
+function categoriesPage(prompts) {
+  const count = (k) => prompts.filter((p) => p.category === k).length;
+  const body = `
+<section class="hero hero--small wrap">
+  <!--CRUMBS-->
+  <h1 class="hero__title">AI prompt categories</h1>
+  <p class="hero__lede">Browse free AI prompts by task or by the AI tool you use.</p>
+</section>
+<section class="wrap library" aria-labelledby="bytask-h">
+  <h2 id="bytask-h" class="section__h">By task</h2>
+  <ul class="cats">${Object.entries(site.categories)
+    .map(([k, c]) => `<li><a class="cat" href="/category/${k}/"><span class="cat__name">${esc(c.name)}</span><span class="cat__count">${count(k)} prompts</span><span class="cat__desc">${esc(c.description)}</span></a></li>`)
+    .join('')}</ul>
+  <h2 class="section__h">By AI tool</h2>
+  ${hubLinks()}
+</section>`;
+  return layout({
+    title: 'AI Prompt Categories: Browse by Task or Tool',
+    description: `Browse ${prompts.length} free AI prompts by task — writing, marketing, SEO, sales, coding, images, video and more — or by AI tool.`,
+    pathname: '/categories/',
+    crumbs: [['All categories', '/categories/']],
+    body,
+    jsonLd: [itemList('AI prompt categories', Object.entries(site.categories).map(([k, c]) => ({ url: `${SITE_URL}/category/${k}/`, name: c.title })))],
+  });
+}
+
+const searchIndex = (prompts) =>
+  JSON.stringify(prompts.map((p) => ({ t: p.title, d: p.description, s: p.slug, c: catName(p.category), m: p.models, g: p.tags, a: p.date })));
+
 function blogIndex(posts) {
   const desc = 'Practical guides to writing better AI prompts for ChatGPT, Claude, Gemini, Midjourney and AI video tools.';
   const body = `
 <section class="hero hero--small wrap">
-  <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a></nav>
+  <!--CRUMBS-->
   <h1 class="hero__title">AI prompting blog</h1>
   <p class="hero__lede">${desc}</p>
 </section>
@@ -506,7 +619,7 @@ function postPage(b, i, posts, promptsBySlug) {
   const body = `
 <article class="prompt post">
   <header class="wrap prompt__head">
-    <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/blog/">Blog</a></nav>
+    <!--CRUMBS-->
     <h1>${esc(b.title)}</h1>
     <p class="prompt__lede">${esc(b.description)}</p>
     <dl class="facts">
@@ -559,7 +672,7 @@ ${more.length ? `<section class="wrap related"><h2>More from the blog</h2><ol cl
 function staticPage(pg) {
   const body = `
 <article class="wrap about">
-  <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a></nav>
+  <!--CRUMBS-->
   <h1 class="hero__title">${esc(pg.h1 || pg.title)}</h1>
   <p class="muted page__updated">Last updated: <time datetime="${pg.updated}">${fmtDate(pg.updated)}</time></p>
   <div class="prose">${pg.html}</div>
@@ -602,7 +715,7 @@ ${items}
 function sitemap(prompts, posts, pages) {
   const newest = prompts[0]?.date || todayISO();
   const newestPost = posts[0]?.date || newest;
-  const urls = [['/', newest], ['/blog/', newestPost], ...Object.keys(site.hubs).map((k) => [`/${k}/`, newest]), ...Object.keys(site.categories).map((k) => [`/category/${k}/`, prompts.find((p) => p.category === k)?.date || newest])]
+  const urls = [['/', newest], ['/prompts/', newest], ['/categories/', newest], ['/blog/', newestPost], ...Object.keys(site.hubs).map((k) => [`/${k}/`, newest]), ...Object.keys(site.categories).map((k) => [`/category/${k}/`, prompts.find((p) => p.category === k)?.date || newest])]
     .map(([u, d]) => `<url><loc>${SITE_URL}${u}</loc><lastmod>${d}</lastmod></url>`)
     .concat(pages.map((pg) => `<url><loc>${SITE_URL}/${pg.slug}/</loc><lastmod>${pg.updated}</lastmod></url>`))
     .concat(prompts.map((p) => `<url><loc>${SITE_URL}/prompts/${p.slug}/</loc><lastmod>${p.updated || p.date}</lastmod></url>`))
@@ -663,6 +776,10 @@ function llmsTxt(prompts, posts, pages) {
 > ${site.description}
 
 ${site.name} publishes free, copy-ready AI prompts. Each prompt has fill-in blanks marked [IN SQUARE BRACKETS] for the user's details, plus steps and tips for using it. All prompts are free to use, including for commercial work. New prompts are added every day.
+
+## Browse
+- [All prompts](${SITE_URL}/prompts/)
+- [All categories](${SITE_URL}/categories/)
 
 ## Prompts by AI tool
 ${Object.entries(site.hubs).map(([k, h]) => line(h.title, `${SITE_URL}/${k}/`, h.description)).join('\n')}
@@ -738,8 +855,13 @@ fs.copyFileSync(path.join(ASSETS, 'favicon.svg'), path.join(DIST, 'favicon.svg')
 
 write('index.html', homePage(prompts, posts));
 prompts.forEach((p, i) => write(`prompts/${p.slug}/index.html`, promptPage(p, i, prompts)));
-Object.keys(site.categories).forEach((k) => write(`category/${k}/index.html`, categoryPage(k, prompts)));
-Object.keys(site.hubs).forEach((k) => write(`${k}/index.html`, hubPage(k, prompts)));
+for (const k of Object.keys(site.categories)) for (const [f, h] of categoryPages(k, prompts)) write(f, h);
+for (const k of Object.keys(site.hubs)) for (const [f, h] of hubPages(k, prompts)) write(f, h);
+for (const [f, h] of allPromptsPages(prompts)) write(f, h);
+write('categories/index.html', categoriesPage(prompts));
+write('search-index.json', searchIndex(prompts));
+const STATIC = path.join(ROOT, 'static');
+if (fs.existsSync(STATIC)) fs.cpSync(STATIC, DIST, { recursive: true });
 write('blog/index.html', blogIndex(posts));
 posts.forEach((b, i) => write(`blog/${b.slug}/index.html`, postPage(b, i, posts, promptsBySlug)));
 pages.forEach((pg) => write(`${pg.slug}/index.html`, staticPage(pg)));

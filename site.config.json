@@ -1,6 +1,7 @@
 {
   "name": "GoodAIPromt",
   "email": "contact@goodaipromt.com",
+  "gtmId": "GTM-TJLCXNX9",
   "tagline": "Free AI prompts you can fill in and copy.",
   "description": "A free AI prompt library for ChatGPT, Claude, Gemini, Midjourney and AI video tools. Fill in the blanks, copy the prompt, get better answers. New prompts daily.",
   "url": "https://goodaipromt.com",
@@ -9,22 +10,77 @@
     "writing": {
       "name": "Writing",
       "title": "ChatGPT Prompts for Writing",
-      "description": "Free ChatGPT and Claude prompts for writing: emails, cover letters, articles, editing and making AI text sound human."
+      "description": "Free ChatGPT and Claude prompts for writing: emails, articles, editing, storytelling and making AI text sound human."
     },
     "marketing": {
       "name": "Marketing",
-      "title": "ChatGPT Prompts for Marketing, SEO and Social Media",
-      "description": "Free AI prompts for marketing: landing pages, SEO briefs, social media calendars, LinkedIn posts and ads."
+      "title": "ChatGPT Prompts for Marketing",
+      "description": "Free AI prompts for marketing: positioning, value propositions, landing pages, social media, ads and campaigns."
+    },
+    "seo": {
+      "name": "SEO",
+      "title": "ChatGPT Prompts for SEO",
+      "description": "Free AI prompts for SEO: content briefs, keyword clustering, meta tags, internal links and on-page optimisation."
+    },
+    "sales": {
+      "name": "Sales",
+      "title": "ChatGPT Prompts for Sales",
+      "description": "Free AI prompts for sales: cold outreach, discovery calls, objection handling, follow-ups and proposals."
     },
     "business": {
-      "name": "Business",
-      "title": "ChatGPT Prompts for Business",
-      "description": "Free AI prompts for business: strategy, planning, risk, resumes, hiring and everyday decisions."
+      "name": "Strategy",
+      "title": "ChatGPT Prompts for Business Strategy",
+      "description": "Free AI prompts for business strategy: selling points, competitive analysis, planning, risk and decisions."
     },
     "productivity": {
       "name": "Productivity",
-      "title": "ChatGPT Prompts for Students and Productivity",
-      "description": "Free AI prompts for learning, studying, planning and getting everyday work done faster."
+      "title": "ChatGPT Prompts for Productivity",
+      "description": "Free AI prompts for planning, prioritising, summarising and getting everyday work done faster."
+    },
+    "education": {
+      "name": "Education",
+      "title": "ChatGPT Prompts for Students and Teachers",
+      "description": "Free AI prompts for learning and teaching: study guides, explanations, quizzes, lesson plans and feedback."
+    },
+    "research": {
+      "name": "Research",
+      "title": "ChatGPT Prompts for Research",
+      "description": "Free AI prompts for research: customer insights, pain points, interviews, surveys and literature summaries."
+    },
+    "data": {
+      "name": "Data analysis",
+      "title": "ChatGPT Prompts for Data Analysis",
+      "description": "Free AI prompts for data analysis: spreadsheets, formulas, SQL, charts and turning numbers into insights."
+    },
+    "finance": {
+      "name": "Finance",
+      "title": "ChatGPT Prompts for Finance",
+      "description": "Free AI prompts for finance: budgets, cash flow, pricing, financial models and explaining reports."
+    },
+    "hr": {
+      "name": "HR",
+      "title": "ChatGPT Prompts for HR and Hiring",
+      "description": "Free AI prompts for HR: job descriptions, interview questions, onboarding, feedback and team policies."
+    },
+    "customer-service": {
+      "name": "Customer service",
+      "title": "ChatGPT Prompts for Customer Service",
+      "description": "Free AI prompts for customer support: replies, help articles, complaint handling and support macros."
+    },
+    "real-estate": {
+      "name": "Real estate",
+      "title": "ChatGPT Prompts for Real Estate",
+      "description": "Free AI prompts for real estate agents: listing descriptions, client emails, market summaries and social posts."
+    },
+    "careers": {
+      "name": "Careers",
+      "title": "ChatGPT Prompts for Resumes and Careers",
+      "description": "Free AI prompts for job seekers: resumes, cover letters, interview prep, LinkedIn profiles and salary talks."
+    },
+    "legal": {
+      "name": "Legal",
+      "title": "ChatGPT Prompts for Legal Work",
+      "description": "Free AI prompts for understanding contracts, drafting plain-language policies and preparing questions for a lawyer."
     },
     "coding": {
       "name": "Coding",
@@ -34,11 +90,11 @@
     "image": {
       "name": "Image",
       "title": "Midjourney Prompts and AI Image Prompts",
-      "description": "Free image prompts for Midjourney, Gemini, Flux, DALL·E and Ideogram: product photos, logos, photo edits and more."
+      "description": "Free image prompts for Midjourney, GPT Image, Gemini, Flux and Ideogram: product ads, portraits, logos and edits."
     },
     "video": {
       "name": "Video",
-      "title": "AI Video Prompts for Seedance, Veo, Kling and Runway",
+      "title": "AI Video Prompts for Seedance, Veo and Kling",
       "description": "Free AI video prompts written like a director's brief: shot-by-shot timing, camera moves and lighting."
     }
   },
@@ -86,5 +142,15 @@
       "h1": "Free AI video prompts",
       "description": "AI video prompts for Seedance, Veo, Kling and Runway with timed beats, camera moves and lighting, ready to copy."
     }
-  }
+  },
+  "nav": [
+    "writing",
+    "marketing",
+    "seo",
+    "sales",
+    "business",
+    "coding",
+    "image",
+    "video"
+  ]
 }

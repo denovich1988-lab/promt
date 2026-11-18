@@ -5,7 +5,7 @@ for root, _, files in os.walk('dist'):
     for f in files:
         if not f.endswith('.html'): continue
         path = os.path.join(root, f); s = open(path).read(); pages += 1
-        if '404' in f: continue
+        if '404' in f or f.startswith('google'): continue
         t = html.unescape(re.search(r'<title>(.*?)</title>', s).group(1))
         d = html.unescape(re.search(r'<meta name="description" content="(.*?)"', s).group(1))
         if len(t) > 62: issues.append(f'{path}: title {len(t)} chars: {t}')
