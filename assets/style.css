@@ -235,11 +235,33 @@ h1, h2, h3 { font-weight: 720; letter-spacing: -0.025em; line-height: 1.05; marg
 .about { padding: clamp(48px, 8vw, 96px) 0 24px; }
 .about .prose { margin-top: 28px; }
 
+/* ---------- hubs (prompts by AI tool) ---------- */
+.hubs { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 32px; }
+.hub { display: inline-flex; align-items: baseline; gap: 10px; padding: 12px 16px; border-radius: 12px; background: var(--paper); border: 1px solid var(--rule); text-decoration: none; }
+.hub:hover { border-color: var(--blue); color: var(--ink); }
+.hub__name { font-weight: 680; letter-spacing: -0.01em; }
+.hub__count { font-size: 14px; color: var(--ink-3); }
+.see-also { margin: 28px 0 0; color: var(--ink-2); }
+.howto { margin-top: 48px; padding-top: 8px; }
+.howto h2 { font-size: 26px; }
+.row--post { grid-template-columns: 76px minmax(0, 1fr) 130px; }
+.post .prompt__body { margin-top: 32px; }
+.post .prompt__body .prose { max-width: 72ch; }
+.prose .editor { margin: 24px 0 28px; max-width: 880px; }
+.prose table { border-collapse: collapse; width: 100%; margin: 20px 0; font-size: 15.5px; }
+.prose th, .prose td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+.prose th { color: var(--ink); font-weight: 650; }
+.prose a { text-decoration-color: var(--blue); }
+
 /* ---------- footer ---------- */
-.foot { margin-top: 88px; border-top: 1px solid var(--rule); padding: 32px 0 48px; font-size: 15px; color: var(--ink-2); }
-.foot__row { display: flex; align-items: baseline; gap: 12px 32px; flex-wrap: wrap; }
-.foot__row p { margin: 0; }
-.foot__row .muted { margin-left: auto; }
+.foot { margin-top: 88px; border-top: 1px solid var(--rule); padding: 40px 0 40px; font-size: 15px; color: var(--ink-2); }
+.foot__grid { display: grid; grid-template-columns: 1.4fr repeat(3, 1fr); gap: 28px; }
+.foot__grid nav { display: flex; flex-direction: column; gap: 8px; }
+.foot__grid nav a { text-decoration: none; color: var(--ink-2); }
+.foot__grid nav a:hover { color: var(--blue); }
+.foot__h { margin: 0 0 4px; font-weight: 650; color: var(--ink); }
+.foot__about { margin: 12px 0 0; max-width: 30ch; }
+.foot__copy { margin: 32px 0 0; font-size: 14px; }
 
 /* ---------- responsive ---------- */
 @media (max-width: 1000px) {
@@ -248,6 +270,7 @@ h1, h2, h3 { font-weight: 720; letter-spacing: -0.025em; line-height: 1.05; marg
   .today__info { position: static; }
   .row { grid-template-columns: 64px minmax(0, 1fr) 120px; }
   .row__models { grid-column: 2 / -1; }
+  .foot__grid { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 640px) {
   body { font-size: 16px; }

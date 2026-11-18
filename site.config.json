@@ -1,16 +1,76 @@
 {
-  "name": "Promt",
-  "tagline": "A new AI prompt every day.",
-  "description": "Copy-ready prompts for ChatGPT, Claude, Gemini, Midjourney and AI video tools. One new prompt published every day, with tips on how to use it.",
+  "name": "GoodAIPromt",
+  "tagline": "Free AI prompts you can fill in and copy.",
+  "description": "A free AI prompt library for ChatGPT, Claude, Gemini, Midjourney and AI video tools. Fill in the blanks, copy the prompt and get better answers. New prompts every day.",
   "url": "https://goodaipromt.com",
   "language": "en",
   "categories": {
-    "writing": { "name": "Writing", "description": "Articles, emails, editing and storytelling." },
-    "marketing": { "name": "Marketing", "description": "Ads, social posts, landing pages and positioning." },
-    "business": { "name": "Business", "description": "Strategy, planning, analysis and decisions." },
-    "productivity": { "name": "Productivity", "description": "Planning, learning, summaries and everyday work." },
-    "coding": { "name": "Coding", "description": "Debugging, code review, docs and architecture." },
-    "image": { "name": "Image", "description": "Midjourney, DALL·E, Flux and other image models." },
-    "video": { "name": "Video", "description": "Seedance, Runway, Kling, Veo and other video models." }
+    "writing": {
+      "name": "Writing",
+      "title": "ChatGPT Prompts for Writing",
+      "description": "Free ChatGPT and Claude prompts for writing: emails, cover letters, articles, editing and making AI text sound human."
+    },
+    "marketing": {
+      "name": "Marketing",
+      "title": "ChatGPT Prompts for Marketing, SEO and Social Media",
+      "description": "Free AI prompts for marketing: landing pages, SEO briefs, social media calendars, LinkedIn posts and ads."
+    },
+    "business": {
+      "name": "Business",
+      "title": "ChatGPT Prompts for Business",
+      "description": "Free AI prompts for business: strategy, planning, risk, resumes, hiring and everyday decisions."
+    },
+    "productivity": {
+      "name": "Productivity",
+      "title": "ChatGPT Prompts for Students and Productivity",
+      "description": "Free AI prompts for learning, studying, planning and getting everyday work done faster."
+    },
+    "coding": {
+      "name": "Coding",
+      "title": "ChatGPT and Claude Prompts for Coding",
+      "description": "Free AI prompts for developers: code review, debugging, tests, documentation and architecture."
+    },
+    "image": {
+      "name": "Image",
+      "title": "Midjourney Prompts and AI Image Prompts",
+      "description": "Free image prompts for Midjourney, Gemini, Flux, DALL·E and Ideogram: product photos, logos, photo edits and more."
+    },
+    "video": {
+      "name": "Video",
+      "title": "AI Video Prompts for Seedance, Veo, Kling and Runway",
+      "description": "Free AI video prompts written like a director's brief: shot-by-shot timing, camera moves and lighting."
+    }
+  },
+  "hubs": {
+    "chatgpt-prompts": {
+      "models": ["ChatGPT"],
+      "title": "ChatGPT Prompts",
+      "h1": "Free ChatGPT prompts",
+      "description": "The best ChatGPT prompts for writing, marketing, business, studying and coding. Fill in the blanks, copy and paste into ChatGPT."
+    },
+    "claude-prompts": {
+      "models": ["Claude"],
+      "title": "Claude Prompts",
+      "h1": "Free Claude prompts",
+      "description": "Copy-ready prompts for Claude: long-form writing, analysis, planning and code review. Fill in your details and paste."
+    },
+    "gemini-prompts": {
+      "models": ["Gemini"],
+      "title": "Gemini Prompts",
+      "h1": "Free Gemini prompts",
+      "description": "Google Gemini prompts for writing, research, studying and photo editing. Fill in your details and copy in one click."
+    },
+    "midjourney-prompts": {
+      "models": ["Midjourney"],
+      "title": "Midjourney Prompts",
+      "h1": "Free Midjourney prompts",
+      "description": "Midjourney prompts for product photos, logos and brand images, written like a photographer's brief. Swap the details and generate."
+    },
+    "ai-video-prompts": {
+      "models": ["Seedance", "Veo", "Kling", "Runway"],
+      "title": "AI Video Prompts for Seedance, Veo and Kling",
+      "h1": "Free AI video prompts",
+      "description": "AI video prompts for Seedance, Veo, Kling and Runway with timed beats, camera moves and lighting, ready to copy."
+    }
   }
 }

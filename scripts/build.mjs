@@ -111,7 +111,7 @@ function loadPrompts() {
 
 // ---------- layout ----------
 function layout({ title, description, pathname, body, ogType = 'website', jsonLd = null }) {
-  const fullTitle = title ? `${title} | ${site.name}` : `${site.name}: ${site.tagline}`;
+  const fullTitle = title ? `${title} | ${site.name}` : `Free AI Prompts for ChatGPT, Claude, Gemini and Midjourney | ${site.name}`;
   const canonical = SITE_URL + pathname;
   const navCats = Object.entries(site.categories)
     .map(([k, c]) => `<a href="/category/${k}/"${pathname === `/category/${k}/` ? ' aria-current="page"' : ''}>${esc(c.name)}</a>`)
@@ -144,18 +144,23 @@ ${jsonLd ? `<script type="application/ld+json">${JSON.stringify(jsonLd)}</script
   <div class="wrap top__row">
     <a class="logo" href="/" aria-label="${esc(site.name)} home">promt<span class="logo__blank" aria-hidden="true"></span></a>
     <nav class="top__nav" aria-label="Categories">${navCats}</nav>
-    <nav class="top__aux" aria-label="Site"><a href="/about/"${pathname === '/about/' ? ' aria-current="page"' : ''}>About</a><a href="/rss.xml">RSS</a></nav>
+    <nav class="top__aux" aria-label="Site"><a href="/blog/"${pathname.startsWith('/blog/') ? ' aria-current="page"' : ''}>Blog</a><a href="/about/"${pathname === '/about/' ? ' aria-current="page"' : ''}>About</a></nav>
   </div>
 </header>
 <main id="main">
 ${body}
 </main>
 <footer class="foot">
-  <div class="wrap foot__row">
-    <p class="logo logo--small">promt<span class="logo__blank" aria-hidden="true"></span></p>
-    <p>${esc(site.tagline)} Free to copy and use.</p>
-    <p class="muted">© ${new Date().getFullYear()} ${esc(site.name)}</p>
+  <div class="wrap foot__grid">
+    <div>
+      <p class="logo logo--small">promt<span class="logo__blank" aria-hidden="true"></span></p>
+      <p class="foot__about">${esc(site.tagline)} Free to copy and use.</p>
+    </div>
+    <nav aria-label="Prompts by AI tool"><p class="foot__h">By AI tool</p>${Object.entries(site.hubs).map(([k, h]) => `<a href="/${k}/">${esc(h.title)}</a>`).join('')}</nav>
+    <nav aria-label="Prompts by task"><p class="foot__h">By task</p>${Object.entries(site.categories).map(([k, c]) => `<a href="/category/${k}/">${esc(c.name)} prompts</a>`).join('')}</nav>
+    <nav aria-label="More"><p class="foot__h">More</p><a href="/blog/">Blog</a><a href="/about/">About</a><a href="/rss.xml">RSS feed</a></nav>
   </div>
+  <div class="wrap"><p class="muted foot__copy">© ${new Date().getFullYear()} ${esc(site.name)}</p></div>
 </footer>
 <script src="/assets/app.js?v=${BUILD_ID}" defer></script>
 </body>
@@ -173,7 +178,21 @@ const row = (p) => `<li class="row" data-search="${esc([p.title, p.description, 
 </li>`;
 
 // ---------- pages ----------
-function homePage(prompts) {
+const hubLinks = () =>
+  `<nav class="hubs" aria-label="Prompts by AI tool">${Object.entries(site.hubs)
+    .map(([k, h]) => `<a class="hub" href="/${k}/"><span class="hub__name">${esc(h.title.replace(/ for .*/, ''))}</span><span class="hub__count">${h._count} prompt${h._count === 1 ? '' : 's'}</span></a>`)
+    .join('')}</nav>`;
+
+const postRow = (b) => `<li class="row row--post">
+  <time class="row__date" datetime="${b.date}">${fmtShort(b.date)}</time>
+  <div class="row__main">
+    <h3 class="row__title"><a href="/blog/${b.slug}/">${esc(b.title)}</a></h3>
+    <p class="row__desc">${esc(b.description)}</p>
+  </div>
+  <p class="row__cat">${b.minutes} min read</p>
+</li>`;
+
+function homePage(prompts, posts) {
   const [today] = prompts;
   const counts = Object.fromEntries(Object.keys(site.categories).map((k) => [k, prompts.filter((p) => p.category === k).length]));
   const chips = [`<button class="chip" type="button" data-filter="" aria-pressed="true">All<span>${prompts.length}</span></button>`]
@@ -183,7 +202,7 @@ function homePage(prompts) {
     ? `<section class="today" aria-labelledby="today-h">
   <div class="wrap today__grid">
     <div class="today__info">
-      <p class="today__when">Today’s prompt, <time datetime="${today.date}">${fmtDate(today.date)}</time></p>
+      <p class="today__when">Newest prompt, <time datetime="${today.date}">${fmtDate(today.date)}</time></p>
       <h2 id="today-h" class="today__title">${esc(today.title)}</h2>
       <p class="today__desc">${esc(today.description)}</p>
       <p class="today__meta">${esc(catName(today.category))}${today.models.length ? `. Works with ${esc(listJoin(today.models))}.` : ''}</p>
@@ -195,19 +214,24 @@ function homePage(prompts) {
     : '';
   const body = `
 <section class="hero wrap">
-  <h1 class="hero__title">Fill in the <span class="hero__blank">blanks</span>.<br>Copy. Paste. Done.</h1>
-  <p class="hero__lede">${esc(site.description)} Type your details straight into the blue blanks and copy a prompt that’s ready to use.</p>
+  <h1 class="hero__title">Free AI prompts. Fill in the <span class="hero__blank">blanks</span>.</h1>
+  <p class="hero__lede">${esc(site.description)}</p>
+  ${hubLinks()}
 </section>
 ${featured}
 <section class="library wrap" aria-labelledby="lib-h">
   <div class="library__head">
-    <h2 id="lib-h">All prompts</h2>
-    <label class="search"><span class="visually-hidden">Search prompts</span><input type="search" placeholder="Search, e.g. email, Midjourney" data-search-input autocomplete="off"></label>
+    <h2 id="lib-h">AI prompt library</h2>
+    <label class="search"><span class="visually-hidden">Search prompts</span><input type="search" placeholder="Search, e.g. resume, Midjourney" data-search-input autocomplete="off"></label>
   </div>
   <div class="chips" role="group" aria-label="Filter by category">${chips}</div>
   <ol class="rows" data-grid>${prompts.map(row).join('\n')}</ol>
   <p class="empty" data-empty hidden>Nothing matches that search. Try a shorter word or pick another category.</p>
-</section>`;
+</section>
+${posts.length ? `<section class="library wrap" aria-labelledby="blog-h">
+  <div class="library__head"><h2 id="blog-h">From the blog</h2><a class="link-strong" href="/blog/">All articles</a></div>
+  <ol class="rows">${posts.slice(0, 3).map(postRow).join('\n')}</ol>
+</section>` : ''}`;
   return layout({
     title: '',
     description: site.description,
@@ -221,6 +245,8 @@ function promptPage(p, i, prompts) {
   const newer = prompts[i - 1];
   const older = prompts[i + 1];
   const related = prompts.filter((x) => x.category === p.category && x.slug !== p.slug).slice(0, 4);
+  const tool = p.models[0] || 'AI';
+  const hubFor = Object.entries(site.hubs).filter(([, h]) => h.models.some((m) => p.models.includes(m)));
   const body = `
 <article class="prompt">
   <header class="wrap prompt__head">
@@ -238,6 +264,7 @@ function promptPage(p, i, prompts) {
     ${editor(p.promptText)}
     <div class="prose">${p.restHtml}</div>
     ${p.tags.length ? `<p class="tags">${p.tags.map((t) => `<span>${esc(t)}</span>`).join('')}</p>` : ''}
+    ${hubFor.length ? `<p class="see-also">More prompts for ${hubFor.map(([k, h]) => `<a href="/${k}/">${esc(h.title.replace(/ Prompts.*/, ''))}</a>`).join(', ')}.</p>` : ''}
   </div>
   <nav class="wrap pager" aria-label="More prompts">
     ${older ? `<a class="pager__link" href="/prompts/${older.slug}/"><span>Previous prompt</span>${esc(older.title)}</a>` : '<span></span>'}
@@ -246,7 +273,7 @@ function promptPage(p, i, prompts) {
 </article>
 ${related.length ? `<section class="wrap related"><h2>More ${esc(catName(p.category).toLowerCase())} prompts</h2><ol class="rows">${related.map(row).join('\n')}</ol></section>` : ''}`;
   return layout({
-    title: p.title,
+    title: /prompt/i.test(p.title) ? p.title : `${p.title}: ${tool} Prompt`,
     description: p.description,
     pathname: `/prompts/${p.slug}/`,
     ogType: 'article',
@@ -263,19 +290,115 @@ ${related.length ? `<section class="wrap related"><h2>More ${esc(catName(p.categ
   });
 }
 
+function listPage({ crumbs, h1, lede, list, title, description, pathname, extra = '' }) {
+  const body = `
+<section class="hero hero--small wrap">
+  <p class="crumbs">${crumbs}</p>
+  <h1 class="hero__title">${esc(h1)}</h1>
+  <p class="hero__lede">${esc(lede)}</p>
+</section>
+<section class="wrap library">
+  ${list.length ? `<ol class="rows">${list.map(row).join('\n')}</ol>` : '<p class="empty">New prompts here are on the way. Meanwhile, <a href="/">browse all prompts</a>.</p>'}
+  ${extra}
+</section>`;
+  return layout({
+    title,
+    description,
+    pathname,
+    body,
+    jsonLd: {
+      '@context': 'https://schema.org',
+      '@type': 'CollectionPage',
+      name: h1,
+      description,
+      url: SITE_URL + pathname,
+      hasPart: list.slice(0, 50).map((p) => ({ '@type': 'CreativeWork', name: p.title, url: `${SITE_URL}/prompts/${p.slug}/` })),
+    },
+  });
+}
+
+const howToUse = `<div class="howto prose"><h2>How to use these prompts</h2><ol><li>Click a prompt and type your details into the blue blanks.</li><li>Press <strong>Copy prompt</strong> and paste it into your AI tool.</li><li>Treat the first answer as a draft and ask for changes until it fits.</li></ol></div>`;
+
 function categoryPage(key, prompts) {
   const c = site.categories[key];
   const list = prompts.filter((p) => p.category === key);
+  return listPage({
+    crumbs: '<a href="/">All prompts</a>',
+    h1: c.title,
+    lede: c.description,
+    list,
+    title: `${c.title} (Free, Copy-Ready)`,
+    description: c.description,
+    pathname: `/category/${key}/`,
+    extra: howToUse,
+  });
+}
+
+function hubPage(key, prompts) {
+  const h = site.hubs[key];
+  const list = prompts.filter((p) => p.models.some((m) => h.models.includes(m)));
+  return listPage({
+    crumbs: '<a href="/">All prompts</a>',
+    h1: h.h1,
+    lede: h.description,
+    list,
+    title: `${h.title}: ${list.length} Free Copy-Ready Prompts`,
+    description: h.description,
+    pathname: `/${key}/`,
+    extra: howToUse,
+  });
+}
+
+function blogIndex(posts) {
   const body = `
 <section class="hero hero--small wrap">
   <p class="crumbs"><a href="/">All prompts</a></p>
-  <h1 class="hero__title">${esc(c.name)} prompts</h1>
-  <p class="hero__lede">${esc(c.description)}</p>
+  <h1 class="hero__title">Blog</h1>
+  <p class="hero__lede">Practical guides to ChatGPT, Claude, Gemini and Midjourney: how to write better prompts and get better answers.</p>
 </section>
 <section class="wrap library">
-  ${list.length ? `<ol class="rows">${list.map(row).join('\n')}</ol>` : '<p class="empty">The first prompt in this category is coming soon. Meanwhile, <a href="/">browse all prompts</a>.</p>'}
+  <ol class="rows">${posts.map(postRow).join('\n')}</ol>
 </section>`;
-  return layout({ title: `${c.name} prompts`, description: `${c.description} Copy-ready AI prompts, a new one every day.`, pathname: `/category/${key}/`, body });
+  return layout({ title: 'AI Prompting Blog: Guides for ChatGPT, Claude and Midjourney', description: 'Practical guides to writing better AI prompts for ChatGPT, Claude, Gemini and Midjourney.', pathname: '/blog/', body });
+}
+
+function postPage(b, i, posts, promptsBySlug) {
+  const related = (b.related || []).map((s) => promptsBySlug[s]).filter(Boolean);
+  const more = posts.filter((x) => x.slug !== b.slug).slice(0, 3);
+  const body = `
+<article class="prompt post">
+  <header class="wrap prompt__head">
+    <p class="crumbs"><a href="/blog/">Blog</a></p>
+    <h1>${esc(b.title)}</h1>
+    <p class="prompt__lede">${esc(b.description)}</p>
+    <dl class="facts">
+      <div><dt>Published</dt><dd><time datetime="${b.date}">${fmtDate(b.date)}</time></dd></div>
+      <div><dt>Reading time</dt><dd>${b.minutes} min</dd></div>
+    </dl>
+  </header>
+  <div class="wrap prompt__body">
+    <div class="prose">${b.html}</div>
+  </div>
+</article>
+${related.length ? `<section class="wrap related"><h2>Prompts from this article</h2><ol class="rows">${related.map(row).join('\n')}</ol></section>` : ''}
+${more.length ? `<section class="wrap related"><h2>More from the blog</h2><ol class="rows">${more.map(postRow).join('\n')}</ol></section>` : ''}`;
+  return layout({
+    title: b.seoTitle || b.title,
+    description: b.description,
+    pathname: `/blog/${b.slug}/`,
+    ogType: 'article',
+    body,
+    jsonLd: {
+      '@context': 'https://schema.org',
+      '@type': 'BlogPosting',
+      headline: b.title,
+      description: b.description,
+      datePublished: b.date,
+      dateModified: b.updated || b.date,
+      url: `${SITE_URL}/blog/${b.slug}/`,
+      publisher: { '@type': 'Organization', name: site.name },
+    },
+  });
 }
 
 function aboutPage() {
@@ -285,7 +408,7 @@ function aboutPage() {
   <div class="prose">
   <p class="prompt__lede">${esc(site.description)}</p>
   <h2>How it works</h2>
-  <p>Every day we publish one prompt for a real task: writing, marketing, business, coding, images or video. Blue blanks mark the details only you know. Click a blank, type your answer, then press <strong>Copy prompt</strong>. Any blank you skip is copied as it was, so you can fill it in later.</p>
+  <p>We publish new prompts every day for real tasks: writing, marketing, business, coding, images and video. Blue blanks mark the details only you know. Click a blank, type your answer, then press <strong>Copy prompt</strong>. Any blank you skip is copied as it was, so you can fill it in later.</p>
   <h2>Getting better results</h2>
   <ul>
     <li><strong>Be specific in every blank.</strong> “Owners of small coffee shops” works better than “businesses”.</li>
@@ -304,16 +427,18 @@ function notFoundPage() {
     title: 'Page not found',
     description: 'This page does not exist.',
     pathname: '/404.html',
-    body: `<section class="hero wrap"><h1 class="hero__title">This page is a <span class="hero__blank">blank</span>.</h1><p class="hero__lede">The link may be old or mistyped. Today’s prompt is on the home page.</p><p><a class="btn btn--copy" href="/">Go to the home page</a></p></section>`,
+    body: `<section class="hero wrap"><h1 class="hero__title">This page is a <span class="hero__blank">blank</span>.</h1><p class="hero__lede">The link may be old or mistyped. The newest prompts are on the home page.</p><p><a class="btn btn--copy" href="/">Go to the home page</a></p></section>`,
   });
 }
 
-function rss(prompts) {
-  const items = prompts
-    .slice(0, 30)
-    .map(
-      (p) => `<item><title>${esc(p.title)}</title><link>${SITE_URL}/prompts/${p.slug}/</link><guid>${SITE_URL}/prompts/${p.slug}/</guid><pubDate>${new Date(p.date + 'T06:00:00Z').toUTCString()}</pubDate><category>${esc(catName(p.category))}</category><description>${esc(p.description)}</description></item>`
-    )
+function rss(prompts, posts) {
+  const entries = [
+    ...prompts.map((p) => ({ title: p.title, url: `${SITE_URL}/prompts/${p.slug}/`, date: p.date, cat: catName(p.category), desc: p.description })),
+    ...posts.map((b) => ({ title: b.title, url: `${SITE_URL}/blog/${b.slug}/`, date: b.date, cat: 'Blog', desc: b.description })),
+  ].sort((a, b) => b.date.localeCompare(a.date));
+  const items = entries
+    .slice(0, 40)
+    .map((e) => `<item><title>${esc(e.title)}</title><link>${e.url}</link><guid>${e.url}</guid><pubDate>${new Date(e.date + 'T06:00:00Z').toUTCString()}</pubDate><category>${esc(e.cat)}</category><description>${esc(e.desc)}</description></item>`)
     .join('\n');
   return `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0"><channel><title>${esc(site.name)}</title><link>${SITE_URL}/</link><description>${esc(site.description)}</description><language>${site.language}</language>
@@ -321,27 +446,63 @@ ${items}
 </channel></rss>`;
 }
 
-function sitemap(prompts) {
-  const urls = ['/', '/about/', ...Object.keys(site.categories).map((k) => `/category/${k}/`)]
+function sitemap(prompts, posts) {
+  const urls = ['/', '/blog/', '/about/', ...Object.keys(site.hubs).map((k) => `/${k}/`), ...Object.keys(site.categories).map((k) => `/category/${k}/`)]
     .map((u) => `<url><loc>${SITE_URL}${u}</loc></url>`)
-    .concat(prompts.map((p) => `<url><loc>${SITE_URL}/prompts/${p.slug}/</loc><lastmod>${p.date}</lastmod></url>`));
+    .concat(prompts.map((p) => `<url><loc>${SITE_URL}/prompts/${p.slug}/</loc><lastmod>${p.date}</lastmod></url>`))
+    .concat(posts.map((b) => `<url><loc>${SITE_URL}/blog/${b.slug}/</loc><lastmod>${b.updated || b.date}</lastmod></url>`));
   return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.join('\n')}\n</urlset>`;
+}
+
+function loadPosts() {
+  const dir = path.join(ROOT, 'content', 'blog');
+  if (!fs.existsSync(dir)) return [];
+  const today = todayISO();
+  return fs
+    .readdirSync(dir)
+    .filter((f) => f.endsWith('.md'))
+    .map((file) => {
+      const { data, content } = matter(fs.readFileSync(path.join(dir, file), 'utf8'));
+      for (const k of ['title', 'description']) if (!data[k]) throw new Error(`blog/${file}: missing "${k}"`);
+      const words = content.split(/\s+/).length;
+      return {
+        slug: data.slug || file.replace(/\.md$/, '').replace(/^\d{4}-\d{2}-\d{2}-/, ''),
+        date: toISODate(data.date || file.slice(0, 10)),
+        updated: data.updated ? toISODate(data.updated) : '',
+        title: data.title,
+        seoTitle: data.seoTitle || '',
+        description: data.description,
+        related: data.related || [],
+        minutes: Math.max(1, Math.round(words / 220)),
+        html: marked.parse(content),
+        draft: Boolean(data.draft),
+      };
+    })
+    .filter((b) => !b.draft && b.date <= today)
+    .sort((a, b) => b.date.localeCompare(a.date) || a.slug.localeCompare(b.slug));
 }
 
 // ---------- build ----------
 const prompts = loadPrompts();
+const posts = loadPosts();
+const promptsBySlug = Object.fromEntries(prompts.map((p) => [p.slug, p]));
+for (const b of posts) for (const s of b.related) if (!promptsBySlug[s]) throw new Error(`blog/${b.slug}: related prompt "${s}" not found`);
+for (const h of Object.values(site.hubs)) h._count = prompts.filter((p) => p.models.some((m) => h.models.includes(m))).length;
 fs.rmSync(DIST, { recursive: true, force: true });
 fs.mkdirSync(DIST, { recursive: true });
 fs.cpSync(ASSETS, path.join(DIST, 'assets'), { recursive: true });
 fs.copyFileSync(path.join(ASSETS, 'favicon.svg'), path.join(DIST, 'favicon.svg'));
 
-write('index.html', homePage(prompts));
+write('index.html', homePage(prompts, posts));
 prompts.forEach((p, i) => write(`prompts/${p.slug}/index.html`, promptPage(p, i, prompts)));
 Object.keys(site.categories).forEach((k) => write(`category/${k}/index.html`, categoryPage(k, prompts)));
+Object.keys(site.hubs).forEach((k) => write(`${k}/index.html`, hubPage(k, prompts)));
+write('blog/index.html', blogIndex(posts));
+posts.forEach((b, i) => write(`blog/${b.slug}/index.html`, postPage(b, i, posts, promptsBySlug)));
 write('about/index.html', aboutPage());
 write('404.html', notFoundPage());
-write('rss.xml', rss(prompts));
-write('sitemap.xml', sitemap(prompts));
+write('rss.xml', rss(prompts, posts));
+write('sitemap.xml', sitemap(prompts, posts));
 write('robots.txt', `User-agent: *\nAllow: /\nSitemap: ${SITE_URL}/sitemap.xml\n`);
 
-console.log(`Built ${prompts.length} prompts → dist/`);
+console.log(`Built ${prompts.length} prompts and ${posts.length} blog posts → dist/`);
