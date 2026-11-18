@@ -1,0 +1,15 @@
+{
+  "name": "promt",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Promt — a new, tested AI prompt every day.",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "serve": "npx --yes serve dist -l 4321"
+  },
+  "dependencies": {
+    "gray-matter": "^4.0.3",
+    "marked": "^15.0.0"
+  }
+}

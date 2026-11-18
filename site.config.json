@@ -1,0 +1,16 @@
+{
+  "name": "Promt",
+  "tagline": "A new AI prompt every day.",
+  "description": "Copy-ready prompts for ChatGPT, Claude, Gemini, Midjourney and AI video tools. One new prompt published every day, with tips on how to use it.",
+  "url": "https://example.com",
+  "language": "en",
+  "categories": {
+    "writing": { "name": "Writing", "description": "Articles, emails, editing and storytelling." },
+    "marketing": { "name": "Marketing", "description": "Ads, social posts, landing pages and positioning." },
+    "business": { "name": "Business", "description": "Strategy, planning, analysis and decisions." },
+    "productivity": { "name": "Productivity", "description": "Planning, learning, summaries and everyday work." },
+    "coding": { "name": "Coding", "description": "Debugging, code review, docs and architecture." },
+    "image": { "name": "Image", "description": "Midjourney, DALL·E, Flux and other image models." },
+    "video": { "name": "Video", "description": "Seedance, Runway, Kling, Veo and other video models." }
+  }
+}
