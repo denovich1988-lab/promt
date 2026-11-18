@@ -1,7 +1,7 @@
 # Promt — instructions for adding content
 
 Static site of AI prompts. Built with `npm run build` (scripts/build.mjs) from `content/prompts/*.md`.
-Every push to `main` is built and deployed to the server by GitHub Actions (.github/workflows/deploy.yml).
+Every push to `main` is built by GitHub Actions (.github/workflows/deploy.yml) and published to the `site` branch; the server pulls that branch every 5 minutes.
 Site language: **English**.
 
 ## Daily prompt — how to add one

@@ -1,0 +1,71 @@
+#cloud-config
+# Paste this whole file into "Cloud config" when creating a server (Hetzner, DigitalOcean "User data", etc.).
+# It installs nginx and keeps the site in sync with the "site" branch on GitHub every 5 minutes.
+package_update: true
+package_upgrade: true
+packages:
+  - nginx
+  - git
+  - rsync
+  - ufw
+  - unattended-upgrades
+
+write_files:
+  - path: /usr/local/bin/promt-update
+    permissions: "0755"
+    content: |
+      #!/bin/sh
+      # Pull the latest built site from GitHub and publish it.
+      set -e
+      REPO=https://github.com/denovich1988-lab/promt.git
+      SRC=/opt/promt-site
+      if [ ! -d "$SRC/.git" ]; then
+        git clone -q --depth 1 --branch site "$REPO" "$SRC"
+      else
+        git -C "$SRC" fetch -q --depth 1 origin site
+        git -C "$SRC" reset -q --hard origin/site
+      fi
+      rsync -a --delete --exclude .git "$SRC/" /var/www/promt/
+
+  - path: /etc/cron.d/promt-update
+    content: |
+      */5 * * * * root /usr/local/bin/promt-update >/var/log/promt-update.log 2>&1
+
+  - path: /etc/nginx/sites-available/promt
+    content: |
+      server {
+          listen 80 default_server;
+          listen [::]:80 default_server;
+          server_name _;
+          root /var/www/promt;
+          index index.html;
+
+          gzip on;
+          gzip_types text/css application/javascript application/xml application/rss+xml image/svg+xml;
+
+          location / {
+              try_files $uri $uri/ =404;
+          }
+          location /assets/ {
+              expires 30d;
+              add_header Cache-Control "public";
+          }
+          location ~ /\. {
+              deny all;
+          }
+          error_page 404 /404.html;
+
+          add_header X-Content-Type-Options nosniff;
+          add_header Referrer-Policy strict-origin-when-cross-origin;
+      }
+
+runcmd:
+  - mkdir -p /var/www/promt
+  - ln -sf /etc/nginx/sites-available/promt /etc/nginx/sites-enabled/promt
+  - rm -f /etc/nginx/sites-enabled/default
+  - /usr/local/bin/promt-update || true
+  - systemctl enable --now nginx
+  - systemctl reload nginx
+  - ufw allow OpenSSH
+  - ufw allow 'Nginx Full'
+  - ufw --force enable
