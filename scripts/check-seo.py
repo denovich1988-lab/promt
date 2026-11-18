@@ -29,6 +29,22 @@ for t, ps in titles.items():
     if len(ps) > 1: issues.append(f'duplicate title "{t}" on {len(ps)} pages')
 for d, ps in descs.items():
     if len(ps) > 1: issues.append(f'duplicate description on {ps}')
+# sitemap: valid XML, every prompt/blog/static page listed, every URL exists
+import xml.etree.ElementTree as ET
+try:
+    ns = {'s': 'http://www.sitemaps.org/schemas/sitemap/0.9'}
+    locs = [u.find('s:loc', ns).text for u in ET.parse('dist/sitemap.xml').getroot()]
+    base = locs[0].rstrip('/')
+    for l in locs:
+        f = 'dist' + l[len(base):] + ('index.html' if l.endswith('/') else '')
+        if not os.path.exists(f): issues.append(f'sitemap URL has no page: {l}')
+    for root, _, files in os.walk('dist'):
+        if 'index.html' in files and '/page/' not in root + '/':
+            u = base + root[4:] + '/'
+            if u not in locs: issues.append(f'page missing from sitemap: {u}')
+    if len(locs) != len(set(locs)): issues.append('duplicate URLs in sitemap')
+except Exception as e:
+    issues.append(f'sitemap error: {e}')
 print(f'{pages} pages checked, {len(issues)} issues')
 for i in issues: print(' -', i)
 sys.exit(1 if issues else 0)
