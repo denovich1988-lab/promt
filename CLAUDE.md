@@ -4,9 +4,9 @@ Static site of AI prompts. Built with `npm run build` (scripts/build.mjs) from `
 Every push to `main` is built by GitHub Actions (.github/workflows/deploy.yml) and published to the `site` branch; the server pulls that branch every 5 minutes.
 Site language: **English**.
 
-## Daily prompts — 50 a day, in batches of 10
+## Daily prompts — 50 every morning
 
-The scheduled task runs 5 times a day; each run adds **10 new prompts** (50 a day).
+One scheduled run each morning (before 9:00 Tashkent) adds **50 new prompts**. Work in 5 batches of 10: write 10, build, check, commit and push, then the next 10. Never ask for confirmation; just publish.
 
 1. Look at what already exists: `ls content/prompts` and the titles (`grep -h "^title:" content/prompts/*.md`). Never repeat a topic or a near-duplicate title.
 2. Get ideas from what https://godofprompt.ai adds (its prompt library "New" and "Popular" lists and blog). Use it only for **topics and categories**; write every prompt from scratch in our own format and words. Never copy their titles, text or structure.
@@ -28,7 +28,17 @@ tags: [3-4, lowercase, tags]
 
 5. Body: 1 short intro paragraph (the problem and why this prompt works) → `## Prompt` with ONE ```prompt block (blanks in `[UPPERCASE IN SQUARE BRACKETS]`) → `## How to use it` (3 numbered steps) → `## Tips` (2–3 bullets).
 6. Run `npm run build` and `python3 scripts/check-seo.py` — both must pass (unique titles and descriptions, lengths, one H1, valid schema). Fix and rerun until clean.
-7. One commit per batch: `Add 10 prompts: <short theme list>`, push to `main`.
+7. One commit per batch of 10: `Add 10 prompts: <short theme list>`, push to `main` (pull --rebase first if the push is rejected).
+
+## Daily blog — 2 articles every morning
+
+A separate scheduled run adds **2 new blog posts** each morning. Never ask for confirmation; just publish.
+
+- Topics: the kind of articles https://godofprompt.ai/blog publishes — "N ChatGPT prompts for <task/audience>", prompting techniques (chain of thought, few-shot, role prompting…), guides to AI tools and features, image and video prompting. Use it only for topic ideas; write everything from scratch.
+- Pick one target keyword per article. When the Ahrefs connector is available, check volume and difficulty (prefer KD ≤ 20 with real volume); otherwise prefer specific long-tail phrases.
+- Don't repeat a topic already in `content/blog/` (check titles first).
+- 900–1600 words, practical, with ```prompt blocks people can fill in, links to 2–4 related prompt pages and one hub. No invented statistics, quotes or claims about real people; hedge features of third-party tools that may change.
+- Commit: `Add blog post: <title>`.
 
 ## Blog posts
 

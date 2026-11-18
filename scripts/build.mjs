@@ -590,26 +590,37 @@ function categoriesPage(prompts) {
 const searchIndex = (prompts) =>
   JSON.stringify(prompts.map((p) => ({ t: p.title, d: p.description, s: p.slug, c: catName(p.category), m: p.models, g: p.tags, a: p.date })));
 
-function blogIndex(posts) {
+function blogIndexPages(posts) {
   const desc = 'Practical guides to writing better AI prompts for ChatGPT, Claude, Gemini, Midjourney and AI video tools.';
-  const body = `
+  const total = Math.max(1, Math.ceil(posts.length / PER_PAGE));
+  const out = [];
+  for (let page = 1; page <= total; page++) {
+    const slice = posts.slice((page - 1) * PER_PAGE, page * PER_PAGE);
+    const pathname = page === 1 ? '/blog/' : `/blog/page/${page}/`;
+    const body = `
 <section class="hero hero--small wrap">
   <!--CRUMBS-->
-  <h1 class="hero__title">AI prompting blog</h1>
-  <p class="hero__lede">${desc}</p>
+  <h1 class="hero__title">AI prompting blog${page > 1 ? ` <span class="hero__page">page ${page}</span>` : ''}</h1>
+  ${page === 1 ? `<p class="hero__lede">${desc}</p>` : ''}
 </section>
 <section class="wrap library" aria-labelledby="list-h">
   <h2 id="list-h" class="list__h">${posts.length} articles, newest first</h2>
-  <ol class="rows">${posts.map(postRow).join('\n')}</ol>
+  <ol class="rows">${slice.map(postRow).join('\n')}</ol>
+  ${pager('/blog/', page, total)}
 </section>`;
-  return layout({
-    title: 'AI Prompting Blog: Guides and Prompt Examples',
-    description: desc,
-    pathname: '/blog/',
-    crumbs: [['Blog', '/blog/']],
-    body,
-    jsonLd: [{ '@type': 'Blog', '@id': `${SITE_URL}/blog/#blog`, name: `${site.name} blog`, url: `${SITE_URL}/blog/`, publisher: { '@id': ORG_ID }, blogPost: posts.map((b) => ({ '@type': 'BlogPosting', headline: b.title, url: `${SITE_URL}/blog/${b.slug}/`, datePublished: b.date })) }],
-  });
+    out.push([
+      pathname.slice(1) + 'index.html',
+      layout({
+        title: page === 1 ? 'AI Prompting Blog: Guides and Prompt Examples' : `AI Prompting Blog (page ${page})`,
+        description: page === 1 ? desc : `${desc} Page ${page} of ${total}.`,
+        pathname,
+        crumbs: page === 1 ? [['Blog', '/blog/']] : [['Blog', '/blog/'], [`Page ${page}`, pathname]],
+        body,
+        jsonLd: [{ '@type': 'Blog', '@id': `${SITE_URL}/blog/#blog`, name: `${site.name} blog`, url: `${SITE_URL}/blog/`, publisher: { '@id': ORG_ID }, blogPost: slice.map((b) => ({ '@type': 'BlogPosting', headline: b.title, url: `${SITE_URL}/blog/${b.slug}/`, datePublished: b.date })) }],
+      }),
+    ]);
+  }
+  return out;
 }
 
 function postPage(b, i, posts, promptsBySlug) {
@@ -862,7 +873,7 @@ write('categories/index.html', categoriesPage(prompts));
 write('search-index.json', searchIndex(prompts));
 const STATIC = path.join(ROOT, 'static');
 if (fs.existsSync(STATIC)) fs.cpSync(STATIC, DIST, { recursive: true });
-write('blog/index.html', blogIndex(posts));
+for (const [f, h] of blogIndexPages(posts)) write(f, h);
 posts.forEach((b, i) => write(`blog/${b.slug}/index.html`, postPage(b, i, posts, promptsBySlug)));
 pages.forEach((pg) => write(`${pg.slug}/index.html`, staticPage(pg)));
 write('404.html', notFoundPage());
