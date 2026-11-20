@@ -255,7 +255,9 @@ h1, h2, h3 { font-weight: 720; letter-spacing: -0.025em; line-height: 1.05; marg
 
 /* ---------- footer ---------- */
 .foot { margin-top: 88px; border-top: 1px solid var(--rule); padding: 40px 0 40px; font-size: 15px; color: var(--ink-2); }
-.foot__grid { display: grid; grid-template-columns: 1.4fr repeat(3, 1fr); gap: 28px; }
+.foot__grid { display: grid; grid-template-columns: 1.15fr 1fr 1.8fr 1fr 0.9fr; gap: 28px 32px; align-items: start; }
+.foot__grid nav.foot__tasks { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 20px; align-content: start; }
+.foot__tasks .foot__h { grid-column: 1 / -1; }
 .foot__grid nav { display: flex; flex-direction: column; gap: 8px; }
 .foot__grid nav a { text-decoration: none; color: var(--ink-2); }
 .foot__grid nav a:hover { color: var(--blue); }
@@ -270,7 +272,9 @@ h1, h2, h3 { font-weight: 720; letter-spacing: -0.025em; line-height: 1.05; marg
   .today__info { position: static; }
   .row { grid-template-columns: 64px minmax(0, 1fr) 120px; }
   .row__models { grid-column: 2 / -1; }
-  .foot__grid { grid-template-columns: 1fr 1fr; }
+  .foot__grid { grid-template-columns: 1fr 1fr 1fr; }
+  .foot__grid > div:first-child, .foot__grid > .foot__tasks { grid-column: 1 / -1; }
+  .foot__grid nav.foot__tasks { grid-template-columns: repeat(3, 1fr); }
 }
 @media (max-width: 640px) {
   body { font-size: 16px; }
@@ -435,7 +439,8 @@ html.menu-open, html.menu-open body { overflow: hidden; }
   .cats { grid-template-columns: 1fr; }
   .foot { margin-top: 56px; }
   .foot__grid { grid-template-columns: 1fr 1fr; gap: 24px 16px; }
-  .foot__grid > div:first-child { grid-column: 1 / -1; }
+  .foot__grid > div:first-child, .foot__grid > .foot__tasks { grid-column: 1 / -1; }
+  .foot__grid nav.foot__tasks { grid-template-columns: 1fr 1fr; }
   .foot__grid nav a { min-height: 36px; display: flex; align-items: center; }
   .consent { left: 0; right: 0; bottom: 0; border-radius: 16px 16px 0 0; padding: 16px 16px calc(16px + env(safe-area-inset-bottom)); }
   .consent__actions { width: 100%; }

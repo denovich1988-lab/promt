@@ -268,7 +268,7 @@ ${body.replace('<!--CRUMBS-->', crumbsNav(crumbs))}
       <p class="foot__about">${esc(site.tagline)} Free to copy and use.</p>
     </div>
     <nav aria-label="Prompts by AI tool"><p class="foot__h">By AI tool</p>${Object.entries(site.hubs).map(([k, h]) => `<a href="/${k}/">${esc(h.title)}</a>`).join('')}</nav>
-    <nav aria-label="Prompts by task"><p class="foot__h">By task</p>${Object.entries(site.categories).map(([k, c]) => `<a href="/category/${k}/">${esc(c.name)} prompts</a>`).join('')}</nav>
+    <nav class="foot__tasks" aria-label="Prompts by task"><p class="foot__h">By task</p>${Object.entries(site.categories).map(([k, c]) => `<a href="/category/${k}/">${esc(c.name)} prompts</a>`).join('')}</nav>
     <nav aria-label="Resources"><p class="foot__h">Resources</p><a href="/prompts/">All prompts</a><a href="/prompt-generator/">Prompt generator</a><a href="/guides/">Guides</a><a href="/best-ai-tools/">Best AI tools</a><a href="/best-ai-mcps/">MCP servers</a><a href="/best-ai-skills/">Claude skills</a><a href="/free-ai-courses/">Free AI courses</a><a href="/faq/">FAQ</a></nav>
     <nav aria-label="Company and legal"><p class="foot__h">Company</p><a href="/blog/">Blog</a>${LEGAL.map(([u, n]) => `<a href="${u}">${n}</a>`).join('')}<a href="/rss.xml">RSS feed</a></nav>
   </div>
