@@ -141,6 +141,8 @@ const googleTag = () => (site.gtmId ? `<script>
   gtag('js', new Date());
 </script>` : '');
 
+const adsenseTag = () => (site.adsenseClient ? `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${site.adsenseClient}" crossorigin="anonymous"></script>` : '');
+
 const consentBanner = () => (site.gtmId ? `<div class="consent" data-consent hidden role="region" aria-label="Cookie choice">
   <p>We use analytics cookies to see which prompts are useful. No ads, no selling data. <a href="/cookies/">Cookie policy</a></p>
   <div class="consent__actions"><button class="btn btn--quiet" type="button" data-consent-no>Decline</button><button class="btn btn--copy" type="button" data-consent-yes>Accept</button></div>
@@ -201,6 +203,7 @@ function layout({ title, description, pathname, body, ogType = 'website', jsonLd
 <html lang="${site.language}">
 <head>
 ${googleTag()}
+${adsenseTag()}
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${esc(fullTitle)}</title>
@@ -937,6 +940,7 @@ pages.forEach((pg) => write(`${pg.slug}/index.html`, staticPage(pg)));
 write('404.html', notFoundPage());
 write('rss.xml', rss(prompts, posts));
 write('sitemap.xml', sitemap(prompts, posts, pages));
+if (site.adsenseClient) write('ads.txt', `google.com, ${site.adsenseClient.replace('ca-', '')}, DIRECT, f08c47fec0942fa0\n`);
 write('robots.txt', robotsTxt());
 write('llms.txt', llmsTxt(prompts, posts, pages));
 write('llms-full.txt', llmsFullTxt(prompts));
