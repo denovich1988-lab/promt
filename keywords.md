@@ -90,19 +90,19 @@ Columns: keyword | US volume | KD | done (slug)
 
 ## Added 2026-11-21 (second Ahrefs pull)
 - [x] ai christmas photo prompt | 1000 | 0 | ai-christmas-photo-family
-- [ ] {B} claude prompt generator (a prompt that writes Claude prompts) | 1400 | 3 |
+- [x] claude prompt generator (a prompt that writes Claude prompts) | 1400 | 3 | claude-prompt-generator
 - [x] claude prompt engineering (improve a prompt for Claude) | 600 | 3 | claude-prompt-engineering-improve
 - [x] chatgpt character prompt | 600 | 0 | chatgpt-character-roleplay
 - [x] ai photo editor prompt | 400 | 0 | chatgpt-photo-editing-retouch
-- [ ] {B} midjourney prompt generator (a prompt that writes Midjourney prompts) | 350 | 0 |
+- [x] midjourney prompt generator (a prompt that writes Midjourney prompts) | 350 | 0 | midjourney-prompt-generator
 - [x] ai image prompt examples | 300 | 1 | ai-image-prompt-examples-annotated
 - [x] best prompt for ai image generator | 200 | 1 | ai-image-prompt-from-idea
 - [x] journal prompts for high school students (ChatGPT generates them) | 500 | 0 | journal-prompts-high-school
-- [ ] {B} writing prompts for middle school students (ChatGPT generates them) | 300 | 1 |
+- [x] writing prompts for middle school students (ChatGPT generates them) | 300 | 1 | middle-school-writing-prompts
 - [x] writing prompts for elementary students (ChatGPT generates them) | 250 | 5 | writing-prompts-elementary-students
 - [x] ai image prompt ideas | 100 | 5 | cool-ai-art-prompt-ideas
 - [x] midjourney prompt template | 60 | 3 | midjourney-prompt-template-fill-in
 - [x] midjourney negative prompt | 60 | 2 | negative-prompts-ai-images
 - [x] chatgpt essay prompt (outline and feedback, not ghost-writing) | 80 | 1 | essay-outline-thesis-check
-- [ ] {B} reverse image prompt (describe an image as a prompt) | 60 | 0 |
+- [x] reverse image prompt (describe an image as a prompt) | 60 | 0 | reverse-image-prompt
 - [x] reflection prompts for students (ChatGPT generates them) | 60 | 4 | reflection-prompts-for-students
