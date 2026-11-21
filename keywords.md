@@ -16,11 +16,11 @@ Columns: keyword | US volume | KD | done (slug)
 - [x] chatgpt prompts for pictures of yourself | 1000 | 0 | pictures-of-yourself-chatgpt
 - [x] ai art prompts | 800 | 4 | ai-art-prompt-builder
 - [x] ai image prompts | 700 | 12 | ai-image-prompt-from-idea
-- [ ] {A} ai prompts for photos | 600 | 5 |
+- [x] ai prompts for photos | 600 | 5 | realistic-ai-photo-prompt
 - [ ] {B} best chatgpt image prompts | 600 | 0 |
-- [ ] {A} chatgpt photo editing prompts | 500 | 0 |
+- [x] chatgpt photo editing prompts | 500 | 0 | chatgpt-photo-editing-retouch
 - [ ] {B} chatgpt color analysis prompt | 400 | 0 |
-- [ ] {A} art styles for ai prompts | 300 | 7 |
+- [x] art styles for ai prompts | 300 | 7 | art-style-picker-ai-images
 - [x] gemini photo prompts | 250 | 0 | gemini-photo-editing
 - [ ] {B} ai character prompts | 200 | 1 |
 - [x] midjourney logo prompts | 200 | 0 | midjourney-logo-design
@@ -38,18 +38,18 @@ Columns: keyword | US volume | KD | done (slug)
 - [ ] {B} midjourney prompts for graphic design | 90 | 0 |
 - [ ] {A} chatgpt action figure prompt | 80 | 0 |
 - [ ] {B} funny ai image prompts | 70 | 0 |
-- [ ] {A} prompts for realistic ai art | 50 | 4 |
+- [x] prompts for realistic ai art | 50 | 4 | realistic-ai-photo-prompt
 
 ## Writing and content
 - [x] prompt to make chatgpt write like a human | 800 | 0 | make-chatgpt-write-like-a-human
 - [x] funny ai prompts / fun chatgpt prompts | 400 | 0 | fun-chatgpt-prompts-games
-- [ ] {A} ai writing prompts | 200 | 5 |
+- [x] ai writing prompts | 200 | 5 | ai-writing-prompts-daily-practice
 - [x] chatgpt copywriting prompts | 150 | 0 | chatgpt-copywriting-framework
 - [ ] {A} chatgpt writing prompts | 150 | 14 |
 - [ ] {B} ai story prompts | 90 | 0 |
 - [ ] {A} chatgpt prompts for blog posts | 90 | 4 |
 - [ ] {B} chatgpt email prompts | 80 | 2 |
-- [ ] {A} chatgpt personality prompt | 80 | 0 |
+- [x] chatgpt personality prompt | 80 | 0 | chatgpt-personality-custom-instructions
 - [ ] {B} chatgpt prompts for content creation | 100 | 4 |
 
 ## Careers and HR
@@ -75,13 +75,13 @@ Columns: keyword | US volume | KD | done (slug)
 - [ ] {B} best chatgpt prompts for outsourced accounting firms | 50 | 0 |
 
 ## Education, research, data
-- [ ] {A} ai prompts for teachers | 150 | 4 |
+- [x] ai prompts for teachers | 150 | 4 | differentiated-lesson-for-teachers
 - [x] chatgpt prompts for research | 100 | 0 | chatgpt-research-question-plan
 - [x] chatgpt prompts for data analysis | 60 | 4 | dataset-trends-outliers
 
 ## Life, finance, legal, productivity
 - [ ] {B} chatgpt therapist prompt (supportive reflection, not therapy) | 150 | 0 |
-- [ ] {A} chatgpt prompts for lawyers | 100 | 4 |
+- [x] chatgpt prompts for lawyers | 100 | 4 | lawyer-plain-english-client-letter
 - [ ] {B} chatgpt financial advisor prompt (education, not advice) | 100 | 0 |
 - [ ] {A} chatgpt workout plan prompt | 80 | 0 |
 - [ ] {B} chatgpt life coach prompt | 60 | 0 |
@@ -93,7 +93,7 @@ Columns: keyword | US volume | KD | done (slug)
 - [ ] {B} claude prompt generator (a prompt that writes Claude prompts) | 1400 | 3 |
 - [ ] {A} claude prompt engineering (improve a prompt for Claude) | 600 | 3 |
 - [ ] {B} chatgpt character prompt | 600 | 0 |
-- [ ] {A} ai photo editor prompt | 400 | 0 |
+- [x] ai photo editor prompt | 400 | 0 | chatgpt-photo-editing-retouch
 - [ ] {B} midjourney prompt generator (a prompt that writes Midjourney prompts) | 350 | 0 |
 - [ ] {A} ai image prompt examples | 300 | 1 |
 - [x] best prompt for ai image generator | 200 | 1 | ai-image-prompt-from-idea
