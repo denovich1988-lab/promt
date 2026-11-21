@@ -30,13 +30,13 @@ Columns: keyword | US volume | KD | done (slug)
 - [ ] {B} cool ai art prompts | 150 | 2 |
 - [x] best midjourney prompts | 150 | 3 | best-midjourney-prompts-parameters
 - [ ] {B} list of art styles for ai prompts | 150 | 6 |
-- [ ] {A} ai logo prompts | 100 | 0 |
+- [x] ai logo prompts | 100 | 0 | ai-logo-prompts-with-name
 - [x] text to image ai prompts | 100 | 3 | ai-image-prompt-from-idea
-- [ ] {A} negative prompts for ai | 100 | 1 |
+- [x] negative prompts for ai | 100 | 1 | negative-prompts-ai-images
 - [ ] {B} anime girl ai prompts | 100 | 0 |
 - [x] ai portrait prompts | 90 | 0 | cinematic-portrait-lighting
 - [ ] {B} midjourney prompts for graphic design | 90 | 0 |
-- [ ] {A} chatgpt action figure prompt | 80 | 0 |
+- [x] chatgpt action figure prompt | 80 | 0 | chatgpt-action-figure-toy-box
 - [ ] {B} funny ai image prompts | 70 | 0 |
 - [x] prompts for realistic ai art | 50 | 4 | realistic-ai-photo-prompt
 
@@ -47,7 +47,7 @@ Columns: keyword | US volume | KD | done (slug)
 - [x] chatgpt copywriting prompts | 150 | 0 | chatgpt-copywriting-framework
 - [x] chatgpt writing prompts | 150 | 14 | chatgpt-writing-prompt-brief
 - [x] ai story prompts | 90 | 0 | ai-story-prompts-generator
-- [ ] {A} chatgpt prompts for blog posts | 90 | 4 |
+- [x] chatgpt prompts for blog posts | 90 | 4 | chatgpt-blog-post-from-outline
 - [x] chatgpt email prompts | 80 | 2 | chatgpt-email-writer-prompt
 - [x] chatgpt personality prompt | 80 | 0 | chatgpt-personality-custom-instructions
 - [ ] {B} chatgpt prompts for content creation | 100 | 4 |
@@ -83,7 +83,7 @@ Columns: keyword | US volume | KD | done (slug)
 - [ ] {B} chatgpt therapist prompt (supportive reflection, not therapy) | 150 | 0 |
 - [x] chatgpt prompts for lawyers | 100 | 4 | lawyer-plain-english-client-letter
 - [ ] {B} chatgpt financial advisor prompt (education, not advice) | 100 | 0 |
-- [ ] {A} chatgpt workout plan prompt | 80 | 0 |
+- [x] chatgpt workout plan prompt | 80 | 0 | chatgpt-workout-plan-weekly
 - [ ] {B} chatgpt life coach prompt | 60 | 0 |
 - [x] chatgpt prompt templates / cheat sheet | 150 | 1 | chatgpt-prompt-template-cheat-sheet
 - [ ] {B} advanced chatgpt prompts | 100 | 0 |
@@ -99,7 +99,7 @@ Columns: keyword | US volume | KD | done (slug)
 - [x] best prompt for ai image generator | 200 | 1 | ai-image-prompt-from-idea
 - [x] journal prompts for high school students (ChatGPT generates them) | 500 | 0 | journal-prompts-high-school
 - [ ] {B} writing prompts for middle school students (ChatGPT generates them) | 300 | 1 |
-- [ ] {A} writing prompts for elementary students (ChatGPT generates them) | 250 | 5 |
+- [x] writing prompts for elementary students (ChatGPT generates them) | 250 | 5 | writing-prompts-elementary-students
 - [ ] {B} ai image prompt ideas | 100 | 5 |
 - [ ] {A} midjourney prompt template | 60 | 3 |
 - [ ] {B} midjourney negative prompt | 60 | 2 |
