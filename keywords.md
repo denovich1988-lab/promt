@@ -25,15 +25,15 @@ Columns: keyword | US volume | KD | done (slug)
 - [x] ai character prompts | 200 | 1 | consistent-ai-character-prompts
 - [x] midjourney logo prompts | 200 | 0 | midjourney-logo-design
 - [x] best ai image prompts | 200 | 2 | fix-weak-ai-image-prompt
-- [ ] {B} ai anime prompts | 150 | 0 |
+- [x] ai anime prompts | 150 | 0 | ai-anime-scene-prompts
 - [x] graphic design ai prompts | 150 | 1 | graphic-design-banner-flyer-prompts
-- [ ] {B} cool ai art prompts | 150 | 2 |
+- [x] cool ai art prompts | 150 | 2 | cool-ai-art-prompt-ideas
 - [x] best midjourney prompts | 150 | 3 | best-midjourney-prompts-parameters
-- [ ] {B} list of art styles for ai prompts | 150 | 6 |
+- [x] list of art styles for ai prompts | 150 | 6 | art-style-picker-ai-images
 - [x] ai logo prompts | 100 | 0 | ai-logo-prompts-with-name
 - [x] text to image ai prompts | 100 | 3 | ai-image-prompt-from-idea
 - [x] negative prompts for ai | 100 | 1 | negative-prompts-ai-images
-- [ ] {B} anime girl ai prompts | 100 | 0 |
+- [x] anime girl ai prompts | 100 | 0 | ai-anime-scene-prompts
 - [x] ai portrait prompts | 90 | 0 | cinematic-portrait-lighting
 - [ ] {B} midjourney prompts for graphic design | 90 | 0 |
 - [x] chatgpt action figure prompt | 80 | 0 | chatgpt-action-figure-toy-box
@@ -50,7 +50,7 @@ Columns: keyword | US volume | KD | done (slug)
 - [x] chatgpt prompts for blog posts | 90 | 4 | chatgpt-blog-post-from-outline
 - [x] chatgpt email prompts | 80 | 2 | chatgpt-email-writer-prompt
 - [x] chatgpt personality prompt | 80 | 0 | chatgpt-personality-custom-instructions
-- [ ] {B} chatgpt prompts for content creation | 100 | 4 |
+- [x] chatgpt prompts for content creation | 100 | 4 | chatgpt-content-creation-system
 
 ## Careers and HR
 - [x] chatgpt resume prompt | 700 | 3 | chatgpt-resume-tailoring
@@ -80,9 +80,9 @@ Columns: keyword | US volume | KD | done (slug)
 - [x] chatgpt prompts for data analysis | 60 | 4 | dataset-trends-outliers
 
 ## Life, finance, legal, productivity
-- [ ] {B} chatgpt therapist prompt (supportive reflection, not therapy) | 150 | 0 |
+- [x] chatgpt therapist prompt (supportive reflection, not therapy) | 150 | 0 | chatgpt-supportive-reflection
 - [x] chatgpt prompts for lawyers | 100 | 4 | lawyer-plain-english-client-letter
-- [ ] {B} chatgpt financial advisor prompt (education, not advice) | 100 | 0 |
+- [x] chatgpt financial advisor prompt (education, not advice) | 100 | 0 | chatgpt-financial-education
 - [x] chatgpt workout plan prompt | 80 | 0 | chatgpt-workout-plan-weekly
 - [ ] {B} chatgpt life coach prompt | 60 | 0 |
 - [x] chatgpt prompt templates / cheat sheet | 150 | 1 | chatgpt-prompt-template-cheat-sheet
@@ -100,7 +100,7 @@ Columns: keyword | US volume | KD | done (slug)
 - [x] journal prompts for high school students (ChatGPT generates them) | 500 | 0 | journal-prompts-high-school
 - [ ] {B} writing prompts for middle school students (ChatGPT generates them) | 300 | 1 |
 - [x] writing prompts for elementary students (ChatGPT generates them) | 250 | 5 | writing-prompts-elementary-students
-- [ ] {B} ai image prompt ideas | 100 | 5 |
+- [x] ai image prompt ideas | 100 | 5 | cool-ai-art-prompt-ideas
 - [ ] {A} midjourney prompt template | 60 | 3 |
 - [ ] {B} midjourney negative prompt | 60 | 2 |
 - [ ] {A} chatgpt essay prompt (outline and feedback, not ghost-writing) | 80 | 1 |
