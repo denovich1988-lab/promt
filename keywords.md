@@ -71,7 +71,7 @@ Columns: keyword | US volume | KD | done (slug)
 - [x] chatgpt prompts for affiliate marketing | 100 | 0 | affiliate-marketing-content-plan
 - [x] chatgpt prompts to make money | 90 | 0 | side-income-ideas-from-skills
 - [x] chatgpt prompts for google ads | 80 | 1 | google-search-ads-copy
-- [ ] {A} chatgpt prompts for project management | 70 | 1 |
+- [x] chatgpt prompts for project management | 70 | 1 | project-plan-wbs-milestones
 - [x] best chatgpt prompts for outsourced accounting firms | 50 | 0 | accounting-firm-client-requests
 
 ## Education, research, data
@@ -89,20 +89,20 @@ Columns: keyword | US volume | KD | done (slug)
 - [ ] {B} advanced chatgpt prompts | 100 | 0 |
 
 ## Added 2026-11-21 (second Ahrefs pull)
-- [ ] {A} ai christmas photo prompt | 1000 | 0 |
+- [x] ai christmas photo prompt | 1000 | 0 | ai-christmas-photo-family
 - [ ] {B} claude prompt generator (a prompt that writes Claude prompts) | 1400 | 3 |
-- [ ] {A} claude prompt engineering (improve a prompt for Claude) | 600 | 3 |
+- [x] claude prompt engineering (improve a prompt for Claude) | 600 | 3 | claude-prompt-engineering-improve
 - [ ] {B} chatgpt character prompt | 600 | 0 |
 - [x] ai photo editor prompt | 400 | 0 | chatgpt-photo-editing-retouch
 - [ ] {B} midjourney prompt generator (a prompt that writes Midjourney prompts) | 350 | 0 |
-- [ ] {A} ai image prompt examples | 300 | 1 |
+- [x] ai image prompt examples | 300 | 1 | ai-image-prompt-examples-annotated
 - [x] best prompt for ai image generator | 200 | 1 | ai-image-prompt-from-idea
 - [x] journal prompts for high school students (ChatGPT generates them) | 500 | 0 | journal-prompts-high-school
 - [ ] {B} writing prompts for middle school students (ChatGPT generates them) | 300 | 1 |
 - [x] writing prompts for elementary students (ChatGPT generates them) | 250 | 5 | writing-prompts-elementary-students
 - [x] ai image prompt ideas | 100 | 5 | cool-ai-art-prompt-ideas
-- [ ] {A} midjourney prompt template | 60 | 3 |
+- [x] midjourney prompt template | 60 | 3 | midjourney-prompt-template-fill-in
 - [ ] {B} midjourney negative prompt | 60 | 2 |
-- [ ] {A} chatgpt essay prompt (outline and feedback, not ghost-writing) | 80 | 1 |
+- [x] chatgpt essay prompt (outline and feedback, not ghost-writing) | 80 | 1 | essay-outline-thesis-check
 - [ ] {B} reverse image prompt (describe an image as a prompt) | 60 | 0 |
-- [ ] {A} reflection prompts for students (ChatGPT generates them) | 60 | 4 |
+- [x] reflection prompts for students (ChatGPT generates them) | 60 | 4 | reflection-prompts-for-students
