@@ -10,11 +10,11 @@ Seeds already used (2026-11-21): chatgpt prompts, ai prompts, midjourney prompts
 Columns: keyword | US volume | KD | done (slug)
 
 ## Image and photo (GPT Image, Gemini, Midjourney, Flux)
-- [ ] {A} chatgpt caricature prompt | 4900 | 0 |
+- [x] chatgpt caricature prompt | 4900 | 0 | chatgpt-caricature-from-photo
 - [ ] {B} chatgpt caricature trend prompt | 600 | 0 |
-- [ ] {A} chatgpt prompts for photos | 1300 | 12 |
+- [x] chatgpt prompts for photos | 1300 | 12 | chatgpt-photo-style-makeover
 - [ ] {B} chatgpt prompts for pictures of yourself | 1000 | 0 |
-- [ ] {A} ai art prompts | 800 | 4 |
+- [x] ai art prompts | 800 | 4 | ai-art-prompt-builder
 - [ ] {B} ai image prompts | 700 | 12 |
 - [ ] {A} ai prompts for photos | 600 | 5 |
 - [ ] {B} best chatgpt image prompts | 600 | 0 |
@@ -34,7 +34,7 @@ Columns: keyword | US volume | KD | done (slug)
 - [ ] {B} text to image ai prompts | 100 | 3 |
 - [ ] {A} negative prompts for ai | 100 | 1 |
 - [ ] {B} anime girl ai prompts | 100 | 0 |
-- [ ] {A} ai portrait prompts | 90 | 0 |
+- [x] ai portrait prompts | 90 | 0 | cinematic-portrait-lighting
 - [ ] {B} midjourney prompts for graphic design | 90 | 0 |
 - [ ] {A} chatgpt action figure prompt | 80 | 0 |
 - [ ] {B} funny ai image prompts | 70 | 0 |
@@ -53,23 +53,23 @@ Columns: keyword | US volume | KD | done (slug)
 - [ ] {B} chatgpt prompts for content creation | 100 | 4 |
 
 ## Careers and HR
-- [ ] {A} chatgpt resume prompt | 700 | 3 |
+- [x] chatgpt resume prompt | 700 | 3 | chatgpt-resume-tailoring
 - [ ] {B} chatgpt prompts for job search | 350 | 1 |
-- [ ] {A} chatgpt prompts for hr | 200 | 2 |
+- [x] chatgpt prompts for hr | 200 | 2 | hr-employee-question-replies
 - [ ] {B} chatgpt cover letter prompt | 150 | 0 |
-- [ ] {A} chatgpt performance review prompt | 80 | 0 |
+- [x] chatgpt performance review prompt | 80 | 0 | performance-review-feedback
 - [ ] {B} chatgpt prompts for recruiters | 70 | 0 |
 
 ## Marketing, sales, SEO, business
-- [ ] {A} ai prompts for social media | 200 | 2 |
+- [x] ai prompts for social media | 200 | 2 | social-media-post-five-platforms
 - [ ] {B} chatgpt marketing prompts | 200 | 0 |
-- [ ] {A} best chatgpt prompts for business | 150 | 1 |
+- [x] best chatgpt prompts for business | 150 | 1 | business-problem-root-cause
 - [ ] {B} chatgpt prompts for social media marketing | 150 | 3 |
-- [ ] {A} chatgpt seo prompts | 150 | 7 |
+- [x] chatgpt seo prompts | 150 | 7 | chatgpt-seo-90-day-plan
 - [ ] {B} ai prompts for marketing | 150 | 7 |
-- [ ] {A} chatgpt sales prompts | 100 | 1 |
+- [x] chatgpt sales prompts | 100 | 1 | sales-features-to-benefits
 - [ ] {B} chatgpt prompts for affiliate marketing | 100 | 0 |
-- [ ] {A} chatgpt prompts to make money | 90 | 0 |
+- [x] chatgpt prompts to make money | 90 | 0 | side-income-ideas-from-skills
 - [ ] {B} chatgpt prompts for google ads | 80 | 1 |
 - [ ] {A} chatgpt prompts for project management | 70 | 1 |
 - [ ] {B} best chatgpt prompts for outsourced accounting firms | 50 | 0 |
@@ -77,7 +77,7 @@ Columns: keyword | US volume | KD | done (slug)
 ## Education, research, data
 - [ ] {A} ai prompts for teachers | 150 | 4 |
 - [ ] {B} chatgpt prompts for research | 100 | 0 |
-- [ ] {A} chatgpt prompts for data analysis | 60 | 4 |
+- [x] chatgpt prompts for data analysis | 60 | 4 | dataset-trends-outliers
 
 ## Life, finance, legal, productivity
 - [ ] {B} chatgpt therapist prompt (supportive reflection, not therapy) | 150 | 0 |
