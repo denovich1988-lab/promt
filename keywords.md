@@ -24,11 +24,11 @@ Columns: keyword | US volume | KD | done (slug)
 - [x] gemini photo prompts | 250 | 0 | gemini-photo-editing
 - [x] ai character prompts | 200 | 1 | consistent-ai-character-prompts
 - [x] midjourney logo prompts | 200 | 0 | midjourney-logo-design
-- [ ] {A} best ai image prompts | 200 | 2 |
+- [x] best ai image prompts | 200 | 2 | fix-weak-ai-image-prompt
 - [ ] {B} ai anime prompts | 150 | 0 |
-- [ ] {A} graphic design ai prompts | 150 | 1 |
+- [x] graphic design ai prompts | 150 | 1 | graphic-design-banner-flyer-prompts
 - [ ] {B} cool ai art prompts | 150 | 2 |
-- [ ] {A} best midjourney prompts | 150 | 3 |
+- [x] best midjourney prompts | 150 | 3 | best-midjourney-prompts-parameters
 - [ ] {B} list of art styles for ai prompts | 150 | 6 |
 - [ ] {A} ai logo prompts | 100 | 0 |
 - [x] text to image ai prompts | 100 | 3 | ai-image-prompt-from-idea
@@ -45,7 +45,7 @@ Columns: keyword | US volume | KD | done (slug)
 - [x] funny ai prompts / fun chatgpt prompts | 400 | 0 | fun-chatgpt-prompts-games
 - [x] ai writing prompts | 200 | 5 | ai-writing-prompts-daily-practice
 - [x] chatgpt copywriting prompts | 150 | 0 | chatgpt-copywriting-framework
-- [ ] {A} chatgpt writing prompts | 150 | 14 |
+- [x] chatgpt writing prompts | 150 | 14 | chatgpt-writing-prompt-brief
 - [x] ai story prompts | 90 | 0 | ai-story-prompts-generator
 - [ ] {A} chatgpt prompts for blog posts | 90 | 4 |
 - [x] chatgpt email prompts | 80 | 2 | chatgpt-email-writer-prompt
@@ -85,7 +85,7 @@ Columns: keyword | US volume | KD | done (slug)
 - [ ] {B} chatgpt financial advisor prompt (education, not advice) | 100 | 0 |
 - [ ] {A} chatgpt workout plan prompt | 80 | 0 |
 - [ ] {B} chatgpt life coach prompt | 60 | 0 |
-- [ ] {A} chatgpt prompt templates / cheat sheet | 150 | 1 |
+- [x] chatgpt prompt templates / cheat sheet | 150 | 1 | chatgpt-prompt-template-cheat-sheet
 - [ ] {B} advanced chatgpt prompts | 100 | 0 |
 
 ## Added 2026-11-21 (second Ahrefs pull)
@@ -97,7 +97,7 @@ Columns: keyword | US volume | KD | done (slug)
 - [ ] {B} midjourney prompt generator (a prompt that writes Midjourney prompts) | 350 | 0 |
 - [ ] {A} ai image prompt examples | 300 | 1 |
 - [x] best prompt for ai image generator | 200 | 1 | ai-image-prompt-from-idea
-- [ ] {A} journal prompts for high school students (ChatGPT generates them) | 500 | 0 |
+- [x] journal prompts for high school students (ChatGPT generates them) | 500 | 0 | journal-prompts-high-school
 - [ ] {B} writing prompts for middle school students (ChatGPT generates them) | 300 | 1 |
 - [ ] {A} writing prompts for elementary students (ChatGPT generates them) | 250 | 5 |
 - [ ] {B} ai image prompt ideas | 100 | 5 |
