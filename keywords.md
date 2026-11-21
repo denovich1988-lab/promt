@@ -11,11 +11,11 @@ Columns: keyword | US volume | KD | done (slug)
 
 ## Image and photo (GPT Image, Gemini, Midjourney, Flux)
 - [x] chatgpt caricature prompt | 4900 | 0 | chatgpt-caricature-from-photo
-- [ ] {B} chatgpt caricature trend prompt | 600 | 0 |
+- [x] chatgpt caricature trend prompt | 600 | 0 | chatgpt-caricature-trend-job
 - [x] chatgpt prompts for photos | 1300 | 12 | chatgpt-photo-style-makeover
-- [ ] {B} chatgpt prompts for pictures of yourself | 1000 | 0 |
+- [x] chatgpt prompts for pictures of yourself | 1000 | 0 | pictures-of-yourself-chatgpt
 - [x] ai art prompts | 800 | 4 | ai-art-prompt-builder
-- [ ] {B} ai image prompts | 700 | 12 |
+- [x] ai image prompts | 700 | 12 | ai-image-prompt-from-idea
 - [ ] {A} ai prompts for photos | 600 | 5 |
 - [ ] {B} best chatgpt image prompts | 600 | 0 |
 - [ ] {A} chatgpt photo editing prompts | 500 | 0 |
@@ -31,7 +31,7 @@ Columns: keyword | US volume | KD | done (slug)
 - [ ] {A} best midjourney prompts | 150 | 3 |
 - [ ] {B} list of art styles for ai prompts | 150 | 6 |
 - [ ] {A} ai logo prompts | 100 | 0 |
-- [ ] {B} text to image ai prompts | 100 | 3 |
+- [x] text to image ai prompts | 100 | 3 | ai-image-prompt-from-idea
 - [ ] {A} negative prompts for ai | 100 | 1 |
 - [ ] {B} anime girl ai prompts | 100 | 0 |
 - [x] ai portrait prompts | 90 | 0 | cinematic-portrait-lighting
@@ -42,9 +42,9 @@ Columns: keyword | US volume | KD | done (slug)
 
 ## Writing and content
 - [x] prompt to make chatgpt write like a human | 800 | 0 | make-chatgpt-write-like-a-human
-- [ ] {B} funny ai prompts / fun chatgpt prompts | 400 | 0 |
+- [x] funny ai prompts / fun chatgpt prompts | 400 | 0 | fun-chatgpt-prompts-games
 - [ ] {A} ai writing prompts | 200 | 5 |
-- [ ] {B} chatgpt copywriting prompts | 150 | 0 |
+- [x] chatgpt copywriting prompts | 150 | 0 | chatgpt-copywriting-framework
 - [ ] {A} chatgpt writing prompts | 150 | 14 |
 - [ ] {B} ai story prompts | 90 | 0 |
 - [ ] {A} chatgpt prompts for blog posts | 90 | 4 |
@@ -54,29 +54,29 @@ Columns: keyword | US volume | KD | done (slug)
 
 ## Careers and HR
 - [x] chatgpt resume prompt | 700 | 3 | chatgpt-resume-tailoring
-- [ ] {B} chatgpt prompts for job search | 350 | 1 |
+- [x] chatgpt prompts for job search | 350 | 1 | chatgpt-job-search-weekly-plan
 - [x] chatgpt prompts for hr | 200 | 2 | hr-employee-question-replies
-- [ ] {B} chatgpt cover letter prompt | 150 | 0 |
+- [x] chatgpt cover letter prompt | 150 | 0 | cover-letter-from-job-post
 - [x] chatgpt performance review prompt | 80 | 0 | performance-review-feedback
 - [ ] {B} chatgpt prompts for recruiters | 70 | 0 |
 
 ## Marketing, sales, SEO, business
 - [x] ai prompts for social media | 200 | 2 | social-media-post-five-platforms
-- [ ] {B} chatgpt marketing prompts | 200 | 0 |
+- [x] chatgpt marketing prompts | 200 | 0 | chatgpt-90-day-marketing-plan
 - [x] best chatgpt prompts for business | 150 | 1 | business-problem-root-cause
-- [ ] {B} chatgpt prompts for social media marketing | 150 | 3 |
+- [x] chatgpt prompts for social media marketing | 150 | 3 | social-media-marketing-strategy
 - [x] chatgpt seo prompts | 150 | 7 | chatgpt-seo-90-day-plan
-- [ ] {B} ai prompts for marketing | 150 | 7 |
+- [x] ai prompts for marketing | 150 | 7 | chatgpt-90-day-marketing-plan
 - [x] chatgpt sales prompts | 100 | 1 | sales-features-to-benefits
 - [ ] {B} chatgpt prompts for affiliate marketing | 100 | 0 |
 - [x] chatgpt prompts to make money | 90 | 0 | side-income-ideas-from-skills
-- [ ] {B} chatgpt prompts for google ads | 80 | 1 |
+- [x] chatgpt prompts for google ads | 80 | 1 | google-search-ads-copy
 - [ ] {A} chatgpt prompts for project management | 70 | 1 |
 - [ ] {B} best chatgpt prompts for outsourced accounting firms | 50 | 0 |
 
 ## Education, research, data
 - [ ] {A} ai prompts for teachers | 150 | 4 |
-- [ ] {B} chatgpt prompts for research | 100 | 0 |
+- [x] chatgpt prompts for research | 100 | 0 | chatgpt-research-question-plan
 - [x] chatgpt prompts for data analysis | 60 | 4 | dataset-trends-outliers
 
 ## Life, finance, legal, productivity
@@ -96,7 +96,7 @@ Columns: keyword | US volume | KD | done (slug)
 - [ ] {A} ai photo editor prompt | 400 | 0 |
 - [ ] {B} midjourney prompt generator (a prompt that writes Midjourney prompts) | 350 | 0 |
 - [ ] {A} ai image prompt examples | 300 | 1 |
-- [ ] {B} best prompt for ai image generator | 200 | 1 |
+- [x] best prompt for ai image generator | 200 | 1 | ai-image-prompt-from-idea
 - [ ] {A} journal prompts for high school students (ChatGPT generates them) | 500 | 0 |
 - [ ] {B} writing prompts for middle school students (ChatGPT generates them) | 300 | 1 |
 - [ ] {A} writing prompts for elementary students (ChatGPT generates them) | 250 | 5 |
