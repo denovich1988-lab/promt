@@ -17,12 +17,12 @@ Columns: keyword | US volume | KD | done (slug)
 - [x] ai art prompts | 800 | 4 | ai-art-prompt-builder
 - [x] ai image prompts | 700 | 12 | ai-image-prompt-from-idea
 - [x] ai prompts for photos | 600 | 5 | realistic-ai-photo-prompt
-- [ ] {B} best chatgpt image prompts | 600 | 0 |
+- [x] best chatgpt image prompts | 600 | 0 | best-chatgpt-image-prompt-formula
 - [x] chatgpt photo editing prompts | 500 | 0 | chatgpt-photo-editing-retouch
-- [ ] {B} chatgpt color analysis prompt | 400 | 0 |
+- [x] chatgpt color analysis prompt | 400 | 0 | chatgpt-color-analysis-selfie
 - [x] art styles for ai prompts | 300 | 7 | art-style-picker-ai-images
 - [x] gemini photo prompts | 250 | 0 | gemini-photo-editing
-- [ ] {B} ai character prompts | 200 | 1 |
+- [x] ai character prompts | 200 | 1 | consistent-ai-character-prompts
 - [x] midjourney logo prompts | 200 | 0 | midjourney-logo-design
 - [ ] {A} best ai image prompts | 200 | 2 |
 - [ ] {B} ai anime prompts | 150 | 0 |
@@ -46,9 +46,9 @@ Columns: keyword | US volume | KD | done (slug)
 - [x] ai writing prompts | 200 | 5 | ai-writing-prompts-daily-practice
 - [x] chatgpt copywriting prompts | 150 | 0 | chatgpt-copywriting-framework
 - [ ] {A} chatgpt writing prompts | 150 | 14 |
-- [ ] {B} ai story prompts | 90 | 0 |
+- [x] ai story prompts | 90 | 0 | ai-story-prompts-generator
 - [ ] {A} chatgpt prompts for blog posts | 90 | 4 |
-- [ ] {B} chatgpt email prompts | 80 | 2 |
+- [x] chatgpt email prompts | 80 | 2 | chatgpt-email-writer-prompt
 - [x] chatgpt personality prompt | 80 | 0 | chatgpt-personality-custom-instructions
 - [ ] {B} chatgpt prompts for content creation | 100 | 4 |
 
@@ -58,7 +58,7 @@ Columns: keyword | US volume | KD | done (slug)
 - [x] chatgpt prompts for hr | 200 | 2 | hr-employee-question-replies
 - [x] chatgpt cover letter prompt | 150 | 0 | cover-letter-from-job-post
 - [x] chatgpt performance review prompt | 80 | 0 | performance-review-feedback
-- [ ] {B} chatgpt prompts for recruiters | 70 | 0 |
+- [x] chatgpt prompts for recruiters | 70 | 0 | chatgpt-prompts-for-recruiters
 
 ## Marketing, sales, SEO, business
 - [x] ai prompts for social media | 200 | 2 | social-media-post-five-platforms
@@ -68,11 +68,11 @@ Columns: keyword | US volume | KD | done (slug)
 - [x] chatgpt seo prompts | 150 | 7 | chatgpt-seo-90-day-plan
 - [x] ai prompts for marketing | 150 | 7 | chatgpt-90-day-marketing-plan
 - [x] chatgpt sales prompts | 100 | 1 | sales-features-to-benefits
-- [ ] {B} chatgpt prompts for affiliate marketing | 100 | 0 |
+- [x] chatgpt prompts for affiliate marketing | 100 | 0 | affiliate-marketing-content-plan
 - [x] chatgpt prompts to make money | 90 | 0 | side-income-ideas-from-skills
 - [x] chatgpt prompts for google ads | 80 | 1 | google-search-ads-copy
 - [ ] {A} chatgpt prompts for project management | 70 | 1 |
-- [ ] {B} best chatgpt prompts for outsourced accounting firms | 50 | 0 |
+- [x] best chatgpt prompts for outsourced accounting firms | 50 | 0 | accounting-firm-client-requests
 
 ## Education, research, data
 - [x] ai prompts for teachers | 150 | 4 | differentiated-lesson-for-teachers
