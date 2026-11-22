@@ -188,3 +188,13 @@ Columns: keyword | US volume | KD | done (slug)
 - [x] chatgpt prompts for just listed real estate posts | - | - | just-listed-social-posts
 - [x] chatgpt prompt for terms and conditions | - | - | terms-and-conditions-draft
 - [x] chatgpt prompt for habit building plan | - | - | habit-building-plan
+- [x] chatgpt prompt raci chart | - | - | raci-chart-project-roles
+- [x] chatgpt prompt for event invitation email | - | - | event-invitation-email
+- [x] chatgpt prompt for sales forecast | - | - | sales-forecast-pipeline
+- [x] chatgpt prompt for technical seo audit | - | - | technical-seo-audit-checklist
+- [x] chatgpt prompt for research proposal methodology | - | - | research-proposal-methodology
+- [x] midjourney car photography prompts | - | - | midjourney-car-photography
+- [x] underwater scene ai video prompt | - | - | underwater-scene-ai-video
+- [x] chatgpt prompt 30-60-90 day plan for interview | - | - | 30-60-90-day-plan-interview
+- [x] chatgpt prompts for iep goals | - | - | iep-goals-draft
+- [x] chatgpt prompt optimize slow sql query | - | - | optimize-slow-sql-query
