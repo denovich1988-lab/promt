@@ -228,3 +228,13 @@ Columns: keyword | US volume | KD | done (slug)
 - [x] chatgpt prompt book blurb | - | - | book-blurb-back-cover
 - [x] chatgpt prompt self evaluation performance review | - | - | self-evaluation-performance-review
 - [x] chatgpt prompt employee training program | - | - | employee-training-program-outline
+- [x] chatgpt prompts for instagram reels | - | - | instagram-reels-script-ideas
+- [x] chatgpt prompt product one pager | - | - | product-one-pager-sales-sheet
+- [x] chatgpt prompt monthly seo report | - | - | monthly-seo-report-clients
+- [x] chatgpt prompt value chain analysis | - | - | value-chain-analysis
+- [x] chatgpt prompt process improvement | - | - | process-improvement-waste-finder
+- [x] midjourney surreal art prompts | - | - | midjourney-surreal-art
+- [x] kids bedtime story ai video prompt | - | - | kids-bedtime-cartoon-ai-video
+- [x] chatgpt prompt parent newsletter | - | - | parent-newsletter-teachers
+- [x] chatgpt prompt data dictionary | - | - | data-dictionary-from-dataset
+- [x] chatgpt prompt demand letter unpaid invoice | - | - | demand-letter-unpaid-invoice
