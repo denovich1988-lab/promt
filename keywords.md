@@ -208,3 +208,13 @@ Columns: keyword | US volume | KD | done (slug)
 - [x] chatgpt prompt wedding vows | - | - | wedding-vows-writer
 - [x] chatgpt prompt expired listing letter | - | - | expired-listing-letter
 - [x] chatgpt prompt boolean search string recruiting | - | - | boolean-search-string-recruiting
+- [x] chatgpt prompt account based marketing plan | - | - | account-based-marketing-plan
+- [x] chatgpt prompt sales playbook | - | - | sales-playbook-outline
+- [x] chatgpt prompts for google search console data analysis | - | - | search-console-query-analysis
+- [x] chatgpt prompt blue ocean strategy | - | - | blue-ocean-strategy-canvas
+- [x] chatgpt prompt evaluate source credibility | - | - | source-credibility-check
+- [x] midjourney macro photography prompts | - | - | midjourney-macro-photography
+- [x] asmr ai video prompt | - | - | asmr-ai-video-prompt
+- [x] chatgpt prompts for report card comments | - | - | report-card-comments-teachers
+- [x] chatgpt prompt smart goals | - | - | smart-goals-action-plan
+- [x] chatgpt prompt add docstrings to code | - | - | code-comments-docstrings
