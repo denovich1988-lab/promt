@@ -40,5 +40,5 @@ Check your arithmetic and show any formulas you use. Do not invent causes.
 ## Tips
 
 - Recheck key totals in your spreadsheet; treat the AI's math as a draft.
-- Build next quarter's view with the [13-week cash flow forecast prompt](/prompts/week-cash-flow-forecast/).
+- Build next quarter's view with the [13-week cash flow forecast prompt](/prompts/13-week-cash-flow-forecast/).
 - Track the drivers ongoing with the [weekly KPI dashboard prompt](/prompts/weekly-kpi-dashboard-metrics/).

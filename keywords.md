@@ -178,3 +178,13 @@ Columns: keyword | US volume | KD | done (slug)
 - [x] chatgpt prompt for college essay brainstorming | - | - | college-essay-brainstorm
 - [x] chatgpt prompt for employee engagement survey | - | - | employee-engagement-survey
 - [x] chatgpt prompt to convert code to another language | - | - | convert-code-another-language
+- [x] chatgpt prompt stakeholder analysis | - | - | stakeholder-analysis-map
+- [x] chatgpt prompt for webinar follow-up email | - | - | webinar-follow-up-email
+- [x] chatgpt prompt for event sponsorship proposal | - | - | event-sponsorship-proposal
+- [x] chatgpt prompt google business profile description | - | - | google-business-profile-description
+- [x] chatgpt prompt annotated bibliography | - | - | annotated-bibliography-entries
+- [x] ai prompt for website hero image | - | - | website-hero-image-prompts
+- [x] app promo ai video prompt | - | - | app-promo-ai-video
+- [x] chatgpt prompts for just listed real estate posts | - | - | just-listed-social-posts
+- [x] chatgpt prompt for terms and conditions | - | - | terms-and-conditions-draft
+- [x] chatgpt prompt for habit building plan | - | - | habit-building-plan

@@ -25,4 +25,4 @@ A short visual of daily life in another era can make a history lesson or video s
 ## Tips
 
 - Pair the clip with a lesson from our [lesson plan generator prompt](/prompts/lesson-plan-generator/).
-- For animated explainers, try our [3D animated explainer prompt](/prompts/d-animated-explainer-scene/).
+- For animated explainers, try our [2D animated explainer prompt](/prompts/2d-animated-explainer-scene/).
