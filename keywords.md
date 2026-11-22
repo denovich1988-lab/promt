@@ -248,3 +248,13 @@ Columns: keyword | US volume | KD | done (slug)
 - [x] chatgpt prompt scholarship essay | - | - | scholarship-essay-brainstorm
 - [x] chatgpt prompt github actions workflow | - | - | github-actions-workflow
 - [x] chatgpt prompt service outage notice | - | - | service-outage-customer-notice
+- [x] chatgpt prompt event recap post | - | - | event-recap-post
+- [x] chatgpt prompt content pruning | - | - | content-pruning-decisions
+- [x] chatgpt prompt international seo hreflang | - | - | international-seo-hreflang-plan
+- [x] chatgpt prompt re-engage cold leads | - | - | reengage-cold-leads-email
+- [x] chatgpt prompt customer advisory board | - | - | customer-advisory-board-plan
+- [x] midjourney 3d clay render prompts | - | - | midjourney-3d-clay-render
+- [x] car chase ai video prompt | - | - | car-chase-action-ai-video
+- [x] chatgpt prompt internal company newsletter | - | - | internal-company-newsletter
+- [x] chatgpt prompt real estate farming postcards | - | - | real-estate-farming-postcards
+- [x] chatgpt prompt compare loan offers | - | - | compare-loan-offers
