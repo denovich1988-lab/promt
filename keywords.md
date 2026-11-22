@@ -136,6 +136,41 @@ New seeds: ai art prompts, grok prompts, flux prompts, prompt ideas, dall e prom
 - [ ] chatgpt prompts for digital marketing | 50 | 2 |
 - [ ] movie prompt ideas | 50 | 7 |
 
+## Added 2026-11-22 (KD 16–50 pull)
+
+Owner raised the KD limit to 50. Prompt rows go to content/prompts as usual. "Hub/list" rows are broad queries: strengthen the matching hub (/chatgpt-prompts/, /gemini-prompts/, /midjourney-prompts/) or write one blog roundup that links to many prompts – do not create thin duplicate prompt pages. "Guide" rows are blog posts.
+
+### Prompts
+
+- [ ] novel ai prompts | 90 | 17 |
+- [ ] text prompts for ai art | 50 | 16 |
+- [ ] ai generated writing prompts | 60 | 33 |
+- [ ] ai prompt for logo design | 90 | 18 |
+
+### Hub/list intents
+
+- [ ] ai prompts | 4400 | 28 |
+- [ ] chatgpt prompt | 1400 | 41 |
+- [ ] chatgpt prompts | 500 | 24 |
+- [ ] good ai prompts | 200 | 23 |
+- [ ] awesome chatgpt prompts | 200 | 38 |
+- [ ] google gemini prompts | 150 | 24 |
+- [ ] midjourney image prompts | 150 | 42 |
+- [ ] free chatgpt prompts | 100 | 32 |
+- [ ] top ai prompts | 100 | 28 |
+- [ ] list of ai prompts | 90 | 16 |
+- [ ] best prompts for ai | 90 | 29 |
+- [ ] examples of ai prompts | 60 | 17 |
+
+### Guides (blog)
+
+- [ ] how to write prompts for chatgpt | 440 | 30 |
+- [ ] chatgpt prompt engineering for developers | 200 | 20 |
+- [ ] what are prompts in ai | 150 | 39 |
+- [ ] midjourney prompts guide | 100 | 23 |
+- [ ] what is a chatgpt prompt | 90 | 20 |
+- [ ] how to create prompts for chatgpt | 40 | 25 |
+
 ## Long-tail fill (list exhausted; demand checked with web search, 2026-11-22)
 - [x] chatgpt prompts for black friday email marketing | - | - | black-friday-email-sequence
 - [x] chatgpt prompts for instagram captions | - | - | instagram-captions-for-brand
