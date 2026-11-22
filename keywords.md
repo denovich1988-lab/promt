@@ -106,3 +106,15 @@ Columns: keyword | US volume | KD | done (slug)
 - [x] chatgpt essay prompt (outline and feedback, not ghost-writing) | 80 | 1 | essay-outline-thesis-check
 - [x] reverse image prompt (describe an image as a prompt) | 60 | 0 | reverse-image-prompt
 - [x] reflection prompts for students (ChatGPT generates them) | 60 | 4 | reflection-prompts-for-students
+
+## Long-tail fill (list exhausted; demand checked with web search, 2026-11-22)
+- [x] chatgpt prompts for black friday email marketing | - | - | black-friday-email-sequence
+- [x] chatgpt prompts for instagram captions | - | - | instagram-captions-for-brand
+- [x] optimize content for ai overviews prompt | - | - | optimize-content-ai-overviews
+- [x] chatgpt prompts for rfp response | - | - | rfp-response-draft
+- [x] chatgpt prompt for pestle analysis | - | - | pestle-analysis-business
+- [x] midjourney prompts for coloring pages | - | - | midjourney-coloring-pages
+- [x] ai christmas greeting video prompt | - | - | ai-christmas-greeting-video
+- [x] thank you email after interview chatgpt prompt | - | - | thank-you-email-after-interview
+- [x] chatgpt prompts for christmas card messages | - | - | christmas-card-messages
+- [x] tax deduction checklist for freelancers chatgpt prompt | - | - | tax-deduction-checklist-freelancers
