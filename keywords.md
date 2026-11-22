@@ -5,7 +5,7 @@ Excluded on purpose: NSFW/adult, jailbreak/DAN/"bypass", "avoid AI detection", o
 
 How to use: every daily prompt run takes the first unchecked rows from top to bottom (one prompt per row, the keyword in the title, description and first paragraph, phrased naturally). After publishing, tick the row and add the slug. Several rows with the same intent can share one page; never make two near-duplicate pages for one keyword. When all rows are used, refresh this list (see CLAUDE.md).
 
-Seeds already used (2026-11-21): chatgpt prompts, ai prompts, midjourney prompts, claude prompts, gemini prompts, chatgpt prompt, gemini ai photo prompt, nano banana prompt, ai video prompt, veo 3 prompt, midjourney prompt, claude prompt, image prompt, photo prompt, video prompt, gpt prompt, ai prompt for, prompts for students.
+Seeds already used (2026-11-21): chatgpt prompts, ai prompts, midjourney prompts, claude prompts, gemini prompts, chatgpt prompt, gemini ai photo prompt, nano banana prompt, ai video prompt, veo 3 prompt, midjourney prompt, claude prompt, image prompt, photo prompt, video prompt, gpt prompt, ai prompt for, prompts for students. (2026-11-22): ai art prompts, grok prompts, flux prompts, prompt ideas, dall e prompts, kling prompts, seedance prompts, chatgpt prompts to, best prompts for, prompt examples, prompt template, ai prompts for, gpt prompts for, gemini prompt for, prompts for business, prompts for marketing, prompt for writing.
 
 Columns: keyword | US volume | KD | done (slug)
 
@@ -106,6 +106,35 @@ Columns: keyword | US volume | KD | done (slug)
 - [x] chatgpt essay prompt (outline and feedback, not ghost-writing) | 80 | 1 | essay-outline-thesis-check
 - [x] reverse image prompt (describe an image as a prompt) | 60 | 0 | reverse-image-prompt
 - [x] reflection prompts for students (ChatGPT generates them) | 60 | 4 | reflection-prompts-for-students
+
+## Added 2026-11-22 (third Ahrefs pull)
+
+New seeds: ai art prompts, grok prompts, flux prompts, prompt ideas, dall e prompts, kling prompts, seedance prompts, chatgpt prompts to, best prompts for, prompt examples, prompt template, ai prompts for, gpt prompts for, gemini prompt for, prompts for business, prompts for marketing, prompt for writing; plus godofprompt.ai organic keywords. Dating-app prompts (hinge, bumble, tinder), NSFW, jailbreak and "avoid AI detection" rows were excluded.
+
+- [ ] grok prompts | 1100 | 0 |
+- [ ] gemini prompt for flight booking | 1400 | 1 |
+- [ ] ai gemini photo prompt for girls (gemini ai prompt for women) | 1350 | 0 |
+- [ ] prompt examples (chatgpt prompt examples) | 850 | 11 |
+- [ ] ai prompt ideas (chatgpt prompt ideas) | 430 | 13 |
+- [ ] writing prompts for 3rd grade (and 2nd grade, chatgpt generates them) | 700 | 1 |
+- [ ] writing prompts for 4th grade (and 5th grade, chatgpt generates them) | 650 | 0 |
+- [ ] anime ai art prompts | 350 | 0 |
+- [ ] negative prompts for ai art | 210 | 1 |
+- [ ] drawing prompt ideas | 200 | 2 |
+- [ ] langchain prompt template | 200 | 7 |
+- [ ] writing prompts for kids (chatgpt generates them) | 200 | 6 |
+- [ ] ai prompts for characters (character ai prompt ideas) | 190 | 1 |
+- [ ] chatgpt prompts list | 190 | 4 |
+- [ ] funny ai art prompts | 110 | 0 |
+- [ ] midjourney prompt examples | 100 | 10 |
+- [ ] ai prompts for logo design | 90 | 0 |
+- [ ] chat gpt prompts for business plan | 80 | 1 |
+- [ ] llm prompt template | 80 | 2 |
+- [ ] how to write prompts for ai | 80 | 10 |
+- [ ] poem prompt ideas | 60 | 4 |
+- [ ] chatgpt prompts for email marketing | 50 | 4 |
+- [ ] chatgpt prompts for digital marketing | 50 | 2 |
+- [ ] movie prompt ideas | 50 | 7 |
 
 ## Long-tail fill (list exhausted; demand checked with web search, 2026-11-22)
 - [x] chatgpt prompts for black friday email marketing | - | - | black-friday-email-sequence
