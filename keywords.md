@@ -148,3 +148,13 @@ Columns: keyword | US volume | KD | done (slug)
 - [x] chatgpt prompt for performance improvement plan | - | - | performance-improvement-plan
 - [x] chatgpt prompts for parent teacher conferences | - | - | parent-teacher-conference-notes
 - [x] chatgpt prompt to interpret a/b test results | - | - | ab-test-results-interpretation
+- [x] chatgpt prompts for grant writing | - | - | grant-proposal-narrative
+- [x] change management communication plan chatgpt | - | - | change-management-communication
+- [x] chatgpt prompt for sales territory plan | - | - | sales-territory-plan
+- [x] people also ask content outline prompt | - | - | people-also-ask-content-outline
+- [x] chatgpt prompt for amazon/etsy product listing | - | - | marketplace-product-listing-optimization
+- [x] ai album cover art prompt | - | - | album-cover-art-concept
+- [x] midjourney watercolor prompts | - | - | midjourney-watercolor-illustration
+- [x] chatgpt prompt to explain career gap | - | - | career-gap-explanation
+- [x] chatgpt prompt for git commit messages | - | - | git-commit-messages
+- [x] shipping delay apology email chatgpt | - | - | shipping-delay-apology-email
