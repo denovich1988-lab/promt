@@ -238,3 +238,13 @@ Columns: keyword | US volume | KD | done (slug)
 - [x] chatgpt prompt parent newsletter | - | - | parent-newsletter-teachers
 - [x] chatgpt prompt data dictionary | - | - | data-dictionary-from-dataset
 - [x] chatgpt prompt demand letter unpaid invoice | - | - | demand-letter-unpaid-invoice
+- [x] chatgpt prompt marketing budget plan | - | - | marketing-budget-allocation
+- [x] chatgpt prompt media kit for influencers | - | - | media-kit-for-creators
+- [x] chatgpt prompt pillar page outline | - | - | pillar-page-outline
+- [x] chatgpt prompt board meeting report | - | - | board-meeting-report
+- [x] chatgpt prompt sales call coaching | - | - | sales-call-coaching-review
+- [x] midjourney botanical illustration prompts | - | - | midjourney-botanical-illustration
+- [x] funny pet ai video prompt | - | - | funny-pet-ai-video
+- [x] chatgpt prompt scholarship essay | - | - | scholarship-essay-brainstorm
+- [x] chatgpt prompt github actions workflow | - | - | github-actions-workflow
+- [x] chatgpt prompt service outage notice | - | - | service-outage-customer-notice
