@@ -158,3 +158,13 @@ Columns: keyword | US volume | KD | done (slug)
 - [x] chatgpt prompt to explain career gap | - | - | career-gap-explanation
 - [x] chatgpt prompt for git commit messages | - | - | git-commit-messages
 - [x] shipping delay apology email chatgpt | - | - | shipping-delay-apology-email
+- [x] chatgpt prompt for ansoff matrix | - | - | ansoff-matrix-growth-strategy
+- [x] chatgpt prompts for linkedin ads copy | - | - | linkedin-ads-copy-variants
+- [x] chatgpt prompts for sms marketing messages | - | - | sms-marketing-messages
+- [x] chatgpt prompt for ideal customer profile (icp) | - | - | ideal-customer-profile-b2b
+- [x] chatgpt prompt for how-to guide article | - | - | how-to-guide-article-seo
+- [x] midjourney pixel art prompts | - | - | midjourney-pixel-art
+- [x] fpv drone flythrough ai video prompt | - | - | fpv-drone-flythrough-video
+- [x] chatgpt prompt letter of recommendation | - | - | letter-of-recommendation
+- [x] chatgpt prompt for budget variance analysis | - | - | budget-variance-analysis
+- [x] chatgpt prompts for live chat scripts | - | - | live-chat-scripts-support
