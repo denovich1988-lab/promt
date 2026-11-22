@@ -168,3 +168,13 @@ Columns: keyword | US volume | KD | done (slug)
 - [x] chatgpt prompt letter of recommendation | - | - | letter-of-recommendation
 - [x] chatgpt prompt for budget variance analysis | - | - | budget-variance-analysis
 - [x] chatgpt prompts for live chat scripts | - | - | live-chat-scripts-support
+- [x] chatgpt prompt for bcg matrix | - | - | bcg-matrix-product-portfolio
+- [x] chatgpt prompt for crisis communication statement | - | - | crisis-communication-statement
+- [x] chatgpt prompt sales commission plan | - | - | sales-commission-plan
+- [x] chatgpt prompt for best of listicle article | - | - | best-of-listicle-article
+- [x] chatgpt prompt for thematic analysis | - | - | qualitative-thematic-analysis
+- [x] midjourney cyberpunk city prompts | - | - | midjourney-cyberpunk-city
+- [x] restaurant promo ai video prompt | - | - | restaurant-promo-ai-video
+- [x] chatgpt prompt for college essay brainstorming | - | - | college-essay-brainstorm
+- [x] chatgpt prompt for employee engagement survey | - | - | employee-engagement-survey
+- [x] chatgpt prompt to convert code to another language | - | - | convert-code-another-language
