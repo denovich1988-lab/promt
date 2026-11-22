@@ -118,3 +118,13 @@ Columns: keyword | US volume | KD | done (slug)
 - [x] thank you email after interview chatgpt prompt | - | - | thank-you-email-after-interview
 - [x] chatgpt prompts for christmas card messages | - | - | christmas-card-messages
 - [x] tax deduction checklist for freelancers chatgpt prompt | - | - | tax-deduction-checklist-freelancers
+- [x] chatgpt prompt for abandoned cart emails | - | - | abandoned-cart-email-sequence
+- [x] broken link building outreach email template | - | - | broken-link-building-outreach
+- [x] follow up email after sending proposal chatgpt | - | - | sales-follow-up-after-proposal
+- [x] chatgpt prompt for porter's five forces | - | - | porters-five-forces-analysis
+- [x] chatgpt prompts for customer segmentation | - | - | customer-segmentation-research
+- [x] midjourney prompts for phone wallpapers | - | - | midjourney-phone-wallpapers
+- [x] ai car commercial video prompt | - | - | ai-car-commercial-video
+- [x] chatgpt prompt for resignation letter | - | - | resignation-letter-professional
+- [x] chatgpt prompt for refund request reply | - | - | refund-request-reply
+- [x] chatgpt prompts for python automation | - | - | python-automation-script
