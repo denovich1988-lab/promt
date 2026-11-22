@@ -218,3 +218,13 @@ Columns: keyword | US volume | KD | done (slug)
 - [x] chatgpt prompts for report card comments | - | - | report-card-comments-teachers
 - [x] chatgpt prompt smart goals | - | - | smart-goals-action-plan
 - [x] chatgpt prompt add docstrings to code | - | - | code-comments-docstrings
+- [x] chatgpt prompt brand audit | - | - | brand-audit-checklist
+- [x] cold call script gatekeeper chatgpt | - | - | get-past-gatekeeper-script
+- [x] chatgpt prompt backlink gap analysis | - | - | backlink-gap-analysis
+- [x] chatgpt prompt balanced scorecard | - | - | balanced-scorecard-kpis
+- [x] chatgpt prompt literature search strategy | - | - | literature-search-strategy
+- [x] midjourney film photography prompts | - | - | midjourney-35mm-film-photography
+- [x] horror ai video prompt | - | - | horror-short-ai-video
+- [x] chatgpt prompt book blurb | - | - | book-blurb-back-cover
+- [x] chatgpt prompt self evaluation performance review | - | - | self-evaluation-performance-review
+- [x] chatgpt prompt employee training program | - | - | employee-training-program-outline
