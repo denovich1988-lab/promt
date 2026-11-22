@@ -198,3 +198,13 @@ Columns: keyword | US volume | KD | done (slug)
 - [x] chatgpt prompt 30-60-90 day plan for interview | - | - | 30-60-90-day-plan-interview
 - [x] chatgpt prompts for iep goals | - | - | iep-goals-draft
 - [x] chatgpt prompt optimize slow sql query | - | - | optimize-slow-sql-query
+- [x] chatgpt prompt product roadmap | - | - | product-roadmap-outline
+- [x] chatgpt prompt for journalist query response | - | - | journalist-query-response-pitch
+- [x] chatgpt prompt for newsletter content ideas | - | - | newsletter-content-ideas
+- [x] chatgpt prompt for seo friendly url slugs | - | - | seo-friendly-url-slugs
+- [x] chatgpt prompt for networking event follow up | - | - | networking-event-follow-up
+- [x] midjourney black and white street photography prompts | - | - | midjourney-black-white-street-photography
+- [x] sci-fi space scene ai video prompt | - | - | sci-fi-space-ai-video
+- [x] chatgpt prompt wedding vows | - | - | wedding-vows-writer
+- [x] chatgpt prompt expired listing letter | - | - | expired-listing-letter
+- [x] chatgpt prompt boolean search string recruiting | - | - | boolean-search-string-recruiting
