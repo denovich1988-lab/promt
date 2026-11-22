@@ -138,3 +138,13 @@ Columns: keyword | US volume | KD | done (slug)
 - [x] chatgpt prompt for job offer letter | - | - | job-offer-letter-template
 - [x] chatgpt prompts for real estate listing presentation | - | - | listing-presentation-outline
 - [x] chatgpt prompt to break down tasks (adhd) | - | - | break-down-overwhelming-task
+- [x] ugc creator brief template chatgpt | - | - | ugc-creator-brief
+- [x] chatgpt prompts for seo blog titles | - | - | blog-title-ideas-keyword
+- [x] chatgpt prompt for discount negotiation | - | - | discount-request-negotiation-prep
+- [x] chatgpt prompt for startup idea validation | - | - | startup-idea-validation-plan
+- [x] chatgpt prompt for research hypothesis | - | - | research-hypothesis-generator
+- [x] midjourney landscape photography prompts | - | - | midjourney-landscape-photography
+- [x] historical scene ai video prompt | - | - | historical-scene-ai-video
+- [x] chatgpt prompt for performance improvement plan | - | - | performance-improvement-plan
+- [x] chatgpt prompts for parent teacher conferences | - | - | parent-teacher-conference-notes
+- [x] chatgpt prompt to interpret a/b test results | - | - | ab-test-results-interpretation
