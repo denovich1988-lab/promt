@@ -128,3 +128,13 @@ Columns: keyword | US volume | KD | done (slug)
 - [x] chatgpt prompt for resignation letter | - | - | resignation-letter-professional
 - [x] chatgpt prompt for refund request reply | - | - | refund-request-reply
 - [x] chatgpt prompts for python automation | - | - | python-automation-script
+- [x] chatgpt prompt to turn article into twitter thread | - | - | x-thread-from-article
+- [x] comparison page seo (x vs y, alternatives) prompt | - | - | comparison-page-vs-competitor
+- [x] referral request email chatgpt prompt | - | - | referral-request-email-clients
+- [x] chatgpt prompt for mission and vision statement | - | - | mission-vision-values-statement
+- [x] competitor social media audit chatgpt prompt | - | - | competitor-social-media-audit
+- [x] ai wedding invitation prompt | - | - | ai-wedding-invitation-design
+- [x] nature documentary ai video prompt | - | - | nature-documentary-ai-video
+- [x] chatgpt prompt for job offer letter | - | - | job-offer-letter-template
+- [x] chatgpt prompts for real estate listing presentation | - | - | listing-presentation-outline
+- [x] chatgpt prompt to break down tasks (adhd) | - | - | break-down-overwhelming-task
