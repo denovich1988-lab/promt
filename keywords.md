@@ -114,10 +114,10 @@ New seeds: ai art prompts, grok prompts, flux prompts, prompt ideas, dall e prom
 - [x] grok prompts | 1100 | 0 | grok-trend-research-prompts
 - [x] gemini prompt for flight booking | 1400 | 1 | gemini-flight-deal-finder
 - [x] ai gemini photo prompt for girls (gemini ai prompt for women) | 1350 | 0 | gemini-portrait-photo-women
-- [ ] prompt examples (chatgpt prompt examples) | 850 | 11 |
+- [x] prompt examples (chatgpt prompt examples) | 850 | 11 | chatgpt-prompt-examples-by-job
 - [ ] ai prompt ideas (chatgpt prompt ideas) | 430 | 13 |
 - [x] writing prompts for 3rd grade (and 2nd grade, chatgpt generates them) | 700 | 1 | writing-prompts-3rd-grade
-- [ ] writing prompts for 4th grade (and 5th grade, chatgpt generates them) | 650 | 0 |
+- [x] writing prompts for 4th grade (and 5th grade, chatgpt generates them) | 650 | 0 | writing-prompts-4th-grade
 - [ ] anime ai art prompts | 350 | 0 |
 - [ ] negative prompts for ai art | 210 | 1 |
 - [ ] drawing prompt ideas | 200 | 2 |
@@ -175,13 +175,13 @@ Owner raised the KD limit to 50. Prompt rows go to content/prompts as usual. "Hu
 
 Seeds: chatgpt prompts for, chatgpt prompt for, midjourney prompts for, claude prompts for, ai video prompts (KD ≤ 50, volume ≥ 50), plus promptsideas.com organic keywords. Most matching terms were already covered; only new intents are listed. Brand terms (chibi pokemon) and tool keywords (t shirt slogan generator) were excluded.
 
-- [ ] chatgpt prompts for lawyers | 100 | 4 |
+- [x] chatgpt prompts for lawyers | 100 | 4 | lawyer-legal-research-memo
 - [x] chatgpt prompts for project management | 70 | 1 | project-status-report
 - [ ] chatgpt prompts for writing a book | 50 | 0 |
 - [ ] chatgpt prompts for coding | 50 | 2 |
 - [x] anime thanksgiving (ai image prompt) | 5000 | 0 | anime-thanksgiving-scene
-- [ ] pencil tattoo drawings (ai image prompt) | 300 | 0 |
-- [ ] hashtags (halloween, motivational, day-of-week hashtags; chatgpt generates them) | 500 | 0 |
+- [x] pencil tattoo drawings (ai image prompt) | 300 | 0 | pencil-sketch-tattoo-design
+- [x] hashtags (halloween, motivational, day-of-week hashtags; chatgpt generates them) | 500 | 0 | hashtag-set-for-post
 - [ ] midjourney aspect ratio (guide, blog) | 100 | 0 |
 
 ## Long-tail fill (list exhausted; demand checked with web search, 2026-11-22)
@@ -339,3 +339,9 @@ Seeds: chatgpt prompts for, chatgpt prompt for, midjourney prompts for, claude p
 ## Long-tail fill (demand checked with web search, 2026-11-23)
 
 - [x] chatgpt prompt local seo citation audit | - | - | local-seo-citation-audit
+
+- [x] chatgpt prompt small business saturday marketing ideas | - | - | small-business-saturday-promo
+- [x] chatgpt prompt podcast show notes seo | - | - | podcast-show-notes-seo
+- [x] chatgpt prompt new sales rep onboarding plan | - | - | new-sales-rep-onboarding
+- [x] chatgpt prompt user research recruiting email | - | - | user-research-recruiting-email
+- [x] new year countdown ai video prompt | - | - | new-year-countdown-ai-video
