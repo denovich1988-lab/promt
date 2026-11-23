@@ -453,3 +453,13 @@ Seeds: chatgpt prompts for, chatgpt prompt for, midjourney prompts for, claude p
 - [x] chatgpt prompt substitute teacher plans | - | - | substitute-teacher-plan
 - [x] chatgpt prompt holiday dinner timeline | - | - | holiday-dinner-cooking-timeline
 - [x] chatgpt prompt database schema design | - | - | database-schema-design
+- [x] chatgpt prompt holiday gift guide | - | - | holiday-gift-guide-content
+- [x] chatgpt prompt proposal executive summary | - | - | proposal-executive-summary
+- [x] chatgpt prompt keyword mapping | - | - | keyword-to-url-mapping
+- [x] chatgpt prompt headcount planning | - | - | headcount-hiring-plan
+- [x] chatgpt prompt competitor feature comparison | - | - | competitor-feature-comparison-table
+- [x] midjourney fantasy map prompts | - | - | midjourney-fantasy-world-map
+- [x] beverage commercial ai video prompt | - | - | beverage-pour-commercial-video
+- [x] chatgpt prompt support escalation | - | - | support-escalation-summary
+- [x] chatgpt prompt real estate market update | - | - | real-estate-market-update-newsletter
+- [x] chatgpt prompt christmas letter | - | - | family-christmas-letter
