@@ -413,3 +413,13 @@ Seeds: chatgpt prompts for, chatgpt prompt for, midjourney prompts for, claude p
 - [x] chatgpt prompt subscription audit | - | - | subscription-audit-cancel
 - [x] chatgpt prompt email to parents about behavior | - | - | parent-email-student-behavior
 - [x] chatgpt prompt year end review personal | - | - | personal-year-end-review
+- [x] chatgpt prompt say no politely email | - | - | say-no-politely-email
+- [x] whatsapp business message templates chatgpt | - | - | whatsapp-business-message-templates
+- [x] sales to customer success handoff template chatgpt | - | - | sales-to-customer-success-handoff
+- [x] chatgpt prompt digital pr ideas | - | - | digital-pr-data-story-ideas
+- [x] chatgpt prompt inclusion exclusion criteria systematic review | - | - | systematic-review-inclusion-criteria
+- [x] oil painting portrait ai prompt | - | - | midjourney-oil-painting-portrait
+- [x] birthday ai video prompt | - | - | birthday-greeting-ai-video
+- [x] chatgpt prompt first time home buyer consultation | - | - | first-time-home-buyer-consultation
+- [x] chatgpt prompt ask for promotion | - | - | promotion-request-case
+- [x] chatgpt prompt write bug report | - | - | bug-report-from-user-complaint
