@@ -370,3 +370,16 @@ Seeds: chatgpt prompts for, chatgpt prompt for, midjourney prompts for, claude p
 - [x] chatgpt prompt feature request prioritization | - | - | feature-request-prioritization
 - [x] midjourney minimalist line art prompts | - | - | midjourney-minimalist-line-art
 - [x] ai mascot design prompt | - | - | original-brand-mascot-design
+
+## Long-tail fill, run 2 (demand checked with web search, 2026-11-23)
+
+- [x] chatgpt prompt cyber monday email campaign | - | - | cyber-monday-email-campaign
+- [x] giving tuesday campaign plan chatgpt | - | - | giving-tuesday-campaign-plan
+- [x] negative keyword list google ads chatgpt prompt | - | - | ppc-negative-keyword-list
+- [x] chatgpt prompt sales prospecting cadence | - | - | multichannel-prospecting-cadence
+- [x] chatgpt prompt project kickoff meeting | - | - | project-kickoff-meeting-plan
+- [x] ugly christmas sweater ai image prompt | - | - | midjourney-ugly-christmas-sweater
+- [x] snow globe christmas ai video prompt | - | - | snow-globe-christmas-ai-video
+- [x] chatgpt prompt holiday out of office message | - | - | holiday-out-of-office-message
+- [x] chatgpt prompt holiday gift budget | - | - | holiday-gift-budget-plan
+- [x] chatgpt prompts for exit tickets | - | - | exit-ticket-questions
