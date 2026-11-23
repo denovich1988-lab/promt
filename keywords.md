@@ -115,7 +115,7 @@ New seeds: ai art prompts, grok prompts, flux prompts, prompt ideas, dall e prom
 - [x] gemini prompt for flight booking | 1400 | 1 | gemini-flight-deal-finder
 - [x] ai gemini photo prompt for girls (gemini ai prompt for women) | 1350 | 0 | gemini-portrait-photo-women
 - [x] prompt examples (chatgpt prompt examples) | 850 | 11 | chatgpt-prompt-examples-by-job
-- [ ] ai prompt ideas (chatgpt prompt ideas) | 430 | 13 |
+- [x] ai prompt ideas (chatgpt prompt ideas) | 430 | 13 | ai-prompt-ideas-from-todo-list
 - [x] writing prompts for 3rd grade (and 2nd grade, chatgpt generates them) | 700 | 1 | writing-prompts-3rd-grade
 - [x] writing prompts for 4th grade (and 5th grade, chatgpt generates them) | 650 | 0 | writing-prompts-4th-grade
 - [ ] anime ai art prompts | 350 | 0 |
@@ -129,9 +129,9 @@ New seeds: ai art prompts, grok prompts, flux prompts, prompt ideas, dall e prom
 - [ ] midjourney prompt examples | 100 | 10 |
 - [ ] ai prompts for logo design | 90 | 0 |
 - [ ] chat gpt prompts for business plan | 80 | 1 |
-- [ ] llm prompt template | 80 | 2 |
+- [x] llm prompt template | 80 | 2 | llm-prompt-template-production
 - [ ] how to write prompts for ai | 80 | 10 |
-- [ ] poem prompt ideas | 60 | 4 |
+- [x] poem prompt ideas | 60 | 4 | poem-prompt-ideas
 - [x] chatgpt prompts for email marketing | 50 | 4 | email-marketing-campaign-calendar
 - [x] chatgpt prompts for digital marketing | 50 | 2 | digital-marketing-channel-audit
 - [ ] movie prompt ideas | 50 | 7 |
@@ -345,3 +345,11 @@ Seeds: chatgpt prompts for, chatgpt prompt for, midjourney prompts for, claude p
 - [x] chatgpt prompt new sales rep onboarding plan | - | - | new-sales-rep-onboarding
 - [x] chatgpt prompt user research recruiting email | - | - | user-research-recruiting-email
 - [x] new year countdown ai video prompt | - | - | new-year-countdown-ai-video
+
+- [x] chatgpt prompt year-end thank you email customers | - | - | year-end-customer-thank-you
+- [x] chatgpt prompt reddit marketing plan | - | - | reddit-community-marketing-plan
+- [x] chatgpt prompt seo content calendar | - | - | seo-content-calendar
+- [x] chatgpt prompt breakup email sales | - | - | breakup-email-unresponsive-prospect
+- [x] chatgpt prompt annual business plan | - | - | annual-business-plan-next-year
+- [x] midjourney winter cabin prompts | - | - | midjourney-winter-cabin-scene
+- [x] dragon flying ai video prompt | - | - | fantasy-dragon-flight-ai-video
