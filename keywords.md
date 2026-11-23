@@ -403,3 +403,13 @@ Seeds: chatgpt prompts for, chatgpt prompt for, midjourney prompts for, claude p
 - [x] chatgpt prompt chatbot conversation flow customer service | - | - | support-chatbot-conversation-flow
 - [x] chatgpt prompt nda draft | - | - | mutual-nda-draft
 - [x] chatgpt prompt pivot table analysis | - | - | pivot-table-analysis-plan
+- [x] chatgpt prompt lead generation quiz | - | - | lead-generation-quiz-funnel
+- [x] chatgpt prompt competitor ad analysis | - | - | competitor-ad-analysis
+- [x] chatgpt prompt linkedin social selling | - | - | linkedin-social-selling-plan
+- [x] chatgpt prompt investor outreach email | - | - | investor-outreach-cold-email
+- [x] chatgpt prompt utm naming convention | - | - | utm-naming-convention
+- [x] gingerbread house ai image prompt | - | - | midjourney-gingerbread-house
+- [x] skiing snowboarding ai video prompt | - | - | ski-snowboard-winter-ai-video
+- [x] chatgpt prompt subscription audit | - | - | subscription-audit-cancel
+- [x] chatgpt prompt email to parents about behavior | - | - | parent-email-student-behavior
+- [x] chatgpt prompt year end review personal | - | - | personal-year-end-review
