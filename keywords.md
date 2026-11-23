@@ -393,3 +393,13 @@ Seeds: chatgpt prompts for, chatgpt prompt for, midjourney prompts for, claude p
 - [x] year end bonus announcement email chatgpt | - | - | year-end-bonus-announcement
 - [x] chatgpt prompt write dockerfile | - | - | dockerfile-for-app
 - [x] chatgpt prompt professional development plan | - | - | professional-development-plan
+- [x] chatgpt prompt employer branding posts | - | - | employer-branding-posts
+- [x] chatgpt prompt pricing strategy new product | - | - | pricing-strategy-new-product
+- [x] chatgpt prompt roi business case sales | - | - | roi-business-case-for-buyers
+- [x] chatgpt prompt project retrospective lessons learned | - | - | project-retrospective-lessons-learned
+- [x] chatgpt prompt topical map seo | - | - | topical-map-for-niche
+- [x] midjourney art deco poster prompts | - | - | midjourney-art-deco-poster
+- [x] perfume commercial ai video prompt | - | - | luxury-perfume-commercial-video
+- [x] chatgpt prompt chatbot conversation flow customer service | - | - | support-chatbot-conversation-flow
+- [x] chatgpt prompt nda draft | - | - | mutual-nda-draft
+- [x] chatgpt prompt pivot table analysis | - | - | pivot-table-analysis-plan
