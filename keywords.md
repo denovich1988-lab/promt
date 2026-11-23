@@ -130,7 +130,7 @@ New seeds: ai art prompts, grok prompts, flux prompts, prompt ideas, dall e prom
 - [x] ai prompts for logo design | 90 | 0 | covered: ai-logo-prompts-with-name
 - [x] chat gpt prompts for business plan | 80 | 1 | covered: one-page-business-plan
 - [x] llm prompt template | 80 | 2 | llm-prompt-template-production
-- [ ] how to write prompts for ai | 80 | 10 |
+- [x] how to write prompts for ai | 80 | 10 | covered: chatgpt-prompt-template-cheat-sheet
 - [x] poem prompt ideas | 60 | 4 | poem-prompt-ideas
 - [x] chatgpt prompts for email marketing | 50 | 4 | email-marketing-campaign-calendar
 - [x] chatgpt prompts for digital marketing | 50 | 2 | digital-marketing-channel-audit
@@ -423,3 +423,13 @@ Seeds: chatgpt prompts for, chatgpt prompt for, midjourney prompts for, claude p
 - [x] chatgpt prompt first time home buyer consultation | - | - | first-time-home-buyer-consultation
 - [x] chatgpt prompt ask for promotion | - | - | promotion-request-case
 - [x] chatgpt prompt write bug report | - | - | bug-report-from-user-complaint
+- [x] chatgpt prompt core web vitals | - | - | core-web-vitals-fix-plan
+- [x] chatgpt prompt year end sales email | - | - | year-end-sales-push-email
+- [x] chatgpt prompt department budget request | - | - | department-budget-request
+- [x] chatgpt prompt performance max assets | - | - | performance-max-asset-group
+- [x] chatgpt prompt statistical analysis plan | - | - | statistical-analysis-plan
+- [x] midjourney seamless pattern prompts | - | - | midjourney-seamless-pattern
+- [x] pov first person ai video prompt | - | - | pov-first-person-ai-video
+- [x] chatgpt prompt for eulogy | - | - | eulogy-writer
+- [x] chatgpt prompt one on one meeting agenda | - | - | one-on-one-meeting-agenda
+- [x] chatgpt prompts for power bi dax | - | - | power-bi-dax-measures
