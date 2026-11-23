@@ -433,3 +433,13 @@ Seeds: chatgpt prompts for, chatgpt prompt for, midjourney prompts for, claude p
 - [x] chatgpt prompt for eulogy | - | - | eulogy-writer
 - [x] chatgpt prompt one on one meeting agenda | - | - | one-on-one-meeting-agenda
 - [x] chatgpt prompts for power bi dax | - | - | power-bi-dax-measures
+- [x] chatgpt prompt unlinked brand mentions | - | - | unlinked-brand-mentions-outreach
+- [x] chatgpt prompt reseller partner program | - | - | reseller-partner-program-plan
+- [x] chatgpt prompt due diligence checklist | - | - | acquisition-due-diligence-checklist
+- [x] chatgpt prompt linkedin newsletter | - | - | linkedin-newsletter-plan
+- [x] chatgpt prompt peer review report | - | - | manuscript-peer-review-report
+- [x] midjourney tarot card prompts | - | - | midjourney-tarot-card-design
+- [x] anime fight scene ai video prompt | - | - | anime-fight-scene-ai-video
+- [x] chatgpt prompt questions to ask interviewer | - | - | questions-to-ask-interviewer
+- [x] chatgpt prompt month end close checklist | - | - | month-end-close-checklist
+- [x] chatgpt prompt cease and desist letter | - | - | cease-and-desist-letter-draft
