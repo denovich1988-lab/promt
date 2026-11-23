@@ -5,7 +5,7 @@ Excluded on purpose: NSFW/adult, jailbreak/DAN/"bypass", "avoid AI detection", o
 
 How to use: every daily prompt run takes the first unchecked rows from top to bottom (one prompt per row, the keyword in the title, description and first paragraph, phrased naturally). After publishing, tick the row and add the slug. Several rows with the same intent can share one page; never make two near-duplicate pages for one keyword. When all rows are used, refresh this list (see CLAUDE.md).
 
-Seeds already used (2026-11-21): chatgpt prompts, ai prompts, midjourney prompts, claude prompts, gemini prompts, chatgpt prompt, gemini ai photo prompt, nano banana prompt, ai video prompt, veo 3 prompt, midjourney prompt, claude prompt, image prompt, photo prompt, video prompt, gpt prompt, ai prompt for, prompts for students. (2026-11-22): ai art prompts, grok prompts, flux prompts, prompt ideas, dall e prompts, kling prompts, seedance prompts, chatgpt prompts to, best prompts for, prompt examples, prompt template, ai prompts for, gpt prompts for, gemini prompt for, prompts for business, prompts for marketing, prompt for writing.
+Seeds already used (2026-11-21): chatgpt prompts, ai prompts, midjourney prompts, claude prompts, gemini prompts, chatgpt prompt, gemini ai photo prompt, nano banana prompt, ai video prompt, veo 3 prompt, midjourney prompt, claude prompt, image prompt, photo prompt, video prompt, gpt prompt, ai prompt for, prompts for students. (2026-11-22): ai art prompts, grok prompts, flux prompts, prompt ideas, dall e prompts, kling prompts, seedance prompts, chatgpt prompts to, best prompts for, prompt examples, prompt template, ai prompts for, gpt prompts for, gemini prompt for, prompts for business, prompts for marketing, prompt for writing. (2026-11-23): chatgpt prompts for, chatgpt prompt for, midjourney prompts for, claude prompts for, ai video prompts; plus promptsideas.com organic keywords.
 
 Columns: keyword | US volume | KD | done (slug)
 
@@ -111,17 +111,17 @@ Columns: keyword | US volume | KD | done (slug)
 
 New seeds: ai art prompts, grok prompts, flux prompts, prompt ideas, dall e prompts, kling prompts, seedance prompts, chatgpt prompts to, best prompts for, prompt examples, prompt template, ai prompts for, gpt prompts for, gemini prompt for, prompts for business, prompts for marketing, prompt for writing; plus godofprompt.ai organic keywords. Dating-app prompts (hinge, bumble, tinder), NSFW, jailbreak and "avoid AI detection" rows were excluded.
 
-- [ ] grok prompts | 1100 | 0 |
-- [ ] gemini prompt for flight booking | 1400 | 1 |
-- [ ] ai gemini photo prompt for girls (gemini ai prompt for women) | 1350 | 0 |
+- [x] grok prompts | 1100 | 0 | grok-trend-research-prompts
+- [x] gemini prompt for flight booking | 1400 | 1 | gemini-flight-deal-finder
+- [x] ai gemini photo prompt for girls (gemini ai prompt for women) | 1350 | 0 | gemini-portrait-photo-women
 - [ ] prompt examples (chatgpt prompt examples) | 850 | 11 |
 - [ ] ai prompt ideas (chatgpt prompt ideas) | 430 | 13 |
-- [ ] writing prompts for 3rd grade (and 2nd grade, chatgpt generates them) | 700 | 1 |
+- [x] writing prompts for 3rd grade (and 2nd grade, chatgpt generates them) | 700 | 1 | writing-prompts-3rd-grade
 - [ ] writing prompts for 4th grade (and 5th grade, chatgpt generates them) | 650 | 0 |
 - [ ] anime ai art prompts | 350 | 0 |
 - [ ] negative prompts for ai art | 210 | 1 |
 - [ ] drawing prompt ideas | 200 | 2 |
-- [ ] langchain prompt template | 200 | 7 |
+- [x] langchain prompt template | 200 | 7 | langchain-prompt-template
 - [ ] writing prompts for kids (chatgpt generates them) | 200 | 6 |
 - [ ] ai prompts for characters (character ai prompt ideas) | 190 | 1 |
 - [ ] chatgpt prompts list | 190 | 4 |
@@ -132,8 +132,8 @@ New seeds: ai art prompts, grok prompts, flux prompts, prompt ideas, dall e prom
 - [ ] llm prompt template | 80 | 2 |
 - [ ] how to write prompts for ai | 80 | 10 |
 - [ ] poem prompt ideas | 60 | 4 |
-- [ ] chatgpt prompts for email marketing | 50 | 4 |
-- [ ] chatgpt prompts for digital marketing | 50 | 2 |
+- [x] chatgpt prompts for email marketing | 50 | 4 | email-marketing-campaign-calendar
+- [x] chatgpt prompts for digital marketing | 50 | 2 | digital-marketing-channel-audit
 - [ ] movie prompt ideas | 50 | 7 |
 
 ## Added 2026-11-22 (KD 16–50 pull)
@@ -170,6 +170,19 @@ Owner raised the KD limit to 50. Prompt rows go to content/prompts as usual. "Hu
 - [ ] midjourney prompts guide | 100 | 23 |
 - [ ] what is a chatgpt prompt | 90 | 20 |
 - [ ] how to create prompts for chatgpt | 40 | 25 |
+
+## Added 2026-11-23 (weekly Ahrefs pull)
+
+Seeds: chatgpt prompts for, chatgpt prompt for, midjourney prompts for, claude prompts for, ai video prompts (KD ≤ 50, volume ≥ 50), plus promptsideas.com organic keywords. Most matching terms were already covered; only new intents are listed. Brand terms (chibi pokemon) and tool keywords (t shirt slogan generator) were excluded.
+
+- [ ] chatgpt prompts for lawyers | 100 | 4 |
+- [x] chatgpt prompts for project management | 70 | 1 | project-status-report
+- [ ] chatgpt prompts for writing a book | 50 | 0 |
+- [ ] chatgpt prompts for coding | 50 | 2 |
+- [x] anime thanksgiving (ai image prompt) | 5000 | 0 | anime-thanksgiving-scene
+- [ ] pencil tattoo drawings (ai image prompt) | 300 | 0 |
+- [ ] hashtags (halloween, motivational, day-of-week hashtags; chatgpt generates them) | 500 | 0 |
+- [ ] midjourney aspect ratio (guide, blog) | 100 | 0 |
 
 ## Long-tail fill (list exhausted; demand checked with web search, 2026-11-22)
 - [x] chatgpt prompts for black friday email marketing | - | - | black-friday-email-sequence
@@ -322,3 +335,7 @@ Owner raised the KD limit to 50. Prompt rows go to content/prompts as usual. "Hu
 - [x] chatgpt prompt internal company newsletter | - | - | internal-company-newsletter
 - [x] chatgpt prompt real estate farming postcards | - | - | real-estate-farming-postcards
 - [x] chatgpt prompt compare loan offers | - | - | compare-loan-offers
+
+## Long-tail fill (demand checked with web search, 2026-11-23)
+
+- [x] chatgpt prompt local seo citation audit | - | - | local-seo-citation-audit
