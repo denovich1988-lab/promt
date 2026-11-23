@@ -463,3 +463,13 @@ Seeds: chatgpt prompts for, chatgpt prompt for, midjourney prompts for, claude p
 - [x] chatgpt prompt support escalation | - | - | support-escalation-summary
 - [x] chatgpt prompt real estate market update | - | - | real-estate-market-update-newsletter
 - [x] chatgpt prompt christmas letter | - | - | family-christmas-letter
+- [x] chatgpt prompt campaign post mortem | - | - | marketing-campaign-post-mortem
+- [x] chatgpt prompt sales kickoff agenda | - | - | sales-kickoff-agenda
+- [x] chatgpt prompt competitive response | - | - | competitive-response-plan
+- [x] chatgpt prompt seo traffic forecast | - | - | seo-traffic-forecast
+- [x] chatgpt prompt youtube channel strategy | - | - | youtube-channel-strategy
+- [x] midjourney ukiyo-e prompts | - | - | midjourney-ukiyo-e-print
+- [x] match cut transition ai video prompt | - | - | match-cut-transition-ai-video
+- [x] chatgpt prompt candidate rejection email | - | - | candidate-rejection-email
+- [x] chatgpt prompt reading comprehension questions | - | - | reading-comprehension-questions
+- [x] chatgpt prompt security code review | - | - | code-security-review
