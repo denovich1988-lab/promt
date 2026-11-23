@@ -443,3 +443,13 @@ Seeds: chatgpt prompts for, chatgpt prompt for, midjourney prompts for, claude p
 - [x] chatgpt prompt questions to ask interviewer | - | - | questions-to-ask-interviewer
 - [x] chatgpt prompt month end close checklist | - | - | month-end-close-checklist
 - [x] chatgpt prompt cease and desist letter | - | - | cease-and-desist-letter-draft
+- [x] chatgpt prompt robots.txt | - | - | robots-txt-rules-review
+- [x] chatgpt prompt sales capacity quota planning | - | - | sales-capacity-quota-plan
+- [x] chatgpt prompt north star metric | - | - | north-star-metric-tree
+- [x] chatgpt prompt van westendorp pricing survey | - | - | van-westendorp-pricing-survey
+- [x] chatgpt prompt shareholder letter | - | - | shareholder-letter-annual
+- [x] midjourney steampunk prompts | - | - | midjourney-steampunk-scene
+- [x] vhs home video ai video prompt | - | - | vhs-home-video-look
+- [x] chatgpt prompt substitute teacher plans | - | - | substitute-teacher-plan
+- [x] chatgpt prompt holiday dinner timeline | - | - | holiday-dinner-cooking-timeline
+- [x] chatgpt prompt database schema design | - | - | database-schema-design
