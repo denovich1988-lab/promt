@@ -120,10 +120,10 @@ New seeds: ai art prompts, grok prompts, flux prompts, prompt ideas, dall e prom
 - [x] writing prompts for 4th grade (and 5th grade, chatgpt generates them) | 650 | 0 | writing-prompts-4th-grade
 - [ ] anime ai art prompts | 350 | 0 |
 - [ ] negative prompts for ai art | 210 | 1 |
-- [ ] drawing prompt ideas | 200 | 2 |
+- [x] drawing prompt ideas | 200 | 2 | drawing-prompt-ideas
 - [x] langchain prompt template | 200 | 7 | langchain-prompt-template
 - [ ] writing prompts for kids (chatgpt generates them) | 200 | 6 |
-- [ ] ai prompts for characters (character ai prompt ideas) | 190 | 1 |
+- [x] ai prompts for characters (character ai prompt ideas) | 190 | 1 | original-character-ideas
 - [ ] chatgpt prompts list | 190 | 4 |
 - [ ] funny ai art prompts | 110 | 0 |
 - [ ] midjourney prompt examples | 100 | 10 |
@@ -353,3 +353,12 @@ Seeds: chatgpt prompts for, chatgpt prompt for, midjourney prompts for, claude p
 - [x] chatgpt prompt annual business plan | - | - | annual-business-plan-next-year
 - [x] midjourney winter cabin prompts | - | - | midjourney-winter-cabin-scene
 - [x] dragon flying ai video prompt | - | - | fantasy-dragon-flight-ai-video
+
+- [x] chatgpt prompt pricing page copy | - | - | pricing-page-copy
+- [x] chatgpt prompt brand ambassador program | - | - | brand-ambassador-program
+- [x] chatgpt prompt author bio eeat | - | - | author-bio-eeat
+- [x] chatgpt prompt sales counteroffer email | - | - | sales-counteroffer-email
+- [x] chatgpt prompt research abstract | - | - | research-abstract-writer
+- [x] midjourney vintage travel poster prompts | - | - | midjourney-vintage-travel-poster
+- [x] dance ai video prompt | - | - | dance-choreography-ai-video
+- [x] chatgpt prompt company holiday party announcement | - | - | holiday-party-announcement
