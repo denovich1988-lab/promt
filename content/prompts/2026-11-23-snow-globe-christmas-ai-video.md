@@ -18,7 +18,7 @@ Write a text-to-video prompt for a 6–8 second snow globe Christmas clip.
 Scene inside the globe: [SCENE, e.g. a tiny village with a lit church, our shop front, a cabin and pine trees]
 Setting outside the globe: [SETTING, e.g. a wooden mantel with fairy lights, a windowsill at night]
 Mood: [MOOD, e.g. cozy, magical, nostalgic]
-Aspect ratio: [16:9 / 9:16 / 1:1]
+Aspect ratio: [ASPECT RATIO, e.g. 16:9, 9:16 or 1:1]
 End frame text or logo space needed: [YES OR NO]
 
 Include in the prompt:

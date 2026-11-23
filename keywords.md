@@ -383,3 +383,13 @@ Seeds: chatgpt prompts for, chatgpt prompt for, midjourney prompts for, claude p
 - [x] chatgpt prompt holiday out of office message | - | - | holiday-out-of-office-message
 - [x] chatgpt prompt holiday gift budget | - | - | holiday-gift-budget-plan
 - [x] chatgpt prompts for exit tickets | - | - | exit-ticket-questions
+- [x] chatgpt prompt company year in review post | - | - | company-year-in-review-post
+- [x] chatgpt prompt team offsite agenda | - | - | team-offsite-agenda
+- [x] discovery call recap email chatgpt | - | - | discovery-call-recap-email
+- [x] chatgpt prompt serp analysis | - | - | serp-analysis-for-keyword
+- [x] chatgpt prompt analyze competitor reviews | - | - | competitor-review-mining
+- [x] white background product photo ai prompt | - | - | white-background-product-photo
+- [x] real estate property tour ai video prompt | - | - | real-estate-property-tour-video
+- [x] year end bonus announcement email chatgpt | - | - | year-end-bonus-announcement
+- [x] chatgpt prompt write dockerfile | - | - | dockerfile-for-app
+- [x] chatgpt prompt professional development plan | - | - | professional-development-plan

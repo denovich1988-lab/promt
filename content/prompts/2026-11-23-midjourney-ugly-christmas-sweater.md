@@ -18,7 +18,7 @@ Create an image prompt for an ugly Christmas sweater design.
 Theme or joke: [THEME, e.g. cats in Santa hats, a coffee-loving reindeer, my company's office dog]
 Style: [STYLE, e.g. classic Fair Isle, retro 8-bit, over-the-top 3D pom-poms]
 Colors (3–5): [COLORS]
-Output type: [flat front-view pattern for print / sweater on a hanger / folded product photo]
+Output type: [OUTPUT TYPE, e.g. flat front-view pattern, sweater on a hanger, folded product photo]
 Text on the sweater, if any: [TEXT, or "none"]
 
 Write one image prompt that includes:

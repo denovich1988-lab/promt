@@ -19,7 +19,7 @@ What we sell and the main problem it solves: [PRODUCT AND PROBLEM]
 Target persona (title, company type, top priorities): [PERSONA]
 Proof we can mention (real customers, results we are allowed to share): [PROOF, or "none yet"]
 Channels available: [CHANNELS, e.g. email, phone, LinkedIn, video]
-Number of touches and length: [e.g. 10 touches over 3 weeks]
+Number of touches and length: [TOUCHES AND WEEKS, e.g. 10 touches over 3 weeks]
 
 Create:
 1. A day-by-day cadence table: day, channel, goal of the touch.

@@ -19,7 +19,7 @@ Grade and subject: [GRADE AND SUBJECT]
 Lesson objective (what students should be able to do): [OBJECTIVE]
 Key vocabulary or skill: [VOCABULARY OR SKILL]
 Common misconceptions I expect: [MISCONCEPTIONS, or "not sure"]
-Format: [paper / digital / verbal]
+Format: [FORMAT, e.g. paper, digital or verbal]
 
 Create:
 1. Three exit ticket sets (2–3 questions each) at different levels: check understanding, apply it, explain reasoning.
