@@ -118,23 +118,23 @@ New seeds: ai art prompts, grok prompts, flux prompts, prompt ideas, dall e prom
 - [x] ai prompt ideas (chatgpt prompt ideas) | 430 | 13 | ai-prompt-ideas-from-todo-list
 - [x] writing prompts for 3rd grade (and 2nd grade, chatgpt generates them) | 700 | 1 | writing-prompts-3rd-grade
 - [x] writing prompts for 4th grade (and 5th grade, chatgpt generates them) | 650 | 0 | writing-prompts-4th-grade
-- [ ] anime ai art prompts | 350 | 0 |
-- [ ] negative prompts for ai art | 210 | 1 |
+- [x] anime ai art prompts | 350 | 0 | covered: ai-anime-scene-prompts
+- [x] negative prompts for ai art | 210 | 1 | covered: negative-prompts-ai-images
 - [x] drawing prompt ideas | 200 | 2 | drawing-prompt-ideas
 - [x] langchain prompt template | 200 | 7 | langchain-prompt-template
-- [ ] writing prompts for kids (chatgpt generates them) | 200 | 6 |
+- [x] writing prompts for kids (chatgpt generates them) | 200 | 6 | covered: writing-prompts-elementary-students
 - [x] ai prompts for characters (character ai prompt ideas) | 190 | 1 | original-character-ideas
-- [ ] chatgpt prompts list | 190 | 4 |
-- [ ] funny ai art prompts | 110 | 0 |
-- [ ] midjourney prompt examples | 100 | 10 |
-- [ ] ai prompts for logo design | 90 | 0 |
-- [ ] chat gpt prompts for business plan | 80 | 1 |
+- [x] chatgpt prompts list | 190 | 4 | covered: chatgpt-prompt-template-cheat-sheet
+- [x] funny ai art prompts | 110 | 0 | covered: funny-ai-image-prompts
+- [x] midjourney prompt examples | 100 | 10 | covered: best-midjourney-prompts-parameters
+- [x] ai prompts for logo design | 90 | 0 | covered: ai-logo-prompts-with-name
+- [x] chat gpt prompts for business plan | 80 | 1 | covered: one-page-business-plan
 - [x] llm prompt template | 80 | 2 | llm-prompt-template-production
 - [ ] how to write prompts for ai | 80 | 10 |
 - [x] poem prompt ideas | 60 | 4 | poem-prompt-ideas
 - [x] chatgpt prompts for email marketing | 50 | 4 | email-marketing-campaign-calendar
 - [x] chatgpt prompts for digital marketing | 50 | 2 | digital-marketing-channel-audit
-- [ ] movie prompt ideas | 50 | 7 |
+- [x] movie prompt ideas | 50 | 7 | movie-plot-ideas
 
 ## Added 2026-11-22 (KD 16–50 pull)
 
@@ -142,10 +142,10 @@ Owner raised the KD limit to 50. Prompt rows go to content/prompts as usual. "Hu
 
 ### Prompts
 
-- [ ] novel ai prompts | 90 | 17 |
-- [ ] text prompts for ai art | 50 | 16 |
-- [ ] ai generated writing prompts | 60 | 33 |
-- [ ] ai prompt for logo design | 90 | 18 |
+- [x] novel ai prompts | 90 | 17 | skipped: brand name (NovelAI)
+- [x] text prompts for ai art | 50 | 16 | covered: ai-art-prompt-builder
+- [x] ai generated writing prompts | 60 | 33 | covered: ai-writing-prompts-daily-practice
+- [x] ai prompt for logo design | 90 | 18 | covered: ai-logo-prompts-with-name
 
 ### Hub/list intents
 
@@ -177,8 +177,8 @@ Seeds: chatgpt prompts for, chatgpt prompt for, midjourney prompts for, claude p
 
 - [x] chatgpt prompts for lawyers | 100 | 4 | lawyer-legal-research-memo
 - [x] chatgpt prompts for project management | 70 | 1 | project-status-report
-- [ ] chatgpt prompts for writing a book | 50 | 0 |
-- [ ] chatgpt prompts for coding | 50 | 2 |
+- [x] chatgpt prompts for writing a book | 50 | 0 | book-writing-plan-chapters
+- [x] chatgpt prompts for coding | 50 | 2 | learn-programming-language-fast
 - [x] anime thanksgiving (ai image prompt) | 5000 | 0 | anime-thanksgiving-scene
 - [x] pencil tattoo drawings (ai image prompt) | 300 | 0 | pencil-sketch-tattoo-design
 - [x] hashtags (halloween, motivational, day-of-week hashtags; chatgpt generates them) | 500 | 0 | hashtag-set-for-post
@@ -362,3 +362,11 @@ Seeds: chatgpt prompts for, chatgpt prompt for, midjourney prompts for, claude p
 - [x] midjourney vintage travel poster prompts | - | - | midjourney-vintage-travel-poster
 - [x] dance ai video prompt | - | - | dance-choreography-ai-video
 - [x] chatgpt prompt company holiday party announcement | - | - | holiday-party-announcement
+
+- [x] chatgpt prompt social media giveaway | - | - | social-media-giveaway-plan
+- [x] chatgpt prompt messaging matrix | - | - | messaging-matrix-by-persona
+- [x] chatgpt prompt cross-sell bundle ideas | - | - | product-bundle-cross-sell-ideas
+- [x] chatgpt prompt request for proposal | - | - | request-for-proposal-draft
+- [x] chatgpt prompt feature request prioritization | - | - | feature-request-prioritization
+- [x] midjourney minimalist line art prompts | - | - | midjourney-minimalist-line-art
+- [x] ai mascot design prompt | - | - | original-brand-mascot-design
