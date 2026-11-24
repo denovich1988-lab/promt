@@ -589,3 +589,13 @@ Seeds: chatgpt prompts for, chatgpt prompt for, midjourney prompts for, claude p
 - [x] 90s yearbook photo ai prompt | - | - | 90s-yearbook-photo-ai
 - [x] chatgpt mock interview prompt | - | - | mock-interview-practice
 - [x] chatgpt prompt for pandas data analysis | - | - | pandas-data-analysis-code
+- [x] chatgpt gap analysis prompt | - | - | gap-analysis-current-future
+- [x] chatgpt prompt youtube transcript to blog post | - | - | video-transcript-to-blog-post
+- [x] billboard ad copy chatgpt prompt | - | - | billboard-ad-copy
+- [x] bid no bid decision rfp chatgpt | - | - | bid-no-bid-decision
+- [x] chatgpt prompt response to reviewers letter | - | - | response-to-reviewers-letter
+- [x] dolly zoom ai video prompt | - | - | dolly-zoom-ai-video
+- [x] midjourney synthwave prompts | - | - | midjourney-synthwave-retro
+- [x] chatgpt prompt small claims court | - | - | small-claims-court-prep
+- [x] chatgpt prompt homeschool schedule | - | - | homeschool-weekly-schedule
+- [x] stay interview questions chatgpt prompt | - | - | stay-interview-questions
