@@ -923,3 +923,165 @@ For the daily blog run, not for prompt pages.
 - [ ] gemini prompts | 1200 | 8 |
 - [ ] chat gpt character prompt | 50 | 0 |
 - [ ] midjourney prompts examples | 30 | 10 |
+
+## Remaining keywords from the 2026-11-24 Excel (any KD)
+
+- [ ] gemini ai photo prompt | 34000 | 26 |
+- [ ] chat gpt resume prompts | 3200 | 2 |
+- [ ] chat gpt caricature prompt | 1600 | 0 |
+- [ ] ai image prompt | 1200 | 5 |
+- [ ] prompts for chatgpt | 1000 | 8 |
+- [ ] ai prompt examples | 900 | 3 |
+- [ ] chatgpt image prompts | 600 | 0 |
+- [ ] best prompts for chatgpt | 600 | 0 |
+- [ ] ai prompts examples | 500 | 8 |
+- [ ] chatgpt image prompt | 450 | 0 |
+- [ ] ai art prompt | 450 | 4 |
+- [ ] chat gpt color analysis prompt | 450 | 0 |
+- [ ] fun chatgpt prompts | 400 | 0 |
+- [ ] prompt for chatgpt | 350 | 2 |
+- [ ] fun chat gpt prompts | 350 | 0 |
+- [ ] resume prompts for chatgpt | 350 | 1 |
+- [ ] chatgpt resume prompts | 350 | 3 |
+- [ ] gemini ai prompt for women | 350 | 0 |
+- [ ] ai prompt template | 350 | 4 |
+- [ ] caricature chatgpt prompt | 300 | 0 |
+- [ ] ai prompt templates | 300 | 5 |
+- [ ] chatgpt prompt examples | 250 | 0 |
+- [ ] prompts ai | 250 | 12 |
+- [ ] ai art prompt examples | 200 | 4 |
+- [ ] prompts for chat gpt | 200 | 1 |
+- [ ] ai prompt ideas | 200 | 13 |
+- [ ] funny chatgpt prompts | 200 | 0 |
+- [ ] chat gpt prompts to make money | 150 | 0 |
+- [ ] cool chatgpt prompts | 150 | 0 |
+- [ ] chatgpt prompt templates | 150 | 1 |
+- [ ] chatgpt prompt library | 150 | 1 |
+- [ ] cool chat gpt prompts | 150 | 0 |
+- [ ] ai writing prompt | 150 | 9 |
+- [ ] funny chat gpt prompts | 150 | 0 |
+- [ ] marketing prompts for chatgpt | 150 | 12 |
+- [ ] ai prompt example | 150 | 2 |
+- [ ] ai anime prompt | 100 | 2 |
+- [ ] useful chatgpt prompts | 100 | 2 |
+- [ ] ai art anime prompts | 100 | 1 |
+- [ ] free chatgpt prompt templates | 100 | 1 |
+- [ ] list of chatgpt prompts | 100 | 3 |
+- [ ] chat gpt resume prompt | 100 | 2 |
+- [ ] chat gpt cover letter prompts | 100 | 0 |
+- [ ] ai prompt anime | 100 | 1 |
+- [ ] ai art prompt ideas | 100 | 5 |
+- [ ] chat gpt cover letter prompt | 100 | 1 |
+- [ ] fun prompts for chatgpt | 100 | 0 |
+- [ ] creative chatgpt prompts | 100 | 0 |
+- [ ] chatgpt prompt template | 100 | 0 |
+- [ ] good chat gpt prompts | 100 | 1 |
+- [ ] chat gpt prompts for content creation | 100 | 2 |
+- [ ] best prompt for chatgpt | 100 | 0 |
+- [ ] good chatgpt prompts | 100 | 0 |
+- [ ] top chatgpt prompts | 100 | 1 |
+- [ ] cool ai image prompts | 100 | 9 |
+- [ ] best chatgpt prompt | 100 | 4 |
+- [ ] chatgpt prompts for business | 100 | 0 |
+- [ ] sora prompt | 100 | 5 |
+- [ ] ai story prompt | 90 | 0 |
+- [ ] writing prompts for chatgpt | 90 | 15 |
+- [ ] list of chat gpt prompts | 80 | 1 |
+- [ ] most useful chatgpt prompts | 80 | 2 |
+- [ ] best chat gpt prompt | 80 | 0 |
+- [ ] funny prompts for chatgpt | 80 | 0 |
+- [ ] chat gpt prompts for social media marketing | 80 | 5 |
+- [ ] best prompts for chat gpt | 80 | 6 |
+- [ ] chat gpt email prompts | 80 | 3 |
+- [ ] funniest chat gpt prompts | 80 | 0 |
+- [ ] chatgpt advanced prompts | 80 | 0 |
+- [ ] top chat gpt prompts | 70 | 2 |
+- [ ] best chat gpt prompts for business | 70 | 0 |
+- [ ] example chat gpt prompts | 70 | 0 |
+- [ ] chat gpt marketing prompts | 70 | 4 |
+- [ ] useful chat gpt prompts | 70 | 4 |
+- [ ] ai prompt art | 70 | 9 |
+- [ ] chatgpt cover letter prompts | 70 | 1 |
+- [ ] interesting chatgpt prompts | 70 | 0 |
+- [ ] chat gpt prompt ideas | 70 | 2 |
+- [ ] good prompts for chat gpt | 60 | 0 |
+- [ ] popular chatgpt prompts | 60 | 1 |
+- [ ] cool prompts for chatgpt | 60 | 0 |
+- [ ] resume prompt for chatgpt | 60 | 0 |
+- [ ] chatgpt prompts examples | 60 | 0 |
+- [ ] chatgpt prompt ideas | 60 | 3 |
+- [ ] interesting prompts for chat gpt | 60 | 0 |
+- [ ] resume chatgpt prompts | 50 | 2 |
+- [ ] cover letter prompts for chatgpt | 50 | 0 |
+- [ ] 50 smart seo prompts for chatgpt | 50 | 0 |
+- [ ] crazy chatgpt prompts | 50 | 0 |
+- [ ] free midjourney prompts | 40 | 0 |
+- [ ] midjourney prompt library | 40 | 0 |
+- [ ] chatgpt prompt for business plan | 40 | 1 |
+- [ ] midjourney negative prompts | 30 | 0 |
+- [ ] best chatgpt resume prompts | 30 | 1 |
+- [ ] chatgpt prompt for coding | 20 | 3 |
+- [ ] chatgpt prompts for business ideas | 20 | 2 |
+
+## Blog topics, added 2026-11-25
+
+- [ ] introduction to prompt engineering for generative ai | 250 | 24 |
+- [ ] how to prompt chatgpt | 90 | 42 |
+- [ ] introduction to prompt engineering | 80 | 47 |
+- [ ] how to prompt ai art | 70 | 16 |
+
+## Tool keywords (not for prompt pages): improve /prompt-generator/ or build a tool page for each group
+
+- [ ] ai prompt generator | 7400 | 39 |
+- [ ] image to prompt | 5100 | 43 |
+- [ ] prompt ai | 1800 | 43 |
+- [ ] ai image editor with prompt | 1600 | 63 |
+- [ ] image to prompt generator | 1300 | 24 |
+- [ ] ai image prompt generator | 1200 | 40 |
+- [ ] image to prompt generator free | 1100 | 18 |
+- [ ] image prompt generator | 1000 | 38 |
+- [ ] ai prompt generator free | 500 | 35 |
+- [ ] image to prompt ai | 500 | 18 |
+- [ ] ai video prompt generator | 500 | 39 |
+- [ ] chatgpt prompt optimizer | 450 | 23 |
+- [ ] funny ai prompts | 400 | 0 |
+- [ ] free ai prompt generator | 400 | 47 |
+- [ ] ai image to prompt | 400 | 50 |
+- [ ] ai story generator based on prompt | 400 | 29 |
+- [ ] prompt generator from image | 400 | 23 |
+- [ ] prompt generator ai | 350 | 39 |
+- [ ] ai prompt builder | 350 | 45 |
+- [ ] ai prompt text generator | 350 | 27 |
+- [ ] prompt engineering tools | 300 | 72 |
+- [ ] ai prompt maker | 300 | 37 |
+- [ ] prompt generator for ai | 300 | 28 |
+- [ ] ai prompt image | 250 | 9 |
+- [ ] image prompt ai | 200 | 10 |
+- [ ] fun ai prompts | 200 | 0 |
+- [ ] ai logo generator with prompt | 200 | 39 |
+- [ ] text to image prompt generator | 200 | 59 |
+- [ ] image to text prompt generator | 200 | 17 |
+- [ ] ai story prompt generator | 200 | 31 |
+- [ ] prompt from image | 200 | 40 |
+- [ ] writing prompt generator ai | 200 | 36 |
+- [ ] anime ai prompts | 150 | 0 |
+- [ ] cool ai prompts | 150 | 8 |
+- [ ] ai photo prompt generator | 150 | 45 |
+- [ ] generate prompt from image | 150 | 23 |
+- [ ] ai anime prompt generator | 150 | 22 |
+- [ ] ai image prompt editor | 150 | 47 |
+- [ ] ai writing prompt generator | 150 | 36 |
+- [ ] creative ai prompts | 100 | 8 |
+- [ ] interesting ai prompts | 100 | 0 |
+- [ ] anime ai prompt | 100 | 0 |
+- [ ] prompt for ai image generator | 100 | 10 |
+- [ ] ai prompt from image | 100 | 21 |
+- [ ] create prompt from image | 100 | 21 |
+- [ ] ai generator prompt ideas | 90 | 23 |
+- [ ] ai character prompt generator | 80 | 21 |
+- [ ] ai image generator prompts | 80 | 22 |
+- [ ] what is a prompt ai | 80 | 43 |
+- [ ] photoshop ai prompt | 70 | 8 |
+- [ ] sample ai prompts | 70 | 2 |
+- [ ] crazy ai prompts | 40 | 0 |
+- [ ] great ai prompts | 40 | 5 |
