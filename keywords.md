@@ -557,3 +557,13 @@ Seeds: chatgpt prompts for, chatgpt prompt for, midjourney prompts for, claude p
 - [x] chatgpt prompt to interpret regression results | - | - | regression-results-explained
 - [x] chatgpt prompts for writing a memoir | - | - | memoir-chapter-from-memories
 - [x] trademark search chatgpt prompt | - | - | trademark-name-check
+- [x] rebrand announcement chatgpt prompt | - | - | rebrand-announcement
+- [x] holiday shipping deadline email | - | - | shipping-deadline-holiday-email
+- [x] champion enablement email b2b sales | - | - | champion-internal-pitch-kit
+- [x] chatgpt prompt to evaluate a franchise | - | - | franchise-opportunity-evaluation
+- [x] card sorting chatgpt prompt | - | - | card-sorting-study
+- [x] midjourney double exposure prompts | - | - | midjourney-double-exposure
+- [x] tilt shift ai video prompt | - | - | tilt-shift-miniature-video
+- [x] chatgpt prompts for bash scripts | - | - | bash-script-automation
+- [x] cancellation request reply template chatgpt | - | - | cancellation-save-reply
+- [x] chatgpt prompt for rental property analysis | - | - | rental-property-cash-flow
