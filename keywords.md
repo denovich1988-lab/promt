@@ -473,3 +473,15 @@ Seeds: chatgpt prompts for, chatgpt prompt for, midjourney prompts for, claude p
 - [x] chatgpt prompt candidate rejection email | - | - | candidate-rejection-email
 - [x] chatgpt prompt reading comprehension questions | - | - | reading-comprehension-questions
 - [x] chatgpt prompt security code review | - | - | code-security-review
+
+## Long-tail fill (2026-11-24; remaining rows are hub/blog intents, demand checked with web search)
+- [x] co-marketing campaign plan chatgpt prompt | - | - | co-marketing-campaign-plan
+- [x] seo product review article prompt | - | - | product-review-article-seo
+- [x] closed lost deal reactivation email | - | - | closed-lost-deal-reactivation
+- [x] chatgpt prompt to calculate freelance rates | - | - | freelance-rate-calculator
+- [x] competitor job postings analysis | - | - | competitor-job-postings-analysis
+- [x] midjourney isometric room prompts | - | - | midjourney-isometric-room-diorama
+- [x] skincare product ai video prompt | - | - | skincare-product-ai-video
+- [x] chatgpt prompt for grad school personal statement | - | - | grad-school-personal-statement
+- [x] chatgpt prompt for written warning letter | - | - | written-warning-letter-employee
+- [x] chatgpt prompt typescript types from json | - | - | typescript-types-from-json
