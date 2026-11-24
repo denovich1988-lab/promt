@@ -537,3 +537,13 @@ Seeds: chatgpt prompts for, chatgpt prompt for, midjourney prompts for, claude p
 - [x] chatgpt prompts for vba macros | - | - | excel-vba-macro
 - [x] salary bands chatgpt prompt | - | - | salary-bands-structure
 - [x] chatgpt prompt for airbnb listing description | - | - | short-term-rental-listing
+- [x] push notification copy chatgpt prompt | - | - | push-notification-copy
+- [x] meddicc chatgpt prompt | - | - | meddicc-deal-review
+- [x] mckinsey 7s chatgpt prompt | - | - | mckinsey-7s-analysis
+- [x] kano model survey chatgpt | - | - | kano-model-feature-survey
+- [x] bottom of funnel keywords chatgpt prompt | - | - | bottom-funnel-keyword-ideas
+- [x] midjourney prompts for stained glass | - | - | midjourney-stained-glass
+- [x] christmas market ai video prompt | - | - | christmas-market-ai-video
+- [x] decision journal chatgpt prompt | - | - | decision-journal
+- [x] chatgpt prompt for lab report | - | - | lab-report-writer
+- [x] billing error apology email chatgpt | - | - | billing-error-apology
