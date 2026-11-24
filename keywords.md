@@ -505,3 +505,13 @@ Seeds: chatgpt prompts for, chatgpt prompt for, midjourney prompts for, claude p
 - [x] reply to job rejection ask for feedback | - | - | job-rejection-feedback-request
 - [x] chatgpt meal prep plan prompt | - | - | weekly-meal-prep-plan
 - [x] chatgpt prompt for dpia | - | - | data-protection-impact-assessment
+- [x] chatgpt prompt for tiktok ad script | - | - | tiktok-ad-script
+- [x] food truck business plan chatgpt prompt | - | - | food-truck-business-plan
+- [x] chatgpt prompt personalized cold email first lines | - | - | personalized-first-lines-prospects
+- [x] diagnose organic traffic drop prompt | - | - | organic-traffic-drop-diagnosis
+- [x] proof of concept plan template b2b | - | - | proof-of-concept-success-plan
+- [x] midjourney mandala prompts | - | - | midjourney-mandala-art
+- [x] claymation ai video prompt | - | - | claymation-character-ai-video
+- [x] chatgpt cohort analysis prompt | - | - | cohort-retention-analysis
+- [x] chatgpt prompt for realtor bio | - | - | real-estate-agent-bio
+- [x] chatgpt prompts for classroom management | - | - | classroom-management-plan
