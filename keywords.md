@@ -577,3 +577,15 @@ Seeds: chatgpt prompts for, chatgpt prompt for, midjourney prompts for, claude p
 - [x] team charter chatgpt prompt | - | - | team-charter
 - [x] chatgpt packing list prompt | - | - | trip-packing-checklist
 - [x] portfolio case study chatgpt prompt | - | - | portfolio-case-study-designers
+
+## Long-tail fill, run 3 (2026-11-24; demand checked with web search)
+- [x] chatgpt prompt 30 60 90 day plan | - | - | 30-60-90-day-plan
+- [x] chatgpt prompt for pitch deck outline | - | - | startup-pitch-deck-outline
+- [x] chatgpt prompt for cost benefit analysis | - | - | cost-benefit-analysis
+- [x] chatgpt prompt google shopping product titles | - | - | shopping-feed-product-titles
+- [x] back in stock email chatgpt prompt | - | - | back-in-stock-email
+- [x] customer reference request email | - | - | customer-reference-request
+- [x] thanksgiving ai video prompt | - | - | thanksgiving-dinner-ai-video
+- [x] 90s yearbook photo ai prompt | - | - | 90s-yearbook-photo-ai
+- [x] chatgpt mock interview prompt | - | - | mock-interview-practice
+- [x] chatgpt prompt for pandas data analysis | - | - | pandas-data-analysis-code
