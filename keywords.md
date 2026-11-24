@@ -495,3 +495,13 @@ Seeds: chatgpt prompts for, chatgpt prompt for, midjourney prompts for, claude p
 - [x] rent vs buy calculator chatgpt prompt | - | - | rent-vs-buy-decision
 - [x] chatgpt prompt for science fair project ideas | - | - | science-fair-project-ideas
 - [x] chatgpt prompt for chargeback dispute response | - | - | chargeback-dispute-response
+- [x] chatgpt prompt for white paper | - | - | white-paper-outline
+- [x] chatgpt prompts for instagram bio | - | - | instagram-bio-ideas
+- [x] seo glossary page | - | - | seo-glossary-page
+- [x] inbound lead response email template | - | - | inbound-lead-response-email
+- [x] perceptual map chatgpt prompt | - | - | perceptual-positioning-map
+- [x] chatgpt prompt old photo restoration | - | - | old-photo-restoration-colorize
+- [x] plant growth timelapse ai video prompt | - | - | plant-growth-timelapse-video
+- [x] reply to job rejection ask for feedback | - | - | job-rejection-feedback-request
+- [x] chatgpt meal prep plan prompt | - | - | weekly-meal-prep-plan
+- [x] chatgpt prompt for dpia | - | - | data-protection-impact-assessment
