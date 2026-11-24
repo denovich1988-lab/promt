@@ -22,10 +22,16 @@ const fmtShort = (d) =>
   new Date(d + 'T00:00:00Z').toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' });
 const toISODate = (d) => (d instanceof Date ? d.toISOString().slice(0, 10) : String(d).slice(0, 10));
 const todayISO = () => new Date().toISOString().slice(0, 10);
+// Owner's rule (2026-11-25): every link to another website is nofollow and opens in a new tab.
+const nofollow = (html) => html.replace(/<a\s([^>]*?)href="(https?:\/\/[^"]+)"([^>]*)>/g, (m, a, u, b) => {
+  if (/^https?:\/\/(www\.)?goodaipromt\.com/.test(u)) return m;
+  const rest = (a + b).replace(/\s*rel="[^"]*"/g, '').replace(/\s*target="[^"]*"/g, '');
+  return `<a ${rest.trim() ? rest.trim() + ' ' : ''}href="${u}" rel="nofollow noopener noreferrer" target="_blank">`;
+});
 const write = (rel, html) => {
   const file = path.join(DIST, rel);
   fs.mkdirSync(path.dirname(file), { recursive: true });
-  fs.writeFileSync(file, html);
+  fs.writeFileSync(file, rel.endsWith('.html') ? nofollow(html) : html);
 };
 const catName = (c) => site.categories[c]?.name || c;
 const listJoin = (a) => (a.length < 2 ? a.join('') : `${a.slice(0, -1).join(', ')} and ${a[a.length - 1]}`);
