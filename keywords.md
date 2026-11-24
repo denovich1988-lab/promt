@@ -599,3 +599,13 @@ Seeds: chatgpt prompts for, chatgpt prompt for, midjourney prompts for, claude p
 - [x] chatgpt prompt small claims court | - | - | small-claims-court-prep
 - [x] chatgpt prompt homeschool schedule | - | - | homeschool-weekly-schedule
 - [x] stay interview questions chatgpt prompt | - | - | stay-interview-questions
+- [x] chatgpt prompt nonprofit strategic plan | - | - | nonprofit-strategic-plan
+- [x] chatgpt prompt llms.txt file | - | - | llms-txt-file-draft
+- [x] radio ad script chatgpt prompt | - | - | radio-ad-script
+- [x] new account manager introduction email | - | - | account-manager-introduction-email
+- [x] chatgpt prompt research poster | - | - | academic-research-poster
+- [x] ai book trailer video prompt | - | - | book-trailer-ai-video
+- [x] ai restaurant menu design prompt | - | - | restaurant-menu-design-image
+- [x] chatgpt prompt personal brand statement | - | - | personal-brand-statement
+- [x] chatgpt prompt net worth statement | - | - | net-worth-statement
+- [x] chatgpt prompt to build a chrome extension | - | - | chrome-extension-starter
