@@ -609,3 +609,13 @@ Seeds: chatgpt prompts for, chatgpt prompt for, midjourney prompts for, claude p
 - [x] chatgpt prompt personal brand statement | - | - | personal-brand-statement
 - [x] chatgpt prompt net worth statement | - | - | net-worth-statement
 - [x] chatgpt prompt to build a chrome extension | - | - | chrome-extension-starter
+- [x] chatgpt prompt project communication plan | - | - | project-communication-plan
+- [x] missed deadline email to client chatgpt | - | - | missed-deadline-client-apology
+- [x] quora marketing chatgpt prompt | - | - | quora-answers-marketing
+- [x] customer birthday email chatgpt prompt | - | - | customer-birthday-email
+- [x] field observation guide chatgpt prompt | - | - | field-observation-guide
+- [x] save the date ai video prompt | - | - | save-the-date-ai-video
+- [x] midjourney aerial drone photography prompts | - | - | midjourney-aerial-drone-photography
+- [x] chatgpt prompt support ticket categories | - | - | support-ticket-tagging-taxonomy
+- [x] chatgpt prompt unit plan backward design | - | - | unit-plan-backward-design
+- [x] chatgpt prompt to delegate tasks | - | - | delegate-task-brief
