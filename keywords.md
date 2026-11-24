@@ -896,3 +896,30 @@ For the daily blog run, not for prompt pages.
 - [ ] how to write a prompt for ai | 70 | 16 |
 - [ ] how does prompt engineering work | 70 | 45 |
 - [ ] prompt engineering strategies | 60 | 65 |
+
+## Competitor keywords, 2026-11-24 (godofprompt.ai, aiprm.com, snackprompt.com, team-gpt.com, aiforwork.co, clickup.com, promptadvance.club)
+
+- [ ] chat gpt prompts list | 90 | 2 |
+- [ ] chat gpt prompts for business | 70 | 4 |
+- [ ] business prompts for chatgpt | 30 | 0 |
+- [ ] thesis prompt | 30 | 0 |
+- [ ] dall e prompts | 100 | 70 |
+- [ ] seo prompts | 100 | 0 |
+- [ ] seo prompt for chatgpt | 100 | 0 |
+- [ ] chat gpt seo prompts | 90 | 1 |
+- [ ] seo prompts for chatgpt | 90 | 0 |
+- [ ] best chat gpt prompts for seo | 80 | 1 |
+- [ ] dall e prompt | 80 | 70 |
+- [ ] script writing prompts | 50 | 0 |
+- [ ] best chatgpt prompts for seo | 50 | 1 |
+- [ ] script prompts | 30 | 56 |
+- [ ] dalle 3 prompts | 20 | 2 |
+- [ ] chatgpt screenwriting prompts | 20 | 0 |
+- [ ] what does a prompt look like | 20 | 11 |
+- [ ] game prompts | 20 | 6 |
+- [ ] website prompts | 200 | 27 |
+- [ ] chat gpt prompts seo | 70 | 4 |
+- [ ] graphic design prompt | 30 | 1 |
+- [ ] gemini prompts | 1200 | 8 |
+- [ ] chat gpt character prompt | 50 | 0 |
+- [ ] midjourney prompts examples | 30 | 10 |
