@@ -629,3 +629,167 @@ Seeds: chatgpt prompts for, chatgpt prompt for, midjourney prompts for, claude p
 - [x] fsbo script chatgpt prompt | - | - | fsbo-cold-call-script
 - [x] chatgpt prompt to write an obituary | - | - | obituary-writer
 - [x] chatgpt prompt pto policy | - | - | pto-policy-draft
+
+## New low-KD keywords, 2026-11-24 (Ahrefs, US, KD ≤ 15)
+
+Seeds: chatgpt prompts, chat gpt prompts, chatgpt prompt, gpt prompts, prompts for chatgpt, ai prompts, ai prompt, midjourney prompts, gemini prompt, claude prompts, nano banana prompt, ai video prompt, veo 3 prompt, sora prompt, grok prompts, image prompt, photo prompt, flux prompt, seedance prompt, kling prompt, plus phrase matches for "chatgpt prompts for", "ai prompts for", "midjourney prompts for", "gemini prompt for", "claude prompts for". Rows already in this file and close variants of them were removed; excluded: NSFW, jailbreak/DAN/bypass, avoid AI detection, prompt-engineer jobs and salaries, tool keywords (generator, enhancer, splitter, manager), other sites brand names. One row = one page; the extra variants after "also:" go into H2s/FAQ of the same page.
+
+- [ ] ai gemini photo prompt for girls | 1000 | 0 |
+- [ ] chat gpt prompts for pictures | 1000 | 0 |
+- [ ] chat gpt photo prompts | 800 | 0 |; also: chatgpt photo prompt
+- [ ] ai photo prompt | 600 | 2 |; also: ai photo prompts
+- [ ] what is a prompt in ai | 800 | 9 |
+- [ ] image prompt | 700 | 7 |
+- [ ] what is an ai prompt | 600 | 10 |
+- [ ] ai prompts for art | 150 | 5 |; also: prompts for ai art, prompt for ai art, good prompts for ai art, best ai prompts for art, best prompt for ai art, funny prompts for ai art, best prompts for ai art
+- [ ] chatgpt prompts for marketing | 150 | 8 |; also: chat gpt prompts for marketing, best chatgpt prompts for marketing, best chat gpt prompts for marketing
+- [ ] chatgpt prompts for resume | 200 | 2 |; also: chat gpt prompts for resume, chatgpt prompt for resume
+- [ ] how to write ai prompts | 400 | 14 |
+- [ ] ai prompts for images | 350 | 7 |
+- [ ] chatgpt prompts for seo | 100 | 1 |; also: chat gpt prompts for seo, best chat gpt prompts for seo, best chatgpt prompts for seo
+- [ ] ai image generator prompt | 250 | 12 |; also: ai image generator prompt ideas
+- [ ] ai picture prompt | 200 | 8 |; also: ai picture prompts
+- [ ] ai drawing prompts | 150 | 9 |; also: ai drawing prompt, ai prompt drawing
+- [ ] chat gpt prompts for cover letter | 200 | 2 |; also: chatgpt prompts for cover letter
+- [ ] what is a negative prompt in ai | 250 | 1 |
+- [ ] prompt for chatgpt to write like a human | 250 | 0 |
+- [ ] ai gemini photo prompt | 250 | 12 |
+- [ ] chatgpt system prompt | 250 | 12 |
+- [ ] prompts to ask chat gpt | 200 | 1 |
+- [ ] what is a prompt in generative ai | 200 | 3 |
+- [ ] what are ai prompts | 200 | 7 |
+- [ ] best prompts for ai art anime | 100 | 0 |; also: best prompts for anime ai art
+- [ ] ai negative prompt | 100 | 2 |; also: ai negative prompts
+- [ ] photo prompt | 150 | 10 |; also: photo prompt ideas
+- [ ] chatgpt prompts for social media | 100 | 1 |; also: chat gpt prompts for social media
+- [ ] prompt chain ai | 150 | 2 |
+- [ ] best chatgpt prompts for resume writing | 150 | 0 |
+- [ ] generative ai prompts | 150 | 12 |
+- [ ] chatgpt prompts for copywriting | 150 | 0 |
+- [ ] ai prompts for resume | 150 | 1 |
+- [ ] what is ai prompt | 150 | 14 |
+- [ ] chatgpt therapist prompt | 150 | 0 |
+- [ ] ai text prompt | 150 | 9 |
+- [ ] ai image generation prompts | 150 | 14 |
+- [ ] chatgpt prompt cheat sheet | 100 | 0 |; also: chatgpt prompts cheat sheet
+- [ ] how to prompt midjourney | 150 | 10 |
+- [ ] prompts for midjourney | 150 | 3 |
+- [ ] chatgpt therapy prompt | 80 | 0 |; also: chat gpt therapy prompt
+- [ ] chatgpt prompts for sales | 60 | 1 |; also: best chatgpt prompts for sales
+- [ ] ai prompt images | 100 | 4 |
+- [ ] chatgpt prompts for social media posts | 100 | 0 |
+- [ ] ai style prompts | 100 | 6 |
+- [ ] prompt in generative ai | 100 | 2 |
+- [ ] how to write a good ai prompt | 100 | 12 |
+- [ ] ai resume prompts | 100 | 1 |
+- [ ] chatgpt financial advisor prompt | 100 | 0 |
+- [ ] chatgpt social media prompts | 100 | 3 |
+- [ ] chatgpt best prompts | 100 | 6 |
+- [ ] prompts for ai art generator | 100 | 11 |
+- [ ] ai marketing prompts | 100 | 9 |
+- [ ] ai prompt database | 100 | 11 |
+- [ ] ai chat prompts | 100 | 4 |
+- [ ] how to write good ai prompts | 100 | 14 |
+- [ ] how to write ai prompts for art | 100 | 0 |
+- [ ] midjourney prompt engineering | 100 | 5 |
+- [ ] writing prompts for ai | 70 | 9 |; also: ai prompts for writing
+- [ ] ai prompt tips | 90 | 12 |
+- [ ] prompts for ai image generation | 90 | 5 |
+- [ ] art style prompts for ai | 90 | 5 |
+- [ ] ai art styles prompts | 90 | 4 |
+- [ ] midjourney prompt tips | 90 | 8 |
+- [ ] how to prompt ai | 80 | 8 |
+- [ ] how to write ai art prompts | 80 | 12 |
+- [ ] ai for education prompt library | 80 | 5 |
+- [ ] chatgpt resume writing prompts | 80 | 3 |
+- [ ] chat gpt essay prompt | 80 | 1 |
+- [ ] ai prompts for characters | 80 | 1 |
+- [ ] chat gpt business prompts | 80 | 4 |
+- [ ] how long can chatgpt prompts be | 70 | 0 |
+- [ ] chat gpt prompts for making money | 70 | 0 |
+- [ ] prompt ideas for ai art | 70 | 4 |
+- [ ] ai generated images prompts | 70 | 8 |
+- [ ] chatgpt blog prompts | 70 | 3 |
+- [ ] how to write ai image prompts | 70 | 12 |
+- [ ] what prompts to use for chat gpt | 70 | 2 |
+- [ ] reverse image prompt | 60 | 0 |
+- [ ] midjourney ai prompts | 60 | 4 |
+- [ ] chat gpt template prompts | 60 | 1 |
+- [ ] how to write better ai prompts | 60 | 14 |
+- [ ] ai art negative prompt list | 60 | 0 |
+- [ ] ai art generator prompt ideas | 60 | 6 |
+- [ ] ai generated art prompts | 60 | 2 |
+- [ ] chatgpt lawyer prompt | 60 | 3 |
+- [ ] ai art prompt guide | 60 | 6 |
+- [ ] ai art examples with prompts | 60 | 6 |
+- [ ] best ai prompts for portraits | 40 | 0 |; also: ai prompts for portraits
+- [ ] ai image negative prompt | 50 | 3 |
+- [ ] midjourney ai art prompts | 50 | 0 |
+- [ ] ai prompts for business | 50 | 7 |
+- [ ] what is negative prompt in ai | 50 | 1 |
+- [ ] ai art prompts to try | 50 | 10 |
+- [ ] chatgpt personal trainer prompt | 50 | 1 |
+- [ ] tips for ai art prompts | 50 | 15 |
+- [ ] chatgpt prompt engineering examples | 50 | 10 |
+- [ ] how to write a prompt for ai art | 50 | 6 |
+- [ ] how to make good ai art prompts | 50 | 12 |
+- [ ] ai art prompt cheat sheet | 40 | 0 |
+- [ ] chatgpt prompts for marketers | 40 | 9 |
+- [ ] how to use ai art prompts | 40 | 7 |
+- [ ] how to write a good prompt for ai art | 40 | 15 |
+- [ ] chatgpt prompts for students | 40 | 5 |
+- [ ] what are the best prompts for chatgpt | 40 | 2 |
+- [ ] chatgpt prompts for studying | 40 | 2 |
+- [ ] chatgpt prompt best practices | 40 | 2 |
+- [ ] chatgpt prompts for linkedin | 40 | 1 |
+- [ ] chatgpt business plan prompt | 40 | 0 |
+- [ ] chatgpt prompt structure | 40 | 2 |
+- [ ] chatgpt prompts for interview preparation | 40 | 0 |
+- [ ] chatgpt real estate prompts | 40 | 0 |
+- [ ] how long can a chatgpt prompt be | 40 | 0 |
+- [ ] ai background prompts | 40 | 3 |
+- [ ] midjourney prompts for realistic photos | 30 | 3 |
+- [ ] ai image prompt guide | 30 | 11 |
+- [ ] midjourney prompt format | 30 | 9 |
+- [ ] midjourney architecture prompts | 30 | 0 |
+- [ ] midjourney prompts for portraits | 30 | 0 |
+- [ ] ai image prompt tips | 30 | 7 |
+- [ ] midjourney coloring book prompt | 30 | 0 |
+- [ ] how to prompt ai image generator | 30 | 7 |
+- [ ] dark fantasy ai prompts | 30 | 0 |
+- [ ] chatgpt prompts for teachers | 30 | 6 |
+- [ ] chat gpt prompts for blog writing | 30 | 14 |
+- [ ] chatgpt prompts for real estate | 30 | 1 |
+- [ ] chatgpt prompts for website copy | 30 | 2 |
+- [ ] chatgpt prompts for editing writing | 30 | 4 |
+- [ ] chatgpt prompts for video scripts | 30 | 0 |
+- [ ] chatgpt prompts for learning | 30 | 0 |
+- [ ] chatgpt prompts for instagram | 30 | 0 |
+- [ ] chatgpt prompts for linkedin profile | 30 | 0 |
+- [ ] chatgpt prompts for content writing | 20 | 7 |
+- [ ] chat gpt prompts for financial advisors | 20 | 0 |
+- [ ] chatgpt prompts for seo content writing | 20 | 4 |
+- [ ] chatgpt prompts for academic writing | 20 | 2 |
+- [ ] chatgpt prompts for authors | 20 | 1 |
+- [ ] midjourney prompts for characters | 20 | 0 |
+- [ ] chatgpt prompts for productivity | 20 | 0 |
+- [ ] chatgpt prompts for performance review | 20 | 0 |
+- [ ] chatgpt prompts for linkedin posts | 20 | 1 |
+- [ ] chatgpt prompt for powerpoint presentation | 20 | 0 |
+- [ ] chatgpt prompts for data science | 20 | 7 |
+- [ ] chatgpt prompts for developers | 10 | 2 |
+- [ ] chat gpt prompts for screenwriting | 10 | 0 |
+- [ ] ai prompts for t shirt designs | 10 | 0 |
+- [ ] best chatgpt prompts for amazon | 10 | 0 |
+- [ ] ai prompts for coloring pages | 10 | 0 |
+- [ ] chatgpt prompts for product managers | 10 | 1 |
+- [ ] chatgpt prompts for essay writing | 10 | 2 |
+- [ ] chatgpt prompts for sales emails | 10 | 4 |
+- [ ] chatgpt prompts for market research | 10 | 4 |
+- [ ] chatgpt prompts for stock trading | 10 | 0 |
+- [ ] chatgpt prompts for proofreading | 10 | 0 |
+- [ ] chatgpt prompts for writers | 10 | 5 |
+- [ ] midjourney prompts for website design | 10 | 1 |
+- [ ] midjourney prompts for logos | 10 | 12 |
+- [ ] chatgpt prompts for starting a business | 10 | 0 |
+- [ ] midjourney prompts for photorealism | 10 | 2 |
