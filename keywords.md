@@ -515,3 +515,13 @@ Seeds: chatgpt prompts for, chatgpt prompt for, midjourney prompts for, claude p
 - [x] chatgpt cohort analysis prompt | - | - | cohort-retention-analysis
 - [x] chatgpt prompt for realtor bio | - | - | real-estate-agent-bio
 - [x] chatgpt prompts for classroom management | - | - | classroom-management-plan
+- [x] chatgpt prompt for retargeting ads | - | - | retargeting-ad-copy
+- [x] new year sale campaign ideas prompt | - | - | new-year-sale-campaign
+- [x] follow up email after no show meeting | - | - | meeting-no-show-follow-up
+- [x] inventory reorder point chatgpt prompt | - | - | inventory-reorder-plan
+- [x] chatgpt prompt to find research gap | - | - | research-gap-finder
+- [x] midjourney low poly prompts | - | - | midjourney-low-poly-landscape
+- [x] cosmic zoom out ai video prompt | - | - | cosmic-zoom-out-video
+- [x] layoff announcement email chatgpt | - | - | layoff-announcement-message
+- [x] chatgpt prompt for api design | - | - | rest-api-endpoint-design
+- [x] chatgpt prompts for thanksgiving messages | - | - | thanksgiving-gratitude-messages
