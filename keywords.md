@@ -547,3 +547,13 @@ Seeds: chatgpt prompts for, chatgpt prompt for, midjourney prompts for, claude p
 - [x] decision journal chatgpt prompt | - | - | decision-journal
 - [x] chatgpt prompt for lab report | - | - | lab-report-writer
 - [x] billing error apology email chatgpt | - | - | billing-error-apology
+- [x] chatgpt prompt for kickstarter crowdfunding campaign | - | - | crowdfunding-campaign-page
+- [x] account expansion whitespace chatgpt | - | - | account-expansion-whitespace
+- [x] build vs buy software chatgpt prompt | - | - | build-vs-buy-software
+- [x] diary study chatgpt prompt | - | - | diary-study-plan
+- [x] entity seo chatgpt prompt | - | - | entity-seo-content
+- [x] midjourney paper cut art prompts | - | - | midjourney-paper-cut-art
+- [x] bullet time ai video prompt | - | - | bullet-time-freeze-video
+- [x] chatgpt prompt to interpret regression results | - | - | regression-results-explained
+- [x] chatgpt prompts for writing a memoir | - | - | memoir-chapter-from-memories
+- [x] trademark search chatgpt prompt | - | - | trademark-name-check
