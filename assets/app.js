@@ -278,3 +278,16 @@ document.querySelectorAll('.prose table').forEach((t) => {
   t.classList.add('stack');
   t.querySelectorAll('tbody tr').forEach((tr) => [...tr.children].forEach((td, i) => heads[i] && td.setAttribute('data-label', heads[i])));
 });
+
+// Home: when searching from the hero, bring the results into view once.
+(() => {
+  const input = document.querySelector('.search--hero input');
+  const lib = document.getElementById('lib-h');
+  if (!input || !lib) return;
+  let done = false;
+  input.addEventListener('input', () => {
+    if (done || input.value.trim().length < 2) return;
+    done = true;
+    setTimeout(() => { const r = lib.getBoundingClientRect(); if (r.top > innerHeight * 0.6) lib.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 250);
+  });
+})();

@@ -29,7 +29,8 @@ tags: [3-4, lowercase, tags]
 
 5. Body: 1 short intro paragraph (the problem and why this prompt works) → `## Prompt` with ONE ```prompt block (blanks in `[UPPERCASE IN SQUARE BRACKETS]`) → `## How to use it` (3 numbered steps) → `## Tips` (2–3 bullets).
 6. Run `npm run build` and `python3 scripts/check-seo.py` — both must pass (unique titles and descriptions, lengths, one H1, valid schema). Fix and rerun until clean.
-7. One commit per batch of 10: `Add 10 prompts: <short theme list>`, push to `main` (pull --rebase first if the push is rejected).
+7. **Owner's rule (2026-11-25): warn when keywords run low.** At the end of every prompt run, count the unchecked rows in `keywords.md` (`grep -c '^- \[ \]' keywords.md`). If fewer than 150 remain (one day of runs), put this line at the very top of the final report: «⚠️ Ключи заканчиваются: в keywords.md осталось N строк — нужен новый сбор ключей». If none remain, say that the prompts were written from long-tail topics instead.
+8. One commit per batch of 10: `Add 10 prompts: <short theme list>`, push to `main` (pull --rebase first if the push is rejected).
 
 ## Daily blog — 2 articles every morning
 

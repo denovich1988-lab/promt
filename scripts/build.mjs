@@ -333,14 +333,11 @@ const homeFaq = () => [
 function homePage(prompts, posts) {
   const [today] = prompts;
   const counts = Object.fromEntries(Object.keys(site.categories).map((k) => [k, prompts.filter((p) => p.category === k).length]));
-  const chips = Object.entries(site.categories)
-    .filter(([k]) => counts[k])
-    .sort((a, b) => counts[b[0]] - counts[a[0]])
-    .slice(0, 10)
-    .map(([k, c]) => `<a class="chip" href="/category/${k}/">${esc(c.name)}<span>${counts[k]}</span></a>`)
-    .concat(`<a class="chip chip--all" href="/categories/">All categories</a>`)
-    .join('');
+  const cats = Object.entries(site.categories).filter(([k]) => counts[k]).sort((a, b) => counts[b[0]] - counts[a[0]]);
+  const newToday = prompts.filter((p) => p.date === prompts[0]?.date).length;
+  const tools = new Set(prompts.flatMap((p) => p.models));
   const faq = homeFaq();
+  const stats = [[prompts.length, 'free prompts'], [cats.length, 'categories'], [tools.size, 'AI tools covered'], [newToday, 'new on the latest day']];
   const featured = today
     ? `<section class="today" aria-labelledby="today-h">
   <div class="wrap today__grid">
@@ -355,28 +352,47 @@ function homePage(prompts, posts) {
   </div>
 </section>`
     : '';
+  const tiles = Object.entries(site.hubs).map(([k, h]) => `<li><a class="tool" href="/${k}/"><span class="tool__name">${esc(h.title.replace(/ for .*/, '').replace(/ Prompts?$/i, ''))}</span><span class="tool__count">${h._count}</span><span class="tool__desc">${esc(h.description.split('. ')[0].replace(/\.$/, ''))}.</span></a></li>`).join('');
+  const catGrid = cats.map(([k, c]) => `<li><a class="topic" href="/category/${k}/"><span class="topic__name">${esc(c.name)}</span><span class="topic__count">${counts[k]}</span></a></li>`).join('');
   const body = `
-<section class="hero wrap">
+<section class="hero hero--home wrap">
   <h1 class="hero__title">Free AI prompts. Fill in the <span class="hero__blank">blanks</span>.</h1>
   <p class="hero__lede">${esc(site.description)}</p>
-  ${hubLinks()}
+  <label class="search search--hero"><span class="visually-hidden">Search prompts</span><input type="search" name="q" placeholder="What do you need a prompt for? e.g. resume, cold email, Midjourney logo" data-search-input autocomplete="off"></label>
+  <dl class="stats">${stats.map(([n, l]) => `<div><dt>${esc(l)}</dt><dd>${n}</dd></div>`).join('')}</dl>
 </section>
-${featured}
+<section class="wrap tools-sec" aria-labelledby="tools-h">
+  <h2 id="tools-h" class="sec-h">Prompts by AI tool</h2>
+  <ul class="tools">${tiles}</ul>
+</section>
 <section class="library wrap" aria-labelledby="lib-h">
   <div class="library__head">
-    <h2 id="lib-h">AI prompt library</h2>
-    <label class="search"><span class="visually-hidden">Search prompts</span><input type="search" name="q" placeholder="Search, e.g. resume, Midjourney" data-search-input autocomplete="off"></label>
+    <h2 id="lib-h">Newest prompts</h2>
+    <a class="link-strong" href="/prompts/">All ${prompts.length} prompts</a>
   </div>
-  <nav class="chips" aria-label="Prompt categories">${chips}</nav>
-  <h3 class="list__h" data-list-h>Newest ${Math.min(HOME_LATEST, prompts.length)} of ${prompts.length} prompts</h3>
+  <h3 class="list__h" data-list-h>Added in the last few days</h3>
   <ol class="rows" data-grid>${prompts.slice(0, HOME_LATEST).map(row).join('\n')}</ol>
   <ol class="rows" data-results hidden></ol>
   <p class="empty" data-empty hidden>Nothing matches that search. Try a shorter word or <a href="/categories/">browse by category</a>.</p>
-  <p class="more"><a class="btn btn--copy" href="/prompts/">Browse all ${prompts.length} prompts</a></p>
+</section>
+${featured}
+<section class="wrap topics-sec" aria-labelledby="cat-h">
+  <div class="library__head"><h2 id="cat-h">Browse by task</h2><a class="link-strong" href="/categories/">All categories</a></div>
+  <ul class="topics">${catGrid}</ul>
+</section>
+<section class="wrap bento-sec" aria-labelledby="res-h">
+  <h2 id="res-h" class="sec-h">More than a prompt list</h2>
+  <ul class="bento">
+    <li class="bento--big"><a href="/prompt-generator/"><span class="bento__k">Free tool</span><span class="bento__t">Prompt generator</span><span class="bento__d">Answer a few questions about your task and get a structured prompt with role, context, steps and output format.</span></a></li>
+    <li><a href="/guides/"><span class="bento__k">Learn</span><span class="bento__t">Prompting guides</span><span class="bento__d">How to write prompts that work, with examples you can copy.</span></a></li>
+    <li><a href="/best-ai-tools/"><span class="bento__k">Compare</span><span class="bento__t">Best AI tools</span><span class="bento__d">Which assistant, image or video tool fits which job.</span></a></li>
+    <li><a href="/best-ai-skills/"><span class="bento__k">Claude</span><span class="bento__t">Claude skills</span><span class="bento__d">Ready-made skills that teach Claude a repeatable task.</span></a></li>
+    <li><a href="/free-ai-courses/"><span class="bento__k">Free</span><span class="bento__t">Free AI courses</span><span class="bento__d">Courses from AI labs and universities that cost nothing.</span></a></li>
+  </ul>
 </section>
 ${posts.length ? `<section class="library wrap" aria-labelledby="blog-h">
   <div class="library__head"><h2 id="blog-h">Guides from the blog</h2><a class="link-strong" href="/blog/">All articles</a></div>
-  <ol class="rows">${posts.slice(0, 3).map(postRow).join('\n')}</ol>
+  <ol class="rows">${posts.slice(0, 4).map(postRow).join('\n')}</ol>
 </section>` : ''}
 <div class="wrap">${faqHtml(faq)}</div>`;
   return layout({
@@ -473,7 +489,7 @@ ${related.length ? `<section class="wrap related"><h2>More ${esc(catName(p.categ
 }
 
 const PER_PAGE = 48;
-const HOME_LATEST = 24;
+const HOME_LATEST = 12;
 
 const pager = (base, page, total) => {
   if (total <= 1) return '';
