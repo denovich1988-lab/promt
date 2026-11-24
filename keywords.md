@@ -793,3 +793,106 @@ Seeds: chatgpt prompts, chat gpt prompts, chatgpt prompt, gpt prompts, prompts f
 - [ ] midjourney prompts for logos | 10 | 12 |
 - [ ] chatgpt prompts for starting a business | 10 | 0 |
 - [ ] midjourney prompts for photorealism | 10 | 2 |
+
+## Higher-KD keywords, 2026-11-24 (Ahrefs, US, KD 16–90; owner allowed up to 90)
+
+Use after the low-KD rows above. Same rules: one row = one page, no near-duplicates.
+
+- [ ] ai prompt | 5100 | 22 |
+- [ ] gemini prompt | 1500 | 38 |
+- [ ] claude prompts | 1000 | 24 |
+- [ ] nano banana prompt | 900 | 50 |
+- [ ] ai prompt engineer | 900 | 34 |
+- [ ] image to video ai with prompt online free | 700 | 38 |
+- [ ] ai prompt library | 600 | 44 |
+- [ ] ai prompt writer | 500 | 26 |
+- [ ] image to ai prompt | 450 | 22 |
+- [ ] ai video prompt | 400 | 23 |
+- [ ] image to text prompt | 350 | 40 |
+- [ ] gpt prompts | 250 | 62 |
+- [ ] essay prompt examples | 250 | 18 |
+- [ ] ai voice prompt | 200 | 64 |
+- [ ] ai prompt list | 150 | 24 |
+- [ ] ai prompt writing | 150 | 30 |
+- [ ] ai generated prompts | 150 | 31 |
+- [ ] free ai art prompts | 150 | 29 |
+- [ ] best ai prompt | 150 | 29 |
+- [ ] chat gpt image prompt | 150 | 18 |
+- [ ] good ai art prompts | 150 | 17 |
+- [ ] writing prompt examples | 150 | 24 |
+- [ ] chatgpt prompts for writing | 150 | 24 |
+- [ ] text to image prompt | 150 | 43 |
+- [ ] prompt image | 150 | 35 |
+- [ ] ai image to text prompt | 150 | 41 |
+- [ ] writing ai prompts | 100 | 16 |
+- [ ] best ai art prompts | 100 | 19 |
+- [ ] ai text to image prompts | 100 | 38 |
+- [ ] best chatgpt prompts for writing | 100 | 25 |
+- [ ] free ai prompt | 100 | 20 |
+- [ ] prompt for ai | 100 | 32 |
+- [ ] generative ai prompt | 100 | 27 |
+- [ ] chat gpt 4 prompts | 90 | 26 |
+- [ ] chat gpt prompt examples | 80 | 18 |
+- [ ] chatgpt pro prompts | 80 | 32 |
+- [ ] ai music prompt | 80 | 40 |
+- [ ] chat gpt writing prompts | 80 | 22 |
+- [ ] create a prompt from an image | 80 | 25 |
+- [ ] gemini ai prompt | 70 | 27 |
+- [ ] chatgpt 4 prompts | 70 | 27 |
+- [ ] free ai prompts | 60 | 24 |
+
+## Blog topics (prompting and prompt engineering), 2026-11-24
+
+For the daily blog run, not for prompt pages.
+
+- [ ] prompt engineering | 40000 | 72 |
+- [ ] what is prompt engineering | 14000 | 57 |
+- [ ] how much water does ai use per prompt | 1800 | 19 |
+- [ ] prompt engineering best practices 2026 | 1500 | 35 |
+- [ ] free resources learn prompt engineering 2026 | 1200 | 18 |
+- [ ] ai prompt engineering | 1200 | 53 |
+- [ ] prompt engineering best practices | 1100 | 79 |
+- [ ] anthropic prompt engineering guide | 1100 | 70 |
+- [ ] prompt engineering guide | 800 | 83 |
+- [ ] context engineering vs prompt engineering | 800 | 26 |
+- [ ] prompt engineering techniques | 700 | 50 |
+- [ ] what is prompt engineering in ai | 600 | 39 |
+- [ ] ai prompt injection | 600 | 67 |
+- [ ] prompt injection examples | 500 | 44 |
+- [ ] anthropic prompt engineering | 500 | 39 |
+- [ ] prompt engineering examples | 450 | 57 |
+- [ ] prompt engineering definition | 400 | 59 |
+- [ ] prompt engineering tutorial | 400 | 68 |
+- [ ] prompt engineering ai | 350 | 33 |
+- [ ] ai prompt engineering best practices | 300 | 65 |
+- [ ] prompt engineering tips | 300 | 60 |
+- [ ] how to write an ai prompt | 250 | 26 |
+- [ ] prompt injection ai | 250 | 71 |
+- [ ] prompt engineering for generative ai | 250 | 37 |
+- [ ] openai prompt engineering best practices | 250 | 72 |
+- [ ] llm prompt engineering | 250 | 26 |
+- [ ] what is ai prompt engineering | 200 | 36 |
+- [ ] generative ai prompt engineering | 200 | 48 |
+- [ ] ai prompt guide | 200 | 59 |
+- [ ] prompt engineering for chatgpt | 200 | 32 |
+- [ ] openai prompt engineering guide | 200 | 79 |
+- [ ] how to write chatgpt prompts | 200 | 22 |
+- [ ] how to learn prompt engineering | 150 | 59 |
+- [ ] chatgpt prompt guide | 150 | 50 |
+- [ ] advanced prompt engineering techniques | 150 | 26 |
+- [ ] chatgpt prompt injection | 150 | 43 |
+- [ ] prompt engineering basics | 150 | 47 |
+- [ ] gpt prompt engineering | 150 | 72 |
+- [ ] chatgpt prompt engineering | 150 | 64 |
+- [ ] prompt engineering meaning | 150 | 58 |
+- [ ] how to learn ai prompt engineering | 150 | 53 |
+- [ ] how to create chatgpt prompts | 100 | 52 |
+- [ ] rag prompt engineering | 100 | 16 |
+- [ ] prompt engineering for llms | 100 | 23 |
+- [ ] what is prompt in generative ai | 100 | 42 |
+- [ ] prompt engineering book | 80 | 23 |
+- [ ] what is prompt in ai | 80 | 21 |
+- [ ] prompt engineering for beginners | 80 | 33 |
+- [ ] how to write a prompt for ai | 70 | 16 |
+- [ ] how does prompt engineering work | 70 | 45 |
+- [ ] prompt engineering strategies | 60 | 65 |
