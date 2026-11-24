@@ -567,3 +567,13 @@ Seeds: chatgpt prompts for, chatgpt prompt for, midjourney prompts for, claude p
 - [x] chatgpt prompts for bash scripts | - | - | bash-script-automation
 - [x] cancellation request reply template chatgpt | - | - | cancellation-save-reply
 - [x] chatgpt prompt for rental property analysis | - | - | rental-property-cash-flow
+- [x] newsletter sponsorship pitch email | - | - | newsletter-sponsorship-pitch
+- [x] brand awareness campaign chatgpt prompt | - | - | brand-awareness-campaign
+- [x] chatgpt prompt for coffee shop business plan | - | - | coffee-shop-business-plan
+- [x] vendor risk assessment questionnaire chatgpt | - | - | vendor-risk-assessment
+- [x] competitor alternatives page seo | - | - | alternatives-page-outline
+- [x] midjourney film noir prompts | - | - | midjourney-noir-film-still
+- [x] ai cosmetics product photography prompts | - | - | cosmetics-product-photo
+- [x] team charter chatgpt prompt | - | - | team-charter
+- [x] chatgpt packing list prompt | - | - | trip-packing-checklist
+- [x] portfolio case study chatgpt prompt | - | - | portfolio-case-study-designers
