@@ -525,3 +525,15 @@ Seeds: chatgpt prompts for, chatgpt prompt for, midjourney prompts for, claude p
 - [x] layoff announcement email chatgpt | - | - | layoff-announcement-message
 - [x] chatgpt prompt for api design | - | - | rest-api-endpoint-design
 - [x] chatgpt prompts for thanksgiving messages | - | - | thanksgiving-gratitude-messages
+
+## Long-tail fill, run 2 (2026-11-24; demand checked with web search)
+- [x] product hunt launch plan chatgpt prompt | - | - | product-hunt-launch-plan
+- [x] chatgpt prompts for app store optimization | - | - | app-store-listing-aso
+- [x] video prospecting script chatgpt | - | - | video-prospecting-script
+- [x] vrio analysis chatgpt prompt | - | - | vrio-analysis-resources
+- [x] website navigation structure chatgpt prompt | - | - | website-navigation-structure
+- [x] midjourney comic book prompts | - | - | midjourney-comic-book-panel
+- [x] ai video prompt hotel resort promo | - | - | ai-hotel-resort-promo-video
+- [x] chatgpt prompts for vba macros | - | - | excel-vba-macro
+- [x] salary bands chatgpt prompt | - | - | salary-bands-structure
+- [x] chatgpt prompt for airbnb listing description | - | - | short-term-rental-listing
