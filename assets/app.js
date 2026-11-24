@@ -291,3 +291,16 @@ document.querySelectorAll('.prose table').forEach((t) => {
     setTimeout(() => { const r = lib.getBoundingClientRect(); if (r.top > innerHeight * 0.6) lib.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 250);
   });
 })();
+
+// Light / dark theme toggle (choice kept in localStorage; default follows the system)
+(() => {
+  const btn = document.querySelector('[data-theme-toggle]');
+  if (!btn) return;
+  btn.addEventListener('click', () => {
+    const root = document.documentElement;
+    const dark = root.dataset.theme ? root.dataset.theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+    const next = dark ? 'light' : 'dark';
+    root.dataset.theme = next;
+    try { localStorage.setItem('theme', next); } catch (e) {}
+  });
+})();

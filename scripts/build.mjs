@@ -208,6 +208,7 @@ function layout({ title, description, pathname, body, ogType = 'website', jsonLd
   return `<!doctype html>
 <html lang="${site.language}">
 <head>
+<script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
 ${googleTag()}
 ${adsenseTag()}
 <meta charset="utf-8">
@@ -249,7 +250,7 @@ ${published ? `<meta property="article:published_time" content="${published}">\n
   <div class="wrap top__row">
     <a class="logo" href="/" aria-label="promt — ${esc(site.name)} home">promt<span class="logo__blank" aria-hidden="true"></span></a>
     <nav class="top__nav" aria-label="Categories">${navCats}</nav>
-    <nav class="top__aux" aria-label="Site"><a href="/prompt-generator/"${pathname === '/prompt-generator/' ? ' aria-current="page"' : ''}>Generator</a><a href="/guides/"${pathname === '/guides/' ? ' aria-current="page"' : ''}>Guides</a><a href="/blog/"${pathname.startsWith('/blog/') ? ' aria-current="page"' : ''}>Blog</a></nav>
+    <nav class="top__aux" aria-label="Site"><a href="/prompt-generator/"${pathname === '/prompt-generator/' ? ' aria-current="page"' : ''}>Generator</a><a href="/guides/"${pathname === '/guides/' ? ' aria-current="page"' : ''}>Guides</a><a href="/blog/"${pathname.startsWith('/blog/') ? ' aria-current="page"' : ''}>Blog</a></nav><button class="theme-btn" type="button" data-theme-toggle aria-label="Switch light or dark theme" title="Light / dark theme"><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></svg><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg></button>
     <button class="menu-btn" type="button" data-menu-btn aria-expanded="false" aria-controls="drawer"><span class="menu-btn__icon" aria-hidden="true"></span><span class="visually-hidden">Menu</span></button>
   </div>
   <div class="drawer" id="drawer" data-drawer hidden>
