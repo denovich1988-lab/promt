@@ -619,3 +619,13 @@ Seeds: chatgpt prompts for, chatgpt prompt for, midjourney prompts for, claude p
 - [x] chatgpt prompt support ticket categories | - | - | support-ticket-tagging-taxonomy
 - [x] chatgpt prompt unit plan backward design | - | - | unit-plan-backward-design
 - [x] chatgpt prompt to delegate tasks | - | - | delegate-task-brief
+- [x] podcast ad read script chatgpt | - | - | podcast-ad-read-script
+- [x] google discover content chatgpt prompt | - | - | google-discover-content-ideas
+- [x] chatgpt prompt business exit strategy | - | - | business-exit-strategy-plan
+- [x] chatgpt prompt prior art search | - | - | prior-art-search-plan
+- [x] pre trade show email to book meetings | - | - | trade-show-meeting-booking-email
+- [x] ai event teaser video prompt | - | - | conference-event-teaser-video
+- [x] ai twilight real estate photo prompt | - | - | twilight-exterior-photo-edit
+- [x] fsbo script chatgpt prompt | - | - | fsbo-cold-call-script
+- [x] chatgpt prompt to write an obituary | - | - | obituary-writer
+- [x] chatgpt prompt pto policy | - | - | pto-policy-draft
