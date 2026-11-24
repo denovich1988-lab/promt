@@ -485,3 +485,13 @@ Seeds: chatgpt prompts for, chatgpt prompt for, midjourney prompts for, claude p
 - [x] chatgpt prompt for grad school personal statement | - | - | grad-school-personal-statement
 - [x] chatgpt prompt for written warning letter | - | - | written-warning-letter-employee
 - [x] chatgpt prompt typescript types from json | - | - | typescript-types-from-json
+- [x] podcast launch plan chatgpt prompt | - | - | podcast-launch-plan
+- [x] ai search brand visibility audit | - | - | ai-search-brand-visibility-audit
+- [x] executive dinner invitation email prospects | - | - | executive-dinner-invite-prospects
+- [x] ai acceptable use policy template prompt | - | - | ai-acceptable-use-policy
+- [x] chatgpt prompt for market entry strategy | - | - | market-entry-strategy
+- [x] midjourney movie poster prompts | - | - | midjourney-movie-poster-concept
+- [x] animate old photo ai prompt | - | - | animate-old-family-photo
+- [x] rent vs buy calculator chatgpt prompt | - | - | rent-vs-buy-decision
+- [x] chatgpt prompt for science fair project ideas | - | - | science-fair-project-ideas
+- [x] chatgpt prompt for chargeback dispute response | - | - | chargeback-dispute-response
