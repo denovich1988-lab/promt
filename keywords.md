@@ -1143,6 +1143,16 @@ For the daily blog run, not for prompt pages.
 - [x] year end charitable giving chatgpt prompt | - | - | year-end-charitable-giving-plan
 - [x] poinsettia botanical illustration ai prompt | - | - | poinsettia-botanical-illustration
 - [x] snowy village drone ai video prompt | - | - | snowy-village-drone-video
+- [x] chatgpt prompts for event venues | - | - | event-venue-inquiry-response
+- [x] chatgpt prompts for optometrists | - | - | optometry-annual-exam-recall
+- [x] chatgpt prompts for locksmiths | - | - | locksmith-google-business-posts
+- [x] chatgpt prompts for gutter cleaning business | - | - | gutter-cleaning-seasonal-promo
+- [x] chatgpt prompts for estheticians | - | - | esthetician-service-menu-descriptions
+- [x] hoa board announcement chatgpt prompt | - | - | hoa-board-community-announcement
+- [x] family caregiver schedule chatgpt prompt | - | - | family-caregiver-weekly-schedule
+- [x] database schema migration plan chatgpt prompt | - | - | database-schema-migration-plan
+- [x] christmas cookie flat lay ai image prompt | - | - | christmas-cookie-flat-lay-photo
+- [x] candle product ai video prompt | - | - | candle-product-video
 
 ## Blog topics, added 2026-11-25
 
