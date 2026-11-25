@@ -902,33 +902,33 @@ For the daily blog run, not for prompt pages.
 - [ ] chat gpt prompts list | 90 | 2 |
 - [ ] chat gpt prompts for business | 70 | 4 |
 - [ ] business prompts for chatgpt | 30 | 0 |
-- [ ] thesis prompt | 30 | 0 |
-- [ ] dall e prompts | 100 | 70 |
+- [x] thesis prompt | 30 | 0 | covered: essay-outline-thesis-check
+- [x] dall e prompts | 100 | 70 | dall-e-3-image-prompts
 - [ ] seo prompts | 100 | 0 |
 - [ ] seo prompt for chatgpt | 100 | 0 |
 - [ ] chat gpt seo prompts | 90 | 1 |
 - [ ] seo prompts for chatgpt | 90 | 0 |
 - [ ] best chat gpt prompts for seo | 80 | 1 |
-- [ ] dall e prompt | 80 | 70 |
+- [x] dall e prompt | 80 | 70 | dall-e-3-image-prompts
 - [x] script writing prompts | 50 | 0 | screenplay-scene-writer
 - [ ] best chatgpt prompts for seo | 50 | 1 |
 - [x] script prompts | 30 | 56 | screenplay-scene-writer
-- [ ] dalle 3 prompts | 20 | 2 |
+- [x] dalle 3 prompts | 20 | 2 | dall-e-3-image-prompts
 - [x] chatgpt screenwriting prompts | 20 | 0 | screenplay-scene-writer
 - [x] what does a prompt look like | 20 | 11 | what-is-an-ai-prompt
-- [ ] game prompts | 20 | 6 |
+- [x] game prompts | 20 | 6 | covered: fun-chatgpt-prompts-games
 - [x] website prompts | 200 | 27 | website-copy-all-pages
 - [ ] chat gpt prompts seo | 70 | 4 |
-- [ ] graphic design prompt | 30 | 1 |
+- [x] graphic design prompt | 30 | 1 | covered: graphic-design-banner-flyer-prompts
 - [ ] gemini prompts | 1200 | 8 |
-- [ ] chat gpt character prompt | 50 | 0 |
+- [x] chat gpt character prompt | 50 | 0 | covered: chatgpt-character-roleplay
 - [ ] midjourney prompts examples | 30 | 10 |
 
 ## Remaining keywords from the 2026-11-24 Excel (any KD)
 
 - [ ] gemini ai photo prompt | 34000 | 26 |
-- [ ] chat gpt resume prompts | 3200 | 2 |
-- [ ] chat gpt caricature prompt | 1600 | 0 |
+- [x] chat gpt resume prompts | 3200 | 2 | covered: chatgpt-resume-tailoring
+- [x] chat gpt caricature prompt | 1600 | 0 | covered: chatgpt-caricature-from-photo
 - [ ] ai image prompt | 1200 | 5 |
 - [ ] prompts for chatgpt | 1000 | 8 |
 - [ ] ai prompt examples | 900 | 3 |
@@ -937,29 +937,29 @@ For the daily blog run, not for prompt pages.
 - [ ] ai prompts examples | 500 | 8 |
 - [ ] chatgpt image prompt | 450 | 0 |
 - [ ] ai art prompt | 450 | 4 |
-- [ ] chat gpt color analysis prompt | 450 | 0 |
-- [ ] fun chatgpt prompts | 400 | 0 |
+- [x] chat gpt color analysis prompt | 450 | 0 | covered: chatgpt-color-analysis-selfie
+- [x] fun chatgpt prompts | 400 | 0 | covered: fun-chatgpt-prompts-games
 - [ ] prompt for chatgpt | 350 | 2 |
-- [ ] fun chat gpt prompts | 350 | 0 |
-- [ ] resume prompts for chatgpt | 350 | 1 |
-- [ ] chatgpt resume prompts | 350 | 3 |
-- [ ] gemini ai prompt for women | 350 | 0 |
+- [x] fun chat gpt prompts | 350 | 0 | covered: fun-chatgpt-prompts-games
+- [x] resume prompts for chatgpt | 350 | 1 | covered: chatgpt-resume-tailoring
+- [x] chatgpt resume prompts | 350 | 3 | covered: chatgpt-resume-tailoring
+- [x] gemini ai prompt for women | 350 | 0 | covered: gemini-portrait-photo-women
 - [ ] ai prompt template | 350 | 4 |
-- [ ] caricature chatgpt prompt | 300 | 0 |
+- [x] caricature chatgpt prompt | 300 | 0 | covered: chatgpt-caricature-from-photo
 - [ ] ai prompt templates | 300 | 5 |
 - [ ] chatgpt prompt examples | 250 | 0 |
 - [ ] prompts ai | 250 | 12 |
 - [ ] ai art prompt examples | 200 | 4 |
 - [ ] prompts for chat gpt | 200 | 1 |
 - [ ] ai prompt ideas | 200 | 13 |
-- [ ] funny chatgpt prompts | 200 | 0 |
-- [ ] chat gpt prompts to make money | 150 | 0 |
+- [x] funny chatgpt prompts | 200 | 0 | covered: fun-chatgpt-prompts-games
+- [x] chat gpt prompts to make money | 150 | 0 | covered: side-income-ideas-from-skills
 - [ ] cool chatgpt prompts | 150 | 0 |
 - [ ] chatgpt prompt templates | 150 | 1 |
 - [ ] chatgpt prompt library | 150 | 1 |
 - [ ] cool chat gpt prompts | 150 | 0 |
 - [ ] ai writing prompt | 150 | 9 |
-- [ ] funny chat gpt prompts | 150 | 0 |
+- [x] funny chat gpt prompts | 150 | 0 | covered: fun-chatgpt-prompts-games
 - [ ] marketing prompts for chatgpt | 150 | 12 |
 - [ ] ai prompt example | 150 | 2 |
 - [ ] ai anime prompt | 100 | 2 |
@@ -967,16 +967,16 @@ For the daily blog run, not for prompt pages.
 - [ ] ai art anime prompts | 100 | 1 |
 - [ ] free chatgpt prompt templates | 100 | 1 |
 - [ ] list of chatgpt prompts | 100 | 3 |
-- [ ] chat gpt resume prompt | 100 | 2 |
-- [ ] chat gpt cover letter prompts | 100 | 0 |
+- [x] chat gpt resume prompt | 100 | 2 | covered: chatgpt-resume-tailoring
+- [x] chat gpt cover letter prompts | 100 | 0 | covered: cover-letter-from-job-post
 - [ ] ai prompt anime | 100 | 1 |
 - [ ] ai art prompt ideas | 100 | 5 |
-- [ ] chat gpt cover letter prompt | 100 | 1 |
-- [ ] fun prompts for chatgpt | 100 | 0 |
+- [x] chat gpt cover letter prompt | 100 | 1 | covered: cover-letter-from-job-post
+- [x] fun prompts for chatgpt | 100 | 0 | covered: fun-chatgpt-prompts-games
 - [ ] creative chatgpt prompts | 100 | 0 |
 - [ ] chatgpt prompt template | 100 | 0 |
 - [ ] good chat gpt prompts | 100 | 1 |
-- [ ] chat gpt prompts for content creation | 100 | 2 |
+- [x] chat gpt prompts for content creation | 100 | 2 | covered: chatgpt-content-creation-system
 - [ ] best prompt for chatgpt | 100 | 0 |
 - [ ] good chatgpt prompts | 100 | 0 |
 - [ ] top chatgpt prompts | 100 | 1 |
@@ -984,44 +984,44 @@ For the daily blog run, not for prompt pages.
 - [ ] best chatgpt prompt | 100 | 4 |
 - [ ] chatgpt prompts for business | 100 | 0 |
 - [ ] sora prompt | 100 | 5 |
-- [ ] ai story prompt | 90 | 0 |
+- [x] ai story prompt | 90 | 0 | covered: ai-story-prompts-generator
 - [ ] writing prompts for chatgpt | 90 | 15 |
 - [ ] list of chat gpt prompts | 80 | 1 |
 - [ ] most useful chatgpt prompts | 80 | 2 |
 - [ ] best chat gpt prompt | 80 | 0 |
-- [ ] funny prompts for chatgpt | 80 | 0 |
-- [ ] chat gpt prompts for social media marketing | 80 | 5 |
+- [x] funny prompts for chatgpt | 80 | 0 | covered: fun-chatgpt-prompts-games
+- [x] chat gpt prompts for social media marketing | 80 | 5 | covered: social-media-marketing-strategy
 - [ ] best prompts for chat gpt | 80 | 6 |
-- [ ] chat gpt email prompts | 80 | 3 |
-- [ ] funniest chat gpt prompts | 80 | 0 |
-- [ ] chatgpt advanced prompts | 80 | 0 |
+- [x] chat gpt email prompts | 80 | 3 | covered: chatgpt-email-writer-prompt
+- [x] funniest chat gpt prompts | 80 | 0 | covered: fun-chatgpt-prompts-games
+- [x] chatgpt advanced prompts | 80 | 0 | covered: advanced-chatgpt-prompt-chain
 - [ ] top chat gpt prompts | 70 | 2 |
 - [ ] best chat gpt prompts for business | 70 | 0 |
 - [ ] example chat gpt prompts | 70 | 0 |
 - [ ] chat gpt marketing prompts | 70 | 4 |
 - [ ] useful chat gpt prompts | 70 | 4 |
 - [ ] ai prompt art | 70 | 9 |
-- [ ] chatgpt cover letter prompts | 70 | 1 |
+- [x] chatgpt cover letter prompts | 70 | 1 | covered: cover-letter-from-job-post
 - [ ] interesting chatgpt prompts | 70 | 0 |
 - [ ] chat gpt prompt ideas | 70 | 2 |
 - [ ] good prompts for chat gpt | 60 | 0 |
 - [ ] popular chatgpt prompts | 60 | 1 |
 - [ ] cool prompts for chatgpt | 60 | 0 |
-- [ ] resume prompt for chatgpt | 60 | 0 |
+- [x] resume prompt for chatgpt | 60 | 0 | covered: chatgpt-resume-tailoring
 - [ ] chatgpt prompts examples | 60 | 0 |
 - [ ] chatgpt prompt ideas | 60 | 3 |
 - [ ] interesting prompts for chat gpt | 60 | 0 |
-- [ ] resume chatgpt prompts | 50 | 2 |
-- [ ] cover letter prompts for chatgpt | 50 | 0 |
+- [x] resume chatgpt prompts | 50 | 2 | covered: chatgpt-resume-tailoring
+- [x] cover letter prompts for chatgpt | 50 | 0 | covered: cover-letter-from-job-post
 - [ ] 50 smart seo prompts for chatgpt | 50 | 0 |
 - [ ] crazy chatgpt prompts | 50 | 0 |
 - [ ] free midjourney prompts | 40 | 0 |
 - [ ] midjourney prompt library | 40 | 0 |
-- [ ] chatgpt prompt for business plan | 40 | 1 |
-- [ ] midjourney negative prompts | 30 | 0 |
-- [ ] best chatgpt resume prompts | 30 | 1 |
-- [ ] chatgpt prompt for coding | 20 | 3 |
-- [ ] chatgpt prompts for business ideas | 20 | 2 |
+- [x] chatgpt prompt for business plan | 40 | 1 | covered: one-page-business-plan
+- [x] midjourney negative prompts | 30 | 0 | covered: negative-prompts-ai-images
+- [x] best chatgpt resume prompts | 30 | 1 | covered: chatgpt-resume-tailoring
+- [x] chatgpt prompt for coding | 20 | 3 | covered: debug-error-step-by-step
+- [x] chatgpt prompts for business ideas | 20 | 2 | chatgpt-business-ideas-local
 
 ## Long-tail fill (2026-11-25, run 1; demand checked with web search)
 - [x] landing page conversion audit chatgpt prompt | - | - | landing-page-conversion-audit
