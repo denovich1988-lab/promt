@@ -730,7 +730,7 @@ Seeds: chatgpt prompts, chat gpt prompts, chatgpt prompt, gpt prompts, prompts f
 - [x] ai art prompts to try | 50 | 10 | covered: cool-ai-art-prompt-ideas
 - [x] chatgpt personal trainer prompt | 50 | 1 | covered: chatgpt-workout-plan-weekly
 - [x] tips for ai art prompts | 50 | 15 | ai-art-prompt-tutor
-- [ ] chatgpt prompt engineering examples | 50 | 10 |
+- [x] chatgpt prompt engineering examples | 50 | 10 | prompt-engineering-techniques-compare
 - [x] how to write a prompt for ai art | 50 | 6 | ai-art-prompt-tutor
 - [x] how to make good ai art prompts | 50 | 12 | ai-art-prompt-tutor
 - [x] ai art prompt cheat sheet | 40 | 0 | ai-art-prompt-tutor
@@ -767,7 +767,7 @@ Seeds: chatgpt prompts, chat gpt prompts, chatgpt prompt, gpt prompts, prompts f
 - [x] chatgpt prompts for instagram | 30 | 0 | covered: instagram-captions-for-brand
 - [x] chatgpt prompts for linkedin profile | 30 | 0 | covered: linkedin-headline-about-section
 - [x] chatgpt prompts for content writing | 20 | 7 | covered: chatgpt-blog-post-from-outline
-- [ ] chat gpt prompts for financial advisors | 20 | 0 |
+- [x] chat gpt prompts for financial advisors | 20 | 0 | financial-advisor-client-review-letter
 - [x] chatgpt prompts for seo content writing | 20 | 4 | covered: seo-content-brief
 - [x] chatgpt prompts for academic writing | 20 | 2 | academic-writing-revision
 - [x] chatgpt prompts for authors | 20 | 1 | covered: book-writing-plan-chapters
@@ -776,7 +776,7 @@ Seeds: chatgpt prompts, chat gpt prompts, chatgpt prompt, gpt prompts, prompts f
 - [x] chatgpt prompts for performance review | 20 | 0 | covered: performance-review-feedback
 - [x] chatgpt prompts for linkedin posts | 20 | 1 | covered: linkedin-post-from-experience
 - [x] chatgpt prompt for powerpoint presentation | 20 | 0 | powerpoint-presentation-slides-outline
-- [ ] chatgpt prompts for data science | 20 | 7 |
+- [x] chatgpt prompts for data science | 20 | 7 | ml-model-project-plan
 - [x] chatgpt prompts for developers | 10 | 2 | covered: senior-code-review
 - [x] chat gpt prompts for screenwriting | 10 | 0 | screenplay-scene-writer
 - [x] ai prompts for t shirt designs | 10 | 0 | covered: ideogram-tshirt-design-text
@@ -786,7 +786,7 @@ Seeds: chatgpt prompts, chat gpt prompts, chatgpt prompt, gpt prompts, prompts f
 - [x] chatgpt prompts for essay writing | 10 | 2 | covered: essay-outline-thesis-check
 - [x] chatgpt prompts for sales emails | 10 | 4 | covered: cold-email-that-gets-replies
 - [x] chatgpt prompts for market research | 10 | 4 | covered: desk-research-plan
-- [ ] chatgpt prompts for stock trading | 10 | 0 |
+- [x] chatgpt prompts for stock trading | 10 | 0 | stock-research-checklist
 - [x] chatgpt prompts for proofreading | 10 | 0 | edit-and-proofread-writing
 - [x] chatgpt prompts for writers | 10 | 5 | covered: chatgpt-writing-prompt-brief
 - [x] midjourney prompts for website design | 10 | 1 | midjourney-website-ui-mockup
@@ -1045,6 +1045,12 @@ For the daily blog run, not for prompt pages.
 - [x] competitive intelligence chatgpt prompt | - | - | competitive-intelligence-monitoring-plan
 - [x] ai garden landscape design prompt | - | - | garden-landscape-design-image
 - [x] selfie vlog ai video prompt | - | - | selfie-vlog-talking-video
+- [x] cta button copy chatgpt prompt | - | - | cta-button-copy-variants
+- [x] b2b lead nurture email sequence prompt | - | - | lead-nurture-email-sequence
+- [x] ad creative testing plan chatgpt prompt | - | - | creative-testing-plan-meta-ads
+- [x] scope of work for freelancer chatgpt prompt | - | - | freelancer-scope-of-work-brief
+- [x] retro 1950s advertisement ai prompt | - | - | retro-1950s-advertisement-image
+- [x] luxury watch commercial ai video prompt | - | - | watch-commercial-macro-video
 
 ## Blog topics, added 2026-11-25
 
