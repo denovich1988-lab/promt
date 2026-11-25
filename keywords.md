@@ -1113,6 +1113,16 @@ For the daily blog run, not for prompt pages.
 - [x] chatgpt prompts for dog trainers | - | - | dog-trainer-program-packages
 - [x] new year's eve fireworks ai video prompt | - | - | new-years-eve-fireworks-video
 - [x] hot chocolate food photography ai prompt | - | - | hot-chocolate-food-photo
+- [x] chatgpt prompts for wineries | - | - | winery-wine-club-newsletter
+- [x] chatgpt prompts for breweries | - | - | brewery-beer-release-posts
+- [x] chatgpt prompts for gym owners (member retention) | - | - | gym-january-member-retention
+- [x] chatgpt prompts for car dealerships | - | - | car-dealership-test-drive-follow-up
+- [x] chatgpt prompts for cleaning business | - | - | cleaning-business-quote-checklist
+- [x] home inspection report summary chatgpt prompt | - | - | home-inspection-report-summary
+- [x] piano practice plan chatgpt prompt | - | - | piano-lesson-practice-plan
+- [x] chatgpt prompts for executive assistants | - | - | executive-assistant-board-meeting-prep
+- [x] fireplace loop ai video prompt | - | - | fireplace-cozy-loop-video
+- [x] christmas ornament product photo ai prompt | - | - | christmas-ornament-product-photo
 
 ## Blog topics, added 2026-11-25
 
