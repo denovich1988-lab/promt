@@ -769,13 +769,13 @@ Seeds: chatgpt prompts, chat gpt prompts, chatgpt prompt, gpt prompts, prompts f
 - [x] chatgpt prompts for content writing | 20 | 7 | covered: chatgpt-blog-post-from-outline
 - [ ] chat gpt prompts for financial advisors | 20 | 0 |
 - [x] chatgpt prompts for seo content writing | 20 | 4 | covered: seo-content-brief
-- [ ] chatgpt prompts for academic writing | 20 | 2 |
+- [x] chatgpt prompts for academic writing | 20 | 2 | academic-writing-revision
 - [x] chatgpt prompts for authors | 20 | 1 | covered: book-writing-plan-chapters
 - [x] midjourney prompts for characters | 20 | 0 | covered: consistent-ai-character-prompts
 - [x] chatgpt prompts for productivity | 20 | 0 | covered: time-blocked-daily-schedule
 - [x] chatgpt prompts for performance review | 20 | 0 | covered: performance-review-feedback
 - [x] chatgpt prompts for linkedin posts | 20 | 1 | covered: linkedin-post-from-experience
-- [ ] chatgpt prompt for powerpoint presentation | 20 | 0 |
+- [x] chatgpt prompt for powerpoint presentation | 20 | 0 | powerpoint-presentation-slides-outline
 - [ ] chatgpt prompts for data science | 20 | 7 |
 - [x] chatgpt prompts for developers | 10 | 2 | covered: senior-code-review
 - [x] chat gpt prompts for screenwriting | 10 | 0 | screenplay-scene-writer
@@ -834,7 +834,7 @@ Use after the low-KD rows above. Same rules: one row = one page, no near-duplica
 - [ ] chat gpt 4 prompts | 90 | 26 |
 - [ ] chat gpt prompt examples | 80 | 18 |
 - [ ] chatgpt pro prompts | 80 | 32 |
-- [ ] ai music prompt | 80 | 40 |
+- [x] ai music prompt | 80 | 40 | ai-music-prompt-song-style
 - [ ] chat gpt writing prompts | 80 | 22 |
 - [ ] create a prompt from an image | 80 | 25 |
 - [ ] gemini ai prompt | 70 | 27 |
@@ -1022,6 +1022,29 @@ For the daily blog run, not for prompt pages.
 - [ ] best chatgpt resume prompts | 30 | 1 |
 - [ ] chatgpt prompt for coding | 20 | 3 |
 - [ ] chatgpt prompts for business ideas | 20 | 2 |
+
+## Long-tail fill (2026-11-25, run 1; demand checked with web search)
+- [x] landing page conversion audit chatgpt prompt | - | - | landing-page-conversion-audit
+- [x] find tasks to automate in my business ai prompt | - | - | automation-opportunities-audit
+- [x] scamper brainstorming chatgpt prompt | - | - | scamper-idea-brainstorm
+- [x] trigger event sales email prompt | - | - | trigger-event-outreach-emails
+- [x] resource page link building outreach prompt | - | - | resource-page-link-outreach
+- [x] faceted navigation seo chatgpt prompt | - | - | faceted-navigation-seo-plan
+- [x] first principles thinking chatgpt prompt | - | - | first-principles-problem-breakdown
+- [x] competitor website teardown prompt | - | - | competitor-website-teardown
+- [x] agency retainer pricing chatgpt prompt | - | - | agency-retainer-pricing-proposal
+- [x] startup one pager for investors chatgpt prompt | - | - | startup-investor-one-pager
+- [x] a/b test plan hypothesis chatgpt prompt | - | - | ab-test-plan-hypothesis
+- [x] content distribution plan chatgpt prompt | - | - | content-distribution-checklist
+- [x] executive sponsor outreach email prompt | - | - | executive-sponsor-outreach-email
+- [x] exploded view product video ai prompt | - | - | exploded-view-product-video
+- [x] brand manifesto chatgpt prompt | - | - | brand-manifesto-writer
+- [x] google ads keyword groups chatgpt prompt | - | - | google-ads-keyword-groups
+- [x] case study sales email prompt | - | - | case-study-outreach-email
+- [x] regulatory landscape research prompt | - | - | regulatory-landscape-brief
+- [x] competitive intelligence chatgpt prompt | - | - | competitive-intelligence-monitoring-plan
+- [x] ai garden landscape design prompt | - | - | garden-landscape-design-image
+- [x] selfie vlog ai video prompt | - | - | selfie-vlog-talking-video
 
 ## Blog topics, added 2026-11-25
 
