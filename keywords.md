@@ -1081,6 +1081,16 @@ For the daily blog run, not for prompt pages.
 - [x] hanukkah card ai image prompt | - | - | hanukkah-greeting-card-image
 - [x] voice of customer analysis chatgpt prompt | - | - | voice-of-customer-sales-calls
 - [x] stop doing list chatgpt prompt | - | - | stop-doing-list-strategy
+- [x] chatgpt prompts for landscapers | - | - | landscapers-snow-removal-offer
+- [x] chatgpt prompts for chiropractors | - | - | chiropractors-patient-reactivation
+- [x] location landing pages seo prompt | - | - | multi-location-landing-pages
+- [x] weekly business review agenda prompt | - | - | weekly-business-review-agenda
+- [x] critique a research paper chatgpt prompt | - | - | research-paper-critique
+- [x] chibi ai prompt | - | - | chibi-avatar-character
+- [x] gift wrapping ai video prompt | - | - | gift-wrapping-overhead-video
+- [x] secret santa rules chatgpt prompt | - | - | secret-santa-office-rules
+- [x] error handling code review chatgpt prompt | - | - | error-handling-improvements
+- [x] metric definitions chatgpt prompt | - | - | metric-definitions-glossary
 
 ## Blog topics, added 2026-11-25
 
