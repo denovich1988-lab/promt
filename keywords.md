@@ -644,7 +644,7 @@ Seeds: chatgpt prompts, chat gpt prompts, chatgpt prompt, gpt prompts, prompts f
 - [x] ai prompts for art | 150 | 5 | covered: ai-art-prompt-builder ; also: prompts for ai art, prompt for ai art, good prompts for ai art, best ai prompts for art, best prompt for ai art, funny prompts for ai art, best prompts for ai art
 - [x] chatgpt prompts for marketing | 150 | 8 | covered: chatgpt-90-day-marketing-plan ; also: chat gpt prompts for marketing, best chatgpt prompts for marketing, best chat gpt prompts for marketing
 - [x] chatgpt prompts for resume | 200 | 2 | covered: chatgpt-resume-tailoring ; also: chat gpt prompts for resume, chatgpt prompt for resume
-- [ ] how to write ai prompts | 400 | 14 |
+- [x] how to write ai prompts | 400 | 14 | ai-prompt-writing-coach
 - [x] ai prompts for images | 350 | 7 | covered: ai-image-prompt-from-idea
 - [x] chatgpt prompts for seo | 100 | 1 | covered: chatgpt-seo-90-day-plan ; also: chat gpt prompts for seo, best chat gpt prompts for seo, best chatgpt prompts for seo
 - [x] ai image generator prompt | 250 | 12 | covered: ai-image-prompt-from-idea ; also: ai image generator prompt ideas
@@ -680,7 +680,7 @@ Seeds: chatgpt prompts, chat gpt prompts, chatgpt prompt, gpt prompts, prompts f
 - [x] chatgpt prompts for social media posts | 100 | 0 | covered: social-media-post-five-platforms
 - [x] ai style prompts | 100 | 6 | covered: art-style-picker-ai-images
 - [x] prompt in generative ai | 100 | 2 | what-is-an-ai-prompt
-- [ ] how to write a good ai prompt | 100 | 12 |
+- [x] how to write a good ai prompt | 100 | 12 | ai-prompt-writing-coach
 - [x] ai resume prompts | 100 | 1 | covered: chatgpt-resume-tailoring
 - [x] chatgpt financial advisor prompt | 100 | 0 | chatgpt-financial-advisor-checkup
 - [x] chatgpt social media prompts | 100 | 3 | covered: social-media-post-five-platforms
@@ -689,23 +689,23 @@ Seeds: chatgpt prompts, chat gpt prompts, chatgpt prompt, gpt prompts, prompts f
 - [x] ai marketing prompts | 100 | 9 | covered: chatgpt-90-day-marketing-plan
 - [x] ai prompt database | 100 | 11 | covered: chatgpt-prompt-examples-by-job
 - [x] ai chat prompts | 100 | 4 | covered: chatgpt-prompt-examples-by-job
-- [ ] how to write good ai prompts | 100 | 14 |
+- [x] how to write good ai prompts | 100 | 14 | ai-prompt-writing-coach
 - [ ] how to write ai prompts for art | 100 | 0 |
 - [x] midjourney prompt engineering | 100 | 5 | covered: midjourney-prompt-template-fill-in
 - [x] writing prompts for ai | 70 | 9 | covered: chatgpt-writing-prompt-brief ; also: ai prompts for writing
-- [ ] ai prompt tips | 90 | 12 |
+- [x] ai prompt tips | 90 | 12 | ai-prompt-writing-coach
 - [x] prompts for ai image generation | 90 | 5 | covered: ai-image-prompt-from-idea
 - [x] art style prompts for ai | 90 | 5 | covered: art-style-picker-ai-images
 - [x] ai art styles prompts | 90 | 4 | covered: art-style-picker-ai-images
 - [x] midjourney prompt tips | 90 | 8 | covered: best-midjourney-prompts-parameters
-- [ ] how to prompt ai | 80 | 8 |
+- [x] how to prompt ai | 80 | 8 | ai-prompt-writing-coach
 - [ ] how to write ai art prompts | 80 | 12 |
 - [ ] ai for education prompt library | 80 | 5 |
 - [x] chatgpt resume writing prompts | 80 | 3 | covered: chatgpt-resume-tailoring
 - [x] chat gpt essay prompt | 80 | 1 | covered: essay-outline-thesis-check
 - [x] ai prompts for characters | 80 | 1 | covered: original-character-ideas
 - [x] chat gpt business prompts | 80 | 4 | covered: chatgpt-prompt-examples-by-job
-- [ ] how long can chatgpt prompts be | 70 | 0 |
+- [x] how long can chatgpt prompts be | 70 | 0 | long-document-chunking-prompt
 - [x] chat gpt prompts for making money | 70 | 0 | covered: side-income-ideas-from-skills
 - [x] prompt ideas for ai art | 70 | 4 | covered: cool-ai-art-prompt-ideas
 - [x] ai generated images prompts | 70 | 8 | covered: ai-image-prompt-from-idea
@@ -715,7 +715,7 @@ Seeds: chatgpt prompts, chat gpt prompts, chatgpt prompt, gpt prompts, prompts f
 - [x] reverse image prompt | 60 | 0 | covered: reverse-image-prompt
 - [x] midjourney ai prompts | 60 | 4 | covered: best-midjourney-prompts-parameters
 - [x] chat gpt template prompts | 60 | 1 | covered: chatgpt-prompt-template-cheat-sheet
-- [ ] how to write better ai prompts | 60 | 14 |
+- [x] how to write better ai prompts | 60 | 14 | ai-prompt-writing-coach
 - [x] ai art negative prompt list | 60 | 0 | covered: negative-prompts-ai-images
 - [x] ai art generator prompt ideas | 60 | 6 | covered: cool-ai-art-prompt-ideas
 - [x] ai generated art prompts | 60 | 2 | covered: ai-art-prompt-builder
@@ -740,13 +740,13 @@ Seeds: chatgpt prompts, chat gpt prompts, chatgpt prompt, gpt prompts, prompts f
 - [x] chatgpt prompts for students | 40 | 5 | covered: exam-study-guide
 - [x] what are the best prompts for chatgpt | 40 | 2 | covered: chatgpt-prompt-examples-by-job
 - [x] chatgpt prompts for studying | 40 | 2 | covered: exam-study-guide
-- [ ] chatgpt prompt best practices | 40 | 2 |
+- [x] chatgpt prompt best practices | 40 | 2 | ai-prompt-writing-coach
 - [x] chatgpt prompts for linkedin | 40 | 1 | covered: linkedin-post-from-experience
 - [x] chatgpt business plan prompt | 40 | 0 | covered: one-page-business-plan
 - [x] chatgpt prompt structure | 40 | 2 | what-is-an-ai-prompt
 - [x] chatgpt prompts for interview preparation | 40 | 0 | covered: mock-interview-practice
 - [x] chatgpt real estate prompts | 40 | 0 | covered: real-estate-listing-description
-- [ ] how long can a chatgpt prompt be | 40 | 0 |
+- [x] how long can a chatgpt prompt be | 40 | 0 | long-document-chunking-prompt
 - [x] ai background prompts | 40 | 3 | ai-background-image-prompts
 - [x] midjourney prompts for realistic photos | 30 | 3 | covered: realistic-ai-photo-prompt
 - [ ] ai image prompt guide | 30 | 11 |
@@ -761,7 +761,7 @@ Seeds: chatgpt prompts, chat gpt prompts, chatgpt prompt, gpt prompts, prompts f
 - [x] chat gpt prompts for blog writing | 30 | 14 | covered: chatgpt-blog-post-from-outline
 - [x] chatgpt prompts for real estate | 30 | 1 | covered: real-estate-listing-description
 - [x] chatgpt prompts for website copy | 30 | 2 | website-copy-all-pages
-- [ ] chatgpt prompts for editing writing | 30 | 4 |
+- [x] chatgpt prompts for editing writing | 30 | 4 | edit-and-proofread-writing
 - [x] chatgpt prompts for video scripts | 30 | 0 | covered: youtube-video-script
 - [x] chatgpt prompts for learning | 30 | 0 | covered: learn-anything-in-a-week
 - [x] chatgpt prompts for instagram | 30 | 0 | covered: instagram-captions-for-brand
@@ -787,9 +787,9 @@ Seeds: chatgpt prompts, chat gpt prompts, chatgpt prompt, gpt prompts, prompts f
 - [x] chatgpt prompts for sales emails | 10 | 4 | covered: cold-email-that-gets-replies
 - [x] chatgpt prompts for market research | 10 | 4 | covered: desk-research-plan
 - [ ] chatgpt prompts for stock trading | 10 | 0 |
-- [ ] chatgpt prompts for proofreading | 10 | 0 |
+- [x] chatgpt prompts for proofreading | 10 | 0 | edit-and-proofread-writing
 - [x] chatgpt prompts for writers | 10 | 5 | covered: chatgpt-writing-prompt-brief
-- [ ] midjourney prompts for website design | 10 | 1 |
+- [x] midjourney prompts for website design | 10 | 1 | midjourney-website-ui-mockup
 - [x] midjourney prompts for logos | 10 | 12 | covered: midjourney-logo-design
 - [x] chatgpt prompts for starting a business | 10 | 0 | covered: startup-idea-validation-plan
 - [x] midjourney prompts for photorealism | 10 | 2 | covered: realistic-ai-photo-prompt
@@ -811,7 +811,7 @@ Use after the low-KD rows above. Same rules: one row = one page, no near-duplica
 - [ ] image to text prompt | 350 | 40 |
 - [ ] gpt prompts | 250 | 62 |
 - [ ] essay prompt examples | 250 | 18 |
-- [ ] ai voice prompt | 200 | 64 |
+- [x] ai voice prompt | 200 | 64 | ai-voice-prompt-voiceover
 - [ ] ai prompt list | 150 | 24 |
 - [ ] ai prompt writing | 150 | 30 |
 - [ ] ai generated prompts | 150 | 31 |
