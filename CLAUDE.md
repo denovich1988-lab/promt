@@ -4,6 +4,8 @@ Static site of AI prompts. Built with `npm run build` (scripts/build.mjs) from `
 Every push to `main` is built by GitHub Actions (.github/workflows/deploy.yml) and published to the `site` branch; the server pulls that branch every 5 minutes.
 Site language: **English**.
 
+
+- **Competitor check (owner, 2026-11-25): before creating or changing any page type, template or article, check the top-10 SERP for its main keyword with Ahrefs (`serp-overview`) and read 2–3 top competitor pages: length, sections, FAQ count, tables. Match or beat them on completeness (never by padding). Do this every time without asking the owner.**
 ## Daily prompts — 150 every morning
 
 Three scheduled runs each morning (07:00, 07:41 and 08:17 Tashkent) each add **50 new prompts**, 150 a day in total. Later runs must `git pull --rebase` before every batch and re-check titles, because earlier runs the same day already added prompts. Work in 5 batches of 10: write 10, build, check, commit and push, then the next 10. Never ask for confirmation; just publish.
