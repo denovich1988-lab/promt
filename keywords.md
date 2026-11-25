@@ -1091,6 +1091,16 @@ For the daily blog run, not for prompt pages.
 - [x] secret santa rules chatgpt prompt | - | - | secret-santa-office-rules
 - [x] error handling code review chatgpt prompt | - | - | error-handling-improvements
 - [x] metric definitions chatgpt prompt | - | - | metric-definitions-glossary
+- [x] chatgpt prompts for yoga teachers | - | - | yoga-class-sequence-plan
+- [x] musician press kit chatgpt prompt | - | - | musician-press-kit-bio
+- [x] chatgpt prompts for barbers | - | - | barbershop-booking-reminders
+- [x] wholesale pitch email chatgpt prompt | - | - | wholesale-pitch-retail-buyers
+- [x] service page seo chatgpt prompt | - | - | service-page-seo-copy
+- [x] subscription pricing model chatgpt prompt | - | - | subscription-pricing-model-switch
+- [x] audience research forum threads chatgpt prompt | - | - | audience-research-forum-threads
+- [x] advent calendar ai image prompt | - | - | advent-calendar-illustration
+- [x] train window ai video prompt | - | - | train-window-travel-video
+- [x] year end tax planning chatgpt prompt | - | - | year-end-tax-planning-questions
 
 ## Blog topics, added 2026-11-25
 
