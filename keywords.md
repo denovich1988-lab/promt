@@ -1102,6 +1102,18 @@ For the daily blog run, not for prompt pages.
 - [x] train window ai video prompt | - | - | train-window-travel-video
 - [x] year end tax planning chatgpt prompt | - | - | year-end-tax-planning-questions
 
+## Long-tail fill (2026-11-25, run 3; demand checked with web search)
+- [x] chatgpt prompts for personal trainers | - | - | personal-trainer-client-program
+- [x] chatgpt prompts for airbnb hosts | - | - | airbnb-listing-house-manual
+- [x] chatgpt prompts for roofing companies | - | - | roofing-storm-damage-leads
+- [x] chatgpt prompts for veterinarians | - | - | vet-discharge-instructions-clients
+- [x] chatgpt prompts for data analysts | - | - | data-analyst-stakeholder-summary
+- [x] chatgpt prompts for pest control | - | - | pest-control-service-plan-pitch
+- [x] chatgpt prompts for solar sales | - | - | solar-consultation-follow-up
+- [x] chatgpt prompts for dog trainers | - | - | dog-trainer-program-packages
+- [x] new year's eve fireworks ai video prompt | - | - | new-years-eve-fireworks-video
+- [x] hot chocolate food photography ai prompt | - | - | hot-chocolate-food-photo
+
 ## Blog topics, added 2026-11-25
 
 - [ ] introduction to prompt engineering for generative ai | 250 | 24 |
