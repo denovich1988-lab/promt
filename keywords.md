@@ -1071,6 +1071,16 @@ For the daily blog run, not for prompt pages.
 - [x] chatgpt prompts for bookkeepers | - | - | bookkeepers-catch-up-plan
 - [x] finals study schedule chatgpt prompt | - | - | finals-week-study-schedule
 - [x] new year resolutions chatgpt prompt | - | - | new-year-resolutions-plan
+- [x] chatgpt prompts for etsy sellers | - | - | etsy-listing-titles-tags
+- [x] chatgpt prompts for auto repair shops | - | - | auto-repair-estimate-explainer
+- [x] chatgpt prompts for florists | - | - | florist-holiday-orders-plan
+- [x] chatgpt prompts for photographers | - | - | photographers-session-shot-list
+- [x] chatgpt prompts for childcare activities | - | - | toddler-weekly-activity-plan
+- [x] holiday closure notice chatgpt prompt | - | - | office-holiday-closure-notice
+- [x] sneaker commercial ai video prompt | - | - | sneaker-commercial-video
+- [x] hanukkah card ai image prompt | - | - | hanukkah-greeting-card-image
+- [x] voice of customer analysis chatgpt prompt | - | - | voice-of-customer-sales-calls
+- [x] stop doing list chatgpt prompt | - | - | stop-doing-list-strategy
 
 ## Blog topics, added 2026-11-25
 
