@@ -1133,6 +1133,16 @@ For the daily blog run, not for prompt pages.
 - [x] chatgpt prompts for principals | - | - | principal-parent-newsletter
 - [x] ice skating rink ai image prompt | - | - | ice-skating-rink-illustration
 - [x] champagne toast slow motion ai video prompt | - | - | champagne-toast-slow-motion-video
+- [x] chatgpt prompts for freight brokers | - | - | freight-broker-carrier-outreach
+- [x] chatgpt prompts for contractors | - | - | contractor-bid-follow-up
+- [x] chatgpt prompts for car wash | - | - | car-wash-membership-promo
+- [x] chatgpt prompts for massage therapists | - | - | massage-therapist-gift-card-promo
+- [x] mystery shopper checklist chatgpt prompt | - | - | mystery-shopper-checklist
+- [x] chatgpt prompts for pool service companies | - | - | pool-service-winterization-reminder
+- [x] holiday shift coverage schedule chatgpt prompt | - | - | holiday-shift-coverage-schedule
+- [x] year end charitable giving chatgpt prompt | - | - | year-end-charitable-giving-plan
+- [x] poinsettia botanical illustration ai prompt | - | - | poinsettia-botanical-illustration
+- [x] snowy village drone ai video prompt | - | - | snowy-village-drone-video
 
 ## Blog topics, added 2026-11-25
 
