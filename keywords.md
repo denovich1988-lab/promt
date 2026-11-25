@@ -854,7 +854,7 @@ For the daily blog run, not for prompt pages.
 - [ ] prompt engineering best practices | 1100 | 79 |
 - [ ] anthropic prompt engineering guide | 1100 | 70 |
 - [ ] prompt engineering guide | 800 | 83 |
-- [ ] context engineering vs prompt engineering | 800 | 26 |
+- [x] context engineering vs prompt engineering | 800 | 26 | blog: context-engineering-vs-prompt-engineering
 - [ ] prompt engineering techniques | 700 | 50 |
 - [ ] what is prompt engineering in ai | 600 | 39 |
 - [ ] ai prompt injection | 600 | 67 |
@@ -1057,7 +1057,7 @@ For the daily blog run, not for prompt pages.
 - [ ] introduction to prompt engineering for generative ai | 250 | 24 |
 - [ ] how to prompt chatgpt | 90 | 42 |
 - [ ] introduction to prompt engineering | 80 | 47 |
-- [ ] how to prompt ai art | 70 | 16 |
+- [x] how to prompt ai art | 70 | 16 | blog: how-to-prompt-ai-art
 
 ## Tool keywords (not for prompt pages): improve /prompt-generator/ or build a tool page for each group
 
