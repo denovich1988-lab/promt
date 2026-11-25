@@ -1052,6 +1052,26 @@ For the daily blog run, not for prompt pages.
 - [x] retro 1950s advertisement ai prompt | - | - | retro-1950s-advertisement-image
 - [x] luxury watch commercial ai video prompt | - | - | watch-commercial-macro-video
 
+## Long-tail fill (2026-11-25, run 2; demand checked with web search)
+- [x] rewrite title tags for ctr chatgpt prompt | - | - | title-tag-ctr-rewrite
+- [x] pestel analysis chatgpt prompt | - | - | pestel-analysis-report
+- [x] corporate gift sales email prompt | - | - | corporate-gift-sales-outreach
+- [x] amazon product listing chatgpt prompt | - | - | amazon-product-listing-copy
+- [x] christmas window display ai image prompt | - | - | christmas-window-display-image
+- [x] internship cover letter chatgpt prompt | - | - | internship-cover-letter
+- [x] book report chatgpt prompt | - | - | book-report-outline-helper
+- [x] employment contract review chatgpt prompt | - | - | employment-contract-review
+- [x] nps comment analysis chatgpt prompt | - | - | nps-comment-analysis
+- [x] annual marketing plan chatgpt prompt | - | - | annual-marketing-plan-next-year
+- [x] 404 page copy chatgpt prompt | - | - | 404-error-page-copy
+- [x] chatgpt prompts for pastors | - | - | sermon-outline-pastors
+- [x] chatgpt prompts for hvac | - | - | hvac-maintenance-plan-pitch
+- [x] hyperlapse ai video prompt | - | - | hyperlapse-city-video
+- [x] northern lights ai image prompt | - | - | northern-lights-landscape-image
+- [x] chatgpt prompts for bookkeepers | - | - | bookkeepers-catch-up-plan
+- [x] finals study schedule chatgpt prompt | - | - | finals-week-study-schedule
+- [x] new year resolutions chatgpt prompt | - | - | new-year-resolutions-plan
+
 ## Blog topics, added 2026-11-25
 
 - [ ] introduction to prompt engineering for generative ai | 250 | 24 |
