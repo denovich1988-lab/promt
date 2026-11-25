@@ -1123,6 +1123,16 @@ For the daily blog run, not for prompt pages.
 - [x] chatgpt prompts for executive assistants | - | - | executive-assistant-board-meeting-prep
 - [x] fireplace loop ai video prompt | - | - | fireplace-cozy-loop-video
 - [x] christmas ornament product photo ai prompt | - | - | christmas-ornament-product-photo
+- [x] chatgpt prompts for caterers | - | - | caterer-holiday-party-proposal
+- [x] chatgpt prompts for makeup artists | - | - | bridal-makeup-inquiry-reply
+- [x] chatgpt prompts for pilates studios | - | - | pilates-studio-intro-offer
+- [x] chatgpt prompts for bookstores | - | - | bookstore-author-event-promo
+- [x] chatgpt prompts for martial arts schools | - | - | martial-arts-trial-class-follow-up
+- [x] dance recital parent guide chatgpt prompt | - | - | dance-studio-recital-parent-guide
+- [x] seasonal hiring job post chatgpt prompt | - | - | seasonal-hiring-job-post
+- [x] chatgpt prompts for principals | - | - | principal-parent-newsletter
+- [x] ice skating rink ai image prompt | - | - | ice-skating-rink-illustration
+- [x] champagne toast slow motion ai video prompt | - | - | champagne-toast-slow-motion-video
 
 ## Blog topics, added 2026-11-25
 
