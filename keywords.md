@@ -1332,3 +1332,13 @@ For the daily blog run, not for prompt pages.
 - [x] google apps script chatgpt prompt | - | - | google-apps-script-automation
 - [x] sympathy card message chatgpt prompt | - | - | sympathy-card-message
 - [x] compare job offers chatgpt prompt | - | - | compare-job-offers
+- [x] quarterly marketing report chatgpt prompt | - | - | quarterly-marketing-report-leadership
+- [x] upwork proposal chatgpt prompt | - | - | freelance-job-proposal
+- [x] xml sitemap audit chatgpt prompt | - | - | xml-sitemap-audit
+- [x] company profile chatgpt prompt | - | - | company-profile-document
+- [x] grant budget justification chatgpt prompt | - | - | grant-budget-justification
+- [x] midjourney wildlife photography prompt | - | - | midjourney-wildlife-photography
+- [x] one take tracking shot ai video prompt | - | - | one-take-tracking-shot-ai-video
+- [x] html accessibility chatgpt prompt | - | - | html-accessibility-fixes
+- [x] salary increase letter chatgpt prompt | - | - | salary-increase-letter
+- [x] novel discussion questions chatgpt prompt | - | - | novel-discussion-questions
