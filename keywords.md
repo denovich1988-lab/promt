@@ -1352,3 +1352,13 @@ For the daily blog run, not for prompt pages.
 - [x] looker studio dashboard chatgpt prompt | - | - | looker-studio-dashboard-plan
 - [x] warranty claim response chatgpt prompt | - | - | warranty-claim-response
 - [x] estate planning chatgpt prompt | - | - | estate-planning-attorney-prep
+- [x] thought leadership article chatgpt prompt | - | - | thought-leadership-article-sme
+- [x] log file analysis seo chatgpt prompt | - | - | server-log-file-seo-analysis
+- [x] ecommerce niche research chatgpt prompt | - | - | ecommerce-niche-research
+- [x] competitive displacement campaign chatgpt prompt | - | - | competitor-switch-campaign
+- [x] irb application chatgpt prompt | - | - | irb-ethics-application
+- [x] sketch to render ai prompt | - | - | sketch-to-render-architecture
+- [x] safety training ai video prompt | - | - | workplace-safety-training-video
+- [x] financial ratio analysis chatgpt prompt | - | - | financial-ratio-analysis
+- [x] probation review chatgpt prompt | - | - | probation-period-review
+- [x] six thinking hats chatgpt prompt | - | - | six-thinking-hats-decision
