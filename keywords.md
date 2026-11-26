@@ -879,7 +879,7 @@ For the daily blog run, not for prompt pages.
 - [ ] how to write chatgpt prompts | 200 | 22 |
 - [ ] how to learn prompt engineering | 150 | 59 |
 - [ ] chatgpt prompt guide | 150 | 50 |
-- [ ] advanced prompt engineering techniques | 150 | 26 |
+- [x] advanced prompt engineering techniques | 150 | 26 | blog: advanced-prompt-engineering-techniques
 - [ ] chatgpt prompt injection | 150 | 43 |
 - [ ] prompt engineering basics | 150 | 47 |
 - [ ] gpt prompt engineering | 150 | 72 |
