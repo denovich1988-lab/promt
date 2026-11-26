@@ -1258,3 +1258,13 @@ For the daily blog run, not for prompt pages.
 - [x] chatgpt prompt react component | - | - | react-component-from-spec
 - [x] chatgpt prompt compare credit cards | - | - | credit-card-comparison
 - [x] chatgpt prompt church announcements | - | - | church-weekly-announcements
+- [x] creator brand pitch email chatgpt | - | - | creator-brand-pitch-email
+- [x] renewal reminder email chatgpt prompt | - | - | contract-renewal-reminder-email
+- [x] vendor onboarding checklist chatgpt | - | - | vendor-onboarding-checklist
+- [x] research participant information sheet consent form chatgpt | - | - | research-participant-information-sheet
+- [x] canonical tag duplicate content audit prompt | - | - | canonical-tag-duplicate-content-audit
+- [x] midjourney impressionist painting prompts | - | - | midjourney-impressionist-painting
+- [x] new years eve party invitation ai image | - | - | new-years-eve-party-invitation-image
+- [x] greatest weakness interview answer chatgpt prompt | - | - | greatest-weakness-interview-answer
+- [x] excel demand forecast chatgpt prompt | - | - | excel-demand-forecast-sales-history
+- [x] chatgpt prompt vocabulary list activities | - | - | vocabulary-list-unit-activities
