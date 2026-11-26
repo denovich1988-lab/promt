@@ -1280,3 +1280,13 @@ For the daily blog run, not for prompt pages.
 - [x] pull request description chatgpt prompt | - | - | pull-request-description
 - [x] chatgpt prompt course syllabus | - | - | course-syllabus-builder
 - [x] reference check questions chatgpt prompt | - | - | reference-check-questions
+- [x] anchor text audit chatgpt prompt | - | - | anchor-text-distribution-audit
+- [x] podcast interview questions chatgpt prompt | - | - | podcast-guest-interview-questions
+- [x] multi-threading deal stakeholders sales prompt | - | - | multi-threading-deal-stakeholders
+- [x] post merger integration plan chatgpt prompt | - | - | post-merger-integration-plan
+- [x] post-event feedback survey questions prompt | - | - | post-event-feedback-survey
+- [x] midjourney pop art prompt | - | - | midjourney-pop-art-portrait
+- [x] toy commercial ai video prompt | - | - | toy-commercial-ai-video
+- [x] job offer acceptance email chatgpt | - | - | job-offer-acceptance-email
+- [x] matplotlib chart chatgpt prompt | - | - | python-chart-code-matplotlib
+- [x] dmca takedown notice chatgpt prompt | - | - | dmca-takedown-notice
