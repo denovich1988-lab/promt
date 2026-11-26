@@ -1228,3 +1228,13 @@ For the daily blog run, not for prompt pages.
 - [x] chatgpt prompt federal resume | - | - | federal-resume-usajobs
 - [x] chatgpt prompts for paralegals deposition summary | - | - | paralegal-deposition-summary
 - [x] chatgpt prompts for esl teachers | - | - | esl-conversation-lesson-plan
+- [x] ga4 report analysis chatgpt prompt | - | - | ga4-traffic-report-analysis
+- [x] google business profile q&a answers prompt | - | - | google-business-profile-qa
+- [x] chatgpt prompt supply chain risk | - | - | supply-chain-risk-plan
+- [x] hotel pre arrival email upsell | - | - | hotel-pre-arrival-upsell-email
+- [x] survey sample size chatgpt prompt | - | - | survey-sample-size-plan
+- [x] midjourney chinese ink painting prompts | - | - | midjourney-chinese-ink-painting
+- [x] ai music visualizer video prompt | - | - | music-visualizer-loop-video
+- [x] chatgpt prompt linkedin recommendation | - | - | linkedin-recommendation-for-colleague
+- [x] chatgpt prompt 3 year financial projections | - | - | startup-three-year-financial-projections
+- [x] chatgpt prompt terraform | - | - | terraform-module-from-requirements
