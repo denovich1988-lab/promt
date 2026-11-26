@@ -1248,3 +1248,13 @@ For the daily blog run, not for prompt pages.
 - [x] chatgpt prompts bell ringer activities | - | - | bell-ringer-warm-up-activities
 - [x] customer service role play scenarios chatgpt | - | - | customer-service-training-roleplay
 - [x] chatgpt moving checklist prompt | - | - | moving-checklist-plan
+- [x] chatgpt prompt sales page copy | - | - | long-form-sales-page-copy
+- [x] youtube ad script chatgpt prompt | - | - | youtube-pre-roll-ad-script
+- [x] volunteer recruitment chatgpt prompt | - | - | volunteer-recruitment-plan-nonprofit
+- [x] tows matrix chatgpt prompt | - | - | tows-matrix-strategy
+- [x] recipe blog post seo chatgpt prompt | - | - | recipe-blog-post-seo
+- [x] midjourney game item icons | - | - | midjourney-rpg-item-icons
+- [x] ai cooking recipe video prompt | - | - | recipe-overhead-cooking-video
+- [x] chatgpt prompt react component | - | - | react-component-from-spec
+- [x] chatgpt prompt compare credit cards | - | - | credit-card-comparison
+- [x] chatgpt prompt church announcements | - | - | church-weekly-announcements
