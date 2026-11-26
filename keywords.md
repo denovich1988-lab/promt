@@ -926,7 +926,7 @@ For the daily blog run, not for prompt pages.
 
 ## Remaining keywords from the 2026-11-24 Excel (any KD)
 
-- [ ] gemini ai photo prompt | 34000 | 26 |
+- [x] gemini ai photo prompt | 34000 | 26 | covered: gemini-photo-editing
 - [x] chat gpt resume prompts | 3200 | 2 | covered: chatgpt-resume-tailoring
 - [x] chat gpt caricature prompt | 1600 | 0 | covered: chatgpt-caricature-from-photo
 - [ ] ai image prompt | 1200 | 5 |
@@ -962,14 +962,14 @@ For the daily blog run, not for prompt pages.
 - [x] funny chat gpt prompts | 150 | 0 | covered: fun-chatgpt-prompts-games
 - [ ] marketing prompts for chatgpt | 150 | 12 |
 - [ ] ai prompt example | 150 | 2 |
-- [ ] ai anime prompt | 100 | 2 |
+- [x] ai anime prompt | 100 | 2 | covered: ai-anime-scene-prompts
 - [ ] useful chatgpt prompts | 100 | 2 |
-- [ ] ai art anime prompts | 100 | 1 |
+- [x] ai art anime prompts | 100 | 1 | covered: ai-anime-scene-prompts
 - [ ] free chatgpt prompt templates | 100 | 1 |
 - [ ] list of chatgpt prompts | 100 | 3 |
 - [x] chat gpt resume prompt | 100 | 2 | covered: chatgpt-resume-tailoring
 - [x] chat gpt cover letter prompts | 100 | 0 | covered: cover-letter-from-job-post
-- [ ] ai prompt anime | 100 | 1 |
+- [x] ai prompt anime | 100 | 1 | covered: ai-anime-scene-prompts
 - [ ] ai art prompt ideas | 100 | 5 |
 - [x] chat gpt cover letter prompt | 100 | 1 | covered: cover-letter-from-job-post
 - [x] fun prompts for chatgpt | 100 | 0 | covered: fun-chatgpt-prompts-games
@@ -1175,7 +1175,7 @@ For the daily blog run, not for prompt pages.
 - [ ] image to prompt ai | 500 | 18 |
 - [ ] ai video prompt generator | 500 | 39 |
 - [ ] chatgpt prompt optimizer | 450 | 23 |
-- [ ] funny ai prompts | 400 | 0 |
+- [x] funny ai prompts | 400 | 0 | covered: funny-ai-image-prompts
 - [ ] free ai prompt generator | 400 | 47 |
 - [ ] ai image to prompt | 400 | 50 |
 - [ ] ai story generator based on prompt | 400 | 29 |
@@ -1188,14 +1188,14 @@ For the daily blog run, not for prompt pages.
 - [ ] prompt generator for ai | 300 | 28 |
 - [ ] ai prompt image | 250 | 9 |
 - [ ] image prompt ai | 200 | 10 |
-- [ ] fun ai prompts | 200 | 0 |
+- [x] fun ai prompts | 200 | 0 | covered: fun-chatgpt-prompts-games
 - [ ] ai logo generator with prompt | 200 | 39 |
 - [ ] text to image prompt generator | 200 | 59 |
 - [ ] image to text prompt generator | 200 | 17 |
 - [ ] ai story prompt generator | 200 | 31 |
 - [ ] prompt from image | 200 | 40 |
 - [ ] writing prompt generator ai | 200 | 36 |
-- [ ] anime ai prompts | 150 | 0 |
+- [x] anime ai prompts | 150 | 0 | covered: ai-anime-scene-prompts
 - [ ] cool ai prompts | 150 | 8 |
 - [ ] ai photo prompt generator | 150 | 45 |
 - [ ] generate prompt from image | 150 | 23 |
@@ -1204,7 +1204,7 @@ For the daily blog run, not for prompt pages.
 - [ ] ai writing prompt generator | 150 | 36 |
 - [ ] creative ai prompts | 100 | 8 |
 - [ ] interesting ai prompts | 100 | 0 |
-- [ ] anime ai prompt | 100 | 0 |
+- [x] anime ai prompt | 100 | 0 | covered: ai-anime-scene-prompts
 - [ ] prompt for ai image generator | 100 | 10 |
 - [ ] ai prompt from image | 100 | 21 |
 - [ ] create prompt from image | 100 | 21 |
@@ -1216,3 +1216,15 @@ For the daily blog run, not for prompt pages.
 - [ ] sample ai prompts | 70 | 2 |
 - [ ] crazy ai prompts | 40 | 0 |
 - [ ] great ai prompts | 40 | 5 |
+
+## Long-tail fill, 2026-11-26 (remaining unchecked rows are hub/list, blog or tool keywords; demand checked with web search: competitor prompt pages exist for each)
+- [x] chatgpt prompt seo proposal | - | - | seo-proposal-for-clients
+- [x] google ads sitelink callout copy chatgpt | - | - | google-ads-sitelinks-callouts
+- [x] open enrollment email chatgpt prompt | - | - | open-enrollment-benefits-email
+- [x] all hands meeting talking points chatgpt | - | - | all-hands-meeting-talking-points
+- [x] price quote email chatgpt prompt | - | - | price-quote-email-customer
+- [x] midjourney art nouveau prompts | - | - | midjourney-art-nouveau-poster
+- [x] santa sleigh ai video prompt | - | - | santa-sleigh-christmas-ai-video
+- [x] chatgpt prompt federal resume | - | - | federal-resume-usajobs
+- [x] chatgpt prompts for paralegals deposition summary | - | - | paralegal-deposition-summary
+- [x] chatgpt prompts for esl teachers | - | - | esl-conversation-lesson-plan
