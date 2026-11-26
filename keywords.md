@@ -1320,3 +1320,15 @@ For the daily blog run, not for prompt pages.
 - [x] field trip permission letter chatgpt prompt | - | - | field-trip-planning-letter
 - [x] law firm client intake questionnaire chatgpt prompt | - | - | law-firm-client-intake-form
 - [x] real estate price reduction conversation chatgpt prompt | - | - | price-reduction-seller-script
+
+## Long-tail fill, 2026-11-26 run 3 (remaining unchecked rows are hub/list, blog or tool keywords; demand checked with web search: competitor prompt pages exist for each)
+- [x] media pitch email to journalists chatgpt prompt | - | - | media-pitch-email-journalists
+- [x] email deliverability checklist chatgpt prompt | - | - | email-deliverability-checklist
+- [x] sales negotiation concession plan chatgpt prompt | - | - | negotiation-concession-plan
+- [x] keyword prioritization chatgpt prompt | - | - | keyword-prioritization-scoring
+- [x] survey question bias review chatgpt prompt | - | - | survey-question-bias-review
+- [x] chatgpt hairstyle try on prompt | - | - | hairstyle-try-on-photo
+- [x] wedding highlight ai video prompt | - | - | wedding-highlight-ai-video
+- [x] google apps script chatgpt prompt | - | - | google-apps-script-automation
+- [x] sympathy card message chatgpt prompt | - | - | sympathy-card-message
+- [x] compare job offers chatgpt prompt | - | - | compare-job-offers
