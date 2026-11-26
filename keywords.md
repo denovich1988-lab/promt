@@ -1268,3 +1268,15 @@ For the daily blog run, not for prompt pages.
 - [x] greatest weakness interview answer chatgpt prompt | - | - | greatest-weakness-interview-answer
 - [x] excel demand forecast chatgpt prompt | - | - | excel-demand-forecast-sales-history
 - [x] chatgpt prompt vocabulary list activities | - | - | vocabulary-list-unit-activities
+
+## Long-tail fill, 2026-11-26 run 2 (remaining unchecked rows are hub/list, blog or tool keywords; demand checked with web search: competitor prompt pages exist for each)
+- [x] chatgpt prompt youtube chapters timestamps | - | - | youtube-chapters-timestamps
+- [x] customer health score chatgpt prompt | - | - | customer-health-score-model
+- [x] incident postmortem chatgpt prompt | - | - | incident-postmortem-report
+- [x] post-purchase email sequence chatgpt prompt | - | - | post-purchase-email-sequence
+- [x] usability test findings report chatgpt prompt | - | - | usability-test-findings-report
+- [x] midjourney bauhaus poster prompt | - | - | midjourney-bauhaus-poster
+- [x] rack focus ai video prompt | - | - | rack-focus-ai-video
+- [x] pull request description chatgpt prompt | - | - | pull-request-description
+- [x] chatgpt prompt course syllabus | - | - | course-syllabus-builder
+- [x] reference check questions chatgpt prompt | - | - | reference-check-questions
