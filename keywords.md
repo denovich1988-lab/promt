@@ -1290,3 +1290,13 @@ For the daily blog run, not for prompt pages.
 - [x] job offer acceptance email chatgpt | - | - | job-offer-acceptance-email
 - [x] matplotlib chart chatgpt prompt | - | - | python-chart-code-matplotlib
 - [x] dmca takedown notice chatgpt prompt | - | - | dmca-takedown-notice
+- [x] customer success playbook chatgpt prompt | - | - | customer-success-playbook
+- [x] amazon ppc campaign structure chatgpt prompt | - | - | amazon-ppc-campaign-structure
+- [x] conjoint analysis survey design prompt | - | - | conjoint-analysis-study-design
+- [x] closed won welcome email sales prompt | - | - | closed-won-welcome-email
+- [x] seo split test title tag chatgpt prompt | - | - | seo-split-test-plan
+- [x] midjourney cottagecore prompt | - | - | midjourney-cottagecore-scene
+- [x] neon rain city ai video prompt | - | - | neon-rain-city-ai-video
+- [x] station rotation lesson chatgpt prompt | - | - | station-rotation-lesson
+- [x] car total cost of ownership chatgpt prompt | - | - | car-buying-total-cost
+- [x] support qa scorecard chatgpt prompt | - | - | support-qa-scorecard
