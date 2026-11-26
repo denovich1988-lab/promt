@@ -2,7 +2,7 @@
 title: Midjourney game item icons for RPGs
 date: 2026-11-26
 category: image
-description: Generate consistent fantasy RPG item icons in Midjourney: weapons, potions, armor and loot on clean backgrounds, ready for inventory screens.
+description: Generate consistent fantasy RPG item icons in Midjourney (weapons, potions, armor and loot) on clean backgrounds, ready for inventory screens.
 models: [Midjourney, Flux, GPT Image]
 level: Intermediate
 tags: [game assets, rpg icons, midjourney game art, inventory icons]
