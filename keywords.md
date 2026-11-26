@@ -1238,3 +1238,13 @@ For the daily blog run, not for prompt pages.
 - [x] chatgpt prompt linkedin recommendation | - | - | linkedin-recommendation-for-colleague
 - [x] chatgpt prompt 3 year financial projections | - | - | startup-three-year-financial-projections
 - [x] chatgpt prompt terraform | - | - | terraform-module-from-requirements
+- [x] warm introduction request email | - | - | warm-introduction-request-email
+- [x] video testimonial interview questions | - | - | video-testimonial-interview-questions
+- [x] franchise operations manual chatgpt | - | - | franchise-operations-manual
+- [x] job posting seo google jobs | - | - | job-posting-seo-google-jobs
+- [x] chatgpt prompt case study analysis | - | - | business-school-case-analysis
+- [x] midjourney knolling prompt | - | - | midjourney-knolling-photography
+- [x] ai video prompt game trailer | - | - | video-game-cinematic-trailer
+- [x] chatgpt prompts bell ringer activities | - | - | bell-ringer-warm-up-activities
+- [x] customer service role play scenarios chatgpt | - | - | customer-service-training-roleplay
+- [x] chatgpt moving checklist prompt | - | - | moving-checklist-plan
