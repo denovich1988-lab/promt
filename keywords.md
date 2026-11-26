@@ -1362,3 +1362,13 @@ For the daily blog run, not for prompt pages.
 - [x] financial ratio analysis chatgpt prompt | - | - | financial-ratio-analysis
 - [x] probation review chatgpt prompt | - | - | probation-period-review
 - [x] six thinking hats chatgpt prompt | - | - | six-thinking-hats-decision
+- [x] waitlist landing page chatgpt prompt | - | - | waitlist-landing-page-copy
+- [x] brand style guide chatgpt prompt | - | - | visual-brand-style-guide
+- [x] reconsideration request manual action chatgpt prompt | - | - | manual-action-reconsideration-request
+- [x] daycare business plan chatgpt prompt | - | - | daycare-business-plan
+- [x] data management plan chatgpt prompt | - | - | research-data-management-plan
+- [x] midjourney embroidery prompt | - | - | midjourney-embroidery-art
+- [x] establishing shot ai video prompt | - | - | cinematic-establishing-shot-video
+- [x] retirement savings chatgpt prompt | - | - | retirement-savings-checkup
+- [x] commercial property listing chatgpt prompt | - | - | commercial-property-listing
+- [x] project based learning chatgpt prompt | - | - | project-based-learning-unit
