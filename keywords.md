@@ -1342,3 +1342,13 @@ For the daily blog run, not for prompt pages.
 - [x] html accessibility chatgpt prompt | - | - | html-accessibility-fixes
 - [x] salary increase letter chatgpt prompt | - | - | salary-increase-letter
 - [x] novel discussion questions chatgpt prompt | - | - | novel-discussion-questions
+- [x] facebook ads audience targeting chatgpt prompt | - | - | facebook-ads-audience-targeting
+- [x] redirect map site migration chatgpt prompt | - | - | redirect-map-site-migration
+- [x] wardley map chatgpt prompt | - | - | wardley-map-strategy
+- [x] discount approval request chatgpt prompt | - | - | deal-desk-discount-approval
+- [x] policy brief chatgpt prompt | - | - | policy-brief-writer
+- [x] christmas card illustration ai prompt | - | - | christmas-card-illustration-design
+- [x] charity appeal ai video prompt | - | - | charity-appeal-ai-video
+- [x] looker studio dashboard chatgpt prompt | - | - | looker-studio-dashboard-plan
+- [x] warranty claim response chatgpt prompt | - | - | warranty-claim-response
+- [x] estate planning chatgpt prompt | - | - | estate-planning-attorney-prep
