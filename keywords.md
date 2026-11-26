@@ -1300,3 +1300,13 @@ For the daily blog run, not for prompt pages.
 - [x] station rotation lesson chatgpt prompt | - | - | station-rotation-lesson
 - [x] car total cost of ownership chatgpt prompt | - | - | car-buying-total-cost
 - [x] support qa scorecard chatgpt prompt | - | - | support-qa-scorecard
+- [x] webinar registration page copy chatgpt prompt | - | - | webinar-registration-page-copy
+- [x] advisory board invitation email | - | - | advisory-board-invitation-email
+- [x] international pricing localization prompt | - | - | international-pricing-localization
+- [x] security questionnaire answers chatgpt prompt | - | - | security-questionnaire-answers
+- [x] product concept test survey chatgpt prompt | - | - | product-concept-test-survey
+- [x] midjourney blueprint prompt | - | - | midjourney-blueprint-drawing
+- [x] concert stage ai video prompt | - | - | concert-stage-ai-video
+- [x] kubernetes yaml chatgpt prompt | - | - | kubernetes-manifests-from-app
+- [x] succession planning chatgpt prompt | - | - | succession-planning-key-roles
+- [x] email inbox rules triage chatgpt prompt | - | - | inbox-rules-email-triage
