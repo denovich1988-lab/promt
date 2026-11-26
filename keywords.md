@@ -1310,3 +1310,13 @@ For the daily blog run, not for prompt pages.
 - [x] kubernetes yaml chatgpt prompt | - | - | kubernetes-manifests-from-app
 - [x] succession planning chatgpt prompt | - | - | succession-planning-key-roles
 - [x] email inbox rules triage chatgpt prompt | - | - | inbox-rules-email-triage
+- [x] site search query analysis content ideas prompt | - | - | site-search-query-content-ideas
+- [x] tiktok shop product listing chatgpt prompt | - | - | tiktok-shop-product-listing
+- [x] small business loan application chatgpt prompt | - | - | small-business-loan-application
+- [x] stakeholder interview guide chatgpt prompt | - | - | stakeholder-interview-guide
+- [x] door to door sales script chatgpt prompt | - | - | door-to-door-sales-script
+- [x] midjourney neon sign prompt | - | - | midjourney-neon-sign-design
+- [x] anime opening sequence ai video prompt | - | - | anime-opening-sequence-video
+- [x] field trip permission letter chatgpt prompt | - | - | field-trip-planning-letter
+- [x] law firm client intake questionnaire chatgpt prompt | - | - | law-firm-client-intake-form
+- [x] real estate price reduction conversation chatgpt prompt | - | - | price-reduction-seller-script
