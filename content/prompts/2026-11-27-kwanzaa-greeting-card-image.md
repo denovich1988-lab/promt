@@ -13,7 +13,7 @@ Kwanzaa runs from December 26 to January 1 and has its own symbols: the kinara w
 ## Prompt
 
 ```prompt
-Design a Kwanzaa greeting card, [PORTRAIT 5x7 / SQUARE] format.
+Design a Kwanzaa greeting card, [PORTRAIT 5X7 / SQUARE] format.
 
 Style: [WARM FLAT ILLUSTRATION / PAPER-CUT / WATERCOLOR / MODERN GEOMETRIC / KENTE-INSPIRED PATTERN]
 Main scene: a kinara with seven lit candles, arranged correctly: three red candles on the left, one black candle in the centre, three green candles on the right. [ADD: MKEKA WOVEN MAT, EARS OF CORN, UNITY CUP, FRUIT BASKET, FAMILY GATHERED]

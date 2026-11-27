@@ -17,7 +17,7 @@ Enamel pin design of [SUBJECT, E.G. A SLEEPY CAT CURLED AROUND A COFFEE CUP].
 
 Pin type: [HARD ENAMEL / SOFT ENAMEL], [GOLD / SILVER / BLACK NICKEL / ROSE GOLD] metal outlines.
 Size: about [25–38] mm, simple silhouette with clean edges.
-Style: [CUTE KAWAII / RETRO 70s / MINIMAL LINE / BOLD CARTOON], thick metal lines separating every color area.
+Style: [CUTE KAWAII / RETRO 1970S / MINIMAL LINE / BOLD CARTOON], thick metal lines separating every color area.
 Colors: maximum [4–6] flat enamel colors: [COLORS]. [OPTIONAL: GLITTER IN ONE AREA / GLOW-IN-THE-DARK DETAIL]
 Text on the pin (render exactly, optional): "[SHORT TEXT]"
 No gradients except where noted, no fine details thinner than the metal lines.

@@ -21,7 +21,7 @@ Target buyer and price: [E.G. GIFT BUYERS, MID-PRICE]
 Style direction: [CLASSIC ENGRAVED CHATEAU / MINIMALIST MODERN / BOTANICAL ILLUSTRATION / BOLD GRAPHIC / VINTAGE LETTERPRESS / PLAYFUL HAND-DRAWN]
 Key visual: [E.G. A HERON, A HILLSIDE VINEYARD, AN ABSTRACT WAVE]
 Palette and paper: [E.G. CREAM TEXTURED PAPER WITH GOLD FOIL AND BLACK INK]
-Label shape and size: [E.G. 90 x 120 MM PORTRAIT RECTANGLE]
+Label shape and size: [E.G. 90 X 120 MM PORTRAIT RECTANGLE]
 
 Text to render exactly: "[WINE NAME]", "[WINERY NAME]", "[VINTAGE]". No other words.
 Leave a clear blank band at the bottom for alcohol content, volume and other legal text.

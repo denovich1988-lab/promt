@@ -1414,3 +1414,13 @@ For the daily blog run, not for prompt pages.
 - [x] data quality checks chatgpt prompt | - | - | data-quality-checks
 - [x] irregular income budget chatgpt prompt | - | - | irregular-income-budget
 - [x] deep work schedule chatgpt prompt | - | - | deep-work-schedule
+- [x] zero click search chatgpt prompt | - | - | zero-click-search-strategy
+- [x] disavow toxic backlinks chatgpt prompt | - | - | toxic-backlinks-disavow-review
+- [x] membership drive chatgpt prompt | - | - | association-membership-drive
+- [x] return policy chatgpt prompt | - | - | ecommerce-return-policy
+- [x] sustainability report chatgpt prompt | - | - | sustainability-esg-report
+- [x] app icon ai prompt | - | - | app-icon-design-image
+- [x] whiteboard animation ai video prompt | - | - | whiteboard-explainer-animation-video
+- [x] retirement speech chatgpt prompt | - | - | retirement-speech-writer
+- [x] independent contractor agreement chatgpt prompt | - | - | independent-contractor-agreement
+- [x] decluttering plan chatgpt prompt | - | - | decluttering-plan-home

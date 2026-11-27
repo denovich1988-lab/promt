@@ -23,7 +23,7 @@ Out of scope: [WHAT THIS RELEASE WON'T DO]
 
 Deliver:
 1. An epic summary in 2 sentences.
-2. 5–10 user stories in the format "As a [role], I want [action], so that [benefit]". Each story should be small enough for one sprint and meet INVEST (independent, negotiable, valuable, estimable, small, testable).
+2. 5–10 user stories in the format "As a {ROLE}, I want {ACTION}, so that {BENEFIT}". Each story should be small enough for one sprint and meet INVEST (independent, negotiable, valuable, estimable, small, testable).
 3. For each story: acceptance criteria in Given/When/Then format, covering the happy path, validation errors, permissions and empty states.
 4. Edge cases and non-functional requirements (performance, accessibility, security, analytics events).
 5. Suggested order and dependencies between stories.
