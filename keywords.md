@@ -1490,3 +1490,13 @@ For the daily blog run, not for prompt pages.
 - [x] graduation speech chatgpt prompt | - | - | graduation-speech-writer
 - [x] teacher resume chatgpt prompt | - | - | teacher-resume-bullet-points
 - [x] graphql schema chatgpt prompt | - | - | graphql-schema-design
+- [x] bed and breakfast marketing chatgpt prompt | - | - | bed-and-breakfast-marketing
+- [x] kitchen remodel proposal chatgpt prompt | - | - | kitchen-remodel-proposal
+- [x] car rental business plan chatgpt prompt | - | - | car-rental-business-plan
+- [x] law firm seo chatgpt prompt | - | - | law-firm-local-seo-plan
+- [x] thrift store marketing ideas chatgpt prompt | - | - | thrift-store-marketing-ideas
+- [x] samurai ai art prompt | - | - | samurai-warrior-art-image
+- [x] waterfall ai video prompt | - | - | waterfall-nature-ai-video
+- [x] csat survey questions chatgpt prompt | - | - | csat-survey-questions
+- [x] phonics lesson plan chatgpt prompt | - | - | phonics-lesson-plan
+- [x] git merge conflict chatgpt prompt | - | - | git-merge-conflict-resolution
