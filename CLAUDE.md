@@ -6,7 +6,7 @@ Site language: **English**.
 
 
 - **Competitor check (owner, 2026-11-25): before creating or changing any page type, template or article, check the top-10 SERP for its main keyword with Ahrefs (`serp-overview`) and read 2–3 top competitor pages: length, sections, FAQ count, tables. Match or beat them on completeness (never by padding). Do this every time without asking the owner.**
-## Daily prompts — 10 every morning
+## Daily prompts — PAUSED (owner, 2026-11-27: the site was hit by a Google filter; publish nothing until the owner says so)
 
 One scheduled run each morning (07:00 Tashkent) adds **10 new prompts** a day in total (owner, 2026-11-27). Never publish more than 10 prompts in a day. `git pull --rebase` first and re-check titles. Write 10, build, check, commit and push. Never ask for confirmation; just publish.
 
