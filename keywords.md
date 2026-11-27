@@ -1520,3 +1520,13 @@ For the daily blog run, not for prompt pages.
 - [x] dress code policy chatgpt prompt | - | - | dress-code-policy
 - [x] home inventory chatgpt prompt | - | - | home-inventory-insurance-list
 - [x] sight word activities chatgpt prompt | - | - | sight-word-activities
+- [x] antique shop marketing chatgpt prompt | - | - | antique-shop-marketing
+- [x] bowling alley marketing ideas chatgpt prompt | - | - | bowling-alley-marketing
+- [x] water damage restoration marketing chatgpt prompt | - | - | water-damage-restoration-marketing
+- [x] pareto analysis chatgpt prompt | - | - | pareto-analysis-80-20
+- [x] fence quote chatgpt prompt | - | - | fence-installation-quote
+- [x] lighthouse ai art prompt | - | - | lighthouse-coastal-art-image
+- [x] autumn forest ai video prompt | - | - | autumn-forest-ai-video
+- [x] toolbox talk chatgpt prompt | - | - | toolbox-talk-safety-meeting
+- [x] website disclaimer chatgpt prompt | - | - | website-disclaimer-draft
+- [x] after hours auto reply chatgpt prompt | - | - | after-hours-support-auto-reply
