@@ -34,7 +34,7 @@ tags: [3-4, lowercase, tags]
 7. **Owner's rule (2026-11-25): refill keywords instead of warning.** At the start of every prompt run, count the unchecked rows in `keywords.md` (`grep -c '^- \[ \]' keywords.md`). If fewer than 50 remain, collect new ones with Ahrefs before writing (this overrides the Monday-only limit): `keywords-explorer-matching-terms` (country us, **no KD limit**, volume ≥ 20, limit 250) on seeds not used before (record them at the top of `keywords.md`), plus `site-explorer-organic-keywords` for one or two prompt competitors (godofprompt.ai, aiprm.com, team-gpt.com, clickup.com, promptsideas.com or a new one you find). Drop rows already in the file or covered by an existing page, near-duplicates, NSFW, jailbreak/bypass, "avoid AI detection", other sites' brand names and tool keywords (generator, image to prompt, editor). Add the rest as `- [ ] keyword | volume | KD |`, aiming for at least 300 new rows. Say in the final report how many rows were added and which seeds were used.
 8. One commit per batch of 10: `Add 10 prompts: <short theme list>`, push to `main` (pull --rebase first if the push is rejected).
 
-## Daily blog — 2 articles every morning
+## Daily blog — PAUSED (owner, 2026-11-27: do not publish blog posts until the owner says so)
 
 A separate scheduled run adds **2 new blog posts** each morning. Never ask for confirmation; just publish.
 
