@@ -1448,3 +1448,13 @@ For the daily blog run, not for prompt pages.
 - [x] chatgpt prompts for art teachers | - | - | art-lesson-plan-elementary
 - [x] chatgpt prompts for staffing agencies | - | - | staffing-agency-candidate-submittal
 - [x] chatgpt prompts for real estate investors | - | - | real-estate-investor-seller-letter
+- [x] auto detailing business marketing chatgpt prompt | - | - | auto-detailing-business-promotions
+- [x] clothing boutique marketing chatgpt prompt | - | - | clothing-boutique-marketing-plan
+- [x] appliance repair local seo chatgpt prompt | - | - | appliance-repair-local-seo
+- [x] laundromat business plan chatgpt prompt | - | - | laundromat-business-plan
+- [x] flooring estimate follow up chatgpt prompt | - | - | flooring-estimate-follow-up
+- [x] vaporwave ai art prompt | - | - | vaporwave-aesthetic-art-image
+- [x] lofi ai video prompt | - | - | lofi-study-room-loop-video
+- [x] chatgpt prompts for home care agencies | - | - | home-care-caregiver-recruitment
+- [x] yard sale chatgpt prompt | - | - | yard-sale-plan-pricing
+- [x] google sheets query formula chatgpt prompt | - | - | google-sheets-query-formula
