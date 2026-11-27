@@ -1468,3 +1468,13 @@ For the daily blog run, not for prompt pages.
 - [x] chatgpt prompts for driving instructors | - | - | driving-instructor-lesson-plan
 - [x] model release form chatgpt prompt | - | - | photo-model-release-form
 - [x] how to ask someone to be your mentor chatgpt prompt | - | - | mentorship-request-message
+- [x] bike shop marketing chatgpt prompt | - | - | bike-shop-seasonal-promotions
+- [x] ice cream shop marketing ideas chatgpt prompt | - | - | ice-cream-shop-marketing
+- [x] furniture product descriptions chatgpt prompt | - | - | furniture-store-product-descriptions
+- [x] tree service estimate chatgpt prompt | - | - | tree-service-estimate-proposal
+- [x] photo booth business plan chatgpt prompt | - | - | photo-booth-business-plan
+- [x] astronaut ai art prompt | - | - | astronaut-surreal-art-image
+- [x] cherry blossom ai image prompt | - | - | cherry-blossom-spring-scene-image
+- [x] escape room ideas chatgpt prompt | - | - | escape-room-story-puzzles
+- [x] quarterly estimated taxes chatgpt prompt | - | - | freelancer-quarterly-estimated-taxes
+- [x] backorder email chatgpt prompt | - | - | backorder-notice-email
