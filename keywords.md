@@ -1384,3 +1384,13 @@ For the daily blog run, not for prompt pages.
 - [x] recruiter inmail chatgpt prompt | - | - | recruiter-inmail-messages
 - [x] user stories acceptance criteria chatgpt prompt | - | - | user-stories-acceptance-criteria
 - [x] rent increase letter chatgpt prompt | - | - | rent-increase-notice-letter
+- [x] javascript seo audit chatgpt prompt | - | - | javascript-seo-rendering-audit
+- [x] employee advocacy program chatgpt prompt | - | - | employee-advocacy-program
+- [x] nonprofit impact report chatgpt prompt | - | - | nonprofit-impact-report
+- [x] competitive benchmarking chatgpt prompt | - | - | competitive-benchmarking-report
+- [x] capability statement chatgpt prompt | - | - | capability-statement-government
+- [x] papercut art ai prompt | - | - | papercut-art-image
+- [x] meditation ai video prompt | - | - | meditation-visuals-ai-video
+- [x] internal job posting chatgpt prompt | - | - | internal-job-posting
+- [x] sinking funds chatgpt prompt | - | - | sinking-funds-plan
+- [x] math word problems chatgpt prompt | - | - | math-word-problems-generator
