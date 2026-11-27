@@ -1438,3 +1438,13 @@ For the daily blog run, not for prompt pages.
 - [x] chatgpt prompts for home builders | - | - | home-builder-buyer-updates
 - [x] chatgpt prompts for music teachers | - | - | music-teacher-studio-policy
 - [x] powershell script chatgpt prompt | - | - | powershell-script-automation
+- [x] chatgpt prompts for handyman business | - | - | handyman-business-marketing
+- [x] line sheet chatgpt prompt | - | - | wholesale-line-sheet-copy
+- [x] decision matrix chatgpt prompt | - | - | weighted-decision-matrix
+- [x] self storage marketing chatgpt prompt | - | - | self-storage-facility-marketing
+- [x] field notes analysis chatgpt prompt | - | - | ethnographic-field-notes-summary
+- [x] aurora borealis ai image prompt | - | - | aurora-borealis-landscape-image
+- [x] morph transition ai video prompt | - | - | morph-transition-ai-video
+- [x] chatgpt prompts for art teachers | - | - | art-lesson-plan-elementary
+- [x] chatgpt prompts for staffing agencies | - | - | staffing-agency-candidate-submittal
+- [x] chatgpt prompts for real estate investors | - | - | real-estate-investor-seller-letter
