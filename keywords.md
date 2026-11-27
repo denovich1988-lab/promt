@@ -1157,6 +1157,8 @@ For the daily blog run, not for prompt pages.
 ## Blog topics, added 2026-11-25
 
 - [ ] introduction to prompt engineering for generative ai | 250 | 24 |
+- [x] chain of thought prompt | 80 | 13 | blog: chain-of-thought-prompting
+- [x] chatgpt prompts for students | 40 | 5 | blog: chatgpt-prompts-for-students
 - [ ] how to prompt chatgpt | 90 | 42 |
 - [ ] introduction to prompt engineering | 80 | 47 |
 - [x] how to prompt ai art | 70 | 16 | blog: how-to-prompt-ai-art
