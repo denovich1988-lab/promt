@@ -1372,3 +1372,15 @@ For the daily blog run, not for prompt pages.
 - [x] retirement savings chatgpt prompt | - | - | retirement-savings-checkup
 - [x] commercial property listing chatgpt prompt | - | - | commercial-property-listing
 - [x] project based learning chatgpt prompt | - | - | project-based-learning-unit
+
+## Long-tail fill, 2026-11-27 run 1 (remaining unchecked rows are hub/list, blog or tool keywords; demand checked with web search: competitor prompt pages exist for each)
+- [x] crawl budget optimization chatgpt prompt | - | - | crawl-budget-optimization-plan
+- [x] media plan chatgpt prompt | - | - | paid-media-plan-budget
+- [x] chatgpt prompts for pet groomers | - | - | pet-grooming-business-marketing
+- [x] request for quotation chatgpt prompt | - | - | rfq-request-for-quotation
+- [x] bant qualification chatgpt prompt | - | - | bant-lead-qualification
+- [x] kwanzaa card ai image prompt | - | - | kwanzaa-greeting-card-image
+- [x] kinetic typography ai video prompt | - | - | kinetic-typography-ai-video
+- [x] recruiter inmail chatgpt prompt | - | - | recruiter-inmail-messages
+- [x] user stories acceptance criteria chatgpt prompt | - | - | user-stories-acceptance-criteria
+- [x] rent increase letter chatgpt prompt | - | - | rent-increase-notice-letter
