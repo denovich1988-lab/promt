@@ -1394,3 +1394,13 @@ For the daily blog run, not for prompt pages.
 - [x] internal job posting chatgpt prompt | - | - | internal-job-posting
 - [x] sinking funds chatgpt prompt | - | - | sinking-funds-plan
 - [x] math word problems chatgpt prompt | - | - | math-word-problems-generator
+- [x] orphan pages seo chatgpt prompt | - | - | orphan-pages-audit
+- [x] csa newsletter farm chatgpt prompt | - | - | farm-csa-member-newsletter
+- [x] target operating model chatgpt prompt | - | - | target-operating-model
+- [x] construction daily report chatgpt prompt | - | - | construction-daily-site-report
+- [x] event marketing plan chatgpt prompt | - | - | event-marketing-plan
+- [x] wine label design ai prompt | - | - | wine-label-design-image
+- [x] travel map animation ai video prompt | - | - | travel-map-route-animation
+- [x] cron expression chatgpt prompt | - | - | cron-expression-builder
+- [x] lease renewal letter chatgpt prompt | - | - | lease-renewal-offer-letter
+- [x] conference talk proposal chatgpt prompt | - | - | conference-talk-proposal
