@@ -1478,3 +1478,15 @@ For the daily blog run, not for prompt pages.
 - [x] escape room ideas chatgpt prompt | - | - | escape-room-story-puzzles
 - [x] quarterly estimated taxes chatgpt prompt | - | - | freelancer-quarterly-estimated-taxes
 - [x] backorder email chatgpt prompt | - | - | backorder-notice-email
+
+## Long-tail fill, 2026-11-27 run 3 (remaining unchecked rows are hub/list, blog or tool keywords; demand checked with web search: competitor prompt pages exist for each)
+- [x] pressure washing business marketing chatgpt prompt | - | - | pressure-washing-business-marketing
+- [x] vending machine business plan chatgpt prompt | - | - | vending-machine-business-plan
+- [x] out of stock products seo chatgpt prompt | - | - | out-of-stock-product-page-seo
+- [x] home security sales script chatgpt prompt | - | - | home-security-system-sales-script
+- [x] fishbone diagram root cause analysis chatgpt prompt | - | - | fishbone-root-cause-analysis
+- [x] koi fish ai art prompt | - | - | koi-pond-ai-art-image
+- [x] volcano eruption ai video prompt | - | - | volcano-eruption-ai-video
+- [x] graduation speech chatgpt prompt | - | - | graduation-speech-writer
+- [x] teacher resume chatgpt prompt | - | - | teacher-resume-bullet-points
+- [x] graphql schema chatgpt prompt | - | - | graphql-schema-design
