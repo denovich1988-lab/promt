@@ -1500,3 +1500,13 @@ For the daily blog run, not for prompt pages.
 - [x] csat survey questions chatgpt prompt | - | - | csat-survey-questions
 - [x] phonics lesson plan chatgpt prompt | - | - | phonics-lesson-plan
 - [x] git merge conflict chatgpt prompt | - | - | git-merge-conflict-resolution
+- [x] campground marketing chatgpt prompt | - | - | campground-rv-park-marketing
+- [x] glamping business plan chatgpt prompt | - | - | glamping-business-plan
+- [x] funeral home marketing chatgpt prompt | - | - | funeral-home-marketing
+- [x] saas seo chatgpt prompt | - | - | saas-seo-content-strategy
+- [x] trampoline park birthday party chatgpt prompt | - | - | trampoline-park-party-sales
+- [x] mermaid ai art prompt | - | - | mermaid-fantasy-art-image
+- [x] desert sand dunes ai video prompt | - | - | desert-sand-dunes-ai-video
+- [x] liability waiver chatgpt prompt | - | - | liability-waiver-draft
+- [x] limerick chatgpt prompt | - | - | limerick-writer
+- [x] 529 plan chatgpt prompt | - | - | college-savings-529-plan
