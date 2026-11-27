@@ -1404,3 +1404,13 @@ For the daily blog run, not for prompt pages.
 - [x] cron expression chatgpt prompt | - | - | cron-expression-builder
 - [x] lease renewal letter chatgpt prompt | - | - | lease-renewal-offer-letter
 - [x] conference talk proposal chatgpt prompt | - | - | conference-talk-proposal
+- [x] image seo chatgpt prompt | - | - | image-seo-checklist
+- [x] medical practice newsletter chatgpt prompt | - | - | medical-practice-patient-newsletter
+- [x] quality control checklist chatgpt prompt | - | - | manufacturing-quality-control-checklist
+- [x] 3pl comparison chatgpt prompt | - | - | third-party-logistics-comparison
+- [x] office relocation plan chatgpt prompt | - | - | office-relocation-plan
+- [x] enamel pin design ai prompt | - | - | enamel-pin-design-image
+- [x] app promo video ai prompt | - | - | app-promo-phone-mockup-video
+- [x] data quality checks chatgpt prompt | - | - | data-quality-checks
+- [x] irregular income budget chatgpt prompt | - | - | irregular-income-budget
+- [x] deep work schedule chatgpt prompt | - | - | deep-work-schedule
