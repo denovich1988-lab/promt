@@ -1510,3 +1510,13 @@ For the daily blog run, not for prompt pages.
 - [x] liability waiver chatgpt prompt | - | - | liability-waiver-draft
 - [x] limerick chatgpt prompt | - | - | limerick-writer
 - [x] 529 plan chatgpt prompt | - | - | college-savings-529-plan
+- [x] summer camp marketing chatgpt prompt | - | - | summer-camp-enrollment-marketing
+- [x] credit union marketing chatgpt prompt | - | - | credit-union-member-marketing
+- [x] garage door marketing chatgpt prompt | - | - | garage-door-company-marketing
+- [x] dental seo chatgpt prompt | - | - | dental-practice-seo-plan
+- [x] concrete estimate chatgpt prompt | - | - | concrete-contractor-estimate
+- [x] owl ai art prompt | - | - | owl-ai-art-image
+- [x] fox ai video prompt | - | - | fox-in-snow-ai-video
+- [x] dress code policy chatgpt prompt | - | - | dress-code-policy
+- [x] home inventory chatgpt prompt | - | - | home-inventory-insurance-list
+- [x] sight word activities chatgpt prompt | - | - | sight-word-activities
