@@ -1426,3 +1426,15 @@ For the daily blog run, not for prompt pages.
 - [x] retirement speech chatgpt prompt | - | - | retirement-speech-writer
 - [x] independent contractor agreement chatgpt prompt | - | - | independent-contractor-agreement
 - [x] decluttering plan chatgpt prompt | - | - | decluttering-plan-home
+
+## Long-tail fill, 2026-11-27 run 2 (remaining unchecked rows are hub/list, blog or tool keywords; demand checked with web search: competitor prompt pages exist for each)
+- [x] chatgpt prompts for accountants | - | - | accountant-tax-season-client-emails
+- [x] chatgpt prompts for med spa marketing | - | - | med-spa-marketing-promotions
+- [x] chatgpt prompts for dropshipping product research | - | - | dropshipping-product-research
+- [x] spin selling chatgpt prompt | - | - | spin-selling-discovery-questions
+- [x] brand serp audit chatgpt prompt | - | - | brand-serp-audit
+- [x] midjourney castle prompts | - | - | midjourney-fantasy-castle
+- [x] hot air balloon ai video prompt | - | - | hot-air-balloon-ai-video
+- [x] chatgpt prompts for home builders | - | - | home-builder-buyer-updates
+- [x] chatgpt prompts for music teachers | - | - | music-teacher-studio-policy
+- [x] powershell script chatgpt prompt | - | - | powershell-script-automation
