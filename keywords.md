@@ -1143,7 +1143,7 @@ For the daily blog run, not for prompt pages.
 - [x] year end charitable giving chatgpt prompt | - | - | year-end-charitable-giving-plan
 - [x] poinsettia botanical illustration ai prompt | - | - | poinsettia-botanical-illustration
 - [x] snowy village drone ai video prompt | - | - | snowy-village-drone-video
-- [x] chatgpt prompts for event venues | - | - | event-venue-inquiry-response
+- [x] golf course membership sales chatgpt prompt | - | - | golf-course-membership-sales
 - [x] chatgpt prompts for optometrists | - | - | optometry-annual-exam-recall
 - [x] chatgpt prompts for locksmiths | - | - | locksmith-google-business-posts
 - [x] chatgpt prompts for gutter cleaning business | - | - | gutter-cleaning-seasonal-promo
@@ -1458,3 +1458,13 @@ For the daily blog run, not for prompt pages.
 - [x] chatgpt prompts for home care agencies | - | - | home-care-caregiver-recruitment
 - [x] yard sale chatgpt prompt | - | - | yard-sale-plan-pricing
 - [x] google sheets query formula chatgpt prompt | - | - | google-sheets-query-formula
+- [x] pet sitting business marketing chatgpt prompt | - | - | pet-sitting-business-marketing
+- [x] junk removal marketing chatgpt prompt | - | - | junk-removal-business-marketing
+- [x] golf course membership sales chatgpt prompt | - | - | golf-course-membership-sales
+- [x] coworking space business plan chatgpt prompt | - | - | coworking-space-business-plan
+- [x] horizon scanning chatgpt prompt | - | - | horizon-scanning-trend-signals
+- [x] viking ai art prompt | - | - | viking-warrior-character-image
+- [x] motorcycle ai video prompt | - | - | motorcycle-ride-cinematic-video
+- [x] chatgpt prompts for driving instructors | - | - | driving-instructor-lesson-plan
+- [x] model release form chatgpt prompt | - | - | photo-model-release-form
+- [x] how to ask someone to be your mentor chatgpt prompt | - | - | mentorship-request-message
