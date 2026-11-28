@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'granted'});
+  gtag('consent', 'default', {ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'denied', region: ["AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IE","IT","LV","LT","LU","MT","NL","PL","PT","RO","SK","SI","ES","SE","IS","LI","NO","GB","CH"]});
+  try { var c = localStorage.getItem('consent'); if (c) gtag('consent', 'update', {analytics_storage: c === 'yes' ? 'granted' : 'denied'}); } catch (e) {}
+</script>
+<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-TJLCXNX9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3226858004021254" crossorigin="anonymous"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>8 Advanced Prompt Engineering Techniques With Templates</title>
+<meta name="description" content="Eight advanced prompt engineering techniques - from self-consistency to step-back and self-critique - with fill-in templates and when to use each.">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="canonical" href="https://goodaipromt.com/blog/advanced-prompt-engineering-techniques/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="GoodAIPromt">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="8 Advanced Prompt Engineering Techniques With Templates">
+<meta property="og:description" content="Eight advanced prompt engineering techniques - from self-consistency to step-back and self-critique - with fill-in templates and when to use each.">
+<meta property="og:url" content="https://goodaipromt.com/blog/advanced-prompt-engineering-techniques/">
+<meta property="og:image" content="https://goodaipromt.com/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="GoodAIPromt: free AI prompts you can fill in and copy">
+<meta property="article:published_time" content="2026-11-26">
+<meta property="article:modified_time" content="2026-11-26">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="8 Advanced Prompt Engineering Techniques With Templates">
+<meta name="twitter:description" content="Eight advanced prompt engineering techniques - from self-consistency to step-back and self-critique - with fill-in templates and when to use each.">
+<meta name="twitter:image" content="https://goodaipromt.com/assets/og.png">
+<meta name="theme-color" content="#e9ebf0" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#101218" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preload" href="/assets/fonts/bricolage.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="alternate" type="application/rss+xml" title="GoodAIPromt" href="/rss.xml">
+<link rel="stylesheet" href="/assets/style.css?v=mwzs8cp7">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://goodaipromt.com/#organization","name":"GoodAIPromt","url":"https://goodaipromt.com/","logo":{"@type":"ImageObject","url":"https://goodaipromt.com/assets/logo.png","width":512,"height":512},"email":"contact@goodaipromt.com","description":"A free AI prompt library for ChatGPT, Claude, Gemini, Midjourney and AI video tools. Fill in the blanks, copy the prompt, get better answers. New prompts daily."},{"@type":"WebSite","@id":"https://goodaipromt.com/#website","name":"GoodAIPromt","url":"https://goodaipromt.com/","description":"A free AI prompt library for ChatGPT, Claude, Gemini, Midjourney and AI video tools. Fill in the blanks, copy the prompt, get better answers. New prompts daily.","inLanguage":"en","publisher":{"@id":"https://goodaipromt.com/#organization"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://goodaipromt.com/?q={search_term_string}"},"query-input":"required name=search_term_string"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://goodaipromt.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://goodaipromt.com/blog/"},{"@type":"ListItem","position":3,"name":"8 Advanced Prompt Engineering Techniques (With Templates)","item":"https://goodaipromt.com/blog/advanced-prompt-engineering-techniques/"}]},{"@type":"BlogPosting","@id":"https://goodaipromt.com/blog/advanced-prompt-engineering-techniques/#article","headline":"8 Advanced Prompt Engineering Techniques (With Templates)","description":"Eight advanced prompt engineering techniques - from self-consistency to step-back and self-critique - with fill-in templates and when to use each.","abstract":"Advanced prompt engineering techniques help most on hard tasks - multi-step reasoning, long documents and work where mistakes are costly. Techniques like step-back prompting, decomposition and self-consistency change how the model approaches a problem, not just the wording. Grounding answers in quoted source text and asking the model to critique its own draft against a rubric both reduce errors. Use the lightest technique that solves the problem, because each one adds length, cost and time.","datePublished":"2026-11-26","dateModified":"2026-11-26","url":"https://goodaipromt.com/blog/advanced-prompt-engineering-techniques/","mainEntityOfPage":"https://goodaipromt.com/blog/advanced-prompt-engineering-techniques/","image":"https://goodaipromt.com/assets/og.png","author":{"@type":"Organization","@id":"https://goodaipromt.com/#organization","name":"GoodAIPromt editorial team","url":"https://goodaipromt.com/about/"},"publisher":{"@id":"https://goodaipromt.com/#organization"},"wordCount":1351,"inLanguage":"en","isAccessibleForFree":true},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What are advanced prompt engineering techniques?","acceptedAnswer":{"@type":"Answer","text":"They are methods that go beyond a clear instruction and a few examples. Common ones include step-back prompting, breaking a problem into sub-questions, sampling several answers and comparing them, exploring multiple solution paths, grounding answers in quotes, and having the model critique and revise its own work."}},{"@type":"Question","name":"Do advanced prompting techniques still matter with reasoning models?","acceptedAnswer":{"@type":"Answer","text":"Some matter less. Models that reason internally often do not need \"think step by step\". But grounding in sources, clear structure, decomposition of large jobs and review against explicit criteria still tend to improve results, because they give the model information and checks it would not otherwise have."}},{"@type":"Question","name":"Which advanced technique should I learn first?","acceptedAnswer":{"@type":"Answer","text":"Start with self-critique against a rubric and grounding answers in quotes. Both are easy to add to prompts you already use, work in ChatGPT, Claude and Gemini, and catch many of the errors that matter in real work."}}]}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <div class="wrap top__row">
+    <a class="logo" href="/" aria-label="promt — GoodAIPromt home">promt<span class="logo__blank" aria-hidden="true"></span></a>
+    <nav class="top__nav" aria-label="Categories"><a href="/category/writing/">Writing</a><a href="/category/marketing/">Marketing</a><a href="/category/seo/">SEO</a><a href="/category/sales/">Sales</a><a href="/category/business/">Strategy</a><a href="/category/coding/">Coding</a><a href="/category/image/">Image</a><a href="/category/video/">Video</a><a href="/categories/">All categories</a></nav>
+    <nav class="top__aux" aria-label="Site"><a href="/prompt-generator/">Generator</a><a href="/guides/">Guides</a><a href="/blog/" aria-current="page">Blog</a></nav><button class="theme-btn" type="button" data-theme-toggle aria-label="Switch light or dark theme" title="Light / dark theme"><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></svg><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg></button>
+    <button class="menu-btn" type="button" data-menu-btn aria-expanded="false" aria-controls="drawer"><span class="menu-btn__icon" aria-hidden="true"></span><span class="visually-hidden">Menu</span></button>
+  </div>
+  <div class="drawer" id="drawer" data-drawer hidden>
+    <div class="wrap drawer__inner">
+      <form class="drawer__search" action="/" method="get" role="search"><label class="visually-hidden" for="drawer-q">Search prompts</label><input id="drawer-q" type="search" name="q" placeholder="Search prompts" autocomplete="off"><button class="btn btn--copy" type="submit">Search</button></form>
+      <div class="drawer__quick">
+        <a href="/prompts/">All prompts</a><a href="/prompt-generator/">Prompt generator</a><a href="/guides/">Guides</a><a href="/blog/">Blog</a>
+      </div>
+      <p class="drawer__h">By AI tool</p>
+      <div class="drawer__chips"><a href="/chatgpt-prompts/">ChatGPT</a><a href="/claude-prompts/">Claude</a><a href="/gemini-prompts/">Gemini</a><a href="/midjourney-prompts/">Midjourney</a><a href="/ai-video-prompts/">AI Video</a></div>
+      <p class="drawer__h">By task</p>
+      <div class="drawer__chips"><a href="/category/writing/">Writing</a><a href="/category/marketing/">Marketing</a><a href="/category/seo/">SEO</a><a href="/category/sales/">Sales</a><a href="/category/business/">Strategy</a><a href="/category/productivity/">Productivity</a><a href="/category/education/">Education</a><a href="/category/research/">Research</a><a href="/category/data/">Data analysis</a><a href="/category/finance/">Finance</a><a href="/category/hr/">HR</a><a href="/category/customer-service/">Customer service</a><a href="/category/real-estate/">Real estate</a><a href="/category/careers/">Careers</a><a href="/category/legal/">Legal</a><a href="/category/coding/">Coding</a><a href="/category/image/">Image</a><a href="/category/video/">Video</a></div>
+      <p class="drawer__h">Resources</p>
+      <div class="drawer__links"><a href="/best-ai-tools/">Best AI tools</a><a href="/best-ai-mcps/">MCP servers</a><a href="/best-ai-skills/">Claude skills</a><a href="/free-ai-courses/">Free AI courses</a><a href="/faq/">FAQ</a><a href="/about/">About</a><a href="/contact/">Contact</a></div>
+    </div>
+  </div>
+</header>
+<main id="main">
+
+<article class="prompt post">
+  <header class="wrap prompt__head">
+    <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/blog/">Blog</a></li><li><span aria-current="page">8 Advanced Prompt Engineering Techniques (With Templates)</span></li></ol></nav>
+    <h1>8 Advanced Prompt Engineering Techniques (With Templates)</h1>
+    <p class="prompt__lede">Eight advanced prompt engineering techniques - from self-consistency to step-back and self-critique - with fill-in templates and when to use each.</p>
+    <dl class="facts">
+      <div><dt>Published</dt><dd><time datetime="2026-11-26">November 26, 2026</time></dd></div>
+      
+      <div><dt>Reading time</dt><dd>6 min</dd></div>
+      <div><dt>By</dt><dd><a href="/about/">GoodAIPromt editorial team</a></dd></div>
+    </dl>
+  </header>
+  <div class="wrap prompt__body">
+    <aside class="summary" aria-labelledby="sum-h"><h2 id="sum-h">Key takeaways</h2><ul><li>Advanced prompt engineering techniques help most on hard tasks - multi-step reasoning, long documents and work where mistakes are costly.</li><li>Techniques like step-back prompting, decomposition and self-consistency change how the model approaches a problem, not just the wording.</li><li>Grounding answers in quoted source text and asking the model to critique its own draft against a rubric both reduce errors.</li><li>Use the lightest technique that solves the problem, because each one adds length, cost and time.</li></ul></aside>
+    <div class="prose"><p>Once you know the basics - a clear task, context, a role and a few examples - most everyday prompts work fine. The trouble starts with harder jobs: analysing a long contract, planning a launch with many moving parts, or answering a question where one wrong step ruins the result. That is where <strong>advanced prompt engineering techniques</strong> earn their extra words.</p>
+<p>This guide covers eight of them. For each you get what it does, when to use it and a fill-in template you can paste into ChatGPT, Claude or Gemini. If you are newer to prompting, start with <a href="/blog/zero-shot-prompting/">zero-shot</a>, <a href="/blog/few-shot-prompting/">few-shot</a> and <a href="/blog/role-prompting/">role prompting</a> first; the techniques below build on them.</p>
+<h2>1. Step-back prompting</h2>
+<p><strong>What it is:</strong> before answering a specific question, the model first states the general principle or concept behind it, then applies that principle to the case.</p>
+<p><strong>When to use it:</strong> questions where the model jumps to a plausible but shallow answer - physics or finance problems, policy questions, &quot;why did this happen&quot; analysis.</p>
+<div class="editor" data-editor>
+<pre class="editor__text"><code>Question: <span class="blank" contenteditable="true" spellcheck="false" role="textbox" aria-label="Fill in: specific question" data-ph="SPECIFIC QUESTION"></span>
+
+Step 1: Before answering, state the general principles, rules or concepts that apply to this kind of question.
+Step 2: Using only those principles and the facts below, answer the question.
+Facts: <span class="blank" contenteditable="true" spellcheck="false" role="textbox" aria-label="Fill in: relevant facts" data-ph="RELEVANT FACTS"></span>
+Show both steps, then give the final answer in one sentence.</code></pre>
+<div class="editor__bar"><p class="editor__status" data-status aria-live="polite"><span data-filled>0</span> of 2 blanks filled</p><div class="editor__actions"><button class="btn btn--quiet" type="button" data-clear>Clear</button><button class="btn btn--copy" type="button" data-copy>Copy prompt</button></div></div>
+</div>
+<h2>2. Decomposition (least-to-most)</h2>
+<p><strong>What it is:</strong> the model splits a hard problem into smaller sub-questions, solves the easiest first and uses each answer to solve the next.</p>
+<p><strong>When to use it:</strong> multi-part problems such as a pricing change that affects revenue, churn and support load, or a research question with several dependencies.</p>
+<div class="editor" data-editor>
+<pre class="editor__text"><code>Problem: <span class="blank" contenteditable="true" spellcheck="false" role="textbox" aria-label="Fill in: problem" data-ph="PROBLEM"></span>
+
+First, list the sub-questions that must be answered to solve this, ordered from simplest to most dependent. Do not answer yet.
+Then answer each sub-question in order, using earlier answers where needed.
+Finish with the overall answer and note which sub-answer you are least confident in.</code></pre>
+<div class="editor__bar"><p class="editor__status" data-status aria-live="polite"><span data-filled>0</span> of 1 blank filled</p><div class="editor__actions"><button class="btn btn--quiet" type="button" data-clear>Clear</button><button class="btn btn--copy" type="button" data-copy>Copy prompt</button></div></div>
+</div>
+<p>For very large tasks, split the steps into separate prompts instead. Our guide to <a href="/blog/prompt-chaining/">prompt chaining</a> and the <a href="/prompts/advanced-chatgpt-prompt-chain/">advanced ChatGPT prompt chain</a> template show how.</p>
+<h2>3. Self-consistency</h2>
+<p><strong>What it is:</strong> you ask for several independent solutions to the same problem, then pick the answer most of them agree on. Disagreement is a useful warning sign.</p>
+<p><strong>When to use it:</strong> questions with one correct answer - calculations, classification, logic - where a single run sometimes slips.</p>
+<div class="editor" data-editor>
+<pre class="editor__text"><code>Solve the following problem in <span class="blank" contenteditable="true" spellcheck="false" role="textbox" aria-label="Fill in: number" data-ph="NUMBER"></span> independent ways, using a different approach each time. Do not let one attempt influence the next.
+Problem: <span class="blank" contenteditable="true" spellcheck="false" role="textbox" aria-label="Fill in: problem" data-ph="PROBLEM"></span>
+
+After the attempts, compare the final answers. Report the answer most attempts agree on, and if they disagree, explain where the reasoning splits.</code></pre>
+<div class="editor__bar"><p class="editor__status" data-status aria-live="polite"><span data-filled>0</span> of 2 blanks filled</p><div class="editor__actions"><button class="btn btn--quiet" type="button" data-clear>Clear</button><button class="btn btn--copy" type="button" data-copy>Copy prompt</button></div></div>
+</div>
+<p>You can also run the same prompt in several fresh chats and compare. That gives more independent attempts than asking for them in one reply.</p>
+<h2>4. Exploring multiple paths (tree of thoughts style)</h2>
+<p><strong>What it is:</strong> instead of committing to the first approach, the model proposes several options, evaluates each, drops the weak ones and develops the best.</p>
+<p><strong>When to use it:</strong> open-ended planning and creative problems - a launch plan, a product name, an architecture choice - where the first idea is rarely the best.</p>
+<div class="editor" data-editor>
+<pre class="editor__text"><code>Goal: <span class="blank" contenteditable="true" spellcheck="false" role="textbox" aria-label="Fill in: goal" data-ph="GOAL"></span>
+Constraints: <span class="blank" contenteditable="true" spellcheck="false" role="textbox" aria-label="Fill in: constraints" data-ph="CONSTRAINTS"></span>
+
+1. Propose <span class="blank" contenteditable="true" spellcheck="false" role="textbox" aria-label="Fill in: number" data-ph="NUMBER"></span> distinct approaches. Keep each to two sentences.
+2. Score each approach from 1 to 5 on <span class="blank" contenteditable="true" spellcheck="false" role="textbox" aria-label="Fill in: criteria" data-ph="CRITERIA"></span>, with one line of reasoning per score.
+3. Drop all but the top two. For each, list the first three steps and the main risk.
+4. Recommend one and explain what would make you switch to the other.</code></pre>
+<div class="editor__bar"><p class="editor__status" data-status aria-live="polite"><span data-filled>0</span> of 4 blanks filled</p><div class="editor__actions"><button class="btn btn--quiet" type="button" data-clear>Clear</button><button class="btn btn--copy" type="button" data-copy>Copy prompt</button></div></div>
+</div>
+<h2>5. Grounding with quotes</h2>
+<p><strong>What it is:</strong> for questions about a document, the model first extracts the exact passages that matter, then answers using only those quotes.</p>
+<p><strong>When to use it:</strong> contracts, reports, policies, research papers, long transcripts - anywhere an invented detail would be costly.</p>
+<div class="editor" data-editor>
+<pre class="editor__text"><code>Here is a document inside &lt;document&gt; tags:
+&lt;document&gt;
+<span class="blank" contenteditable="true" spellcheck="false" role="textbox" aria-label="Fill in: paste document" data-ph="PASTE DOCUMENT"></span>
+&lt;/document&gt;
+
+Question: <span class="blank" contenteditable="true" spellcheck="false" role="textbox" aria-label="Fill in: question" data-ph="QUESTION"></span>
+
+First, copy the exact sentences from the document that are relevant, inside &lt;quotes&gt; tags. Then answer the question using only those quotes. If the document does not contain the answer, say &quot;Not stated in the document&quot; instead of guessing.</code></pre>
+<div class="editor__bar"><p class="editor__status" data-status aria-live="polite"><span data-filled>0</span> of 2 blanks filled</p><div class="editor__actions"><button class="btn btn--quiet" type="button" data-clear>Clear</button><button class="btn btn--copy" type="button" data-copy>Copy prompt</button></div></div>
+</div>
+<p>The tags help separate your instructions from the material. Anthropic&#39;s documentation recommends XML-style tags for Claude, and they tend to work well in other models too, though guidance from each provider may change.</p>
+<h2>6. Self-critique against a rubric</h2>
+<p><strong>What it is:</strong> the model writes a draft, reviews it against explicit criteria, then revises. The rubric is what makes this work - &quot;check your work&quot; alone is vague.</p>
+<p><strong>When to use it:</strong> anything you would otherwise review by hand - sales emails, reports, lesson plans, code explanations.</p>
+<div class="editor" data-editor>
+<pre class="editor__text"><code>Task: <span class="blank" contenteditable="true" spellcheck="false" role="textbox" aria-label="Fill in: task" data-ph="TASK"></span>
+
+Step 1: Write a first draft.
+Step 2: Review the draft against this rubric, scoring each item 1-5 with a one-line reason:
+- <span class="blank" contenteditable="true" spellcheck="false" role="textbox" aria-label="Fill in: criterion 1" data-ph="CRITERION 1"></span>
+- <span class="blank" contenteditable="true" spellcheck="false" role="textbox" aria-label="Fill in: criterion 2" data-ph="CRITERION 2"></span>
+- <span class="blank" contenteditable="true" spellcheck="false" role="textbox" aria-label="Fill in: criterion 3" data-ph="CRITERION 3"></span>
+Step 3: Rewrite the draft to fix every item that scored below 4.
+Show only the rubric scores and the final version.</code></pre>
+<div class="editor__bar"><p class="editor__status" data-status aria-live="polite"><span data-filled>0</span> of 4 blanks filled</p><div class="editor__actions"><button class="btn btn--quiet" type="button" data-clear>Clear</button><button class="btn btn--copy" type="button" data-copy>Copy prompt</button></div></div>
+</div>
+<h2>7. Structured output with a schema</h2>
+<p><strong>What it is:</strong> you define the exact shape of the answer - fields, types, allowed values - so the output can be pasted into a spreadsheet or read by code.</p>
+<p><strong>When to use it:</strong> extracting data from messy text, tagging feedback, building tables, or any step that feeds another tool.</p>
+<div class="editor" data-editor>
+<pre class="editor__text"><code>Extract information from the text below and return valid JSON only, with no extra text.
+Schema:
+{
+  &quot;name&quot;: string,
+  &quot;company&quot;: string or null,
+  &quot;request_type&quot;: one of <span class="blank" contenteditable="true" spellcheck="false" role="textbox" aria-label="Fill in: category list" data-ph="CATEGORY LIST"></span>,
+  &quot;urgency&quot;: &quot;low&quot; | &quot;medium&quot; | &quot;high&quot;,
+  &quot;summary&quot;: string under 25 words
+}
+If a field is missing, use null. Do not invent values.
+
+Text: <span class="blank" contenteditable="true" spellcheck="false" role="textbox" aria-label="Fill in: text" data-ph="TEXT"></span></code></pre>
+<div class="editor__bar"><p class="editor__status" data-status aria-live="polite"><span data-filled>0</span> of 2 blanks filled</p><div class="editor__actions"><button class="btn btn--quiet" type="button" data-clear>Clear</button><button class="btn btn--copy" type="button" data-copy>Copy prompt</button></div></div>
+</div>
+<p>Some tools and APIs offer a dedicated structured output or JSON mode that enforces a schema more strictly. Check your tool&#39;s current documentation, since these features change.</p>
+<h2>8. Meta prompting: let the model improve the prompt</h2>
+<p><strong>What it is:</strong> you ask the model to rewrite your prompt before running it - adding missing context, constraints and an output format.</p>
+<p><strong>When to use it:</strong> when a prompt keeps giving mediocre results and you are not sure what is missing.</p>
+<div class="editor" data-editor>
+<pre class="editor__text"><code>I want to use an AI model for this task: <span class="blank" contenteditable="true" spellcheck="false" role="textbox" aria-label="Fill in: task description" data-ph="TASK DESCRIPTION"></span>.
+Here is my current prompt: <span class="blank" contenteditable="true" spellcheck="false" role="textbox" aria-label="Fill in: current prompt" data-ph="CURRENT PROMPT"></span>
+
+Ask me up to 5 questions about missing context. After I answer, rewrite the prompt so it includes the goal, audience, context, constraints, output format and a quality check. Explain each change in one line.</code></pre>
+<div class="editor__bar"><p class="editor__status" data-status aria-live="polite"><span data-filled>0</span> of 2 blanks filled</p><div class="editor__actions"><button class="btn btn--quiet" type="button" data-clear>Clear</button><button class="btn btn--copy" type="button" data-copy>Copy prompt</button></div></div>
+</div>
+<p>Our full guide to <a href="/blog/meta-prompting/">meta prompting</a> covers this in more depth, and the <a href="/prompts/claude-prompt-engineering-improve/">Claude prompt improver</a> is a ready template.</p>
+<h2>How to choose the right technique</h2>
+<table>
+<thead>
+<tr>
+<th>Problem</th>
+<th>Technique to try first</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Shallow or obvious answers</td>
+<td>Step-back prompting</td>
+</tr>
+<tr>
+<td>Problem with many parts</td>
+<td>Decomposition or prompt chaining</td>
+</tr>
+<tr>
+<td>One right answer, occasional slips</td>
+<td>Self-consistency</td>
+</tr>
+<tr>
+<td>Open-ended plan or idea</td>
+<td>Exploring multiple paths</td>
+</tr>
+<tr>
+<td>Questions about a long document</td>
+<td>Grounding with quotes</td>
+</tr>
+<tr>
+<td>Draft quality varies</td>
+<td>Self-critique against a rubric</td>
+</tr>
+<tr>
+<td>Output feeds a sheet or code</td>
+<td>Structured output with a schema</td>
+</tr>
+<tr>
+<td>Not sure what the prompt lacks</td>
+<td>Meta prompting</td>
+</tr>
+</tbody></table>
+<h2>Common mistakes</h2>
+<ul>
+<li><strong>Stacking every technique at once.</strong> Each one adds length and cost. Start with one and add another only if results are still weak.</li>
+<li><strong>Vague review criteria.</strong> &quot;Make it better&quot; gives cosmetic edits. Name what good looks like.</li>
+<li><strong>Trusting agreement blindly.</strong> If several attempts agree on a wrong premise, self-consistency will not catch it. Check key facts against a source.</li>
+<li><strong>Ignoring model differences.</strong> Reasoning models may not need explicit step-by-step instructions, while grounding and structure still help. Test on the model you actually use.</li>
+</ul>
+<h2>Keep a library of what works</h2>
+<p>When a technique fixes a problem, save the prompt as a template with blanks so you can reuse it. The <a href="/prompts/chatgpt-prompt-template-cheat-sheet/">ChatGPT prompt template cheat sheet</a> is a good place to start, and you will find more ready-made templates in our <a href="/claude-prompts/">Claude prompts hub</a>.</p>
+</div>
+    <section class="faq prose" aria-labelledby="faq-h"><h2 id="faq-h">Frequently asked questions</h2><h3>What are advanced prompt engineering techniques?</h3><p>They are methods that go beyond a clear instruction and a few examples. Common ones include step-back prompting, breaking a problem into sub-questions, sampling several answers and comparing them, exploring multiple solution paths, grounding answers in quotes, and having the model critique and revise its own work.</p><h3>Do advanced prompting techniques still matter with reasoning models?</h3><p>Some matter less. Models that reason internally often do not need &quot;think step by step&quot;. But grounding in sources, clear structure, decomposition of large jobs and review against explicit criteria still tend to improve results, because they give the model information and checks it would not otherwise have.</p><h3>Which advanced technique should I learn first?</h3><p>Start with self-critique against a rubric and grounding answers in quotes. Both are easy to add to prompts you already use, work in ChatGPT, Claude and Gemini, and catch many of the errors that matter in real work.</p></section>
+  </div>
+</article>
+<section class="wrap related"><h2>Prompts from this article</h2><ol class="rows"><li class="row" data-search="advanced chatgpt prompt that plans, drafts and self-checks an advanced chatgpt prompt that makes the ai clarify, plan, draft, critique against your criteria and revise before giving a final answer. productivity chatgpt claude gemini advanced prompts prompt engineering self-critique quality control" data-cat="productivity">
+  <time class="row__date" datetime="2026-11-21">Nov 21</time>
+  <div class="row__main">
+    <h3 class="row__title"><a href="/prompts/advanced-chatgpt-prompt-chain/">Advanced ChatGPT prompt that plans, drafts and self-checks</a></h3>
+    <p class="row__desc">An advanced ChatGPT prompt that makes the AI clarify, plan, draft, critique against your criteria and revise before giving a final answer.</p>
+  </div>
+  <p class="row__cat">Productivity</p>
+  <p class="row__models">For ChatGPT, Claude and Gemini</p>
+</li>
+<li class="row" data-search="claude prompt engineering to improve any prompt use claude prompt engineering basics to rewrite any prompt with clear structure, xml-tagged context, examples and output checks. coding claude chatgpt claude prompt engineering xml tags" data-cat="coding">
+  <time class="row__date" datetime="2026-11-21">Nov 21</time>
+  <div class="row__main">
+    <h3 class="row__title"><a href="/prompts/claude-prompt-engineering-improve/">Claude prompt engineering to improve any prompt</a></h3>
+    <p class="row__desc">Use Claude prompt engineering basics to rewrite any prompt with clear structure, XML-tagged context, examples and output checks.</p>
+  </div>
+  <p class="row__cat">Coding</p>
+  <p class="row__models">For Claude and ChatGPT</p>
+</li>
+<li class="row" data-search="chatgpt prompt templates cheat sheet for any task a chatgpt prompt templates cheat sheet built for your work, with role, task, context, format and checks filled in for your common tasks. productivity chatgpt claude gemini prompt templates cheat sheet prompting" data-cat="productivity">
+  <time class="row__date" datetime="2026-11-21">Nov 21</time>
+  <div class="row__main">
+    <h3 class="row__title"><a href="/prompts/chatgpt-prompt-template-cheat-sheet/">ChatGPT prompt templates cheat sheet for any task</a></h3>
+    <p class="row__desc">A ChatGPT prompt templates cheat sheet built for your work, with role, task, context, format and checks filled in for your common tasks.</p>
+  </div>
+  <p class="row__cat">Productivity</p>
+  <p class="row__models">For ChatGPT, Claude and Gemini</p>
+</li></ol></section>
+<section class="wrap related"><h2>More from the blog</h2><ol class="rows"><li class="row row--post">
+  <time class="row__date" datetime="2026-11-27">Nov 27</time>
+  <div class="row__main">
+    <h3 class="row__title"><a href="/blog/chain-of-thought-prompting/">Chain of Thought Prompting: How to Get AI to Reason Step by Step</a></h3>
+    <p class="row__desc">What a chain of thought prompt is, when step-by-step reasoning helps, and copy-ready templates for maths, decisions, debugging and analysis.</p>
+  </div>
+  <p class="row__cat">7 min read</p>
+</li>
+<li class="row row--post">
+  <time class="row__date" datetime="2026-11-27">Nov 27</time>
+  <div class="row__main">
+    <h3 class="row__title"><a href="/blog/chatgpt-prompts-for-students/">15 ChatGPT Prompts for Students (Study Smarter, Not Shortcut)</a></h3>
+    <p class="row__desc">15 fill-in ChatGPT prompts for students to understand topics, revise for exams, plan essays, manage time and get feedback without cheating.</p>
+  </div>
+  <p class="row__cat">6 min read</p>
+</li>
+<li class="row row--post">
+  <time class="row__date" datetime="2026-11-26">Nov 26</time>
+  <div class="row__main">
+    <h3 class="row__title"><a href="/blog/chatgpt-prompts-for-business/">25 ChatGPT Prompts for Business (Fill In and Copy)</a></h3>
+    <p class="row__desc">25 fill-in ChatGPT prompts for business owners - strategy, marketing, sales, finance, operations and hiring - plus tips to get usable answers.</p>
+  </div>
+  <p class="row__cat">7 min read</p>
+</li></ol></section>
+</main>
+<footer class="foot">
+  <div class="wrap foot__grid">
+    <div>
+      <p class="logo logo--small">promt<span class="logo__blank" aria-hidden="true"></span></p>
+      <p class="foot__about">Free AI prompts you can fill in and copy. Free to copy and use.</p>
+    </div>
+    <nav aria-label="Prompts by AI tool"><p class="foot__h">By AI tool</p><a href="/chatgpt-prompts/">ChatGPT Prompts</a><a href="/claude-prompts/">Claude Prompts</a><a href="/gemini-prompts/">Gemini Prompts</a><a href="/midjourney-prompts/">Midjourney Prompts</a><a href="/ai-video-prompts/">AI Video Prompts for Seedance, Veo and Kling</a></nav>
+    <nav class="foot__tasks" aria-label="Prompts by task"><p class="foot__h">By task</p><a href="/category/writing/">Writing prompts</a><a href="/category/marketing/">Marketing prompts</a><a href="/category/seo/">SEO prompts</a><a href="/category/sales/">Sales prompts</a><a href="/category/business/">Strategy prompts</a><a href="/category/productivity/">Productivity prompts</a><a href="/category/education/">Education prompts</a><a href="/category/research/">Research prompts</a><a href="/category/data/">Data analysis prompts</a><a href="/category/finance/">Finance prompts</a><a href="/category/hr/">HR prompts</a><a href="/category/customer-service/">Customer service prompts</a><a href="/category/real-estate/">Real estate prompts</a><a href="/category/careers/">Careers prompts</a><a href="/category/legal/">Legal prompts</a><a href="/category/coding/">Coding prompts</a><a href="/category/image/">Image prompts</a><a href="/category/video/">Video prompts</a></nav>
+    <nav aria-label="Resources"><p class="foot__h">Resources</p><a href="/prompts/">All prompts</a><a href="/prompt-generator/">Prompt generator</a><a href="/guides/">Guides</a><a href="/best-ai-tools/">Best AI tools</a><a href="/best-ai-mcps/">MCP servers</a><a href="/best-ai-skills/">Claude skills</a><a href="/free-ai-courses/">Free AI courses</a><a href="/faq/">FAQ</a></nav>
+    <nav aria-label="Company and legal"><p class="foot__h">Company</p><a href="/blog/">Blog</a><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy policy</a><a href="/cookies/">Cookie policy</a><a href="/terms/">Terms of use</a><a href="/disclaimer/">Disclaimer</a><a href="/rss.xml">RSS feed</a></nav>
+  </div>
+  <div class="wrap"><p class="muted foot__copy">© 2026 GoodAIPromt. Not affiliated with OpenAI, Anthropic, Google or Midjourney.</p></div>
+</footer>
+<div class="consent" data-consent hidden role="region" aria-label="Cookie choice">
+  <p>We use analytics cookies to see which prompts are useful. No ads, no selling data. <a href="/cookies/">Cookie policy</a></p>
+  <div class="consent__actions"><button class="btn btn--quiet" type="button" data-consent-no>Decline</button><button class="btn btn--copy" type="button" data-consent-yes>Accept</button></div>
+</div>
+<script src="/assets/app.js?v=mwzs8cp7" defer></script>
+</body>
+</html>

@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'granted'});
+  gtag('consent', 'default', {ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'denied', region: ["AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IE","IT","LV","LT","LU","MT","NL","PL","PT","RO","SK","SI","ES","SE","IS","LI","NO","GB","CH"]});
+  try { var c = localStorage.getItem('consent'); if (c) gtag('consent', 'update', {analytics_storage: c === 'yes' ? 'granted' : 'denied'}); } catch (e) {}
+</script>
+<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-TJLCXNX9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3226858004021254" crossorigin="anonymous"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Context Engineering vs Prompt Engineering, Explained</title>
+<meta name="description" content="Context engineering vs prompt engineering in plain English - how they differ, when each one matters, and fill-in templates to put both to work.">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="canonical" href="https://goodaipromt.com/blog/context-engineering-vs-prompt-engineering/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="GoodAIPromt">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Context Engineering vs Prompt Engineering, Explained">
+<meta property="og:description" content="Context engineering vs prompt engineering in plain English - how they differ, when each one matters, and fill-in templates to put both to work.">
+<meta property="og:url" content="https://goodaipromt.com/blog/context-engineering-vs-prompt-engineering/">
+<meta property="og:image" content="https://goodaipromt.com/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="GoodAIPromt: free AI prompts you can fill in and copy">
+<meta property="article:published_time" content="2026-11-25">
+<meta property="article:modified_time" content="2026-11-25">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Context Engineering vs Prompt Engineering, Explained">
+<meta name="twitter:description" content="Context engineering vs prompt engineering in plain English - how they differ, when each one matters, and fill-in templates to put both to work.">
+<meta name="twitter:image" content="https://goodaipromt.com/assets/og.png">
+<meta name="theme-color" content="#e9ebf0" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#101218" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preload" href="/assets/fonts/bricolage.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="alternate" type="application/rss+xml" title="GoodAIPromt" href="/rss.xml">
+<link rel="stylesheet" href="/assets/style.css?v=mwzs8cp7">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://goodaipromt.com/#organization","name":"GoodAIPromt","url":"https://goodaipromt.com/","logo":{"@type":"ImageObject","url":"https://goodaipromt.com/assets/logo.png","width":512,"height":512},"email":"contact@goodaipromt.com","description":"A free AI prompt library for ChatGPT, Claude, Gemini, Midjourney and AI video tools. Fill in the blanks, copy the prompt, get better answers. New prompts daily."},{"@type":"WebSite","@id":"https://goodaipromt.com/#website","name":"GoodAIPromt","url":"https://goodaipromt.com/","description":"A free AI prompt library for ChatGPT, Claude, Gemini, Midjourney and AI video tools. Fill in the blanks, copy the prompt, get better answers. New prompts daily.","inLanguage":"en","publisher":{"@id":"https://goodaipromt.com/#organization"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://goodaipromt.com/?q={search_term_string}"},"query-input":"required name=search_term_string"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://goodaipromt.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://goodaipromt.com/blog/"},{"@type":"ListItem","position":3,"name":"Context Engineering vs Prompt Engineering: What Changes and Why It Matters","item":"https://goodaipromt.com/blog/context-engineering-vs-prompt-engineering/"}]},{"@type":"BlogPosting","@id":"https://goodaipromt.com/blog/context-engineering-vs-prompt-engineering/#article","headline":"Context Engineering vs Prompt Engineering: What Changes and Why It Matters","description":"Context engineering vs prompt engineering in plain English - how they differ, when each one matters, and fill-in templates to put both to work.","abstract":"Prompt engineering is about how you word the request; context engineering is about what information the model has in front of it when it answers. Most weak AI answers come from missing or messy context, not from bad wording, so fixing the context often helps more than rephrasing. Good context is relevant, current, clearly labelled and as short as the task allows - more text is not automatically better. In practice you need both - a clear instruction plus a well-chosen context package - and the templates below combine them.","datePublished":"2026-11-25","dateModified":"2026-11-25","url":"https://goodaipromt.com/blog/context-engineering-vs-prompt-engineering/","mainEntityOfPage":"https://goodaipromt.com/blog/context-engineering-vs-prompt-engineering/","image":"https://goodaipromt.com/assets/og.png","author":{"@type":"Organization","@id":"https://goodaipromt.com/#organization","name":"GoodAIPromt editorial team","url":"https://goodaipromt.com/about/"},"publisher":{"@id":"https://goodaipromt.com/#organization"},"wordCount":1596,"inLanguage":"en","isAccessibleForFree":true},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is context engineering replacing prompt engineering?","acceptedAnswer":{"@type":"Answer","text":"No. Context engineering is a wider view that includes prompt engineering. You still need a clear instruction; you also need to decide which documents, examples, memory and tool results the model sees alongside it."}},{"@type":"Question","name":"Do I need to be a developer to use context engineering?","acceptedAnswer":{"@type":"Answer","text":"No. In a chat app, context engineering simply means pasting the right material, labelling it, removing what doesn't matter and starting a fresh chat when the old one is cluttered. Developers apply the same ideas in code with retrieval, memory and tool calls."}},{"@type":"Question","name":"Is a bigger context window always better?","acceptedAnswer":{"@type":"Answer","text":"A large context window lets you include more, but it does not guarantee the model uses all of it well. Models can miss details buried in long inputs, so select and order the material carefully and put the key facts and the instruction where they are easy to find."}}]}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <div class="wrap top__row">
+    <a class="logo" href="/" aria-label="promt — GoodAIPromt home">promt<span class="logo__blank" aria-hidden="true"></span></a>
+    <nav class="top__nav" aria-label="Categories"><a href="/category/writing/">Writing</a><a href="/category/marketing/">Marketing</a><a href="/category/seo/">SEO</a><a href="/category/sales/">Sales</a><a href="/category/business/">Strategy</a><a href="/category/coding/">Coding</a><a href="/category/image/">Image</a><a href="/category/video/">Video</a><a href="/categories/">All categories</a></nav>
+    <nav class="top__aux" aria-label="Site"><a href="/prompt-generator/">Generator</a><a href="/guides/">Guides</a><a href="/blog/" aria-current="page">Blog</a></nav><button class="theme-btn" type="button" data-theme-toggle aria-label="Switch light or dark theme" title="Light / dark theme"><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></svg><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg></button>
+    <button class="menu-btn" type="button" data-menu-btn aria-expanded="false" aria-controls="drawer"><span class="menu-btn__icon" aria-hidden="true"></span><span class="visually-hidden">Menu</span></button>
+  </div>
+  <div class="drawer" id="drawer" data-drawer hidden>
+    <div class="wrap drawer__inner">
+      <form class="drawer__search" action="/" method="get" role="search"><label class="visually-hidden" for="drawer-q">Search prompts</label><input id="drawer-q" type="search" name="q" placeholder="Search prompts" autocomplete="off"><button class="btn btn--copy" type="submit">Search</button></form>
+      <div class="drawer__quick">
+        <a href="/prompts/">All prompts</a><a href="/prompt-generator/">Prompt generator</a><a href="/guides/">Guides</a><a href="/blog/">Blog</a>
+      </div>
+      <p class="drawer__h">By AI tool</p>
+      <div class="drawer__chips"><a href="/chatgpt-prompts/">ChatGPT</a><a href="/claude-prompts/">Claude</a><a href="/gemini-prompts/">Gemini</a><a href="/midjourney-prompts/">Midjourney</a><a href="/ai-video-prompts/">AI Video</a></div>
+      <p class="drawer__h">By task</p>
+      <div class="drawer__chips"><a href="/category/writing/">Writing</a><a href="/category/marketing/">Marketing</a><a href="/category/seo/">SEO</a><a href="/category/sales/">Sales</a><a href="/category/business/">Strategy</a><a href="/category/productivity/">Productivity</a><a href="/category/education/">Education</a><a href="/category/research/">Research</a><a href="/category/data/">Data analysis</a><a href="/category/finance/">Finance</a><a href="/category/hr/">HR</a><a href="/category/customer-service/">Customer service</a><a href="/category/real-estate/">Real estate</a><a href="/category/careers/">Careers</a><a href="/category/legal/">Legal</a><a href="/category/coding/">Coding</a><a href="/category/image/">Image</a><a href="/category/video/">Video</a></div>
+      <p class="drawer__h">Resources</p>
+      <div class="drawer__links"><a href="/best-ai-tools/">Best AI tools</a><a href="/best-ai-mcps/">MCP servers</a><a href="/best-ai-skills/">Claude skills</a><a href="/free-ai-courses/">Free AI courses</a><a href="/faq/">FAQ</a><a href="/about/">About</a><a href="/contact/">Contact</a></div>
+    </div>
+  </div>
+</header>
+<main id="main">
+
+<article class="prompt post">
+  <header class="wrap prompt__head">
+    <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/blog/">Blog</a></li><li><span aria-current="page">Context Engineering vs Prompt Engineering: What Changes and Why It Matters</span></li></ol></nav>
+    <h1>Context Engineering vs Prompt Engineering: What Changes and Why It Matters</h1>
+    <p class="prompt__lede">Context engineering vs prompt engineering in plain English - how they differ, when each one matters, and fill-in templates to put both to work.</p>
+    <dl class="facts">
+      <div><dt>Published</dt><dd><time datetime="2026-11-25">November 25, 2026</time></dd></div>
+      
+      <div><dt>Reading time</dt><dd>7 min</dd></div>
+      <div><dt>By</dt><dd><a href="/about/">GoodAIPromt editorial team</a></dd></div>
+    </dl>
+  </header>
+  <div class="wrap prompt__body">
+    <aside class="summary" aria-labelledby="sum-h"><h2 id="sum-h">Key takeaways</h2><ul><li>Prompt engineering is about how you word the request; context engineering is about what information the model has in front of it when it answers.</li><li>Most weak AI answers come from missing or messy context, not from bad wording, so fixing the context often helps more than rephrasing.</li><li>Good context is relevant, current, clearly labelled and as short as the task allows - more text is not automatically better.</li><li>In practice you need both - a clear instruction plus a well-chosen context package - and the templates below combine them.</li></ul></aside>
+    <div class="prose"><p>If you have spent time improving your AI prompts, you have probably noticed something frustrating: a beautifully worded prompt can still produce a vague or wrong answer. Often the problem isn&#39;t the wording at all. The model simply didn&#39;t have the information it needed.</p>
+<p>That gap is why people now talk about <strong>context engineering vs prompt engineering</strong>. This guide explains the difference in plain terms, shows when each one matters, and gives you fill-in templates that use both.</p>
+<h2>The short answer</h2>
+<ul>
+<li><strong>Prompt engineering</strong> is the craft of writing the instruction: the task, the role, the format, the constraints and the examples.</li>
+<li><strong>Context engineering</strong> is the craft of deciding what <em>everything else</em> the model sees: documents, data, past messages, memory, tool results, examples and the system prompt — and how that material is selected, ordered and trimmed.</li>
+</ul>
+<p>A useful way to picture it: the prompt is the question you ask a consultant. The context is the folder you hand them before they answer. A sharp question with an empty folder gets a generic answer. A modest question with the right folder often gets a great one.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Prompt engineering</th>
+<th>Context engineering</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Main question</strong></td>
+<td>How should I ask?</td>
+<td>What should the model know when it answers?</td>
+</tr>
+<tr>
+<td><strong>Typical work</strong></td>
+<td>Wording, structure, role, output format, examples</td>
+<td>Choosing sources, retrieval, memory, summaries, tool output, ordering, trimming</td>
+</tr>
+<tr>
+<td><strong>Scope</strong></td>
+<td>Usually one message</td>
+<td>The whole input the model receives, across turns</td>
+</tr>
+<tr>
+<td><strong>Common failure</strong></td>
+<td>Unclear or conflicting instructions</td>
+<td>Missing, outdated, irrelevant or buried information</td>
+</tr>
+<tr>
+<td><strong>Where it shows up</strong></td>
+<td>Chat prompts, templates</td>
+<td>Assistants, agents, RAG systems, long projects</td>
+</tr>
+</tbody></table>
+<h2>Why the idea took off</h2>
+<p>Early prompting advice focused on wording tricks because most people used chatbots for one-off questions. Today many uses are bigger: assistants that read company documents, agents that call tools over many steps, and projects that span long conversations. In those setups, the instruction is a small part of what the model reads. The rest — retrieved documents, history, tool results — has a large effect on the answer.</p>
+<p>So the skill has widened. You still write instructions, but you also design the <em>information environment</em> around them.</p>
+<h2>What counts as context</h2>
+<p>Context is anything in the model&#39;s input other than your core instruction. Common pieces:</p>
+<ol>
+<li><strong>System prompt or standing instructions</strong> — role, rules and tone that apply to every turn. (Our guide to <a href="/blog/system-prompt-guide/">system prompts</a> covers these in depth.)</li>
+<li><strong>Reference material</strong> — documents, policies, product specs, notes or data you paste or the system retrieves.</li>
+<li><strong>Examples</strong> — sample inputs and outputs that show the pattern you want, as in <a href="/blog/few-shot-prompting/">few-shot prompting</a>.</li>
+<li><strong>Conversation history</strong> — earlier messages, which can help or quietly mislead.</li>
+<li><strong>Memory</strong> — saved facts about the user or project, in tools that offer it.</li>
+<li><strong>Tool results</strong> — search results, database rows, code output or API responses fed back to the model.</li>
+</ol>
+<p>Each of these can be helpful or harmful. Context engineering is the habit of checking which is which.</p>
+<h2>Four principles of good context</h2>
+<h3>1. Relevant beats complete</h3>
+<p>Pasting a whole 80-page handbook &quot;just in case&quot; makes the model&#39;s job harder. Include the sections that bear on the task. If you can&#39;t tell which sections matter, ask the model to find them first in a separate step, then answer using only those.</p>
+<h3>2. Label everything</h3>
+<p>Wrap each piece of material in a clear label so the model knows what it is and how much to trust it. Tags such as <code>&lt;policy&gt;</code>, <code>&lt;customer_email&gt;</code> or <code>&lt;draft&gt;</code> work well, as do plain headings. Labels also let you refer to material precisely: &quot;Answer using only the text in <code>&lt;policy&gt;</code>.&quot;</p>
+<h3>3. Keep it current and consistent</h3>
+<p>Two documents that disagree will produce a confused answer. Remove outdated versions, or tell the model which source wins: &quot;If the FAQ and the policy disagree, follow the policy.&quot;</p>
+<h3>4. Put key things where they are easy to find</h3>
+<p>In long inputs, models can overlook details in the middle. Put the instruction and the most important facts in clear, prominent places — many people place long documents first and the question at the end — and repeat a critical constraint near the instruction if it really matters.</p>
+<h2>When prompt engineering is enough</h2>
+<p>For short, self-contained tasks, the instruction is most of the work:</p>
+<ul>
+<li>rewriting a paragraph you&#39;ve pasted</li>
+<li>brainstorming names or headlines</li>
+<li>explaining a general concept</li>
+<li>turning notes into a formatted list</li>
+</ul>
+<p>Here, clear wording, a defined output format and maybe one example will get you most of the way. The <a href="/blog/how-to-write-ai-prompts/">5-part prompt formula</a> is a good default.</p>
+<h2>When context engineering matters more</h2>
+<p>Context becomes the main lever when:</p>
+<ul>
+<li>the answer depends on <strong>your</strong> facts (your product, policy, data or client)</li>
+<li>the task runs over <strong>many turns</strong> or steps</li>
+<li>the model must <strong>use tools</strong> and act on their output</li>
+<li>accuracy matters and you need answers <strong>grounded in sources</strong></li>
+<li>outputs must stay <strong>consistent</strong> with a brand voice or style guide</li>
+</ul>
+<p>In these cases, rewording the prompt rarely fixes a bad answer. Adding the missing source, removing the misleading one, or summarising a long history usually does.</p>
+<h2>Template 1: A context-first prompt for chat apps</h2>
+<p>Use this when you paste material into ChatGPT, Claude or Gemini and want a grounded answer.</p>
+<div class="editor" data-editor>
+<pre class="editor__text"><code>You are helping me with [TASK, e.g. drafting a reply to a customer complaint].
+
+Below is the material you need. Use only this material for facts. If something
+you need is missing, say what is missing instead of guessing.
+
+&lt;background&gt;
+<span class="blank" contenteditable="true" spellcheck="false" role="textbox" aria-label="Fill in: who i am, who the audience is, and the goal in 2-3 sentences" data-ph="WHO I AM, WHO THE AUDIENCE IS, AND THE GOAL IN 2-3 SENTENCES"></span>
+&lt;/background&gt;
+
+&lt;source_1 title=&quot;<span class="blank" contenteditable="true" spellcheck="false" role="textbox" aria-label="Fill in: source name" data-ph="SOURCE NAME"></span>&quot;&gt;
+<span class="blank" contenteditable="true" spellcheck="false" role="textbox" aria-label="Fill in: paste the most relevant section only" data-ph="PASTE THE MOST RELEVANT SECTION ONLY"></span>
+&lt;/source_1&gt;
+
+&lt;source_2 title=&quot;<span class="blank" contenteditable="true" spellcheck="false" role="textbox" aria-label="Fill in: source name" data-ph="SOURCE NAME"></span>&quot;&gt;
+<span class="blank" contenteditable="true" spellcheck="false" role="textbox" aria-label="Fill in: paste a second source, or delete this block" data-ph="PASTE A SECOND SOURCE, OR DELETE THIS BLOCK"></span>
+&lt;/source_2&gt;
+
+&lt;rules&gt;
+- If sources disagree, follow <span class="blank" contenteditable="true" spellcheck="false" role="textbox" aria-label="Fill in: which source wins" data-ph="WHICH SOURCE WINS"></span>.
+- Tone: <span class="blank" contenteditable="true" spellcheck="false" role="textbox" aria-label="Fill in: tone" data-ph="TONE"></span>. Length: <span class="blank" contenteditable="true" spellcheck="false" role="textbox" aria-label="Fill in: length" data-ph="LENGTH"></span>.
+- <span class="blank" contenteditable="true" spellcheck="false" role="textbox" aria-label="Fill in: any other constraint" data-ph="ANY OTHER CONSTRAINT"></span>
+&lt;/rules&gt;
+
+Task: <span class="blank" contenteditable="true" spellcheck="false" role="textbox" aria-label="Fill in: the exact request" data-ph="THE EXACT REQUEST"></span>.
+Before the final answer, list the facts you used and which source each came from.</code></pre>
+<div class="editor__bar"><p class="editor__status" data-status aria-live="polite"><span data-filled>0</span> of 9 blanks filled</p><div class="editor__actions"><button class="btn btn--quiet" type="button" data-clear>Clear</button><button class="btn btn--copy" type="button" data-copy>Copy prompt</button></div></div>
+</div>
+<p>The closing line turns the model&#39;s reasoning into something you can check in a few seconds.</p>
+<h2>Template 2: Clean up a messy conversation</h2>
+<p>Long chats collect dead ends, old drafts and changed decisions. Instead of pushing on, compress the useful context and start fresh.</p>
+<div class="editor" data-editor>
+<pre class="editor__text"><code>We are going to continue this work in a new conversation. Write a compact
+context summary I can paste there. Include:
+
+1. Goal: what we are trying to produce, for whom.
+2. Decisions made so far (only the latest version of each).
+3. Facts and constraints that must be kept.
+4. Open questions and next steps.
+5. Anything we tried and rejected, with one line on why.
+
+Leave out drafts, small talk and anything superseded. Keep it under <span class="blank" contenteditable="true" spellcheck="false" role="textbox" aria-label="Fill in: word limit" data-ph="WORD LIMIT"></span> words.
+Project: <span class="blank" contenteditable="true" spellcheck="false" role="textbox" aria-label="Fill in: project name" data-ph="PROJECT NAME"></span></code></pre>
+<div class="editor__bar"><p class="editor__status" data-status aria-live="polite"><span data-filled>0</span> of 2 blanks filled</p><div class="editor__actions"><button class="btn btn--quiet" type="button" data-clear>Clear</button><button class="btn btn--copy" type="button" data-copy>Copy prompt</button></div></div>
+</div>
+<p>Paste the result into a new chat with your next instruction. This is one of the simplest forms of context engineering, and it often fixes a chat that has started to drift.</p>
+<h2>Template 3: Ask the model what context it needs</h2>
+<p>When you aren&#39;t sure what to include, let the model tell you before it starts.</p>
+<div class="editor" data-editor>
+<pre class="editor__text"><code>I want you to <span class="blank" contenteditable="true" spellcheck="false" role="textbox" aria-label="Fill in: task" data-ph="TASK"></span>. Do not start yet.
+
+First, list the information you would need to do this well, grouped as:
+- Must have (you cannot do a good job without it)
+- Nice to have (improves quality)
+- Not needed (I might be tempted to paste it, but it would only add noise)
+
+Context about me and the situation: <span class="blank" contenteditable="true" spellcheck="false" role="textbox" aria-label="Fill in: short description" data-ph="SHORT DESCRIPTION"></span>.
+Ask me for the &quot;must have&quot; items one group at a time.</code></pre>
+<div class="editor__bar"><p class="editor__status" data-status aria-live="polite"><span data-filled>0</span> of 2 blanks filled</p><div class="editor__actions"><button class="btn btn--quiet" type="button" data-clear>Clear</button><button class="btn btn--copy" type="button" data-copy>Copy prompt</button></div></div>
+</div>
+<p>This flips the usual flow: you engineer the context with the model&#39;s help instead of guessing.</p>
+<h2>Template 4: A context checklist for builders</h2>
+<p>If you build assistants or agents, run each important prompt through a quick review.</p>
+<div class="editor" data-editor>
+<pre class="editor__text"><code>Review the following model input as a context engineer. For each section, say
+whether it is necessary, what could be cut or summarised, what is missing, and
+whether anything conflicts. Then suggest a reordered version.
+
+Use case: <span class="blank" contenteditable="true" spellcheck="false" role="textbox" aria-label="Fill in: what the assistant or agent does" data-ph="WHAT THE ASSISTANT OR AGENT DOES"></span>
+Typical user request: <span class="blank" contenteditable="true" spellcheck="false" role="textbox" aria-label="Fill in: example request" data-ph="EXAMPLE REQUEST"></span>
+
+&lt;model_input&gt;
+<span class="blank" contenteditable="true" spellcheck="false" role="textbox" aria-label="Fill in: paste the full system prompt, retrieved documents, examples and tool output" data-ph="PASTE THE FULL SYSTEM PROMPT, RETRIEVED DOCUMENTS, EXAMPLES AND TOOL OUTPUT"></span>
+&lt;/model_input&gt;</code></pre>
+<div class="editor__bar"><p class="editor__status" data-status aria-live="polite"><span data-filled>0</span> of 3 blanks filled</p><div class="editor__actions"><button class="btn btn--quiet" type="button" data-clear>Clear</button><button class="btn btn--copy" type="button" data-copy>Copy prompt</button></div></div>
+</div>
+<p>For production prompts, pair this with a structured template like our <a href="/prompts/llm-prompt-template-production/">LLM prompt template for production</a>.</p>
+<h2>Common mistakes</h2>
+<ul>
+<li><strong>Dumping everything.</strong> More context can bury the important parts and raise costs. Trim first.</li>
+<li><strong>Unlabelled pasting.</strong> Without labels, the model may treat a customer&#39;s complaint as your instruction, or an old draft as the current one.</li>
+<li><strong>Stale memory.</strong> Saved preferences and long histories can carry outdated assumptions. Review them, or start clean.</li>
+<li><strong>Trusting retrieved text blindly.</strong> Search results and documents can be wrong or contain instructions of their own. Tell the model to treat them as data, not commands, and check important facts.</li>
+<li><strong>Fixing the wording when the facts are missing.</strong> If an answer is wrong because the model didn&#39;t know something, no rephrasing will help.</li>
+</ul>
+<h2>Putting it together</h2>
+<p>Think of every request as two parts: the <strong>instruction</strong> and the <strong>context package</strong>. Write the instruction clearly, then ask: does the model have the right facts, in a clear order, without clutter? If the answer is no, fix that first.</p>
+<p>For more ready-to-use prompts that apply these ideas, try the <a href="/prompts/claude-prompt-engineering-improve/">Claude prompt improver</a>, the <a href="/prompts/executive-summary-long-document/">executive summary for long documents</a> prompt and the <a href="/prompts/brand-voice-guide/">brand voice guide</a> prompt, or browse the <a href="/claude-prompts/">Claude prompts hub</a>.</p>
+</div>
+    <section class="faq prose" aria-labelledby="faq-h"><h2 id="faq-h">Frequently asked questions</h2><h3>Is context engineering replacing prompt engineering?</h3><p>No. Context engineering is a wider view that includes prompt engineering. You still need a clear instruction; you also need to decide which documents, examples, memory and tool results the model sees alongside it.</p><h3>Do I need to be a developer to use context engineering?</h3><p>No. In a chat app, context engineering simply means pasting the right material, labelling it, removing what doesn't matter and starting a fresh chat when the old one is cluttered. Developers apply the same ideas in code with retrieval, memory and tool calls.</p><h3>Is a bigger context window always better?</h3><p>A large context window lets you include more, but it does not guarantee the model uses all of it well. Models can miss details buried in long inputs, so select and order the material carefully and put the key facts and the instruction where they are easy to find.</p></section>
+  </div>
+</article>
+<section class="wrap related"><h2>Prompts from this article</h2><ol class="rows"><li class="row" data-search="llm prompt template for production apps a prompt that designs a reusable llm prompt template for your app, with role, rules, variables, output schema, examples and an evaluation set. coding chatgpt claude gemini llm prompt template prompt engineering ai apps evaluation" data-cat="coding">
+  <time class="row__date" datetime="2026-11-23">Nov 23</time>
+  <div class="row__main">
+    <h3 class="row__title"><a href="/prompts/llm-prompt-template-production/">LLM prompt template for production apps</a></h3>
+    <p class="row__desc">A prompt that designs a reusable LLM prompt template for your app, with role, rules, variables, output schema, examples and an evaluation set.</p>
+  </div>
+  <p class="row__cat">Coding</p>
+  <p class="row__models">For ChatGPT, Claude and Gemini</p>
+</li>
+<li class="row" data-search="claude prompt engineering to improve any prompt use claude prompt engineering basics to rewrite any prompt with clear structure, xml-tagged context, examples and output checks. coding claude chatgpt claude prompt engineering xml tags" data-cat="coding">
+  <time class="row__date" datetime="2026-11-21">Nov 21</time>
+  <div class="row__main">
+    <h3 class="row__title"><a href="/prompts/claude-prompt-engineering-improve/">Claude prompt engineering to improve any prompt</a></h3>
+    <p class="row__desc">Use Claude prompt engineering basics to rewrite any prompt with clear structure, XML-tagged context, examples and output checks.</p>
+  </div>
+  <p class="row__cat">Coding</p>
+  <p class="row__models">For Claude and ChatGPT</p>
+</li>
+<li class="row" data-search="executive summary of a long document condense a long report, proposal or research document into a one-page executive summary that leads with conclusions and decisions. writing chatgpt claude gemini executive summary business writing summarizing" data-cat="writing">
+  <time class="row__date" datetime="2026-11-21">Nov 21</time>
+  <div class="row__main">
+    <h3 class="row__title"><a href="/prompts/executive-summary-long-document/">Executive summary of a long document</a></h3>
+    <p class="row__desc">Condense a long report, proposal or research document into a one-page executive summary that leads with conclusions and decisions.</p>
+  </div>
+  <p class="row__cat">Writing</p>
+  <p class="row__models">For ChatGPT, Claude and Gemini</p>
+</li>
+<li class="row" data-search="create a brand voice guide from examples turn samples of your best writing into a practical brand voice guide with tone traits, do and don't word lists and before-and-after examples. marketing chatgpt claude gemini brand voice tone of voice content guidelines" data-cat="marketing">
+  <time class="row__date" datetime="2026-11-19">Nov 19</time>
+  <div class="row__main">
+    <h3 class="row__title"><a href="/prompts/brand-voice-guide/">Create a brand voice guide from examples</a></h3>
+    <p class="row__desc">Turn samples of your best writing into a practical brand voice guide with tone traits, do and don't word lists and before-and-after examples.</p>
+  </div>
+  <p class="row__cat">Marketing</p>
+  <p class="row__models">For ChatGPT, Claude and Gemini</p>
+</li></ol></section>
+<section class="wrap related"><h2>More from the blog</h2><ol class="rows"><li class="row row--post">
+  <time class="row__date" datetime="2026-11-27">Nov 27</time>
+  <div class="row__main">
+    <h3 class="row__title"><a href="/blog/chain-of-thought-prompting/">Chain of Thought Prompting: How to Get AI to Reason Step by Step</a></h3>
+    <p class="row__desc">What a chain of thought prompt is, when step-by-step reasoning helps, and copy-ready templates for maths, decisions, debugging and analysis.</p>
+  </div>
+  <p class="row__cat">7 min read</p>
+</li>
+<li class="row row--post">
+  <time class="row__date" datetime="2026-11-27">Nov 27</time>
+  <div class="row__main">
+    <h3 class="row__title"><a href="/blog/chatgpt-prompts-for-students/">15 ChatGPT Prompts for Students (Study Smarter, Not Shortcut)</a></h3>
+    <p class="row__desc">15 fill-in ChatGPT prompts for students to understand topics, revise for exams, plan essays, manage time and get feedback without cheating.</p>
+  </div>
+  <p class="row__cat">6 min read</p>
+</li>
+<li class="row row--post">
+  <time class="row__date" datetime="2026-11-26">Nov 26</time>
+  <div class="row__main">
+    <h3 class="row__title"><a href="/blog/advanced-prompt-engineering-techniques/">8 Advanced Prompt Engineering Techniques (With Templates)</a></h3>
+    <p class="row__desc">Eight advanced prompt engineering techniques - from self-consistency to step-back and self-critique - with fill-in templates and when to use each.</p>
+  </div>
+  <p class="row__cat">6 min read</p>
+</li></ol></section>
+</main>
+<footer class="foot">
+  <div class="wrap foot__grid">
+    <div>
+      <p class="logo logo--small">promt<span class="logo__blank" aria-hidden="true"></span></p>
+      <p class="foot__about">Free AI prompts you can fill in and copy. Free to copy and use.</p>
+    </div>
+    <nav aria-label="Prompts by AI tool"><p class="foot__h">By AI tool</p><a href="/chatgpt-prompts/">ChatGPT Prompts</a><a href="/claude-prompts/">Claude Prompts</a><a href="/gemini-prompts/">Gemini Prompts</a><a href="/midjourney-prompts/">Midjourney Prompts</a><a href="/ai-video-prompts/">AI Video Prompts for Seedance, Veo and Kling</a></nav>
+    <nav class="foot__tasks" aria-label="Prompts by task"><p class="foot__h">By task</p><a href="/category/writing/">Writing prompts</a><a href="/category/marketing/">Marketing prompts</a><a href="/category/seo/">SEO prompts</a><a href="/category/sales/">Sales prompts</a><a href="/category/business/">Strategy prompts</a><a href="/category/productivity/">Productivity prompts</a><a href="/category/education/">Education prompts</a><a href="/category/research/">Research prompts</a><a href="/category/data/">Data analysis prompts</a><a href="/category/finance/">Finance prompts</a><a href="/category/hr/">HR prompts</a><a href="/category/customer-service/">Customer service prompts</a><a href="/category/real-estate/">Real estate prompts</a><a href="/category/careers/">Careers prompts</a><a href="/category/legal/">Legal prompts</a><a href="/category/coding/">Coding prompts</a><a href="/category/image/">Image prompts</a><a href="/category/video/">Video prompts</a></nav>
+    <nav aria-label="Resources"><p class="foot__h">Resources</p><a href="/prompts/">All prompts</a><a href="/prompt-generator/">Prompt generator</a><a href="/guides/">Guides</a><a href="/best-ai-tools/">Best AI tools</a><a href="/best-ai-mcps/">MCP servers</a><a href="/best-ai-skills/">Claude skills</a><a href="/free-ai-courses/">Free AI courses</a><a href="/faq/">FAQ</a></nav>
+    <nav aria-label="Company and legal"><p class="foot__h">Company</p><a href="/blog/">Blog</a><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy policy</a><a href="/cookies/">Cookie policy</a><a href="/terms/">Terms of use</a><a href="/disclaimer/">Disclaimer</a><a href="/rss.xml">RSS feed</a></nav>
+  </div>
+  <div class="wrap"><p class="muted foot__copy">© 2026 GoodAIPromt. Not affiliated with OpenAI, Anthropic, Google or Midjourney.</p></div>
+</footer>
+<div class="consent" data-consent hidden role="region" aria-label="Cookie choice">
+  <p>We use analytics cookies to see which prompts are useful. No ads, no selling data. <a href="/cookies/">Cookie policy</a></p>
+  <div class="consent__actions"><button class="btn btn--quiet" type="button" data-consent-no>Decline</button><button class="btn btn--copy" type="button" data-consent-yes>Accept</button></div>
+</div>
+<script src="/assets/app.js?v=mwzs8cp7" defer></script>
+</body>
+</html>
